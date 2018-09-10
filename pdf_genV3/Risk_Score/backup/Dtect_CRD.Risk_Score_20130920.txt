@@ -1,0 +1,49 @@
+#Specific disease/drug category	RSID	ID	Risk allele	Allele frequency (HapMap)	Odd ratio (Homozygote)	Odd ratio (Heterozygote)	Homozygous modal genotype (Major allele)	Heterozygous	Homozygous variant genotype (Minor allele)
+Abdominal Aortic Aneurysm	rs10757278	CRD_01_01	G	0.4272	1.7161	1.31	AA	AG	GG
+Abdominal Aortic Aneurysm	rs7025486	CRD_01_01	A	0.2605	1.4641	1.21	GG	AG	AA
+Atrial Fibrillation	rs7193343	CRD_01_02	T	0.3118	1.4641	1.21	CC	CT	TT
+Atrial Fibrillation	rs13376333	CRD_01_02	T	0.2202	2.25	1.5	CC	CT	TT
+Atrial Fibrillation	rs2200733	CRD_01_02	T	0.2706	3.2761	1.81	CC	CT	TT
+Brain Aneurysm	rs10757278	CRD_01_03	G	0.4272	1.6641	1.29	AA	AG	GG
+Brain Aneurysm	rs10958409	CRD_01_03	A	0.2166	1.79	1.37	GG	AG	AA
+Brain Aneurysm	rs1333040	CRD_01_03	T	0.6223	1.67	1.29	TT	CT	CC
+Brain Aneurysm	rs1429412	CRD_01_03	G	0.3489	1.46	1.27	AA	AG	GG
+Brain Aneurysm	rs700675	CRD_01_03	G	0.3008	1.56	1.18	AA	GA	GG
+Brain Aneurysm	rs911271	CRD_01_03	C	0.6071	1.4	1.13	CC	AC	AA
+Coronary Heart Disease	rs17465637	CRD_01_04	C	0.5481	1.2769	1.13	CC	AC	AA
+Coronary Heart Disease	rs3798220	CRD_01_04	C	0.0568	2.2801	1.51	TT	CT	CC
+Heart Attack	rs2291834	CRD_01_06	C	0.543	1.145	1.07	CC	CT	TT
+Heart Attack	rs599839	CRD_01_06	A	0.6877	1.6641	1.29	AA	AG	GG
+Heart Attack	rs6922269	CRD_01_06	A	0.2908	1.65	1.17	GG	AG	AA
+Peripheral Arterial Disease	rs1051730	CRD_01_07	A	0.1937	1.4161	1.19	GG	AG	AA
+Peripheral Arterial Disease	rs7025486	CRD_01_07	A	0.2605	1.2996	1.14	GG	AG	AA
+Sudden Cardiac Arrest	rs174230	CRD_01_08	T	0.1328	1.9044	1.38	CC	CT	TT
+Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs1799963	CRD_01_09	A	0.0046	2.99982	1.732	GG	AG	AA
+Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs268	CRD_01_09	G	0.0082	9.5481	3.09	AA	AG	GG
+Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs5361	CRD_01_09	G	0.0549	7.4529	2.73	TT	GT	GG
+Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs6025	CRD_01_09	T	0.006	12.7449	3.57	CC	CT	TT
+Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs7025486	CRD_01_09	A	0.2605	1.44	1.2	GG	AG	AA
+Hypertriglyceridemia	rs964184	CRD_01_10	G	0.2001	10.7584	3.28	CC	CG	GG
+Chronic Obstructive Pulmonary Disease (COPD)	rs17576	CRD_01_11	G	0.4501	3.8	1.8	AA	AG	GG
+Chronic Obstructive Pulmonary Disease (COPD)	rs1800469	CRD_01_11	G	0.641	1.0404	1.02	GG	AG	AA
+Chronic Obstructive Pulmonary Disease (COPD)	rs2241712	CRD_01_11	T	0.6506	1.4161	1.19	TT	CT	CC
+Chronic Obstructive Pulmonary Disease (COPD)	rs3736309	CRD_01_11	A	0.1557	0.1936	0.44	AA	AG	GG
+Chronic Obstructive Pulmonary Disease (COPD)	rs7671167	CRD_01_11	T	0.5151	1.7424	1.32	TT	CT	CC
+Chronic Obstructive Pulmonary Disease (COPD)	rs8034191	CRD_01_11	C	0.2092	1.97122	1.404	TT	CT	CC
+Chronic Obstructive Pulmonary Disease (COPD)	rs8192287	CRD_01_11	T	0.0563	6.25	2.5	GG	GT	TT
+Hypertension	rs3754777	CRD_01_12	T	0.1941	1.51536	1.231	CC	CT	TT
+Hypertension	rs1378942	CRD_01_12	C	0.6703	1.5625	1.25	CC	AC	AA
+Hypertension	rs12413409	CRD_01_12	G	0.1383	0.7396	0.86	GG	AG	AA
+Hypertension	rs13333226	CRD_01_12	A	0.1964	0.7569	0.87	AA	AG	GG
+Hypertension	rs16998073	CRD_01_12	T	0.2509	1.3689	1.17	AA	AT	TT
+Hypertension	rs5370	CRD_01_12	T	0.2056	3.8025	1.95	GG	GT	TT
+Hypertension	rs17367504	CRD_01_12	A	0.1099	0.7921	0.89	AA	AG	GG
+Obesity	rs8050136	CRD_01_13	A	0.3384	2.1025	1.45	CC	AC	AA
+Obesity	rs10871777	CRD_01_13	G	0.2285	1.0404	1.02	AA	AG	GG
+Obesity	rs3751812	CRD_01_13	T	0.2413	4.84	2.2	GG	GT	TT
+Obesity	rs9939609	CRD_01_13	A	0.3553	1.9881	1.41	TT	AT	AA
+Obesity	rs1421085	CRD_01_13	C	0.2473	2.0449	1.43	TT	CT	CC
+Obesity	rs1121980	CRD_01_13	A	0.3681	1.7956	1.34	GG	AG	AA
+Stroke	rs12425791	CRD_01_14	A	0.2019	1.96	1.4	GG	AG	AA
+Stroke	rs3783799	CRD_01_14	T	0.0627	1.6129	1.27	CC	CT	TT
+

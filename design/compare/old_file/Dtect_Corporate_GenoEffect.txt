@@ -1,0 +1,404 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles	Genotypes	Genotype effects	PMID	Risk/Efficacy	# SNPs/condition
+1	Alcohol dependence	Disease	COR	01	rs1076560	A/C	A;A	Increased risk of alcoholism	17196743	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1076560	A/C	A;C	Increased risk of alcoholism	17196743	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1076560	A/C	C;C	Typical risk of alcoholism	17196743	Neutral	5
+1	Alcohol dependence	Disease	COR	01	rs1799971	A/G	G;G	Increased risk of alcoholism	17207095	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1799971	A/G	A;G	Increased risk of alcoholism	17207095	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1799971	A/G	A;A	Typical risk of alcoholism	17207095	Neutral	5
+1	Alcohol dependence	Disease	COR	01	rs1800497	A/G	A;A	Increased risk of alcoholism	17453061	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1800497	A/G	A;G	Increased risk of alcoholism	17453061	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs1800497	A/G	G;G	Typical risk of alcoholism	17453061	Neutral	5
+1	Alcohol dependence	Disease	COR	01	rs27072	C/T	T;T	Increased risk of alcoholism	19740369	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs27072	C/T	C;T	Increased risk of alcoholism	19740369	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs27072	C/T	C;C	Typical risk of alcoholism	19740369	Neutral	5
+1	Alcohol dependence	Disease	COR	01	rs671	A/G	A;A	Increased risk of alcoholism	22102315, 20833657	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs671	A/G	A;G	Increased risk of alcoholism	22102315, 20833657	Bad	5
+1	Alcohol dependence	Disease	COR	01	rs671	A/G	G;G	Typical risk of alcoholism	22102315, 20833657	Neutral	5
+2	Ankylosing spondylitis	Disease	COR	01	rs10865331	A/G	A;A	Increased risk of ankylosing spondylitis	20062062, 22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs10865331	A/G	A;G	Slightly increased risk of ankylosing spondylitis	20062062, 22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs10865331	A/G	G;G	Typical risk of ankylosing spondylitis	20062062, 22138694	Neutral	4
+2	Ankylosing spondylitis	Disease	COR	01	rs17095830	A/G	A;A	Typical risk of ankylosing spondylitis	22138694	Neutral	4
+2	Ankylosing spondylitis	Disease	COR	01	rs17095830	A/G	A;G	Slightly increased risk of ankylosing spondylitis	22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs17095830	A/G	G;G	Increase risk of ankylosing spondylitis	22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs30187	C/T	C;C	Typical risk of ankylosing spondylitis	19414429, 22632381	Neutral	4
+2	Ankylosing spondylitis	Disease	COR	01	rs30187	C/T	C;T	Slightly increased risk of ankylosing spondylitis	19414429, 22632381	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs30187	C/T	T;T	Slightly increased risk of ankylosing spondylitis	19414429, 22632381	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs4552569	C/T	C;C	Increase risk of ankylosing spondylitis	22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs4552569	C/T	C;T	Slightly increased risk of ankylosing spondylitis	22138694	Bad	4
+2	Ankylosing spondylitis	Disease	COR	01	rs4552569	C/T	T;T	Typical risk of ankylosing spondylitis	22138694	Neutral	4
+3	Asthma	Disease	COR	01	rs12603332	C/T	C;C	Increased risk of asthma	22370936, 18310477	Bad	3
+3	Asthma	Disease	COR	01	rs12603332	C/T	C;T	Typical risk of asthma	22370936, 18310477	Neutral	3
+3	Asthma	Disease	COR	01	rs12603332	C/T	T;T	Typical risk of asthma	22370936, 18310477	Neutral	3
+3	Asthma	Disease	COR	01	rs404860	C/T	T;T	Slightly increased risk of asthma	21804548	Bad	3
+3	Asthma	Disease	COR	01	rs404860	C/T	C;T	Typical risk of asthma	21804548	Neutral	3
+3	Asthma	Disease	COR	01	rs404860	C/T	C;C	Typical risk of asthma	21804548	Neutral	3
+3	Asthma	Disease	COR	01	rs7216389	C/T	T;T	Increased risk of asthma	22370936,  21985515, 18310477	Bad	3
+3	Asthma	Disease	COR	01	rs7216389	C/T	C;T	Typical risk of asthma	22370936,  21985515, 18310477	Neutral	3
+3	Asthma	Disease	COR	01	rs7216389	C/T	C;C	Typical risk of asthma	22370936,  21985515, 18310477	Neutral	3
+4	Atrial fibrillation	Disease	COR	01	rs7193343	C/T	C;C	Typical risk of atrial fibrillation	20173747	Neutral	3
+4	Atrial fibrillation	Disease	COR	01	rs7193343	C/T	C;T	Slightly increased risk of atrial fibrillation	20173747	Bad	3
+4	Atrial fibrillation	Disease	COR	01	rs7193343	C/T	T;T	Slightly increased risk of atrial fibrillation	20173747	Bad	3
+4	Atrial fibrillation	Disease	COR	01	rs13376333	C/T	C;C	Typical risk of atrial fibrillation	17603472, 19141561	Neutral	3
+4	Atrial fibrillation	Disease	COR	01	rs13376333	C/T	C;T	Slightly increased risk of atrial fibrillation	17603472, 19141561	Bad	3
+4	Atrial fibrillation	Disease	COR	01	rs13376333	C/T	T;T	Increased risk of atrial fibrillation	17603472, 19141561	Bad	3
+4	Atrial fibrillation	Disease	COR	01	rs2200733	C/T	C;C	Typical risk of atrial fibrillation	19597491, 21760908	Neutral	3
+4	Atrial fibrillation	Disease	COR	01	rs2200733	C/T	C;T	Slightly increased risk of atrial fibrillation	19597491, 21760908	Bad	3
+4	Atrial fibrillation	Disease	COR	01	rs2200733	C/T	T;T	Increased risk of atrial fibrillation	19597491, 21760908	Bad	3
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs1676486	A/G	A;A	Increased risk of back Pain (Lumbar disk disease)	17999364	Bad	2
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs1676486	A/G	A;G	Slightly increased risk of back Pain (Lumbar disk disease)	17999364	Bad	2
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs1676486	A/G	G;G	Typical risk of back Pain (Lumbar disk disease)	17999364	Neutral	2
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs2073711	A/G	G;G	Increased risk of back Pain (Lumbar disk disease)	15864306, 22107760	Bad	2
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs2073711	A/G	A;G	Typical risk of back Pain (Lumbar disk disease)	15864306, 22107760	Neutral	2
+5	Back Pain (Lumbar disk disease)	Disease	COR	01	rs2073711	A/G	A;A	Typical risk of back Pain (Lumbar disk disease)	15864306, 22107760	Neutral	2
+6	Breast Cancer	Disease	COR	01	rs13387042	A/G	A;A	Slightly increased risk of breast cancer	21908515	Bad	9
+6	Breast Cancer	Disease	COR	01	rs13387042	A/G	A;G	Slightly increased risk of breast cancer	21908515	Bad	9
+6	Breast Cancer	Disease	COR	01	rs13387042	A/G	G;G	Typical risk of breast cancer	21908515	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs1219648	A/G	G;G	Slightly increased risk of breast cancer	17529973, 18845558, 20640597	Bad	9
+6	Breast Cancer	Disease	COR	01	rs1219648	A/G	A;G	Slightly increased risk of breast cancer	17529973, 18845558, 20640597	Bad	9
+6	Breast Cancer	Disease	COR	01	rs1219648	A/G	A;A	Typical risk of breast cancer	17529973, 18845558, 20640597	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs3803662	A/G	A;A	Increased risk of breast cancer	17529974, 19567422, 22287734, 22087758	Bad	9
+6	Breast Cancer	Disease	COR	01	rs3803662	A/G	A;G	Typical risk of breast cancer	17529974, 19567422, 22287734, 22087758	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs3803662	A/G	G;G	Typical risk of breast cancer	17529974, 19567422, 22287734, 22087758	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs889312	A/C	C;C	Slightly increased risk of breast cancer	19219042, 21303983, 21197568	Bad	9
+6	Breast Cancer	Disease	COR	01	rs889312	A/C	A;C	Slightly increased risk of breast cancer	19219042, 21303983, 21197568	Bad	9
+6	Breast Cancer	Disease	COR	01	rs889312	A/C	A;A	Typical risk of breast cancer	19219042, 21303983, 21197568	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs2981582	A/G	A;A	Slightly increased risk of breast cancer	18437204, 17529967, 21822685, 20699374	Bad	9
+6	Breast Cancer	Disease	COR	01	rs2981582	A/G	A;G	Slightly increased risk of breast cancer	18437204, 17529967, 21822685, 20699374	Bad	9
+6	Breast Cancer	Disease	COR	01	rs2981582	A/G	G;G	Typical risk of breast cancer	18437204, 17529967, 21822685, 20699374	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs7107217	A/C	C;C	Slightly increased risk of breast cancer	17529974, 19005751, 22452962	Bad	9
+6	Breast Cancer	Disease	COR	01	rs7107217	A/C	A;C	Slightly increased risk of breast cancer	17529974, 19005751, 22452962	Bad	9
+6	Breast Cancer	Disease	COR	01	rs7107217	A/C	A;A	Typical risk of breast cancer	17529974, 19005751, 22452962	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs10822013	C/T	T;T	Slightly increased risk of breast cancer	22452962, 20585626, 21445572	Bad	9
+6	Breast Cancer	Disease	COR	01	rs10822013	C/T	C;T	Slightly increased risk of breast cancer	22452962, 20585626, 21445572	Bad	9
+6	Breast Cancer	Disease	COR	01	rs10822013	C/T	C;C	Typical risk of breast cancer	22452962, 20585626, 21445572	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs4784227	C/T	T;T	Increased risk of breast cancer	22383897	Bad	9
+6	Breast Cancer	Disease	COR	01	rs4784227	C/T	C;T	Slightly increased risk of breast cancer	22383897	Bad	9
+6	Breast Cancer	Disease	COR	01	rs4784227	C/T	C;C	Typical risk of breast cancer	22383897	Neutral	9
+6	Breast Cancer	Disease	COR	01	rs2046210	A/G	A;A	Increased risk of breast cancer	17529967, 20809358, 20699374, 21415360, 22452962	Bad	9
+6	Breast Cancer	Disease	COR	01	rs2046210	A/G	A;G	Slightly increased risk of breast cancer	17529967, 20809358, 20699374, 21415360, 22452962	Bad	9
+6	Breast Cancer	Disease	COR	01	rs2046210	A/G	G;G	Typical risk of breast cancer	17529967, 20809358, 20699374, 21415360, 22452962	Neutral	9
+7	Cervical cancer	Disease	COR	01	rs568408	A/G	A;A	Increased risk of cervical cancer	20163849	Bad	6
+7	Cervical cancer	Disease	COR	01	rs568408	A/G	A;G	Slightly increased risk of cervical cancer	20163849	Bad	6
+7	Cervical cancer	Disease	COR	01	rs568408	A/G	G;G	Typical risk of cervical cancer	20163849	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs3212227	G/T	G;G	Increased risk of cervical cancer	20538028	Bad	6
+7	Cervical cancer	Disease	COR	01	rs3212227	G/T	G;T	Slightly increased risk of cervical cancer	20538028	Bad	6
+7	Cervical cancer	Disease	COR	01	rs3212227	G/T	T;T	Typical risk of cervical cancer	20538028	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs750749	C/T	C;C	Typical risk of cervical cancer	20163849	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs750749	C/T	C;T	Typical risk of cervical cancer	20163849	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs750749	C/T	T;T	Slightly increased risk of cervical cancer	20163849	Bad	6
+7	Cervical cancer	Disease	COR	01	rs231775	A/G	A;A	Slightly increased risk of cervical cancer	19118071	Bad	6
+7	Cervical cancer	Disease	COR	01	rs231775	A/G	A;G	Typical risk of cervical cancer	19118071	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs231775	A/G	G;G	Typical risk of cervical cancer	19118071	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs11134527	A/G	G;G	Typical risk of cervical cancer	19118071	Neutral	6
+7	Cervical cancer	Disease	COR	01	rs11134527	A/G	A;G	Slightly increased risk of cervical cancer	19118071	Bad	6
+7	Cervical cancer	Disease	COR	01	rs11134527	A/G	A;A	Slightly increased risk of cervical cancer	19118071	Bad	6
+7	Cervical cancer	Disease	COR	01	rs2566	A/G	A;A	Increased risk of cervical cancer	18056445, 19446866	Bad	6
+7	Cervical cancer	Disease	COR	01	rs2566	A/G	A;G	Slightly increased risk of cervical cancer	18056445, 19446866	Bad	6
+7	Cervical cancer	Disease	COR	01	rs2566	A/G	G;G	Typical risk of cervical cancer	18056445, 19446866	Neutral	6
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs17576	A/G	A;A	Typical risk of COPD in smokers	18046864	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs17576	A/G	A;G	Typical risk of COPD in smokers	18046864	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs17576	A/G	G;G	Increased risk of COPD in smokers	18046864	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs1800469	A/G	A;A	Typical risk of COPD	15175276	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs1800469	A/G	A;G	Typical risk of COPD	15175276	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs1800469	A/G	G;G	Slightly increased risk of COPD	15175276	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs2241712	C/T	C;C	Typical risk of COPD	15175276	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs2241712	C/T	C;T	Typical risk of COPD	15175276	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs2241712	C/T	T;T	Slightly increased risk of COPD	15175276	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs3736309	A/G	A;A	Slightly increased risk of COPD	18853286	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs3736309	A/G	A;G	Typical risk of COPD	18853286	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs3736309	A/G	G;G	Typical risk of COPD	18853286	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs7671167	C/T	C;C	Typical risk of COPD	20173748	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs7671167	C/T	C;T	Typical risk of COPD	20173748	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs7671167	C/T	T;T	Slightly increased risk of COPD	20173748	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8034191	C/T	C;C	Increased risk of COPD in smokers	19300482	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8034191	C/T	C;T	Slightly increased risk of COPD in smokers	19300482	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8034191	C/T	T;T	Typical risk of COPD in smokers	19300482	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8192287	G/T	G;G	Typical risk of COPD	18703790	Neutral	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8192287	G/T	G;T	Increased risk of COPD	18703790	Bad	7
+8	Chronic obstructive pulmonary disease (COPD)	Disease	COR	01	rs8192287	G/T	T;T	Increased risk of COPD	18703790	Bad	7
+9	Colorectal cancer	Disease	COR	01	rs6983267	G/T	G;G	Slightly increased risk of colorectal cancer	18372905, 20530476, 21179028, 20648012	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs6983267	G/T	G;T	Typical risk of colorectal cancer	18372905, 20530476, 21179028, 20648012	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs6983267	G/T	T;T	Typical risk of colorectal cancer	18372905, 20530476, 21179028, 20648012	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs3802842	A/C	C;C	Increased risk of colorectal cancer	21761138, 18372905	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs3802842	A/C	A;C	Slightly increased risk of colorectal cancer	21761138, 18372905	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs3802842	A/C	A;A	Typical risk of colorectal cancer	21761138, 18372905	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs4779584	C/T	T;T	Slightly increased risk of colorectal cancer	21565826, 20967208, 18712731	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs4779584	C/T	C;T	Slightly increased risk of colorectal cancer	21565826, 20967208, 18712731	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs4779584	C/T	C;C	Typical risk of colorectal cancer	21565826, 20967208, 18712731	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs10795668	A/G	G;G	Slightly increased risk of colorectal cancer	18372901, 20530476	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs10795668	A/G	A;G	Typical risk of colorectal cancer	18372901, 20530476	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs10795668	A/G	A;A	Typical risk of colorectal cancer	18372901, 20530476	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs961253	A/C	A;A	Increased risk of colorectal cancer	19011631, 21119214, 22367214	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs961253	A/C	A;C	Slightly increased risk of colorectal cancer	19011631, 21119214, 22367214	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs961253	A/C	C;C	Typical risk of colorectal cancer	19011631, 21119214, 22367214	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs4444235	C/T	C;C	Slightly increased risk of colorectal cancer	18372905, 21179028, 18084292, 18372905	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs4444235	C/T	C;T	Slightly increased risk of colorectal cancer	18372905, 21179028, 18084292, 18372905	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs4444235	C/T	T;T	Typical risk of colorectal cancer	18372905, 21179028, 18084292, 18372905	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs16892766	A/C	A;A	Slightly increased risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs16892766	A/C	A;C	Typical risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs16892766	A/C	C;C	Typical risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs7758229	G/T	T;T	Increased risk of colorectal cancer	22076443, 22045029, 20972440	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs7758229	G/T	G;T	Slightly increased risk of colorectal cancer	22076443, 22045029, 20972440	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs7758229	G/T	G;G	Typical risk of colorectal cancer	22076443, 22045029, 20972440	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs6691170	G/T	T;T	Slightly increased risk of colorectal cancer	21761138, 21242260, 20530476	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs6691170	G/T	G;T	Slightly increased risk of colorectal cancer	21761138, 21242260, 20530476	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs6691170	G/T	G;G	Typical risk of colorectal cancer	21761138, 21242260, 20530476	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs4939827	C/T	C;C	Typical risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Neutral	11
+9	Colorectal cancer	Disease	COR	01	rs4939827	C/T	C;T	Slightly increased risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs4939827	C/T	T;T	Slightly increased risk of colorectal cancer	22457859, 22457752, 21242260, 21221812	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs1800734	A/G	A;A	Increased risk of colorectal cancer	19011631, 20530476, 22509336	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs1800734	A/G	A;G	Slightly increased risk of colorectal cancer	19011631, 20530476, 22509336	Bad	11
+9	Colorectal cancer	Disease	COR	01	rs1800734	A/G	G;G	Typical risk of colorectal cancer	19011631, 20530476, 22509336	Neutral	11
+10	Coronary heart disease	Disease	COR	01	rs17465637	A/C	A;A	Typical risk of coronary heart disease	19198609	Neutral	2
+10	Coronary heart disease	Disease	COR	01	rs17465637	A/C	A;C	Typical risk of coronary heart disease	19198609	Neutral	2
+10	Coronary heart disease	Disease	COR	01	rs17465637	A/C	C;C	Slightly increased risk of coronary heart disease	19198609	Bad	2
+10	Coronary heart disease	Disease	COR	01	rs3798220	C/T	C;C	Increased risk of coronary heart disease	18775538, 21378990	Bad	2
+10	Coronary heart disease	Disease	COR	01	rs3798220	C/T	C;T	Increased risk of coronary heart disease	18775538, 21378990	Bad	2
+10	Coronary heart disease	Disease	COR	01	rs3798220	C/T	T;T	Typical risk of coronary heart disease	18775538, 21378990	Neutral	2
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs1799963	A/G	A;A	Increased risk of thrombosis	10477778	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs1799963	A/G	A;G	Increased risk of thrombosis	10477778	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs1799963	A/G	G;G	Typical risk of thrombosis	10477778	Neutral	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs268	A/G	A;A	Typical risk of thrombosis	16651467	Neutral	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs268	A/G	A;G	Increased risk of thrombosis	16651467	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs268	A/G	G;G	Increased risk of thrombosis	16651467	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs5361	G/T	G;G	Increased risk of recurrent thrombosis	16908800	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs5361	G/T	G;T	Increased risk of recurrent thrombosis	16908800	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs5361	G/T	T;T	Typical risk of recurrent thrombosis	16908800	Neutral	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs6025	C/T	C;C	Typical risk of thrombosis	10477778, 14996674	Neutral	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs6025	C/T	C;T	Increased risk of thrombosis	10477778, 14996674	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs6025	C/T	T;T	Increased risk of thrombosis	10477778, 14996674	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs7025486	A/G	A;A	Slightly increased risk of thrombosis	20622881	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs7025486	A/G	A;G	Slightly increased risk of thrombosis	20622881	Bad	5
+11	Deep Vein Thrombosis and Pulmonary Embolism 	Disease	COR	01	rs7025486	A/G	G;G	Typical risk of thrombosis	20622881	Neutral	5
+12	Heart attack	Disease	COR	01	rs2291834	C/T	C;C	Slightly increased risk of heart attack	19198609	Bad	3
+12	Heart attack	Disease	COR	01	rs2291834	C/T	C;T	Typical risk of heart attack	19198609	Neutral	3
+12	Heart attack	Disease	COR	01	rs2291834	C/T	T;T	Typical risk of heart attack	19198609	Neutral	3
+12	Heart attack	Disease	COR	01	rs599839	A/G	A;A	Slightly increased risk of heart attack	17634449	Bad	3
+12	Heart attack	Disease	COR	01	rs599839	A/G	A;G	Typical risk of heart attack	17634449	Neutral	3
+12	Heart attack	Disease	COR	01	rs599839	A/G	G;G	Typical risk of heart attack	17634449	Neutral	3
+12	Heart attack	Disease	COR	01	rs6922269	A/G	A;A	Increased risk of heart attack	17634449	Bad	3
+12	Heart attack	Disease	COR	01	rs6922269	A/G	A;G	Slightly increased risk of heart attack	17634449	Bad	3
+12	Heart attack	Disease	COR	01	rs6922269	A/G	G;G	Typical risk of heart attack	17634449	Neutral	3
+13	Hepatocellular carcinoma	Disease	COR	01	rs4444903	A/G	G;G	Slightly increased risk of hepatocellular carcinoma in cirrhosis patients	22174901	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs4444903	A/G	A;G	Typical risk of hepatocellular carcinoma in cirrhosis patients	22174901	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs4444903	A/G	A;A	Typical risk of hepatocellular carcinoma in cirrhosis patients	22174901	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs231775	A/G	A;A	Slightly increased risk of hepatocellular carcinoma	22174901	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs231775	A/G	A;G	Typical risk of hepatocellular carcinoma	22174901	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs231775	A/G	G;G	Typical risk of hepatocellular carcinoma	22174901	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs430397	C/T	T;T	Increased risk of hepatocellular carcinoma	19778566, 20538028	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs430397	C/T	C;T	Increased risk of hepatocellular carcinoma	19778566, 20538028	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs430397	C/T	C;C	Typical risk of hepatocellular carcinoma	19778566, 20538028	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs7821974	C/T	T;T	Slightly increased risk of hepatocellular carcinoma in patients with HBV	21499248, 21963516	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs7821974	C/T	C;T	Typical risk of hepatocellular carcinoma in patients with HBV	21499248, 21963516	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs7821974	C/T	C;C	Typical risk of hepatocellular carcinoma in patients with HBV	21499248, 21963516	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2275959	A/G	A;A	Increased risk of hepatocellular carcinoma in patients with HBV	19533686, 21445355	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2275959	A/G	A;G	Slightly increased risk of hepatocellular carcinoma in patients with HBV	19533686, 21445355	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2275959	A/G	G;G	Typical risk of hepatocellular carcinoma in patients with HBV	19533686, 21445355	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs1573266	A/G	G;G	Increased risk of hepatocellular carcinoma in patients with HBV	18167406, 22403631, 22236006	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs1573266	A/G	A;G	Typical risk of hepatocellular carcinoma in patients with HBV	18167406, 22403631, 22236006	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs1573266	A/G	A;A	Typical risk of hepatocellular carcinoma in patients with HBV	18167406, 22403631, 22236006	Neutral	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2596542	C/T	T;T	Increased risk of HCV-induced hepatocellular carcinoma	22174901	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2596542	C/T	C;T	Slightly increased risk of HCV-induced hepatocellular carcinoma	22174901	Bad	7
+13	Hepatocellular carcinoma	Disease	COR	01	rs2596542	C/T	C;C	Typical risk of HCV-induced hepatocellular carcinoma	22174901	Neutral	7
+14	Hypertension	Disease	COR	01	rs12413409	A/G	A;A	Typical risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs12413409	A/G	A;G	Typical risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs12413409	A/G	G;G	Slightly increased risk of hypertension	19430483	Bad	6
+14	Hypertension	Disease	COR	01	rs13333226	A/G	A;A	Slightly increased risk of hypertension	21082022	Bad	6
+14	Hypertension	Disease	COR	01	rs13333226	A/G	A;G	Typical risk of hypertension	21082022	Neutral	6
+14	Hypertension	Disease	COR	01	rs13333226	A/G	G;G	Typical risk of hypertension	21082022	Neutral	6
+14	Hypertension	Disease	COR	01	rs1378942	A/C	A;A	Typical increased risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs1378942	A/C	A;C	Typical increased risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs1378942	A/C	C;C	Slightly increased risk of hypertension	19430483	Bad	6
+14	Hypertension	Disease	COR	01	rs17367504	A/G	A;A	Slightly increased risk of hypertension	19430483	Bad	6
+14	Hypertension	Disease	COR	01	rs17367504	A/G	A;G	Typical risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs17367504	A/G	G;G	Typical risk of hypertension	19430483	Neutral	6
+14	Hypertension	Disease	COR	01	rs3754777	C/T	C;C	Typical risk of hypertension	19114657	Neutral	6
+14	Hypertension	Disease	COR	01	rs3754777	C/T	C;T	Slightly increased risk of hypertension	19114657	Bad	6
+14	Hypertension	Disease	COR	01	rs3754777	C/T	T;T	Increased risk of hypertension	19114657	Bad	6
+14	Hypertension	Disease	COR	01	rs5370	G/T	G;G	Typical risk of hypertension	17938376	Neutral	6
+14	Hypertension	Disease	COR	01	rs5370	G/T	G;T	Slightly increased risk of hypertension	17938376	Bad	6
+14	Hypertension	Disease	COR	01	rs5370	G/T	T;T	Increased risk hypertension	17938376	Bad	6
+15	Lung Cancer	Disease	COR	01	rs8034191	C/T	C;C	Increased risk of lung cancer	18385739, 19836008	Bad	9
+15	Lung Cancer	Disease	COR	01	rs8034191	C/T	C;T	Slightly increased risk of lung cancer	18385739, 19836008	Bad	9
+15	Lung Cancer	Disease	COR	01	rs8034191	C/T	T;T	Typical risk of lung cancer	18385739, 19836008	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs1051730	A/G	A;A	Increased risk of lung cancer	21725308, 22370939, 22404340	Bad	9
+15	Lung Cancer	Disease	COR	01	rs1051730	A/G	A;G	Slightly increased risk of lung cancer	21725308, 22370939, 22404340	Bad	9
+15	Lung Cancer	Disease	COR	01	rs1051730	A/G	G;G	Typical risk of lung cancer	21725308, 22370939, 22404340	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs401681	C/T	C;C	Slightly increased risk of lung cancer	18978787, 19654303, 19955392, 20142248	Bad	9
+15	Lung Cancer	Disease	COR	01	rs401681	C/T	C;T	Typical risk of lung cancer	18978787, 19654303, 19955392, 20142248	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs401681	C/T	T;T	Typical risk of lung cancer	18978787, 19654303, 19955392, 20142248	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs748404	C/T	T;T	Slightly increased risk of lung cancer	22404340, 21622582, 20142248	Bad	9
+15	Lung Cancer	Disease	COR	01	rs748404	C/T	C;T	Typical risk of lung cancer	22404340, 21622582, 20142248	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs748404	C/T	C;C	Typical risk of lung cancer	22404340, 21622582, 20142248	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs2736100	A/C	C;C	Slightly increased risk of lung cancer	19151717, 22404340, 22370939	Bad	9
+15	Lung Cancer	Disease	COR	01	rs2736100	A/C	A;C	Typical risk of lung cancer	19151717, 22404340, 22370939	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs2736100	A/C	A;A	Typical risk of lung cancer	19151717, 22404340, 22370939	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs4488809	C/T	C;C	Slightly increased risk of lung cancer	22404340, 22370939, 21966413, 21750227	Bad	9
+15	Lung Cancer	Disease	COR	01	rs4488809	C/T	C;T	Slightly increased risk of lung cancer	22404340, 22370939, 21966413, 21750227	Bad	9
+15	Lung Cancer	Disease	COR	01	rs4488809	C/T	T;T	Typical risk of lung cancer	22404340, 22370939, 21966413, 21750227	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs402710	C/T	C;C	Slightly increased risk of lung cancer	21725308, 22367405, 22310392, 20871597	Bad	9
+15	Lung Cancer	Disease	COR	01	rs402710	C/T	C;T	Typical risk of lung cancer	21725308, 22367405, 22310392, 20871597	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs402710	C/T	T;T	Typical risk of lung cancer	21725308, 22367405, 22310392, 20871597	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs31489	A/C	C;C	Slightly increased risk of lung cancer	21303977, 19654303	Bad	9
+15	Lung Cancer	Disease	COR	01	rs31489	A/C	A;C	Typical risk of lung cancer	21303977, 19654303	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs31489	A/C	A;A	Typical risk of lung cancer	21303977, 19654303	Neutral	9
+15	Lung Cancer	Disease	COR	01	rs3117582	G/T	G;G	Increased risk of lung cancer	18385739, 18385676, 22306564, 22028403	Bad	9
+15	Lung Cancer	Disease	COR	01	rs3117582	G/T	G;T	Slightly increased risk of lung cancer	18385739, 18385676, 22306564, 22028403	Bad	9
+15	Lung Cancer	Disease	COR	01	rs3117582	G/T	T;T	Typical risk of lung cancer	18385739, 18385676, 22306564, 22028403	Neutral	9
+16	Macular degeneration	Disease	COR	01	rs1061147	A/C	A;A	Increased risk of macular degeneration	18043728, 17167412	Bad	5
+16	Macular degeneration	Disease	COR	01	rs1061147	A/C	A;C	Slightly increased risk of macular degeneration	18043728, 17167412	Bad	5
+16	Macular degeneration	Disease	COR	01	rs1061147	A/C	C;C	Typical risk of macular degeneration	18043728, 17167412	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs2230199	C/G	G;G	Slightly increased risk of macular degeneration	22174912, 21576320	Bad	5
+16	Macular degeneration	Disease	COR	01	rs2230199	C/G	C;G	Typical risk of macular degeneration	22174912, 21576320	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs2230199	C/G	C;C	Typical risk of macular degeneration	22174912, 21576320	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs3750847	C/T	T;T	Increased risk of macular degeneration	21909106, 20140183	Bad	5
+16	Macular degeneration	Disease	COR	01	rs3750847	C/T	C;T	Slightly increased risk of macular degeneration	21909106, 20140183	Bad	5
+16	Macular degeneration	Disease	COR	01	rs3750847	C/T	C;C	Typical risk of macular degeneration	21909106, 20140183	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs547154	G/T	G;G	Slightly increased risk of macular degeneration	19696172, 21609242	Bad	5
+16	Macular degeneration	Disease	COR	01	rs547154	G/T	G;T	Typical risk of macular degeneration	19696172, 21609242	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs547154	G/T	T;T	Typical risk of macular degeneration	19696172, 21609242	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs9621532	A/C	A;A	Slightly increased risk of macular degeneration	22171703, 20385819	Bad	5
+16	Macular degeneration	Disease	COR	01	rs9621532	A/C	A;C	Typical risk of macular degeneration	22171703, 20385819	Neutral	5
+16	Macular degeneration	Disease	COR	01	rs9621532	A/C	C;C	Typical risk of macular degeneration	22171703, 20385819	Neutral	5
+17	Obesity	Disease	COR	01	rs10871777	A/G	A;A	Typical risk of obesity	19151714	Neutral	4
+17	Obesity	Disease	COR	01	rs10871777	A/G	A;G	Slightly increased risk of obesity	19151714	Bad	4
+17	Obesity	Disease	COR	01	rs10871777	A/G	G;G	Slightly increased risk of obesity	19151714	Bad	4
+17	Obesity	Disease	COR	01	rs1121980	A/G	A;A	Increased risk of obesity	18159244, 20075932	Bad	4
+17	Obesity	Disease	COR	01	rs1121980	A/G	A;G	Slightly increased risk of obesity	18159244, 20075932	Bad	4
+17	Obesity	Disease	COR	01	rs1121980	A/G	G;G	Typical risk of obesity	18159244, 20075932	Neutral	4
+17	Obesity	Disease	COR	01	rs1421085	C/T	C;C	Increased risk of obesity	19151714	Bad	4
+17	Obesity	Disease	COR	01	rs1421085	C/T	C;T	Slightly increased risk of obesity	19151714	Bad	4
+17	Obesity	Disease	COR	01	rs1421085	C/T	T;T	Typical risk of obesity	19151714	Neutral	4
+17	Obesity	Disease	COR	01	rs8050136	A/C	A;A	Increased risk of obesity	20057365	Bad	4
+17	Obesity	Disease	COR	01	rs8050136	A/C	A;C	Slightly increased risk of obesity	20057365	Bad	4
+17	Obesity	Disease	COR	01	rs8050136	A/C	C;C	Typical risk of obesity	20057365	Neutral	4
+18	Emotional and Social Behaviour	Disease	COR	01	rs53576	A/G	G;G	Optimistic and empathetic	21896752	Good	1
+18	Emotional and Social Behaviour	Disease	COR	01	rs53576	A/G	A;G	Less optimistic and empathetic	21896752	Bad	1
+18	Emotional and Social Behaviour	Disease	COR	01	rs53576	A/G	A;A	Less optimistic and empathetic	21896752	Bad	1
+19	Osteoarthritis	Disease	COR	01	rs11842874	A/G	A;A	Slightly increased risk of osteoarthritis	21871595, 22615457	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs11842874	A/G	A;G	Typical risk of osteoarthritis	21871595, 22615457	Neutral	4
+19	Osteoarthritis	Disease	COR	01	rs11842874	A/G	G;G	Typical risk of osteoarthritis	21871595, 22615457	Neutral	4
+19	Osteoarthritis	Disease	COR	01	rs143383	A/G	A;A	Slightly increased risk of osteoarthritis	18299287, 17384640, 22905146	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs143383	A/G	A;G	Typical risk of osteoarthritis	18299287, 17384640, 22905146	Neutral	4
+19	Osteoarthritis	Disease	COR	01	rs143383	A/G	G;G	Typical risk of osteoarthritis	18299287, 17384640, 22905146	Neutral	4
+19	Osteoarthritis	Disease	COR	01	rs7639618	C/T	T;T	Increased risk of osteoarthritis	18622395, 19181678, 22083612	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs7639618	C/T	C;T	Slightly increased risk of osteoarthritis	18622395, 19181678, 22083612	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs7639618	C/T	C;C	Typical risk of osteoarthritis	18622395, 19181678, 22083612	Neutral	4
+19	Osteoarthritis	Disease	COR	01	rs9864422	C/T	T;T	Increased risk of osteoarthritis	18622395, 19181678	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs9864422	C/T	C;T	Slightly increased risk of osteoarthritis	18622395, 19181678	Bad	4
+19	Osteoarthritis	Disease	COR	01	rs9864422	C/T	C;C	Typical risk of osteoarthritis	18622395, 19181678	Neutral	4
+20	Ovarian Cancer	Disease	COR	01	rs2665390	C/T	C;C	Increased risk of ovarian cancer	20852632, 22253144, 22235027	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2665390	C/T	C;T	Slightly increased risk of ovarian cancer	20852632, 22253144, 22235027	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2665390	C/T	T;T	Typical risk of ovarian cancer	20852632, 22253144, 22235027	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs1042838	A/C	A;A	Increased risk of ovarian cancer	15632380, 18219286	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs1042838	A/C	A;C	Increased risk of ovarian cancer	15632380, 18219286	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs1042838	A/C	C;C	Typical risk of ovarian cancer	15632380, 18219286	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs3814113	C/T	C;C	Typical risk of ovarian cancer	20852632, 22235027	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs3814113	C/T	C;T	Typical risk of ovarian cancer	20852632, 22235027	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs3814113	C/T	T;T	Slightly increased risk of ovarian cancer	20852632, 22235027	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2072590	A/C	A;A	Increased risk of ovarian cancer	20056644	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2072590	A/C	A;C	Slightly increased risk of ovarian cancer	20056644	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2072590	A/C	C;C	Typical risk of ovarian cancer	20056644	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs10088218	A/G	A;A	Typical risk of ovarian cancer	20852632, 22253144, 22235027	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs10088218	A/G	A;G	Typical risk of ovarian cancer	20852632, 22253144, 22235027	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs10088218	A/G	G;G	Slightly increased risk of ovarian cancer	20852632, 22253144, 22235027	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2295190	G/T	T;T	Slightly increased risk of ovarian cancer	16685266, 17047088, 18431743	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2295190	G/T	G;T	Slightly increased risk of ovarian cancer	16685266, 17047088, 18431743	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2295190	G/T	G;G	Typical risk of ovarian cancer	16685266, 17047088, 18431743	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs9303542	A/G	G;G	Slightly increased risk of ovarian cancer	19648919, 21169536, 22235027, 21642636	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs9303542	A/G	A;G	Slightly increased risk of ovarian cancer	19648919, 21169536, 22235027, 21642636	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs9303542	A/G	A;A	Typical risk of ovarian cancer	19648919, 21169536, 22235027, 21642636	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs2854344	A/G	G;G	Slightly increased risk of ovarian cancer	20852632	Bad	8
+20	Ovarian Cancer	Disease	COR	01	rs2854344	A/G	A;G	Typical risk of ovarian cancer	20852632	Neutral	8
+20	Ovarian Cancer	Disease	COR	01	rs2854344	A/G	A;A	Typical risk of ovarian cancer	20852632	Neutral	8
+21	Peripheral arterial disease	Disease	COR	01	rs1051730	A/G	A;A	Increased risk of peripheral arterial disease	18385739	Bad	2
+21	Peripheral arterial disease	Disease	COR	01	rs1051730	A/G	A;G	Slightly increased risk of peripheral arterial disease	18385739	Bad	2
+21	Peripheral arterial disease	Disease	COR	01	rs1051730	A/G	G;G	Typical risk of peripheral arterial disease	18385739	Neutral	2
+21	Peripheral arterial disease	Disease	COR	01	rs7025486	A/G	A;A	Slightly increased risk of peripheral arterial disease	20622881	Bad	2
+21	Peripheral arterial disease	Disease	COR	01	rs7025486	A/G	A;G	Slightly increased risk of peripheral arterial disease	20622881	Bad	2
+21	Peripheral arterial disease	Disease	COR	01	rs7025486	A/G	G;G	Typical risk of peripheral arterial disease	20622881	Neutral	2
+22	Prostate cancer 	Disease	COR	01	rs1447295	A/C	A;A	Increased risk of pancreatic cancer	20676098, 20333697	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1447295	A/C	A;C	Slightly increased risk of pancreatic cancer	20676098, 20333697	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1447295	A/C	C;C	Typical risk of pancreatic cancer	20676098, 20333697	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs6983267	G/T	G;G	Slightly increased risk of prostate cancer	19767753, 20651075	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs6983267	G/T	G;T	Typical risk of prostate cancer	19767753, 20651075	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs6983267	G/T	T;T	Typical risk of prostate cancer	19767753, 20651075	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs1859962	G/T	G;G	Increased risk of prostate cancer	18726982, 21756274, 18199855	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1859962	G/T	G;T	Slightly increased risk of prostate cancer	18726982, 21756274, 18199855	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1859962	G/T	T;T	Typical risk of prostate cancer	18726982, 21756274, 18199855	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs4430796	G/A	A;A	Slightly increased risk of prostate cancer	19767753, 20676098	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs4430796	G/A	G;A	Typical risk of prostate cancer	19767753, 20676098	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs4430796	G/A	G;G	Typical risk of prostate cancer	19767753, 20676098	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs10993994	C/T	T;T	Slightly increased risk of prostate cancer	18073375, 22077888, 21538423	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs10993994	C/T	C;T	Slightly increased risk of prostate cancer	18073375, 22077888, 21538423	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs10993994	C/T	C;C	Typical risk of prostate cancer	18073375, 22077888, 21538423	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs1512268	C/T	T;T	Slightly increased risk of prostate cancer	18199855, 19908238, 21756274	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1512268	C/T	C;T	Slightly increased risk of prostate cancer	18199855, 19908238, 21756274	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1512268	C/T	C;C	Typical risk of prostate cancer	18199855, 19908238, 21756274	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs16901979	A/C	A;A	Increased risk of prostate cancer	21242260, 17603485	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs16901979	A/C	A;C	Increased risk of prostate cancer	21242260, 17603485	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs16901979	A/C	C;C	Typical risk of prostate cancer	21242260, 17603485	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs12621278	A/G	A;A	Slightly increased risk of prostate cancer	20080650, 21520160, 21367958	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs12621278	A/G	A;G	Typical risk of prostate cancer	20080650, 21520160, 21367958	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs12621278	A/G	G;G	Typical risk of prostate cancer	20080650, 21520160, 21367958	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs1571801	G/T	T;T	Increased risk of prostate cancer	19726753, 21959049, 21982019	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1571801	G/T	G;T	Slightly increased risk of prostate cancer	19726753, 21959049, 21982019	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs1571801	G/T	G;G	Typical risk of prostate cancer	19726753, 21959049, 21982019	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs4054823	C/T	T;T	Slightly increased risk of prostate cancer	17401363, 19602258, 21242260	Bad	10
+22	Prostate cancer 	Disease	COR	01	rs4054823	C/T	C;T	Typical risk of prostate cancer	17401363, 19602258, 21242260	Neutral	10
+22	Prostate cancer 	Disease	COR	01	rs4054823	C/T	C;C	Typical risk of prostate cancer	17401363, 19602258, 21242260	Neutral	10
+23	Stomach cancer	Disease	COR	01	rs2274223	A/G	G;G	Increased risk of stomach cancer	18162478	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2274223	A/G	A;G	Slightly increased risk of stomach cancer	18162478	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2274223	A/G	A;A	Typical risk of stomach cancer	18162478	Neutral	4
+23	Stomach cancer	Disease	COR	01	rs1801133	G/A	A;A	Slightly increased risk of stomach cancer	21642993, 22412849, 21837401	Bad	4
+23	Stomach cancer	Disease	COR	01	rs1801133	G/A	G;A	Slightly increased risk of stomach cancer	21642993, 22412849, 21837401	Bad	4
+23	Stomach cancer	Disease	COR	01	rs1801133	G/A	G;G	Typical risk of stomach cancer	21642993, 22412849, 21837401	Neutral	4
+23	Stomach cancer	Disease	COR	01	rs2294008	C/T	T;T	Increased risk of stomach cancer	22481254, 21538581, 21268123	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2294008	C/T	C;T	Slightly increased risk of stomach cancer	22481254, 21538581, 21268123	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2294008	C/T	C;C	Typical risk of stomach cancer	22481254, 21538581, 21268123	Neutral	4
+23	Stomach cancer	Disease	COR	01	rs2976392	A/G	A;A	Increased risk of stomach cancer	22481254	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2976392	A/G	A;G	Slightly increased risk of stomach cancer	22481254	Bad	4
+23	Stomach cancer	Disease	COR	01	rs2976392	A/G	G;G	Typical risk of stomach cancer	22481254	Neutral	4
+24	Stroke	Disease	COR	01	rs12425791	A/G	A;A	Increased risk of stroke	19369658	Bad	2
+24	Stroke	Disease	COR	01	rs12425791	A/G	A;G	Slightly increased risk of stroke	19369658	Bad	2
+24	Stroke	Disease	COR	01	rs12425791	A/G	G;G	Typical risk of stroke	19369658	Neutral	2
+24	Stroke	Disease	COR	01	rs3783799	C/T	C;C	Typical risk of stroke	18164711	Neutral	2
+24	Stroke	Disease	COR	01	rs3783799	C/T	C;T	Slightly increased risk of stroke	18164711	Bad	2
+24	Stroke	Disease	COR	01	rs3783799	C/T	T;T	Increased risk of stroke	18164711	Bad	2
+25	Sudden cardiac arrest	Disease	COR	01	rs12143842	C/T	T;T	Increased risk of sudden cardiac arrest/death	19587794, 18927126	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs12143842	C/T	C;T	Increased risk of sudden cardiac arrest/death	19587794, 18927126	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs12143842	C/T	C;C	Typical risk of sudden cardiac arrest/death	19587794, 18927126	Neutral	5
+25	Sudden cardiac arrest	Disease	COR	01	rs174230	C/T	C;C	Typical risk of sudden cardiac arrest/death	21738491	Neutral	5
+25	Sudden cardiac arrest	Disease	COR	01	rs174230	C/T	C;T	Slightly increased risk of sudden cardiac arrest/death	21738491	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs174230	C/T	T;T	Increased risk of sudden cardiac arrest/death	21738491	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs2824292	A/G	G;G	Increased risk of sudden cardiac arrest/death	20622880	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs2824292	A/G	A;G	Typical risk of sudden cardiac arrest/death	20622880	Neutral	5
+25	Sudden cardiac arrest	Disease	COR	01	rs2824292	A/G	A;A	Typical risk of sudden cardiac arrest/death	20622880	Neutral	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4665058	A/C	A;A	Increased risk of sudden cardiac arrest/death	21738491	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4665058	A/C	A;C	Increased risk of sudden cardiac arrest/death	21738491	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4665058	A/C	C;C	Typical risk of sudden cardiac arrest/death	21738491	Neutral	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4687718	A/G	A;A	Increased risk of sudden cardiac arrest/death	21076409	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4687718	A/G	A;G	Slightly increased risk of sudden cardiac arrest/death	21076409	Bad	5
+25	Sudden cardiac arrest	Disease	COR	01	rs4687718	A/G	G;G	Typical risk of sudden cardiac arrest/death	21076409	Neutral	5
+26	Type 2 Diabetes	Disease	COR	01	rs1111875	C/T	C;C	Increased risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs1111875	C/T	C;T	Typical risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs1111875	C/T	T;T	Typical risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs13266634	C/T	C;C	Slightly increased risk of type 2 diabetes	18162508, 18324385, 19033397	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs13266634	C/T	C;T	Typical risk of type 2 diabetes	18162508, 18324385, 19033397	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs13266634	C/T	T;T	Typical risk of type 2 diabetes	18162508, 18324385, 19033397	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs4402960	G/T	G;G	Typical risk of type 2 diabetes	18477659, 18437351, 20523342	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs4402960	G/T	G;T	Slightly increased risk of type 2 diabetes	18477659, 18437351, 20523342	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs4402960	G/T	T;T	Increased risk of type 2 diabetes	18477659, 18437351, 20523342	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs5219	C/T	C;C	Typical risk of type 2 diabetes	17977958, 18162508, 19498446	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs5219	C/T	C;T	Slightly increased risk of type 2 diabetes	17977958, 18162508, 19498446	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs5219	C/T	T;T	Increased risk of type 2 diabetes	17977958, 18162508, 19498446	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs7756992	A/G	A;A	Typical risk of type 2 diabetes	18162508, 19033397, 22437209	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs7756992	A/G	A;G	Slightly increased risk of type 2 diabetes	18162508, 19033397, 22437209	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs7756992	A/G	G;G	Increased risk of type 2 diabetes	18162508, 19033397, 22437209	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs7903146	C/T	C;C	Typical risk of type 2 diabetes	17671651, 18655717, 21109996	Neutral	7
+26	Type 2 Diabetes	Disease	COR	01	rs7903146	C/T	C;T	Slightly increased risk of type 2 diabetes	17671651, 18655717, 21109996	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs7903146	C/T	T;T	Increased risk of type 2 diabetes	17671651, 18655717, 21109996	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs8050136	A/C	A;A	Slightly increased risk of type 2 diabetes	17959933, 20057365	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs8050136	A/C	A;C	Slightly increased risk of type 2 diabetes	17959933, 20057365	Bad	7
+26	Type 2 Diabetes	Disease	COR	01	rs8050136	A/C	C;C	Typical risk of type 2 diabetes	17959933, 20057365	Neutral	7
+

@@ -1,0 +1,191 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles	Genotypes	Genotype effects	PMID	Risk/Efficacy	# SNPs/condition
+1	Alopecia Areata	Disease	OST	01	rs694739	G/A	G;G	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs694739	G/A	G;A	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs694739	G/A	A;A	Slightly increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1024161	C/T	C;C	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1024161	C/T	C;T	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1024161	C/T	T;T	Increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1701704	G/T	G;G	Increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1701704	G/T	G;T	Slightly increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs1701704	G/T	T;T	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs3118470	C/T	C;C	Increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs3118470	C/T	C;T	Slightly increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs3118470	C/T	T;T	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs7682241	G/T	G;G	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs7682241	G/T	G;T	Slightly increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs7682241	G/T	T;T	Increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9275572	A/G	A;A	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9275572	A/G	A;G	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9275572	A/G	G;G	Increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9479482	C/T	C;C	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9479482	C/T	C;T	Typical risk of alopecia areata	14582673, 20596022	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs9479482	C/T	T;T	Slightly increase risk of alopecia areata	14582673, 20596022	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs304650	C/T	C:C	Increased risk of alopecia areata	22027810	Bad	Total:8
+1	Alopecia Areata	Disease	OST	01	rs304650	C/T	C:T	Typical risk of alopecia areata	22027810	Neutral	Total:8
+1	Alopecia Areata	Disease	OST	01	rs304650	C/T	T:T	Typical risk of alopecia areata	22027810	Neutral	Total:8
+2	Ankylosing Spondylitis	Disease	OST	01	rs30187	C/T	C;C	Typical risk of ankylosing spondylitis	19414429, 22632381	Neutral	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs30187	C/T	C;T	Slightly increased risk of ankylosing spondylitis	19414429, 22632381	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs30187	C/T	T;T	Slightly increased risk of ankylosing spondylitis	19414429, 22632381	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs4552569	C/T	C;C	Increase risk of ankylosing spondylitis	22138694	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs4552569	C/T	C;T	Slightly increase risk of ankylosing spondylitis	22138694	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs4552569	C/T	T;T	Typical risk of ankylosing spondylitis	22138694	Neutral	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs10865331	A/G	A;A	Increased risk of ankylosing spondylitis	20062062, 22138694	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs10865331	A/G	A;G	Slightly increased risk of ankylosing spondylitis	20062062, 22138694	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs10865331	A/G	G;G	Typical risk of ankylosing spondylitis	20062062, 22138694	Neutral	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs17095830	A/G	A;A	Typical risk of ankylosing spondylitis	22138694	Neutral	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs17095830	A/G	A;G	Slightly increase risk of ankylosing spondylitis	22138694	Bad	Total:4
+2	Ankylosing Spondylitis	Disease	OST	01	rs17095830	A/G	G;G	Increase risk of ankylosing spondylitis	22138694	Bad	Total:4
+3	Antioxidant	Disease	OST	01	rs4880	A/G	A;A	Decreased oxidative stress	16538174, 22877234. 22615781	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs4880	A/G	A;G	Decreased oxidative stress	16538174, 22877234. 22615781	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs4880	A/G	G;G	Increased oxidative stress	16538174, 22877234. 22615781	Bad	Total:5
+3	Antioxidant	Disease	OST	01	rs189037	A/G	A;A	Decreased oxidative stress	20816691, 19193393	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs189037	A/G	A;G	Decreased oxidative stress	20816691, 19193393	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs189037	A/G	G;G	Typical oxidative stress	20816691, 19193393	Neutral	Total:5
+3	Antioxidant	Disease	OST	01	rs699473	C/T	C:C	Typical oxidative stress	19318538, 21351093	Neutral	Total:5
+3	Antioxidant	Disease	OST	01	rs699473	C/T	C:T	Increased oxidative stress	19318538, 21351093	Bad	Total:5
+3	Antioxidant	Disease	OST	01	rs699473	C/T	T:T	Increased oxidative stress	19318538, 21351093	Bad	Total:5
+3	Antioxidant	Disease	OST	01	rs713041	C/T	C:C	Typical oxidative stress	22139612, 20852007	Neutral	Total:5
+3	Antioxidant	Disease	OST	01	rs713041	C/T	C:T	Decreased oxidative stress	22139612, 20852007	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs713041	C/T	T:T	Decreased oxidative stress	22139612, 20852007	Good	Total:5
+3	Antioxidant	Disease	OST	01	rs5746136	C/T	T;T	Increased oxidative stress	19753309, 22959522, 19505917	Bad	Total:5
+3	Antioxidant	Disease	OST	01	rs5746136	C/T	C;T	Increased oxidative stress	19753309, 22959522, 19505917	Bad	Total:5
+3	Antioxidant	Disease	OST	01	rs5746136	C/T	C;C	Typical oxidative stress	19753309, 22959522, 19505917	Neutral	Total:5
+4	Collagen Formation	Disease	OST	01	rs17576	A/G	A:A	Higher breakdown rate of collagen	21447148, 21844877, 22107133, 16643654	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs17576	A/G	A:G	Higher breakdown rate of collagen	21447148, 21844877, 22107133, 16643654	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs17576	A/G	G:G	Lower breakdown rate of collagen	21447148, 21844877, 22107133, 16643654	Good	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800012	A/C	A;A	Decreased collagen formation	22066665, 22057139, 20798928	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800012	A/C	A;C	Decreased collagen formation	22066665, 22057139, 20798928	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800012	A/C	C;C	Normal collagen formation	22066665, 22057139, 20798928	Neutral	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800255	A/G	A:A	Decreased collagen formation	22241462, 18722615	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800255	A/G	A:G	Decreased collagen formation	22241462, 18722615	Bad	Total:3
+4	Collagen Formation	Disease	OST	01	rs1800255	A/G	G:G	Normal collagen formation	22241462, 18722615	Neutral	Total:3
+5	Inflammatory Response	Disease	OST	01	rs1205	C/T	C;C	Higher C-reactive protein levels	19567438, 19139754	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1205	C/T	C;T	lower C-reactive protein levels	19567438, 19139754	Good	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1205	C/T	T;T	lower C-reactive protein levels	19567438, 19139754	Good	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800629	A/G	A:A	Increased risk of having inflammatory response	22873651, 21865054	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800629	A/G	A:G	Increased risk of having inflammatory response	22873651, 21865054	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800629	A/G	G:G	Typical risk of having inflammatory response	22873651, 21865054	Neutral	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800947	C/G	C:C	lower C-reactive protein levels	21647738, 18216863	Good	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800947	C/G	C:G	lower C-reactive protein levels	21647738, 18216863	Good	Total:5
+5	Inflammatory Response	Disease	OST	01	rs1800947	C/G	G:G	Typical C-reactive protein levels	21647738, 18216863	Neutral	Total:5
+5	Inflammatory Response	Disease	OST	01	rs4537545	C/T	C:C	Typical risk of having inflammatory response	19567438, 17671508	Neutral	Total:5
+5	Inflammatory Response	Disease	OST	01	rs4537545	C/T	C:T	Increased risk of having inflammatory response	19567438, 17671508	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs4537545	C/T	T:T	Increased risk of having inflammatory response	19567438, 17671508	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs7310409	A/G	A:A	Typical C-reactive protein levels	18439548, 21196492, 20031577, 21195701	Neutral	Total:5
+5	Inflammatory Response	Disease	OST	01	rs7310409	A/G	A:G	Higher C-reactive protein levels	18439548, 21196492, 20031577, 21195701	Bad	Total:5
+5	Inflammatory Response	Disease	OST	01	rs7310409	A/G	G:G	Higher C-reactive protein levels	18439548, 21196492, 20031577, 21195701	Bad	Total:5
+6	Keloid	Disease	OST	01	rs873549	C/T	C;C	Increased risk of keloid formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs873549	C/T	C;T	Increased risk of keloid formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs873549	C/T	T;T	Typical risk of keloids formation at skin injury	20711176	Neutral	Total:4
+6	Keloid	Disease	OST	01	rs940187	C/T	C:C	Typical risk of keloids formation at skin injury	20711176	Neutral	Total:4
+6	Keloid	Disease	OST	01	rs940187	C/T	C:T	Increased risk of keloids formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs940187	C/T	T:T	Increased risk of keloid formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs1511412	A/G	A:A	Increased risk of keloids formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs1511412	A/G	A:G	Increased risk of keloids formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs1511412	A/G	G:G	Typical risk of keloids formation at skin injury	20711176	Neutral	Total:4
+6	Keloid	Disease	OST	01	rs8032158	C/T	C:C	Increased risk of keloids formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs8032158	C/T	C:T	Increased risk of keloids formation at skin injury	20711176	Bad	Total:4
+6	Keloid	Disease	OST	01	rs8032158	C/T	T:T	Typical risk of keloids formation at skin injury	20711176	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs143383	A/G	A;A	Slightly increased risk of osteoarthritis	18299287, 17384640, 22905146	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs143383	A/G	A;G	Typical risk of osteoarthritis	18299287, 17384640, 22905146	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs143383	A/G	G;G	Typical risk of osteoarthritis	18299287, 17384640, 22905146	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs7639618	C/T	T;T	Increased risk of osteoarthritis	18622395, 19181678, 22083612	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs7639618	C/T	C;T	Slightly increased risk of osteoarthritis	18622395, 19181678, 22083612	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs7639618	C/T	C;C	Typical risk of osteoarthritis	18622395, 19181678, 22083612	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs9864422	C/T	T;T	Injcreased risk of osteoarthritis	18622395, 19181678	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs9864422	C/T	C;T	Slightly increased risk of osteoarthritis	18622395, 19181678	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs9864422	C/T	C;C	Typical risk of osteoarthritis	18622395, 19181678	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs11842874	A/G	A;A	Slightly increased risk of osteoarthritis	21871595, 22615457	Bad	Total:4
+7	Osteoarthritis	Disease	OST	01	rs11842874	A/G	A;G	Typical risk of osteoarthritis	21871595, 22615457	Neutral	Total:4
+7	Osteoarthritis	Disease	OST	01	rs11842874	A/G	G;G	Typical risk of osteoarthritis	21871595, 22615457	Neutral	Total:4
+8	Osteoporosis	Disease	OST	01	rs1038304	A/G	A:A	Typical risk of osteoporosis	19079262, 18445777,  20072603	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs1038304	A/G	A:G	Typical risk of osteoporosis	19079262, 18445777,  20072603	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs1038304	A/G	G:G	Slightly increased risk of osteoporosis	19079262, 18445777,  20072603	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs2273061	A/G	A:A	Slightly increased risk of osteoporosis	20096396, 22174012, 21646926	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs2273061	A/G	A:G	Typical risk of osteoporosis	20096396, 22174012, 21646926	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs2273061	A/G	G:G	Typical risk of osteoporosis	20096396, 22174012, 21646926	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3018362	A/G	A:A	Slightly increased risk of osteoporosis	18445777, 20072603, 20554715	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3018362	A/G	A:G	Slightly increased risk of osteoporosis	18445777, 20072603, 20554715	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3018362	A/G	G:G	Typical risk of osteoporosis	18445777, 20072603, 20554715	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3736228	C/T	C:C	Typical risk of osteoporosis	18455228, 20146170, 18349089, 20554715	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3736228	C/T	C:T	Slightly increased risk of osteoporosis	18455228, 20146170, 18349089, 20554715	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs3736228	C/T	T:T	Increased risk of osteoporosis	18455228, 20146170, 18349089, 20554715	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs4355801	A/G	A:A	Slightly increased risk of osteoporosis	18455228, 20146170	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs4355801	A/G	A:G	Typical risk of osteoporosis	18455228, 20146170	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs4355801	A/G	G:G	Typical risk of osteoporosis	18455228, 20146170	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6469804	A/G	A:A	Slightly increased risk of osteoporosis	18445777, 20554715, 20548944	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6469804	A/G	A:G	Typical risk of osteoporosis	18445777, 20554715, 20548944	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6469804	A/G	G:G	Typical risk of osteoporosis	18445777, 20554715, 20548944	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6929137	A/G	A:A	Slightly increased risk of osteoporosis	18445777, 19079262, 20072603	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6929137	A/G	A:G	Slightly increased risk of osteoporosis	18445777, 19079262, 20072603	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs6929137	A/G	G:G	Typical risk of osteoporosis	18445777, 19079262, 20072603	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs7524102	A/G	A:A	Slightly increased risk of osteoporosis	18445777,  20554715, 19801982	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs7524102	A/G	A:G	Slightly increased risk of osteoporosis	18445777,  20554715, 19801982	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs7524102	A/G	G:G	Typical risk of osteoporosis	18445777,  20554715, 19801982	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs9594738	C/T	C:C	Typical risk of osteoporosis	18445777, 21124946, 21760914, 22022476, 22370887	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs9594738	C/T	C:T	Slightly increased risk of osteoporosis	18445777, 21124946, 21760914, 22022476, 22370887	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs9594738	C/T	T:T	Slightly increased risk of osteoporosis	18445777, 21124946, 21760914, 22022476, 22370887	Bad	Total: 10
+8	Osteoporosis	Disease	OST	01	rs11898505	A/G	A:A	Typical risk of osteoporosis	18445777, 20554715, 19629617	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs11898505	A/G	A:G	Typical risk of osteoporosis	18445777, 20554715, 19629617	Neutral	Total: 10
+8	Osteoporosis	Disease	OST	01	rs11898505	A/G	G:G	Slightly increased risk of osteoporosis	18445777, 20554715, 19629617	Bad	Total: 10
+9	Psoriasis	Disease	OST	01	rs20541	A/G	A;A	Typical risk of psoriasis	19169254, 21349879	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs20541	A/G	A;G	Typical risk of psoriasis	19169254, 21349879	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs20541	A/G	G;G	Slightly increased risk of psoriasis	19169254, 21349879	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs1800925	C/T	C;C	Slightly increased risk of psoriasis	19169254, 21613309	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs1800925	C/T	C;T	Typical risk of psoriasis	19169254, 21613309	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs1800925	C/T	T;T	Typical risk of psoriasis	19169254, 21613309	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs3212227	G/T	G;G	Typical risk of psoriasis	18219280, 19035472, 22897389	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs3212227	G/T	G;T	Typical risk of psoriasis	18219280, 19035472, 22897389	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs3212227	G/T	T;T	Slightly increased risk of psoriasis	18219280, 19035472, 22897389	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs4085613	G/T	G;G	Slightly increased risk of psoriasis	19169255, 20643763	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs4085613	G/T	G;T	Typical risk of psoriasis	19169255, 20643763	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs4085613	G/T	T;T	Typical risk of psoriasis	19169255, 20643763	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs6887695	C/G	G;G	Increased risk of psoriasis	18369459, 22739501, 17236132	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs6887695	C/G	C;G	Slightly increased risk of psoriasis	18369459, 22739501, 17236132	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs6887695	C/G	C;C	Typical risk of psoriasis	18369459, 22739501, 17236132	Neutral	Total: 6
+9	Psoriasis	Disease	OST	01	rs10484554	C/T	T;T	Increased risk of psoriasis	19169254, 18369459, 21559375	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs10484554	C/T	C;T	Increased risk of psoriasis	19169254, 18369459, 21559375	Bad	Total: 6
+9	Psoriasis	Disease	OST	01	rs10484554	C/T	C;C	Typical risk of psoriasis	19169254, 18369459, 21559375	Neutral	Total: 6
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs492602	A/G	A;A	Typical vitamin B12 levels	18776911, 19744961	Neutral	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs492602	A/G	A;G	Higher vitamin B12 levels	18776911, 19744961	Good	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs492602	A/G	G;G	Higher vitamin B12 levels	18776911, 19744961	Good	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs526934	A/G	A:A	Typical vitamin B12 levels	19303062, 19744961	Neutral	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs526934	A/G	A:G	Lower vitamin B12 levels	19303062, 19744961	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs526934	A/G	G:G	Lower vitamin B12 levels	19303062, 19744961	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs11254363	A/G	A:A	Lower vitamin B12 levels	19303062	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs11254363	A/G	A:G	Lower vitamin B12 levels	19303062	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs11254363	A/G	G:G	Typical vitamin B12 levels	19303062	Neutral	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs4654748	C/T	C:C	Lower vitamin B6 levels	19303062	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs4654748	C/T	C:T	Lower vitamin B6 levels	19303062	Bad	Total: 4
+10	Vitamin B Level (B12, B6)	Disease	OST	01	rs4654748	C/T	T:T	Typical vitamin B6 levels	19303062	Neutral	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs4588	G/T	G;G	Typical vitamin D levels	20418485, 20541252	Neutral	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs4588	G/T	G;T	Lower vitamin D levels	20418485, 20541252	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs4588	G/T	T;T	Lower vitamin D levels	20418485, 20541252	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs2060793	A/G	A:A	Lower vitamin D levels	22801813,  21972121, 20418485	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs2060793	A/G	A:G	Lower vitamin D levels	22801813,  21972121, 20418485	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs2060793	A/G	G:G	Typical vitamin D levels	22801813,  21972121, 20418485	Neutral	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs10741657	A/G	A:A	Typical vitamin D levels	21431378, 22583563, 20541252	Neutral	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs10741657	A/G	A:G	Lower vitamin D levels	21431378, 22583563, 20541252	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs10741657	A/G	G:G	Lower vitamin D levels	21431378, 22583563, 20541252	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs12785878	G/T	G:G	Lower vitamin D levels	20541252, 22801813	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs12785878	G/T	G:T	Lower vitamin D levels	20541252, 22801813	Bad	Total: 4
+11	Vitamin D Level	Disease	OST	01	rs12785878	G/T	T:T	Typical vitamin D levels	20541252, 22801813	Neutral	Total: 4
+12	Vitamin E Level	Disease	OST	01	rs2108622	C/T	C:C	Typical circulating alpha-tocopherol	21729881, 22437554, 22291837	Neutral	Total: 2
+12	Vitamin E Level	Disease	OST	01	rs2108622	C/T	C:T	Increased circulating alpha-tocopherol	21729881, 22437554, 22291837	Good	Total: 2
+12	Vitamin E Level	Disease	OST	01	rs2108622	C/T	T:T	Increased circulating alpha-tocopherol	21729881, 22437554, 22291837	Good	Total: 2
+12	Vitamin E Level	Disease	OST	01	rs11057830	A/G	A:A	Increased circulating alpha-tocopherol	21729881, 22291837	Good	Total: 2
+12	Vitamin E Level	Disease	OST	01	rs11057830	A/G	A:G	Increased circulating alpha-tocopherol	21729881, 22291837	Good	Total: 2
+12	Vitamin E Level	Disease	OST	01	rs11057830	A/G	G:G	Typical circulating alpha-tocopherol	21729881, 22291837	Neutral	Total: 2
+13	Xenobiotics Metabolism	Disease	OST	01	rs1695	A/G	A:A	Typical xenobiotics metabolism	20049212, 20472488, 22525558	Neutral	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1695	A/G	A:G	Decreased xenobiotics metabolism	20049212, 20472488, 22525558	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1695	A/G	G:G	Decreased xenobiotics metabolism	20049212, 20472488, 22525558	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1051740	C/T	C:C	Decreased xenobiotics metabolism	21653646, 17885617, 21598178	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1051740	C/T	C:T	Decreased xenobiotics metabolism	21653646, 17885617, 21598178	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1051740	C/T	T:T	Typical xenobiotics metabolism	21653646, 17885617, 21598178	Neutral	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1800566	A/G	A;A	Decreased xenobiotics metabolism	20110814, 20049130, 18214807	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1800566	A/G	A;G	Decreased xenobiotics metabolism	20110814, 20049130, 18214807	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs1800566	A/G	G;G	Typical xenobiotics metabolism	20110814, 20049130, 18214807	Neutral	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs2234922	A/G	A:A	Typical xenobiotics metabolism	21653646, 17885617, 20932192, 21598178	Neutral	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs2234922	A/G	A:G	Decreased xenobiotics metabolism	21653646, 17885617, 20932192, 21598178	Bad	Total: 4
+13	Xenobiotics Metabolism	Disease	OST	01	rs2234922	A/G	G:G	Decreased xenobiotics metabolism	21653646, 17885617, 20932192, 21598178	Bad	Total: 4
+

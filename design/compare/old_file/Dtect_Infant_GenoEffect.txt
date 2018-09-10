@@ -1,0 +1,191 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles	Genotypes	Genotype effects	PMID	Risk/Efficacy	# SNPs/condition	Relative Risk
+1	Abnormal QT Interval	Disease	PDI	01	rs10494366	G/T	G;G	Increased risk of long QT interval	19204306, 19587794, 20538168, 19247217	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs10494366	G/T	G;T	Slightly increased risk of long QT interval	19204306, 19587794, 20538168, 19247217	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs10494366	G/T	T;T	Typical average QT interval	19204306, 19587794, 20538168, 19247217	Neutral	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs10918594	C/G	C;C	Increased risk of short QT interval	16648850, 17576865, 18235038, 19247217	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs10918594	C/G	C;G	Typical average QT interval	16648850, 17576865, 18235038, 19247217	Neutral	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs10918594	C/G	G;G	Typical average QT interval	16648850, 17576865, 18235038, 19247217	Neutral	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs12143842	C/T	C;C	Typical average QT interval	18927126, 20722683, 19587794, 19305408	Neutral	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs12143842	C/T	C;T	Slightly increased risk of long QT interval	18927126, 20722683, 19587794, 19305408	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs12143842	C/T	T;T	Increased risk of long QT interval	18927126, 20722683, 19587794, 19305408	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs16847548	C/T	C;C	Increased risk of long QT interval	19204306, 19180230, 20538168	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs16847548	C/T	C;T	Slightly increased risk of long QT interval	19204306, 19180230, 20538168	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs16847548	C/T	T;T	Typical average QT interval	19204306, 19180230, 20538168	Neutral	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs4657139	A/T	A;A	Increased risk of long QT interval	19204306, 20215044, 20538168	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs4657139	A/T	A;T	Slightly increased risk of long QT interval	19204306, 20215044, 20538168	Bad	Total: 6	1
+1	Abnormal QT Interval	Disease	PDI	01	rs4657139	A/T	T;T	Typical average QT interval	19204306, 20215044, 20538168	Neutral	Total: 6	1
+2	Allergic Asthma (Early Onset)	Disease	PDI	01	rs16947078	A/G	A;A	Typical risk of allergic asthma	17949803	Neutral	Total: 6	1
+2	Allergic Asthma (Early Onset)	Disease	PDI	01	rs16947078	A/G	A;G	Increased risk of allergic asthma	17949803	Bad	Total: 6	1
+2	Allergic Asthma (Early Onset)	Disease	PDI	01	rs16947078	A/G	G;G	Increased risk of allergic asthma	17949803	Bad	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs1041973	A/C	A;A	Typical risk of early onset asthma	21281963, 19910030	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs1041973	A/C	A;C	Typical risk of early onset asthma	21281963, 19910030	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs1041973	A/C	C;C	Slightly increased risk of early onset asthma	21281963, 19910030	Bad	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs2305480	A/G	A;A	Increased risk of early onset asthma (higher risk if exposed to smoke)	20860503, 18923164	Bad	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs2305480	A/G	A;G	Typical risk of early onset asthma	20860503, 18923164	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs2305480	A/G	G;G	Typical risk of early onset asthma	20860503, 18923164	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs7216389	C/T	C;C	Typical risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs7216389	C/T	C;T	Typical risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs7216389	C/T	T;T	Slightly increased risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Bad	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8067378	A/G	A;A	Typical risk of early onset asthma	17611496, 22370936	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8067378	A/G	A;G	Typical risk of early onset asthma	17611496, 22370936	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8067378	A/G	G;G	Increased risk of early onset asthma	17611496, 22370936	Bad	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8069176	A/G	A;A	Typical risk of early onset asthma	18923164, 22370936	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8069176	A/G	A;G	Typical risk of early onset asthma	18923164, 22370936	Neutral	Total: 6	1
+3	Asthma (Early Onset)	Disease	PDI	01	rs8069176	A/G	G;G	Increased risk of early onset asthma (higher risk if exposed to smoke)	18923164, 22370936	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs1464510	A/C	A;A	Slightly increased risk of celiac disease	18311140, 19693089, 20190752	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs1464510	A/C	A;C	Slightly increased risk of celiac disease	18311140, 19693089, 20190752	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs1464510	A/C	C;C	Typical risk of celiac disease	18311140, 19693089, 20190752	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs17810546	A/G	A;A	Typical risk of celiac disease	18311140, 20190752	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs17810546	A/G	A;G	Increased risk of celiac disease	18311140, 20190752	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs17810546	A/G	G;G	Increased risk of celiac disease	18311140, 20190752	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs2187668	C/T	C;C	Typical risk of celiac disease	17558408, 18509540	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs2187668	C/T	C;T	Increased risk of celiac disease	17558408, 18509540	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs2187668	C/T	T;T	Increased risk of celiac disease	17558408, 18509540	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs3184504	C/T	C;C	Typical risk of celiac disease	19693089, 18311140	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs3184504	C/T	C;T	Slightly increased risk of celiac disease	19693089, 18311140	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs3184504	C/T	T;T	Increased risk of celiac disease	19693089, 18311140	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6441961	C/T	C;C	Typical risk of celiac disease	18311140, 19693089, 19542083	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6441961	C/T	C;T	Slightly increased risk of celiac disease	18311140, 19693089, 19542083	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6441961	C/T	T;T	Increased risk of celiac disease	18311140, 19693089, 19542083	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6822844	G/T	G;G	Slightly increased risk of celiac disease	18311140, 17558408	Bad	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6822844	G/T	G;T	Typical risk of celiac disease	18311140, 17558408	Neutral	Total: 6	1
+4	Celiac Disease	Disease	PDI	01	rs6822844	G/T	T;T	Typical risk of celiac disease	18311140, 17558408	Neutral	Total: 6	1
+5	Crohn's Disease	Disease	PDI	01	rs10761659	A/G	A;A	Slightly increased risk of Crohn's disease	21102463, 17554300, 18936107	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs10761659	A/G	A;G	Typical risk of Crohn's disease	21102463, 17554300, 18936107	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs10761659	A/G	G;G	Typical risk of Crohn's disease	21102463, 17554300, 18936107	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs10883365	A/G	A;A	Typical risk of Crohn's disease	17554300, 18936107,  21172269	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs10883365	A/G	A;G	Typical risk of Crohn's disease	17554300, 18936107,  21172269	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs10883365	A/G	G;G	Increased risk of Crohn's disease	17554300, 18936107, 21172269	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11209026	A/G	A;A	Typical risk of Crohn's disease	17068223, 20157760, 22412388	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11209026	A/G	A;G	Increased risk of Crohn's disease	17068223, 20157760, 22412388	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11209026	A/G	G;G	Increased risk of Crohn's disease	17068223, 20157760, 22412388	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11805303	C/T	C;C	Typical risk of Crohn's disease	17554300, 22426692, 22333126	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11805303	C/T	C;T	Slightly increased risk of Crohn's disease	17554300, 22426692, 22333126	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs11805303	C/T	T;T	Increased risk of Crohn's disease	17554300, 22426692, 22333126	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs17234657	G/T	G;G	Increased risk of Crohn's disease	17554300, 19174780, 19953089	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs17234657	G/T	G;T	Increased risk of Crohn's disease	17554300, 19174780, 19953089	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs17234657	G/T	T;T	Typical risk of Crohn's disease	17554300, 19174780, 19953089	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2241880	A/G	A;A	Typical risk of Crohn's disease	17200669, 17435756, 17554300, 18162085	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2241880	A/G	A;G	Slightly increased risk of Crohn's disease	17200669, 17435756, 17554300, 18162085	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2241880	A/G	G;G	Increased risk of Crohn's disease	17200669, 17435756, 17554300, 18162085	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2542151	G/T	G;G	Slightly increased risk of Crohn's disease	17554300, 19953089, 22426692, 22377701	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2542151	G/T	G;T	Slightly increased risk of Crohn's disease	17554300, 19953089, 22426692, 22377701	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs2542151	G/T	T;T	Typical risk of Crohn's disease	17554300, 19953089, 22426692, 22377701	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs4958847	A/G	A;A	Increased risk of Crohn's disease	18580884, 19491842	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs4958847	A/G	A;G	Slightly increased risk of Crohn's disease	18580884, 19491842	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs4958847	A/G	G;G	Typical risk of Crohn's disease	18580884, 19491842	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6596075	C/G	C;C	Slightly increased risk of Crohn's disease	17554300, 21674708	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6596075	C/G	C;G	Typical risk of Crohn's disease	17554300, 21674708	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6596075	C/G	G;G	Typical risk of Crohn's disease	17554300, 21674708	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6908425	C/T	C;C	Slightly increased risk of Crohn's disease	17554300, 19587699, 21152001	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6908425	C/T	C;T	Typical risk of Crohn's disease	17554300, 19587699, 21152001	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs6908425	C/T	T;T	Typical risk of Crohn's disease	17554300, 19587699, 21152001	Neutral	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs9858542	A/G	A;A	Increased risk of Crohn's disease	17554300, 19657358, 20024904	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs9858542	A/G	A;G	Slightly increased risk of Crohn's disease	17554300, 19657358, 20024904	Bad	Total: 11	1
+5	Crohn's Disease	Disease	PDI	01	rs9858542	A/G	G;G	Typical risk of Crohn's disease	17554300, 19657358, 20024904	Neutral	Total: 11	1
+6	Early Speech Impairment	Disease	PDI	01	rs2710102	A/G	A;A	Typical risk of speech development delay and/or impairment	18179893, 18987363, 21310003, 21987501	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs2710102	A/G	A;G	Typical risk of speech development delay and/or impairment	18179893, 18987363, 21310003, 21987501	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs2710102	A/G	G;G	Slightly increased risk of speech development delay and/or impairment	18179893, 18987363, 21310003, 21987501	Bad	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs759178	A/C	A;A	Typical risk of speech development delay and/or impairment	18987363, 21310003	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs759178	A/C	A;C	Typical risk of speech development delay and/or impairment	18987363, 21310003	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs759178	A/C	C;C	Increased risk of speech development delay and/or impairment	18987363, 21310003	Bad	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs17236239	A/G	A;A	Typical risk of speech development delay and/or impairment	18987363, 21310003	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs17236239	A/G	A;G	Slightly increased risk of speech development delay and/or impairment	18987363, 21310003	Bad	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs17236239	A/G	G;G	Increased risk of speech development delay and/or impairment	18987363, 21310003	Bad	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs2538976	C/T	C;C	Increased risk of speech development delay and/or impairment	21310003	Bad	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs2538976	C/T	C;T	Typical risk of speech development delay and/or impairment	21310003	Neutral	Total: 4	1
+6	Early Speech Impairment	Disease	PDI	01	rs2538976	C/T	T;T	Typical risk of speech development delay and/or impairment	21310003	Neutral	Total: 4	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs11712066	A/G	A;A	Slightly increased risk of infantile hypertrophic pyloric stenosis	22306654	Bad	Total: 3	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs11712066	A/G	A;G	Typical risk of infantile hypertrophic pyloric stenosis	22306654	Neutral	Total: 3	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs11712066	A/G	G;G	Typical risk of infantile hypertrophic pyloric stenosis	22306654	Neutral	Total: 3	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs29784	C/T	C;C	Typical risk of infantile hypertrophic pyloric stenosis	22306654	Neutral	Total: 3	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs29784	C/T	C;T	Slightly increased risk of infantile hypertrophic pyloric stenosis	22306654	Bad	Total: 3	1
+7	Infantile Hypertrophic Pyloric Stenosis	Disease	PDI	01	rs29784	C/T	T;T	Increased risk of infantile hypertrophic pyloric stenosis	22306654	Bad	Total: 3	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs2233406	A/G	A;A	Typical risk of invasive pneumococcal disease	17463416	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs2233406	A/G	A;G	Slightly increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs2233406	A/G	G;G	Increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs3138053	C/T	C;C	Typical risk of invasive pneumococcal disease	17463416	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs3138053	C/T	C;T	Slightly increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs3138053	C/T	T;T	Increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs4925858	A/G	A;A	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs4925858	A/G	A;G	Typical risk of invasive pneumococcal disease	21171993	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs4925858	A/G	G;G	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs600718	A/T	A;A	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs600718	A/T	A;T	Typical risk of invasive pneumococcal disease	19798075	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs600718	A/T	T;T	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs616597	A/C	A;A	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs616597	A/C	A;C	Typical risk of invasive pneumococcal disease	19798075	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs616597	A/C	C;C	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs760477	A/G	A;A	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs760477	A/G	A;G	Typical risk of invasive pneumococcal disease	21171993	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs760477	A/G	G;G	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs8177374	C/T	C;C	Slightly increased risk of invasive pneumococcal disease	19509334, 17322885	Bad	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs8177374	C/T	C;T	Typical risk of invasive pneumococcal disease	19509334, 17322885	Neutral	Total: 7	1
+8	Invasive Pneumococcal Disease (IPD)	Disease	PDI	01	rs8177374	C/T	T;T	Slightly increased risk of invasive pneumococcal disease	19509334, 17322885	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs10129255	C/T	C;C	Typical risk of Kawasaki disease	21326860	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs10129255	C/T	C;T	Slightly increased risk of Kawasaki disease	21326860	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs10129255	C/T	T;T	Increased risk of Kawasaki disease	21326860	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1568657	G/A	G;G	Increased risk of Kawasaki disease	21326860	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1568657	G/A	G;A	Slightly increased risk of Kawasaki disease	21326860	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1568657	G/A	A;A	Typical risk of Kawasaki disease	21326860	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1801274	A/G	A;A	Slightly increased risk of Kawasaki disease	22081228	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1801274	A/G	A;G	Typical risk of Kawasaki disease	22081228	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs1801274	A/G	G;G	Typical risk of Kawasaki disease	22081228	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs2844724	C/T	C;C	Increased risk of Kawasaki disease	19180512	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs2844724	C/T	C;T	Slightly increased risk of Kawasaki disease	19180512	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs2844724	C/T	T;T	Typical risk of Kawasaki disease	19180512	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs28493229	C/G	C;C	Increased risk of Kawasaki disease	18084290, 20045869, 22081228	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs28493229	C/G	C;G	Increased risk of Kawasaki disease	18084290, 20045869, 22081228	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs28493229	C/G	G;G	Typical risk of Kawasaki disease	18084290, 20045869, 22081228	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs527409	C/T	C;C	Typical risk of Kawasaki disease	21221998	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs527409	C/T	C;T	Increased risk of Kawasaki disease	21221998	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs527409	C/T	T;T	Increased risk of Kawasaki disease	21221998	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs7604693	A/C	A;A	Typical risk of Kawasaki disease	21221998	Neutral	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs7604693	A/C	A;C	Increased risk of Kawasaki disease	21221998	Bad	Total: 7	1
+9	Kawasaki's Disease	Disease	PDI	01	rs7604693	A/C	C;C	Increased risk of Kawasaki disease	21221998	Bad	Total: 7	1
+10	Meningococcal Disease	Disease	PDI	01	rs1065489	G/T	G;G	Slightly increased risk of meningococcal disease	20694013	Bad	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs1065489	G/T	G;T	Typical risk of meningococcal disease	20694013	Neutral	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs1065489	G/T	T;T	Slightly increased risk of meningococcal disease	20694013	Bad	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs11582939	C/T	C;C	Slightly increased risk of meningococcal disease	20694013	Bad	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs11582939	C/T	C;T	Typical risk of meningococcal disease	20694013	Neutral	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs11582939	C/T	T;T	Slightly increased risk of meningococcal disease	20694013	Bad	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs352140	C/T	C;C	Slightly increased risk of meningococcal disease	21258099, 22577991	Bad	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs352140	C/T	C;T	Typical risk of meningococcal disease	21258099, 22577991	Neutral	Total: 3	1
+10	Meningococcal Disease	Disease	PDI	01	rs352140	C/T	T;T	Slightly increased risk of meningococcal disease	21258099, 22577991	Bad	Total: 3	1
+11	Pathological Myopia	Disease	PDI	01	rs10034228	C/T	C;C	Slightly increased risk of high myopia	21505071, 22150588	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs10034228	C/T	C;T	Slightly increased risk of high myopia	21505071, 22150588	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs10034228	C/T	T;T	Typical risk of high myopia	21505071, 22150588	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs4803455	A/C	A;A	Typical risk of high myopia	19365037	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs4803455	A/C	A;C	Typical risk of high myopia	19365037	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs4803455	A/C	C;C	Increased risk of high myopia	19365037	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs662702	C/T	C;C	Slightly increased risk of high myopia	22447870, 21421876	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs662702	C/T	C;T	Typical risk of high myopia	22447870, 21421876	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs662702	C/T	T;T	Typical risk of high myopia	22447870, 21421876	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs6885224	C/T	C;C	Increased risk of high myopia	21095009, 21911587	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs6885224	C/T	C;T	Slightly increased risk of high myopia	21095009, 21911587	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs6885224	C/T	T;T	Typical risk of high myopia	21095009, 21911587	Neutral	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs9318086	A/G	A;A	Increased risk of high myopia	21640322	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs9318086	A/G	A;G	Slightly increased risk of high myopia	21640322	Bad	Total: 6	1
+11	Pathological Myopia	Disease	PDI	01	rs9318086	A/G	G;G	Typical risk of high myopia	21640322	Neutral	Total: 6	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs10494366	G/T	G;G	Typical risk of sudden infant death	19289301, 16648850, 19204306	Neutral	Total: 2	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs10494366	G/T	G;T	Slightly increased risk of sudden infant death	19289301, 16648850, 19204306	Bad	Total: 2	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs10494366	G/T	T;T	Slightly increased risk of sudden infant death	19289301, 16648850, 19204306	Bad	Total: 2	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs2075575	A/G	A;A	Slightly increased risk of sudden infant death	20351659	Bad	Total: 2	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs2075575	A/G	A;G	Slightly increased risk of sudden infant death	20351659	Bad	Total: 2	1
+12	Sudden Infant Death Syndrome	Disease	PDI	01	rs2075575	A/G	G;G	Typical risk of sudden infant death	20351659	Neutral	Total: 2	1
+13	Early or Late Teething	Disease	PDI	01	rs1956529	C/T	C;C	No significant effect on first tooth eruption delay or fewer teeth at the end of infancy	20195514	Neutral	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs1956529	C/T	C;T	A allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs1956529	C/T	T;T	A allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs4844096	A/G	A;A	No significant effect on first tooth eruption delay or fewer teeth at the end of infancy	20195514	Neutral	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs4844096	A/G	A;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs4844096	A/G	G;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs5936487	A/G	A;A	No significant effect on first tooth eruption delay or fewer teeth at the end of infancy	20195514	Neutral	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs5936487	A/G	A;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs5936487	A/G	G;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs8079702	A/G	A;A	No significant effect on first tooth eruption delay or fewer teeth at the end of infancy	20195514	Neutral	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs8079702	A/G	A;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs8079702	A/G	G;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs9674544	A/G	A;A	No significant effect on first tooth eruption delay or fewer teeth at the end of infancy	20195514	Neutral	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs9674544	A/G	A;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+13	Early or Late Teething	Disease	PDI	01	rs9674544	A/G	G;G	G allele increased odds of first tooth eruption delay or fewer teeth at the end of infancy	20195514	Bad	Total: 5	1
+

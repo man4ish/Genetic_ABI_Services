@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="88">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>QSDb.h</itemPath>
+      <itemPath>QSDb_Func.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1" displayName="Source Files" projectFiles="true">
+      <itemPath>QSDb_Map.cpp</itemPath>
+      <itemPath>QSDb_Private.cpp</itemPath>
+      <itemPath>QSDb_Public.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <architecture>2</architecture>
+          <incDir>
+            <pElem>../GSSDb_Core</pElem>
+            <pElem>/usr/include/mysql</pElem>
+            <pElem>/usr/local/chilkat-9.3.1/include</pElem>
+            <pElem>../DbBase</pElem>
+          </incDir>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="QSDb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="QSDb_Func.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="QSDb_Map.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QSDb_Private.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QSDb_Public.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>../GSSDb_Core</pElem>
+            <pElem>/usr/include/mysql</pElem>
+            <pElem>../DbBase</pElem>
+          </incDir>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="QSDb.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="QSDb_Func.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="QSDb_Map.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QSDb_Private.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="QSDb_Public.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<database>
+		<dbname>GSSDb</dbname>
+		<dbhost>192.168.7.1</dbhost>
+		<dblogin>jameswong</dblogin>
+		<dbpasswd></dbpasswd>
+	</database>
+	<database>
+		<dbname>QSDb</dbname>
+		<dbhost>192.168.7.1</dbhost>
+		<dblogin>jameswong</dblogin>
+		<dbpasswd></dbpasswd>
+	</database>
+	<database>
+		<dbname>LIMS_DB</dbname>
+		<dbhost>192.168.7.1</dbhost>
+		<dblogin>jameswong</dblogin>
+		<dbpasswd></dbpasswd>
+	</database>
+	<database>
+		<dbname>TRANS_DB</dbname>
+		<dbhost>192.168.7.1</dbhost>
+		<dblogin>jameswong</dblogin>
+		<dbpasswd></dbpasswd>
+	</database>
+	<input>
+		<qsinput>/data/gss_in</qsinput>
+	</input>
+	<output>
+		<qsoutput>/data/pdf_report</qsoutput>
+		<qsmove>/data/quantgeno</qsmove>
+	</output>
+
+	<!-- full path filename for logging -->
+	<logfile>/var/log/dtector/gss.log</logfile>
+	<latex_logfile>/var/log/dtector/gss_latex.log</latex_logfile>
+
+	<!-- number of seconds to sleep between checks for incoming file/s -->
+	<interval>1</interval>
+
+	<!-- sample id prefixes to ignore -->
+	<filter>NTC</filter>
+	<filter>PTC</filter>
+	
+	<!-- diseases/drugs filtered. i.e, not to be reported -->
+        <disdrug_filter>PDI_01_12</disdrug_filter>
+        <disdrug_filter>ONC_01_16</disdrug_filter>
+        <disdrug_filter>ONC_01_17</disdrug_filter>
+
+	<!-- maximum number of segments in general population chart -->
+	<max_bar>5</max_bar>
+
+	<!-- minimum percentage of a segment allowed before binning (0.0 - 1.0) -->
+	<min_pct>1.0</min_pct>
+
+	<!-- cluster target segment -->
+	<cluster_target>ON</cluster_target>
+
+	<!-- boolean flag to turn LIMS ON/OFF -->
+	<lims>ON</lims>
+	
+	<!-- if LIMS is OFF, Dtector uses TESTCODE specified in 'testcode' -->
+	<testcode>CRD01</testcode>
+
+	<!-- turns ON/OFF deletion of intermediate results files -->
+	<delete_intermediate>OFF</delete_intermediate>
+
+	<!-- turns ON/OFF generation of pdf reports -->
+	<pdf>ON</pdf>
+
+	<!-- turns ON/OFF check for 'missed' disease/drug -->
+	<missed_disease>OFF</missed_disease>
+
+	<!-- maximum invalid calls allowed -->
+	<max_invalid>0</max_invalid>
+
+	<!-- directory of images for reporting -->
+        <image_dir>/opt/synamatix/gss/bin/pdf_gen/image</image_dir>
+
+        <!-- default language code -->
+        <lang_code>en</lang_code>
+	<lang_code>zh</lang_code>
+
+	<redirect_stdout>ON</redirect_stdout>
+	<redirect_stderr>ON</redirect_stderr>
+</root>

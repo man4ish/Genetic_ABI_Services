@@ -1,0 +1,2376 @@
+\documentclass[11pt,table,a5paper]{article}
+\usepackage{array,ragged2e}
+\usepackage{graphicx}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{lipsum}
+\usepackage[top=2cm, bottom=2cm, outer=1cm, inner=2.1cm,twoside, headsep=26pt]{geometry}
+\usepackage{ifthen}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{parskip}
+\usepackage{framed}
+\usepackage{sidecap}
+\renewcommand{\familydefault}{\sfdefault} 
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{transparent}
+\usepackage{hyphenat}
+\usepackage{bm}
+\newcommand{\+}{\discretionary{\mbox{${\bm\cdot}\mkern-1mu$}}{}{}}
+\usepackage{microtype}
+\usepackage{xstring}
+\usepackage{forloop}
+\usepackage{collcell}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{varwidth}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{placeins}
+\usepackage[T1,T2A]{fontenc}
+\usepackage{CJKutf8}
+\usepackage[english,russian]{babel}
+\usepackage{alltt}
+\usepackage{caption}
+\usepackage{Sweave}
+\captionsetup{skip=5pt,font=footnotesize}
+\usepackage[labelformat=empty]{caption}
+\usepackage{needspace}
+\usepackage{setspace}
+\singlespacing 
+\raggedbottom
+\fboxsep=4mm%padding thickness
+\fboxrule=.1pt%border thickness
+\usepackage{array}% http://ctan.org/pkg/array
+\usepackage{keyval}% http://ctan.org/pkg/keyval
+\makeatletter
+\newlength{\mylist@beforeskip}
+\newlength{\mylist@afterskip}
+\define@key{mylist}{beforeskip}{\setlength{\mylist@beforeskip}{#1}}
+\define@key{mylist}{afterskip}{\setlength{\mylist@afterskip}{#1}}
+\newenvironment{mylist}[1][,]
+  {\setkeys{mylist}{beforeskip=10pt,afterskip=10pt,#1}%
+   \par\vspace*{\mylist@beforeskip}%
+   \begin{itemize}}
+  {\end{itemize}%
+   \vspace*{\mylist@afterskip}}
+\makeatother
+
+
+\usepackage{etoolbox,graphicx}% http://ctan.org/pkg/{etoolbox,graphicx}
+
+\newcommand{\addstufftotoc}[2][toc]{% \addimagetotoc[<toc>]{<stuff>}
+  \addtocontents{#1}{%
+    \unexpanded{\unexpanded{\nobreak\smallskip#2\par\medskip}}%
+  }%
+}
+\makeatletter
+\patchcmd{\l@section}% <cmd>
+  {\begingroup}% <search>
+  {\begingroup\normalfont\small\bfseries}% <replace>
+  {}{}% <success><failure>
+\makeatother
+
+\usepackage{paralist}
+\let\itemize\compactitem
+\let\enditemize\endcompactitem
+\let\enumerate\compactenum
+\let\endenumerate\endcompactenum
+\let\description\compactdesc
+\let\enddescription\endcompactdesc
+\pltopsep=\medskipamount
+\plitemsep=0pt
+\plparsep=1pt
+\renewcommand{\ttdefault}{txtt}
+\newenvironment{toplessitemize}{\vspace{\dimexpr-\topsep-.5\baselineskip\relax}%
+                                \begin{itemize}}
+                               {\end{itemize}}
+\usepackage{wallpaper}
+\makeatletter
+\newcommand*\wrapletters[1]{\wr@pletters#1\@nil}
+\def\wr@pletters#1#2\@nil{#1\allowbreak\if&#2&\else\wr@pletters#2\@nil\fi}
+\makeatother
+
+\makeatletter 
+\makeatother
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+
+\DeclareUnicodeCharacter{00A0}{~}
+\newcolumntype{P}[1]{>{\collectcell\AddBreakableChars}p{#1}<{\endcollectcell}}
+\newsavebox\MyBreakChar%
+\sbox\MyBreakChar{}% char to display the break after non char
+\newsavebox\MySpaceBreakChar%
+\sbox\MySpaceBreakChar{-}% char to display the break after space
+\makeatletter%
+\newcommand*{\BreakableChar}[1][\MyBreakChar]{%
+  \leavevmode%
+  \prw@zbreak%
+  \discretionary{\usebox#1}{}{}%
+  \prw@zbreak%
+}%
+
+\newcounter{index}%
+\newcommand{\AddBreakableChars}[1]{%
+  \StrLen{#1 }[\stringLength]%
+  \forloop[1]{index}{1}{\value{index}<\stringLength}{%
+    \StrChar{#1}{\value{index}}[\currentLetter]%
+    \IfStrEq{\currentLetter}{]}
+        {\currentLetter\BreakableChar[\MyBreakChar]}%
+        {\currentLetter}%
+  }%
+}%
+
+\usepackage{etoolbox}
+\newcounter{cnt}
+\newcommand\textlist{}
+\newcommand\settext[2]{%
+  \csdef{text#1}{#2}}
+\newcommand\addtext[1]{%
+  \stepcounter{cnt}%
+  \csdef{text\thecnt}{#1}}
+\newcommand\gettext[1]{%
+  \csuse{text#1}}
+
+\newcounter{colnum}
+\newcommand\maketabularrow[1]{%
+  \setcounter{colnum}{0}%
+  \whileboolexpr
+    { test {\ifnumcomp{\value{colnum}}{<}{#1}} }%
+    {&\stepcounter{colnum}\thecolnum}
+  }
+
+%   
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline} 
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+
+% new colours
+\definecolor{shadecolor}{rgb}{.753, .878, .914}
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+\definecolor{yellow}{rgb}{1,0.5,0}
+\definecolor{bananamania}{rgb}{1.0, .835, 0.655}
+\definecolor{goldenpoppy}{rgb}{.059, .412, .659}
+\definecolor{gold}{rgb}{1.0, 0.84, 0.0}
+\definecolor{burlywood1}{rgb}{.996, .894, .745}
+\definecolor{blue}{rgb}{0,.412,.651}
+\definecolor{maincol}{rgb}{.404,.404,1.00}
+\definecolor{goldenrod}{rgb}{1.00, .937, .835}
+\definecolor{rowcol}{rgb}{.714, .855, .957}
+\definecolor{headcol}{rgb}{.537, .769, .933}
+\definecolor{yel}{rgb}{1, 1, 0}
+\definecolor{logcol}{rgb}{0,.411,0.655}
+\pagestyle{fancy} 
+\fancyhf{}
+\fancyhead{} 
+\fancyfoot{} 
+
+%chunk = 1
+<<echo=FALSE,results=tex>>=
+cmd<-commandArgs()
+cmd<-strsplit(cmd," ")
+InFile<-cmd[[4]][1]
+mayocontentflag<-cmd[[5]][1]
+runtype<-cmd[[6]][1]
+CMitalic <- Type1Font("ComputerModern2",
+                      c("CM_regular_10.afm", "CM_boldx_10.afm",
+                        "cmti10.afm", "cmbxti10.afm",
+                         "CM_symbol_10.afm"),
+                      encoding = "TeXtext.enc")
+
+pdfFonts(CMitalic = CMitalic)
+library(jpeg)
+library(grid)
+library(XML)
+library(stringr)
+library(plotrix)
+library(utils)
+
+doc = xmlTreeParse(paste(InFile,".fmt",sep=""), useInternal = TRUE, encoding="UTF-8")
+top = xmlRoot(doc)
+lang<-xmlValue(top[["Metadata"]][["Language"]])
+ChipType<-xmlValue(top[["GeneralInformation"]][["ChipType"]])
+rfile<-paste("Risk_Score/Dtect_",ChipType,".Risk_Score",sep="")
+riskfile<-read.table(rfile,header=TRUE,sep="\t",check.names=FALSE,quote="\"", row.names=NULL)
+
+TypicalRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["RiskType"]][["Typical"]])
+SlightlyIncreasedRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["RiskType"]][["Slightly"]])
+IncreasedRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["RiskType"]][["Increased"]])
+
+generateimage <- function(pdfname,pos,data,postext,xmlnode){          #function for generating plot
+        
+        top<-xmlnode
+        LegendIncreasedRisk<-xmlValue(top[["Titles"]][["LegendIncreasedRisk"]])
+        LegendNormalRisk<-xmlValue(top[["Titles"]][["LegendNormalRisk"]])
+        LegendReducedRisk<-xmlValue(top[["Titles"]][["LegendReducedRisk"]])
+        LegendYourRisk<-xmlValue(top[["Titles"]][["LegendYourRisk"]])
+        col1<-"green"
+        col2<-"yellow"
+        col3<-"red"
+ 
+
+        cat("~\\\\","\n")
+        x<-log2(as.numeric(as.character(data)))
+
+        pdf(paste("./tmp/",pdfname, sep=""),width=9,height=3)
+        par(mar=c(0,1,0,0))
+	arrowcol<-numeric(0)
+
+	if(pos < quantile(x,0.25))
+	{
+   		arrowcol<-"green"
+                
+	}
+	else if (pos > quantile(x,0.25) && pos < quantile(x,0.75) )
+	{
+  		arrowcol<-"yellow"
+	}
+	else 
+	{
+   		arrowcol<-"red"
+	}
+        
+          if(length(table(x))<15)	
+          {
+             plot<-boxplot(x,boxwex = .25,horizontal=TRUE,axes=FALSE,outline=TRUE)
+             minval<-min(x)
+             maxval<-max(x)
+          }
+          else
+          {
+             plot<-boxplot(x,boxwex = .25,horizontal=TRUE,axes=FALSE,outline=FALSE)
+             minval<-plot$stats[1]
+             maxval<-plot$stats[5]
+          }
+        if(pos > maxval)
+        {
+            pos=maxval
+        }
+        else if(pos < minval)
+        {
+            pos=minval
+        }
+        
+        Q1<-quantile(x,0.25)
+        Q3<-quantile(x,0.75)
+        IQR<-Q3-Q1
+        if(minval == Q1)
+        {
+            Q1<-Q1+IQR/100
+        }
+  
+        rect(minval,1.24,Q1,1.19,col=col1,border="black",lwd=1)
+	rect(Q1,1.24,Q3,1.19,col=col2,border="black",lwd=1)
+        rect(Q3,1.19,maxval,1.24,col=col3,border="black",lwd=1)	
+ 
+        
+        #Always show three color
+        if(Q1 == 0 && Q3 == 0 && minval !=0)
+        {
+           rect(maxval-minval/50,1.19,maxval,1.24,col=col2,border="black",lwd=1)
+           rect(maxval-minval/100,1.19,maxval-minval/50,1.24,col=col3,border="black",lwd=1) 
+        } else if(Q3 == maxval)
+        {
+           rect(maxval-minval/50,1.19,maxval,1.24,col=col3,border="black",lwd=1)
+        } else if(Q1==Q3 && Q3 == minval)
+        {
+           rect(minval-maxval/50,1.19,minval,1.24,col=col2,border="black",lwd=1)
+           rect(minval-maxval/100,1.19,minval-maxval/50,1.24,col=col1,border="black",lwd=1)
+           #rect(minval-maxval/50,1.19,minval,1.24,col=col1,border="black",lwd=1)
+        }else if(Q1==Q3)
+        {
+           rect(Q3+maxval/50,1.19,Q3,1.24,col=col2,border="black",lwd=1)
+        }
+        
+        scale<-(maxval-minval)/80
+	polygon(c(pos,pos-scale,pos+scale,pos), c(1.18,1.12,1.12,1.18), angle = c(-45, 45),col="black",border="NA")
+        scale<-(maxval-minval)/120
+        legend(x=minval-(maxval-minval)/50,y=.9, c("Reduced Risk","Normal Risk","Increased Risk","Your Risk"), cex=1,pt.cex =1.4,  bty="n",col=c("green", "yellow", "red", rgb(.219, .6941, .8941)), pch=c(15, 15, 15, 17), border="black")        
+	dev.off()
+
+
+        pdf("./tmp/label.pdf",height=2,width=3)
+        plot.new()
+        boxplottitle<-"Risk Score Distribution"
+        mtext(boxplottitle,cex=1.2)
+        dev.off()
+        #generate legends
+        pdf("./tmp/legend.pdf")
+        plot.new()
+        legend(x=0,y=.15, c("Reduced Risk"), cex=1,pt.cex =1.4,  bty="n",col=c("green"), pch=c(15, 15, 15, 17), border="black")
+        legend(x=.3,y=.15, c("Normal Risk"), cex=1,pt.cex =1.4,  bty="n",col=c("yellow"), pch=c(15, 15, 15, 17), border="black")
+        legend(x=.6,y=.15, c("Increased Risk"), cex=1,pt.cex =1.4,  bty="n",col=c("red"), pch=c(15, 15, 15, 17), border="black")
+        legend(x=0,y=.15, c("Your Risk"), cex=1, pt.cex =1.4,  bty="n",col=c(rgb(.219, .6941, .8941)), pch=c(17), border="black")
+        dev.off()
+
+        #generate risk legends
+        if(lang== "zh")
+        {
+           pdf("./tmp/risk_legend.pdf", family="GB1")          
+        } else {
+           pdf("./tmp/risk_legend.pdf")
+        }
+        #pdf("./tmp/risk_legend.pdf")
+        plot.new()
+        #col1<-rgb(.86,.93,.956)
+        #col2<-rgb(.17,.78, 1)
+        #col3<-rgb(.31,.50,.74)
+        legend(x=0, y=.15, LegendReducedRisk, cex=1, pt.cex =2, bty="n", pch=22, col="black",pt.bg=col1) 
+        legend(x=.25, y=.15,LegendNormalRisk , cex=1, pt.cex =2, bty="n", pch=22, col="black",pt.bg=col2)
+        legend(x=.5, y=.15,LegendIncreasedRisk , cex=1, pt.cex =2, bty="n", pch=22, col="black",pt.bg=col3)
+        legend(x=.75,y=.15,LegendYourRisk , cex=1, pt.cex =1.5, bty="n", pch=24, col="black", pt.bg="black")
+ 
+        dev.off()
+}
+
+
+# push pod definition
+push <- function(vec, item) {
+   	vec=substitute(vec)
+   	if (is(item, "character")) 
+   	{
+      		eval.parent(parse(text = paste(vec, ' <- c(', vec, ', "', item, '")', sep = '')), n = 1)
+   	} 
+   	else 
+   	{
+      		eval.parent(parse(text = paste(vec, ' <- c(', vec, ', ', item, ')', sep = '')), n = 1)
+   	}
+}
+
+pop <- function(vec) {
+  	tmp <- vec[length(vec)]
+  	vec=substitute(vec)
+  	eval.parent(parse(text = paste(vec, ' <- ', vec, '[-length(', vec, ')]',
+	sep = '')),
+	n = 1)
+	tmp
+}
+
+logo<-numeric(0)
+reporttext<-numeric(0)
+qrcode<-numeric(0)
+companylogo<-numeric(0)
+backgroundimage<-numeric(0)
+address<-numeric(0)
+PatientId<-numeric(0)
+PatientName<-numeric(0)
+PatientAdd<-numeric(0)
+SampleId<-numeric(0)
+SampleType<-numeric(0)
+SampleCollectionDate<-numeric(0)
+SampleReceiptDate<-numeric(0)
+ReportDate<-numeric(0)
+DoctorName<-numeric(0)
+DoctorAdd<-numeric(0)
+RefNum<-numeric(0)
+Arrow<-numeric(0)
+
+logo<-xmlValue(top[["Images"]][["MainLogo"]])
+chiplogo<-xmlValue(top[["Images"]][["ProductLogo"]])
+qrcode<-xmlValue(top[["Images"]][["QrCode"]])
+backgroundimage<-xmlValue(top[["Images"]][["CoverBackground"]])
+reporttext<-xmlValue(top[["Images"]][["CoverChipLogo"]])
+companylogo<-xmlValue(top[["Images"]][["CompanyLogo"]])
+Arrow<-xmlValue(top[["Images"]][["Arrow"]])
+DiseaseLogo<-xmlValue(top[["Images"]][["DiseaseLogo"]])
+risklogo<-xmlValue(top[["Images"]][["RiskLogo"]])
+
+#need to add section
+Section1<-xmlValue(top[["Images"]][["Section1"]])
+Section2<-xmlValue(top[["Images"]][["Section2"]])
+Section3<-xmlValue(top[["Images"]][["Section3"]])
+
+PatientNameKey<-xmlGetAttr(top[["GeneralInformation"]][["PatientName"]],"key")
+PatientNameValue<-xmlValue(top[["GeneralInformation"]][["PatientName"]])
+
+PatientIdKey<-xmlGetAttr(top[["GeneralInformation"]][["PatientId"]],"key")
+PatientIdValue<-xmlValue(top[["GeneralInformation"]][["PatientId"]])
+
+PatientAddressKey<-xmlGetAttr(top[["GeneralInformation"]][["PatientAddress"]],"key")
+PatientAddressValue<-xmlValue(top[["GeneralInformation"]][["PatientAddress"]])
+
+PatientSampleIdKey<-xmlGetAttr(top[["GeneralInformation"]][["SampleId"]],"key")
+PatientSampleIdValue<-xmlValue(top[["GeneralInformation"]][["SampleId"]])
+
+PatientSampleTypeKey<-xmlGetAttr(top[["GeneralInformation"]][["PrimarySampleType"]],"key")
+PatientSampleTypeValue<-xmlValue(top[["GeneralInformation"]][["PrimarySampleType"]])
+
+PatientSampleCollectionDateKey<-xmlGetAttr(top[["GeneralInformation"]][["SampleCollectionDate"]],"key")
+PatientSampleCollectionDateValue<-xmlValue(top[["GeneralInformation"]][["SampleCollectionDate"]])
+
+PatientSampleReceiptDateKey<-xmlGetAttr(top[["GeneralInformation"]][["SampleReceiptDate"]],"key")
+PatientSampleReceiptDateValue<-xmlValue(top[["GeneralInformation"]][["SampleReceiptDate"]])
+
+PatientDoctorNameKey<-xmlGetAttr(top[["GeneralInformation"]][["DoctorName"]],"key")
+PatientDoctorNameValue<-xmlValue(top[["GeneralInformation"]][["DoctorName"]])
+
+PatientReportDateKey<-xmlGetAttr(top[["GeneralInformation"]][["ReportDate"]],"key")
+PatientReportDateValue<-xmlValue(top[["GeneralInformation"]][["ReportDate"]])
+
+PatientDoctorAddKey<-xmlGetAttr(top[["GeneralInformation"]][["DoctorAddress"]],"key")
+PatientDoctorAddValue<-xmlValue(top[["GeneralInformation"]][["DoctorAddress"]])
+
+PatientRefNumKey<-xmlGetAttr(top[["GeneralInformation"]][["ReferenceNo"]],"key")
+PatientRefNumValue<-xmlValue(top[["GeneralInformation"]][["ReferenceNo"]])
+
+CoverTitle<-xmlValue(top[["GeneralInformation"]][["CoverTitle"]])
+ChipType<-xmlValue(top[["GeneralInformation"]][["ChipType"]])
+PartnerCode<-xmlValue(top[["GeneralInformation"]][["PartnerCode"]])
+
+CompanyName<-xmlValue(top[["Company"]][["Name"]])
+CompanyAddress<-xmlValue(top[["Company"]][["Address"]])
+CompanyUrl<-xmlValue(top[["Company"]][["Url"]])
+CompanyContactName<-xmlGetAttr(top[["Company"]][["Contact"]],"key")
+CompanyContact<-xmlValue(top[["Company"]][["Contact"]])
+
+summarytext<-xmlValue(top[["Summary"]][["Disclaimer"]])
+cat("\\fancyfoot[C]{\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=white,outerlinewidth=.1, innerleftmargin=0,innertopmargin=0,innerbottommargin=0,innerrightmargin=0,everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedright{\\scriptsize\\textcolor{white}{",PatientIdValue,"}}}"),"\n")
+cat(paste("\\parbox[t]{0.31\\textwidth}{\\centering{\\scriptsize\\textcolor{white}{\\thepage}}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedleft{\\scriptsize\\textcolor{white}{",PatientReportDateValue,"}}}"),"\n")
+cat("\\end{mdframed}}","\n")
+cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}")
+cat("\\definecolor{maincol}{rgb}{.219, .6941, .8941}")
+@ % end chunk = 1
+
+
+\patchcmd{\tableofcontents}{\section*}{\vspace*{-30pt}\section*}{}{}
+\makeatletter
+\patchcmd{\l@section}% <cmd>
+  {\begingroup}% <search>
+  {\begingroup\normalfont\Large\bfseries}% <replace>
+  {}{}% <success><failure>
+\newcommand\mdframedintoc{\par\bigskip%
+\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=gray,outerlinewidth=.1, innerleftmargin=4, innerrightmargin=4, innertopmargin=4,innerbottommargin=4, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]
+\centering
+\includegraphics[trim=2.8cm 4cm 1.5cm 12.8cm, clip=true,width=0.75\linewidth]{./tmp/risk_legend.pdf}
+\end{mdframed}\par\bigskip
+
+
+\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=white,outerlinewidth=.001, innerleftmargin=0, innerrightmargin=0, innertopmargin=0,innerbottommargin=0, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]
+%chunk = 2
+<<echo=FALSE,results=tex>>=
+UpperText<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["UpperText"]])
+LowerText<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["LowerText"]])
+
+if(ChipType=="CRD" && runtype == 1)
+{
+   cat("~\\\\[35pt]","\n")
+   cat("\\hspace{1mm}","\n")
+   cat(paste("\\normalsize\\textcolor{textcol}{\\textbf{{",xmlValue(top[["Drugs"]][["ProfileTitle"]]),"}}}",sep=""),"\n")
+   drugindexfile<-numeric(0)
+   drugindexfile<-read.csv("GSS_Report_Revamp.index",sep="'",header=F)
+   cat("{\\renewcommand{\\arraystretch}{-1}\\begin{longtable}{P{4.5cm}M{5.55cm}P{1cm}}","\n")
+   for (icnt in 1:nrow(drugindexfile))
+   {
+              cat(paste("\\hspace{-.2cm}\\normalfont\\small\\bfseries{",drugindexfile[icnt,1],"} & "," &\\normalfont\\small\\bfseries{",drugindexfile[icnt,2],"}\\\\",sep=""),"\n")
+              cat(paste("\\small\\textcolor{white}{data}&  &\\small\\textcolor{white}{data}","\\\\",sep=""),"\n")
+              cat(paste("\\small\\textcolor{white}{data}&  &\\small\\textcolor{white}{data}","\\\\",sep=""),"\n")
+   }
+
+   cat("\\end{longtable}}","\n")
+}
+   cat("\\footnotesize","\n")
+@ %end chunk = 2
+\end{mdframed}%
+}
+\patchcmd{\tableofcontents}{\@starttoc{toc}}{\@starttoc{toc}\mdframedintoc}{}{}
+\makeatother
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+
+
+\begin{document}
+%chunk = 3 
+<<echo=FALSE,results=tex>>=
+if(lang == "zh")
+{
+  cat("\\begin{CJK*}{UTF8}{gbsn}","\n")
+}
+@ %end chunk = 3
+
+\begin{minipage}{0.85\linewidth}
+%chunk = 4
+<<echo=FALSE,results=tex>>=
+cat(paste("\\ThisLRCornerWallPaper{1.0}{",backgroundimage,"}",sep=""),"\n")
+cat(paste("\\includegraphics[width=0.5\\linewidth]{",chiplogo,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+cat("\\begin{minipage}{0.15\\linewidth}","\n")
+cat(paste("\\includegraphics[width=1.0\\linewidth]{",qrcode,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+@ % end chunk = 4
+
+\thispagestyle{empty}
+\hspace{10cm}
+\newline
+\vspace{2.3cm}
+
+\begin{minipage}{0.45\linewidth}
+\hspace{1cm}
+\end{minipage}
+
+\begin{mdframed}[roundcorner=10pt,leftmargin=46, rightmargin=18, linecolor=goldenpoppy,outerlinewidth=.5, innerleftmargin=18, innertopmargin=18,innerbottommargin=8, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]
+\begin{minipage}{0.55\linewidth}
+%chunk = 5
+<<echo=FALSE,results=tex>>=
+        cat("\\normalsize","\n")
+	cat("\\begin{tabular}{P{3.7cm}  P{6cm} }","\n")
+  	cat(paste("\\textbf{\\textsf{",PatientNameKey,":}} & \\textbf{\\textsf{",PatientNameValue,"}}\\\\",sep = ""),"\n")
+
+        cat("\\\\","\n");
+  	cat(paste("\\textsf{",PatientIdKey,":} & \\textsf{", PatientIdValue ,"}\\\\",sep = ""),"\n")
+        padd<-strsplit(as.character(PatientAddressValue),"`")
+  	cat(paste("\\textsf{",PatientAddressKey,":} & \\textsf{", padd[[1]][1] ,"}\\\\",sep = ""),"\n")
+
+        for (idx in 2:7) {
+           if(is.na(padd[[1]][idx]) == FALSE)
+           {
+              if (padd[[1]][idx] != "") { cat(paste(" & \\textsf{",padd[[1]][idx],"}\\\\", sep = ""),"\n") }
+           }
+        }
+
+        cat("\\vspace{0pt}   &  \\\\[-10pt]","\n")
+        
+  	cat(paste("\\textsf{",PatientSampleIdKey,":} & \\textsf{", PatientRefNumValue ,"/",PartnerCode,"}\\\\",sep = ""),"\n")
+  	cat(paste("\\textsf{",PatientSampleCollectionDateKey,":} & \\textsf{", PatientSampleCollectionDateValue ,"}\\\\",sep = ""),"\n")
+  	cat(paste("\\textsf{",PatientSampleReceiptDateKey,":} & \\textsf{", PatientSampleReceiptDateValue ,"}\\\\",sep = ""),"\n")
+  	cat(paste("\\textsf{",PatientReportDateKey,":} & \\textsf{", PatientReportDateValue ,"}\\\\",sep = ""),"\n")
+  	cat("\\vspace{0pt}   &  \\\\[-10pt]","\n")
+        
+  	cat(paste("\\textsf{",PatientDoctorNameKey,":} & \\textsf{", PatientDoctorNameValue ,"}\\\\",sep = ""),"\n")
+
+        PatientDoctorAddValue<-gsub("\\&","\\\\&",PatientDoctorAddValue)  
+
+        docadd<-strsplit(as.character(PatientDoctorAddValue),"`")
+        cat(paste("\\textsf{",PatientDoctorAddKey,":} & \\textsf{", docadd[[1]][1] ,"}\\\\",sep = ""),"\n")
+
+	for (idx in 2:7) {
+           if(is.na(docadd[[1]][idx]) == FALSE)
+           {
+              if (docadd[[1]][idx] != "") { cat(paste(" & \\textsf{",docadd[[1]][idx],"}\\\\", sep = ""),"\n"); }
+           }
+        }
+
+	cat("\n","\\end{tabular}","\n")  
+        cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}")
+@ % end chunk = 5
+
+\end{minipage}
+\end{mdframed}
+\definecolor{textcol}{rgb}{.118, .565, 1.00}
+\newpage
+\pagestyle{empty}
+
+%chunk = 6
+<<echo=FALSE,results=tex>>=
+
+################################### Letter Section ###################
+
+cat("\\small","\n")
+cat("\\pagestyle{fancy}","\n")
+
+cat("\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,innerleftmargin=20,innertopmargin=20,innerbottommargin=20,innerrightmargin=20,everyline = true, outerlinewidth=5, splittopskip=1cm, splitbottomskip=.5cm]","\n")
+cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}","\n")
+
+LetterName<-xmlValue(top[["Letter"]][["LetterName"]])
+LetterContent<-xmlValue(top[["Letter"]][["LetterContent"]])
+LetterSignature<-xmlValue(top[["Letter"]][["LetterSignature"]])
+LetterHead<-xmlValue(top[["Images"]][["LetterHead"]])
+cat("~\\\\","\n")
+cat(paste(LetterName," ",PatientNameValue,",",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+cat(LetterContent)
+
+if(ChipType != "CRD")
+{
+  cat("~\\\\","\n")
+  cat("~\\\\","\n")
+}
+cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+cat("\\includegraphics[trim=0cm 0cm 0cm 0.1cm, clip=true,width=0.5\\linewidth]{Signature.jpg}","\n")
+cat("\\end{minipage}","\n")
+cat("~\\\\","\n")
+cat(LetterSignature)
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+cat(paste("\\includegraphics[width=0.3\\linewidth]{",logo,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+if(ChipType !="CRD")
+{
+  cat("~\\\\[60pt]","\n")
+}
+
+
+cat("\\end{mdframed}","\n")
+cat("\\newpage","\n")
+cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{1.0\\textwidth}{\\raggedright","\\includegraphics[width=0.18\\linewidth]{",logo,"}}","\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedleft 3} \\end{mdframed}}",sep=""),"\n")
+cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{1.0\\textwidth}{\\raggedleft","\\includegraphics[width=0.18\\linewidth]{",logo,"}}","\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedright 3} \\end{mdframed}}",sep=""),"\n")
+cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}","\n")
+cat("\\fancyfoot[C]{\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=white,outerlinewidth=.1, innerleftmargin=0,innertopmargin=0,innerbottommargin=0,innerrightmargin=0,everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedright{\\scriptsize", PatientIdValue,"}}"),"\n")
+cat(paste("\\parbox[t]{0.31\\textwidth}{\\centering{\\scriptsize\\thepage}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedleft{\\scriptsize", PatientReportDateValue,"}}"),"\n")
+cat("\\end{mdframed}}","\n")
+
+cat("\\renewcommand{\\headrulewidth}{0pt}","\n")
+cat("\\renewcommand{\\footrulewidth}{0pt}","\n")
+
+cat("\\pagestyle{empty}","\n")
+cat("\\clearpage","\n")
+
+cat("\\begin{center}")
+cat(paste("\\ThisULCornerWallPaper{1.0}{./image/Section/Report_photo_",lang,".pdf}",sep=""),"\n")
+
+cat("\\end{center}")
+
+cat("\\newpage","\n")
+cat("\\pagestyle{fancy}","\n")
+cat("\\setcounter{page}{1}","\n")
+cat("\\footnotesize","\n")
+cat("~\\\\[-35pt]","\n")
+LimitationTitle<-xmlValue(top[["Limitation"]][["LimitationTitle"]])
+LimitationText<-xmlValue(top[["Limitation"]][["LimitationText"]])
+cat("~\\\\","\n")
+cat("\\begin{center}")
+cat(paste("\\textcolor{textcol}{\\textbf{",LimitationTitle,"}}",sep=""),"\n")
+cat("\\end{center}")
+cat("~\\\\[-10pt]","\n")
+cat(paste("\\nohyphens{",LimitationText,"}",sep=""),"\n")
+cat("\\newpage","\n")
+TermsTitle<-xmlValue(top[["Terms"]][["TermsTitle"]])
+TermsContents<-xmlValue(top[["Terms"]][["TermsContents"]])
+
+cat("\\begin{center}")
+cat(paste("{\\textcolor{textcol}{",TermsTitle,"}}",sep=""),"\n")
+cat("\\end{center}")
+
+cat("\\footnotesize","\n")
+cat("~\\\\[-10pt]","\n")
+cat(paste("\\nohyphens{",TermsContents,"}",sep=""),"\n")
+cat("~\\\\[-5pt]","\n")
+cat(paste("\\begin{minipage}{.05\\linewidth}","\n"))
+cat("\\hspace{.5cm}","\n")
+cat("\\end{minipage}","\n")
+
+################################### Section I Image ###################
+cat("\\ifthenelse{\\isodd{\\thepage}}{}{\\newpage\\mbox{}\\thispagestyle{empty}\\newpage}","\n")
+cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+cat(paste("\\includegraphics[width=0.3\\linewidth]{",logo,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+cat("\\needspace{5cm}","\n")
+cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+cat("\\vspace{3cm}","\n")
+cat("\\end{minipage}","\n")
+
+cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+
+if(lang == "zh")
+{
+   imagewidth_CRD= 1.0
+   imagewidth = 0.7
+} else {
+   imagewidth_CRD= 1.3
+   imagewidth = 1.0
+}
+
+if(ChipType == "CRD")
+{
+   if(lang == "zh") {
+      cat(paste("\\includegraphics[trim=0.25cm 0.1cm 0cm 0cm, clip=true,width=",imagewidth_CRD,"\\linewidth]{",Section1,"}",sep=""),"\n")
+   } else {
+      cat(paste("\\includegraphics[trim=0.25cm 0.3cm 0cm 0cm, clip=true,width=",imagewidth_CRD,"\\linewidth]{",Section1,"}",sep=""),"\n")
+   }
+ } else {
+   cat(paste("\\includegraphics[trim=0cm 0.1cm 0cm 0cm, clip=true,width=",imagewidth,"\\linewidth]{",Section1,"}",sep=""),"\n")
+}
+
+if(lang == "zh" && ChipType != "CRD"){
+   cat("~\\\\[-5pt]","\n")
+} else {
+   cat("~\\\\[-15pt]","\n")
+}
+
+cat("\\linethickness{.3mm}","\n")
+cat("\\textcolor{logcol}{\\line(1,0){330}}","\n")
+cat("\\end{minipage}","\n")
+cat(paste("\\ThisLRCornerWallPaper{1.0}{",backgroundimage,"}",sep=""),"\n")
+cat("\\thispagestyle{empty}","\n")
+#cat("\\newpage\\mbox{}\\thispagestyle{empty}\\newpage","\n")
+cat("\\newpage","\n")
+
+################################### Increased Genetic Risk Summary ###################
+
+rsize<-xmlSize(xmlChildren(top[["Summary"]][["Results"]]))
+art = top[["Summary"]][["Results"]]
+data<-xmlSApply(art, function(x) xmlSApply(x, xmlValue))
+diseasename<-numeric(0)
+
+
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+TableTitle_Tmp<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Title"]])
+TableTitle<-sub("\\$\\{cover_title\\}",CoverTitle,TableTitle_Tmp)
+
+cat("~\\\\[-5pt]","\n")
+
+cat("\\begin{center}")
+cat(paste("{ \\normalsize \\textbf{",TableTitle,"}}",sep=""),"\n")
+cat("\\end{center}")
+
+cat("~\\\\","\n")
+#cat("~\\\\","\n")
+
+Header1<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col1"]])
+Header2<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col2"]])
+Header3<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col3"]])
+Header4<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col4"]])
+Header5<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col5"]])
+Header6<-xmlValue(top[["SummaryIncreasedRiskTable"]][["Col6"]])
+
+cat("\\vspace{-16pt}","\n")
+cat("\\arrayrulecolor{black}","\n")
+
+if (runtype == 1)
+{
+    diseaseindexfile<-read.csv("GSS_Report_Revamp.disindex",sep="^",quote="\"",header=F)
+    indexmap=list()
+    for (ii in 1:nrow(diseaseindexfile))
+    {
+         disname<-diseaseindexfile[ii,1]
+         dname<-gsub(" ","_",disname)
+         dname<-gsub("\\'","",dname)
+         indexmap[[dname]]= diseaseindexfile[ii,2]
+    }
+
+    rcount<-0
+    column1<-numeric(0)
+    column2<-numeric(0)
+    column3<-numeric(0)
+    column4<-numeric(0)
+    column5<-numeric(0)
+
+    for (rs in 1:rsize) {
+         tag<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Type")
+ 
+         if (tag == "Disease" && as.numeric(data[5,rs]) > 1) {
+             disname<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Name")
+             dname<-gsub(" ","_",disname)
+             dname<-gsub("\\'","",dname)
+ 
+             push(column1,disname)
+             push(column2,data[3,rs])
+             push(column3,data[4,rs])
+             push(column4,data[5,rs])
+             push(column5,indexmap[[dname]])
+             rcount<-rcount+1
+         }
+    }
+
+    newdata <- data.frame(col1=column1, col2=column2, col3=column3, col4=column4,col5=column5)
+    sorteddata <- newdata[order(newdata$col4,decreasing = TRUE), ]
+ 
+    cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|P{2.8cm}|M{1.1cm}|P{1.4cm}|M{1.2cm}|M{1.8cm}|M{0.8cm}|}","\n")
+    cat("\\hline","\n")
+
+    cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",Header1,"}} &\\textbf{ \\textcolor{white}{",Header2,"}} &\\textbf{ \\textcolor{white}{",Header3,"}}  &\\textbf{ \\textcolor{white}{",Header4,"}} &\\textbf{ \\textcolor{white}{",Header5,"}} &\\textbf{ \\textcolor{white}{",Header6,"}} \\\\",sep=""),"\n")
+    cat("\\endfirsthead","\n")
+
+    cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",Header1,"}} &\\textbf{ \\textcolor{white}{",Header2,"}} &\\textbf{ \\textcolor{white}{",Header3,"}}  &\\textbf{ \\textcolor{white}{",Header4,"}} &\\textbf{ \\textcolor{white}{",Header5,"}} &\\textbf{ \\textcolor{white}{",Header6,"}} \\\\",sep=""),"\n")
+    cat("\\endhead","\n")
+
+    rcount<-0     
+    if (nrow(sorteddata) != 0 )
+    {
+        for (rs in 1:nrow(sorteddata)) {
+
+             if (as.numeric(sorteddata[rs,4]) > 2) { 
+                cat("\\rowcolor[RGB]{243,189,185}","\n")   #{254,179,164},{253,162,137}                
+             }  
+             else  { 
+                cat("\\rowcolor[RGB]{251,204,157}","\n")   # {249,177,105
+             }
+ 
+             cat(paste(sorteddata[rs,1],sep=""),"\n")
+             cat(paste("& ", sorteddata[rs,4],sep=""),"\n")
+             cat (paste("& ", " ",sep=""),"\n")
+             cat (paste("& ", " ",sep=""),"\n")
+
+             cat (paste("& ", " ",sep=""),"\n")
+             cat (paste("& ", sorteddata[rs,5]," \\\\",sep=""),"\n")
+
+             cat("\\hline","\n")
+             rcount<-rcount+1
+        }
+    }
+    else
+    {
+        cat("\\hline","\n") 
+        text<-SummaryNoRisk
+        cat(paste("\\multicolumn{5}{|m{11cm}|}{\\centering ",text,"} \\\\",sep=""),"\n") 
+        cat("\\hline","\n")
+    }
+    cat("\\end{longtable}}","\n")
+}
+    
+cat("\\newpage","\n")
+
+################################### Typical and Decreased Genetic Risk Summary ###################
+
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+TableTitle_Tmp<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Title"]])
+TableTitle<-sub("\\$\\{cover_title\\}",CoverTitle,TableTitle_Tmp)
+TableTitle<-sub("Report","",TableTitle)
+
+cat("~\\\\[-5pt]","\n")
+
+cat("\\begin{center}")
+cat(paste("{ \\normalsize \\textbf{",TableTitle,"}}",sep=""),"\n")
+cat("\\end{center}")
+
+cat("~\\\\","\n")
+#cat("~\\\\","\n")
+
+Header1<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col1"]])
+Header2<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col2"]])
+Header3<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col3"]])
+Header4<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col4"]])
+Header5<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col5"]])
+Header6<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Col6"]])
+
+cat("\\vspace{-16pt}","\n")
+cat("\\arrayrulecolor{black}","\n")
+
+if (runtype == 1)
+{
+    rcount<-0
+    column1<-numeric(0)
+    column2<-numeric(0)
+    column3<-numeric(0)
+    column4<-numeric(0)
+    column5<-numeric(0)
+
+    for (rs in 1:rsize) {
+         tag<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Type")
+
+         if (tag == "Disease" && as.numeric(data[5,rs]) <= 1) {
+             disname<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Name")
+             dname<-gsub(" ","_",disname)
+             dname<-gsub("\\'","",dname)
+
+             push(column1,disname)
+             push(column2,data[3,rs])
+             push(column3,data[4,rs])
+             push(column4,data[5,rs])
+             push(column5,indexmap[[dname]])
+             rcount<-rcount+1
+         }
+    }
+
+    newdata <- data.frame(col1=column1, col2=column2, col3=column3, col4=column4,col5=column5)
+    sorteddata <- newdata[order(newdata$col4,decreasing = TRUE), ]
+
+    cat("{\\renewcommand{\\arraystretch}{1.8}\\begin{longtable}{|P{2.8cm}|M{1.1cm}|P{1.4cm}|M{1.2cm}|M{1.8cm}|M{0.8cm}|}","\n")
+    cat("\\hline","\n")
+    cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",Header1,"}} &\\textbf{ \\textcolor{white}{",Header2,"}} &\\textbf{ \\textcolor{white}{",Header3,"}}  &\\textbf{ \\textcolor{white}{",Header4,"}} &\\textbf{ \\textcolor{white}{",Header5,"}} &\\textbf{ \\textcolor{white}{",Header6,"}} \\\\",sep=""),"\n")
+    cat("\\endfirsthead","\n")
+
+    cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",Header1,"}} &\\textbf{ \\textcolor{white}{",Header2,"}} &\\textbf{ \\textcolor{white}{",Header3,"}}  &\\textbf{ \\textcolor{white}{",Header4,"}} &\\textbf{ \\textcolor{white}{",Header5,"}} &\\textbf{ \\textcolor{white}{",Header6,"}} \\\\",sep=""),"\n")
+    cat("\\endhead","\n")
+
+    rcount<-0
+    if (nrow(sorteddata) != 0 )
+    {
+        for (rs in 1:nrow(sorteddata)) {
+             cat("\\rowcolor[RGB]{255,255,0}","\n") #cat("\\rowcolor{rowcol}","\n")
+             cat(paste(sorteddata[rs,1],sep=""),"\n")
+             cat(paste("& ", sorteddata[rs,4],sep=""),"\n")
+             cat (paste("& ", " ",sep=""),"\n")
+             cat (paste("& ", " ",sep=""),"\n")
+             cat (paste("& ", " ",sep=""),"\n")
+             cat (paste("& ", sorteddata[rs,5],"\\\\",sep=""),"\n")
+             cat("\\hline","\n")
+             rcount<-rcount+1
+        }
+    }
+    else
+    {
+        cat("\\hline","\n")
+        text<-SummaryNoRisk
+        cat(paste("\\multicolumn{5}{|m{11cm}|}{\\centering ",text,"} \\\\",sep=""),"\n")
+        cat("\\hline","\n")
+    }
+    cat("\\end{longtable}}","\n")
+}
+    
+cat("~\\\\","\n")
+Caption<-xmlValue(top[["SummaryTypicalAndDecreasedRiskTable"]][["Caption"]])  
+cat(paste("{ ",Caption,"}",sep=""),"\n")
+ 
+cat("\\newpage","\n")
+
+################################### Drug Summary (Only apply to Cardio) ###################
+
+if (ChipType=="CRD" && runtype == 1)
+{
+     cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+     TableTitle_Tmp<-xmlValue(top[["SummaryDrugTable"]][["Title"]])
+     TableTitle<-sub("\\$\\{cover_title\\}",CoverTitle,TableTitle_Tmp)
+     TableTitle<-sub("Report","",TableTitle)
+
+     cat("~\\\\[-5pt]","\n")
+     cat(paste("{\\normalsize \\textbf{",TableTitle,"}}",sep=""),"\n")
+     cat("~\\\\","\n")
+     cat("~\\\\","\n")
+
+      DrugHeader1<-xmlValue(top[["SummaryDrugTable"]][["Col1"]])
+      DrugHeader2<-xmlValue(top[["SummaryDrugTable"]][["Col2"]])
+      DrugHeader3<-xmlValue(top[["SummaryDrugTable"]][["Col3"]])
+      DrugHeader4<-xmlValue(top[["SummaryDrugTable"]][["Col4"]])
+
+      cat("\\vspace{-16pt}","\n")
+      cat("\\scriptsize ","\n")
+
+      cat("\\arrayrulecolor{black}","\n")
+
+      cat("\\definecolor{textcol_drug}{rgb}{0.556863,0.486275,0.764706}","\n")
+      cat("\\definecolor{rowcol_drug}{rgb}{ .851, .824, .914}","\n")
+
+      if (lang == "zh")
+      {
+          cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|P{3.3cm}|M{1.9cm}|M{4cm}|M{0.8cm}|}","\n")
+      } 
+      else
+      {
+          cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|P{3.5cm}|M{1.5cm}|M{4cm}|M{1cm}|}","\n")
+      }
+
+      cat("\\hline","\n")     
+      cat(paste("\\rowcolor{textcol_drug} \\textbf{ \\textcolor{white}{",DrugHeader1,"}} &\\textbf{ \\textcolor{white}{",DrugHeader2,"}} &\\textbf{ \\textcolor{white}{",DrugHeader3,"}}  &\\textbf{ \\textcolor{white}{",DrugHeader4,"}}  \\\\",sep=""),"\n")
+      cat("\\endfirsthead","\n")
+      cat(paste("\\rowcolor{textcol_drug} \\textbf{ \\textcolor{white}{",DrugHeader1,"}} &\\textbf{ \\textcolor{white}{",DrugHeader2,"}} &\\textbf{ \\textcolor{white}{",DrugHeader3,"}}  &\\textbf{ \\textcolor{white}{",DrugHeader4,"}}  \\\\",sep=""),"\n")
+      cat("\\endhead","\n") 
+
+      drugsummaryfile<-numeric(0)
+      drugsummaryfile<-read.csv("GSS_Report_Revamp.comment",sep="'",header=F)
+           
+      for (rcnt in 1:nrow(drugsummaryfile))
+      {              
+           cat("\\hline","\n")
+           cat("\\rowcolor{rowcol_drug}","\n")
+           cat(paste(drugsummaryfile[rcnt,1]," &",drugsummaryfile[rcnt,2]," &",drugsummaryfile[rcnt,3]," &",drugsummaryfile[rcnt,4],"\\\\",sep=""),"\n")                 
+      }
+
+      cat("\\hline","\n")
+      cat("\\end{longtable}}","\n")
+}
+
+cat("\\newpage","\n")
+
+################################### General Life Style Changes Statements ###################
+
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+cat("~\\\\[-5pt]","\n")
+
+Title<-xmlValue(top[["GeneralLifeStyle"]][["Title"]])
+Content1<-xmlValue(top[["GeneralLifeStyle"]][["Content1"]])
+Content2<-xmlValue(top[["GeneralLifeStyle"]][["Content2"]])
+
+cat(paste("{ \\normalsize \\textbf{",Title,"}}",sep=""),"\n")
+cat(paste("{ \\normalsize ",Content1,"}",sep=""),"\n")
+
+cat("\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,innerleftmargin=10,innertopmargin=5,innerbottommargin=10,innerrightmargin=10,everyline = true, outerlinewidth=2, splittopskip=1cm, splitbottomskip=.5cm]","\n")
+cat(paste("{ \\normalsize ",Content2,"}",sep=""),"\n")
+cat("\\end{mdframed}")
+cat("\\newpage","\n")
+
+################################### Interpretation ###################
+
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+cat("~\\\\[-5pt]","\n")
+
+Title_Tmp<-xmlValue(top[["Interpretation"]][["Title"]])
+Title<-sub("\\$\\{cover_title\\}",CoverTitle,Title_Tmp)
+
+cat(paste("{ \\normalsize \\textbf{",Title,"}}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+Content1<-xmlValue(top[["Interpretation"]][["Content1"]])
+cat(paste("{",Content1,"}",sep=""),"\n")
+
+Content2_Tmp<-xmlValue(top[["Interpretation"]][["Content2"]])
+Content2_Tmp<-gsub("\\$\\{udrline_start\\}","\\\\underline\\{",Content2_Tmp)
+Content2<-gsub("\\$\\{udrline_stop\\}","\\}",Content2_Tmp)
+
+cat("\\begin{mdframed}[linecolor=red,roundcorner=0pt,innerleftmargin=10,innertopmargin=5,innerbottommargin=10,innerrightmargin=10,everyline = true, outerlinewidth=2, splittopskip=1cm, splitbottomskip=.5cm]","\n")
+cat(paste("{",Content2,"}",sep=""),"\n")
+cat("\\end{mdframed}","\n")
+
+cat("\\newpage","\n")
+
+################################### Risk Scores Definition ###################
+
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+cat("~\\\\[-5pt]","\n")
+
+Title<-xmlValue(top[["RiskScoresDefinition"]][["Title"]])
+cat(paste("{ \\normalsize \\textbf{",Title,"}}",sep=""),"\n")
+
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+Content1<-xmlValue(top[["RiskScoresDefinition"]][["Content1"]][["Text"]])
+cat(paste("{",Content1,"}",sep=""),"\n")
+
+Formula1<-xmlValue(top[["RiskScoresDefinition"]][["Content1"]][["Formula1"]])
+Formula2_Tmp<-xmlValue(top[["RiskScoresDefinition"]][["Content1"]][["Formula2"]])
+Formula2_Tmp<-sub("\\$\\{color_red_start\\}","\\\\textcolor\\{red\\}\\{",Formula2_Tmp)
+Formula2<-sub("\\$\\{color_red_stop\\}","\\}",Formula2_Tmp)
+Formula3<-xmlValue(top[["RiskScoresDefinition"]][["Content1"]][["Formula3"]])
+cat("{\\begin{longtable}{P{1.4cm}P{10.2cm}}","\n")
+cat(paste("  & ",Formula1,"\\\\",sep=""),"\n")
+cat(paste("\\normalsize ",Formula2," & \\begin{flushleft} \\linethickness{1mm} \\line(1,0){268} \\end{flushleft} \\\\",sep=""),"\n") #\\textemdas
+cat(paste("  & ",Formula3,"\\\\",sep=""),"\n")
+cat("\\end{longtable}}","\n")
+
+
+Content2<-xmlValue(top[["RiskScoresDefinition"]][["Content2"]][["Text"]])
+cat(paste("{",Content2,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+
+SubTitle3<-xmlValue(top[["RiskScoresDefinition"]][["Content3"]][["SubTitle"]])
+cat(paste("{ \\normalsize ",SubTitle3,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+Content3<-xmlValue(top[["RiskScoresDefinition"]][["Content3"]][["Text"]])
+cat(paste("{",Content3,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+
+SubTitle4<-xmlValue(top[["RiskScoresDefinition"]][["Content4"]][["SubTitle"]])
+cat(paste("{ \\normalsize ",SubTitle4,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+Content4<-xmlValue(top[["RiskScoresDefinition"]][["Content4"]][["Text"]])
+cat(paste("{",Content4,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+
+SubTitle5<-xmlValue(top[["RiskScoresDefinition"]][["Content5"]][["SubTitle"]])
+cat(paste("{ \\normalsize ",SubTitle5,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+Content5<-xmlValue(top[["RiskScoresDefinition"]][["Content5"]][["Text"]])
+cat(paste("{",Content5,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+
+Content6<-xmlValue(top[["RiskScoresDefinition"]][["Content6"]][["Text"]])
+cat(paste("{",Content6,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+Formula_Tmp<-xmlValue(top[["RiskScoresDefinition"]][["Content6"]][["Formula"]])
+Formula_Tmp<-gsub("\\$\\{color_red_start\\}","\\\\textcolor\\{red\\}\\{",Formula_Tmp)
+Formula<-gsub("\\$\\{color_red_stop\\}","\\}",Formula_Tmp)
+cat(paste("{ \\normalsize ",Formula,"}",sep=""),"\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+cat("~\\\\","\n")
+
+
+Content7<-xmlValue(top[["RiskScoresDefinition"]][["Content7"]][["Text"]])
+cat(paste("{",Content7,"}",sep=""),"\n")
+
+cat("\\newpage","\n")
+
+################################### Section II Image ###################
+        
+         cat("\\footnotesize","\n")
+         cat("\\ifthenelse{\\isodd{\\thepage}}{}{\\newpage\\mbox{}\\thispagestyle{empty}\\newpage}","\n")
+
+
+         cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+         cat(paste("\\includegraphics[width=0.3\\linewidth]{",logo,"}",sep=""),"\n")
+         cat("\\end{minipage}","\n")
+         cat("\\needspace{5cm}","\n")
+         cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+         cat("\\vspace{3cm}","\n")
+         cat("\\end{minipage}","\n")
+
+         cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+
+         if(lang == "zh")
+         {
+            cat(paste("\\includegraphics[trim=0.23cm 0.1cm 0cm 0cm, clip=true,width=0.7\\linewidth]{",Section2,"}",sep=""),"\n")            
+            cat("~\\\\[-2pt]","\n")
+         } else {
+            cat(paste("\\includegraphics[trim=0cm 0.1cm 0cm 0cm, clip=true,width=1.0\\linewidth]{",Section2,"}",sep=""),"\n")         
+            cat("~\\\\[-15pt]","\n")
+         }
+
+         cat("\\linethickness{.3mm}","\n")
+         cat("\\textcolor{logcol}{\\line(1,0){330}}","\n")
+         cat("\\end{minipage}","\n")
+         cat(paste("\\ThisLRCornerWallPaper{1.0}{",backgroundimage,"}",sep=""),"\n")
+         cat("\\thispagestyle{empty}","\n")
+         cat("\\newpage\\mbox{}\\thispagestyle{empty}","\n")
+
+########################################################################
+
+@ % end chunk = 6
+
+\ifthenelse{\isodd{\thepage}}%
+{
+\mbox{}
+\thispagestyle{empty}
+\newpage
+}
+\clearpage
+%chunk = 7
+<<echo=FALSE,results=tex>>=
+#summaryheader<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Header"]])
+#summarytitle<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Title"]])
+
+#cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,backgroundcolor=textcol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedright","\\textbf{ \\textcolor{white}{\\sffamily \\normalsize ",summaryheader,"}}","}\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedleft 3} \\end{mdframed}}",sep=""),"\n")
+#cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,backgroundcolor=textcol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedleft","\\textbf{ \\textcolor{white}{\\sffamily \\normalsize ",summaryheader,"}}","}\\end{mdframed}}",sep=""),"\n")
+#cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}","\n")
+#cat(paste("\\renewcommand{\\contentsname}{\\normalsize \\textcolor{textcol}{",summarytitle,"}}",sep=""))
+@ % end chunk =7
+
+%chunk = 8
+<<echo=FALSE,results=hide>>=
+title<-xmlValue(top[["Summary"]][["Title"]])
+#numfootnote<-xmlSize(top[["Summary"]][["Footnotes"]])
+#for (fc in 1:numfootnote) {
+#     if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "PopulationZero") {
+#         PopulationZero<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }
+#     if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "PatientZero") {
+#         PatientZero<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }
+#     if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "UND") {
+#         UND<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }  
+#      if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "risk_footnote1") {
+#         risk_footnote1<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }
+
+#      if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "risk_footnote2") {
+#         risk_footnote2<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }
+
+#      if(xmlGetAttr(top[["Summary"]][["Footnotes"]][fc][["Footnote"]],"id") == "risk_footnote3") {
+#         risk_footnote3<-xmlValue(top[["Summary"]][["Footnotes"]][fc][["Footnote"]]);
+#     }
+#}
+
+#xmlGetAttr(top[["Summary"]][["Footnotes"]][1][["Footnote"]],"id")
+summarytext<-xmlValue(top[["Summary"]][["Disclaimer"]])
+legendpatient<-xmlValue(top[["Summary"]][["Legends"]][["Patient"]])
+legendpopulation<-xmlValue(top[["Summary"]][["Legends"]][["Population"]])
+xlable<-xmlValue(top[["Summary"]][["XLabel"]])
+
+rsize<-xmlSize(xmlChildren(top[["Summary"]][["Results"]]))
+art = top[["Summary"]][["Results"]]
+data<-xmlSApply(art, function(x) xmlSApply(x, xmlValue))
+diseasename<-numeric(0)
+
+x<-numeric(0)
+y<-numeric(0)
+xx<-numeric(0)
+yy<-numeric(0)
+riskvalue<-numeric(0)
+
+names<-numeric(0)
+map = list()
+rmap =list()
+PositionText<-xmlValue(top[["Titles"]][["LegendYourRisk"]])
+DrugTitle<-xmlValue(top[["Titles"]][["DrugTitle"]])
+
+for (rs in 1:rsize)
+{ 
+     tag<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Type")      
+     if (tag == "Disease") {
+         push(xx,as.numeric(data[1,rs])) 
+         push(yy,as.numeric(data[2,rs]))
+
+         riskvalue<-data[5,rs]
+         #riskvalue<-data[3,rs]    #temporary changed from 3 to 5
+         disname<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Name")
+         dname<-gsub(" ","_",disname)
+         dname<-gsub("\\'","",dname)
+         rmap[[dname]]= TypicalRisk   #temporary fix
+
+         disid<-xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"ID")
+         ImageName<-paste(disid,".pdf",sep="")
+         cat("~\\\\","\n")       
+     
+         rr<-numeric(0)
+         if (length(riskfile[[disid]]) !=0)
+         {
+             cat("\\leavevmode","\n")
+             cat("\\newline","\n")
+             x<-riskfile[[disid]]
+             if (length(subset(x, x==1)) != 1207)       #quick and dirty solution
+             {
+                 generateimage(ImageName,log2(as.numeric(as.character(riskvalue))),riskfile[[disid]],PositionText,top)
+             }
+             ################################################################
+             pos<-log2(as.numeric(as.character(riskvalue)))
+             x<-log2(as.numeric(as.character(riskfile[[disid]]))) 
+                
+             if (length(table(x))<15)
+             {
+                 plot<-boxplot(x,boxwex = .25,horizontal=TRUE,axes=FALSE,outline=TRUE)
+                 minval<-min(x)
+                 maxval<-max(x)
+             }
+             else
+             {
+                 plot<-boxplot(x,boxwex = .25,horizontal=TRUE,axes=FALSE,outline=FALSE)
+                 minval<-plot$stats[1]
+                 maxval<-plot$stats[5]
+             }
+
+             if (pos > maxval)
+             {
+                 pos=maxval
+             }
+             else if(pos < minval)
+             {
+                 pos=minval
+             }
+
+             Q1<-quantile(x,0.25)
+             Q3<-quantile(x,0.75) 
+
+             cat(paste("minval = ",minval,sep=""))
+             cat(paste("Q1 = ",Q1,sep=""))
+             cat(paste("Q3 = ",Q3,sep=""))
+             cat(paste("maxval = ",maxval,sep=""))
+
+             if (riskvalue < 1.0001)                               #need to modify statment for typical risk
+             {
+          	 map[[dname]]= TypicalRisk
+ 	     }
+             else if(riskvalue < 1.3)
+             {
+                 map[[dname]]= SlightlyIncreasedRisk
+             }
+             else 
+             {
+                 map[[dname]]= IncreasedRisk
+             } 
+
+             if (pos > quantile(x,0.75))
+             {
+                 rmap[[dname]]= IncreasedRisk
+             }
+             ################################################################
+         }
+
+         push(names,xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Name"))
+     }
+     push (diseasename, xmlGetAttr(top[["Summary"]][["Results"]][rs][["Result"]],"Name"))
+}
+
+x<-as.numeric(data[1,])
+y<-as.numeric(data[2,])
+dd<-cbind(rev(yy),rev(xx))
+
+for (ii in 1:length(xx)) {
+   if(xx[ii] == 0) {
+      names[ii] = paste(names[ii],"*",sep="")
+   }
+   if(yy[ii] == 0) {
+      names[ii] = paste(names[ii],"+",sep="")
+   }
+}
+rownames(dd)<-rev(names)
+
+@ % end chunk = 8
+
+%########################################################################
+
+%\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=gray,outerlinewidth=.1, innerleftmargin=10, innerrightmargin=10, innertopmargin=10,innerbottommargin=10, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]
+
+%chunk = 9
+<<echo=FALSE,results=tex>>=
+#UpperText<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["UpperText"]])
+#LowerText<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["LowerText"]])
+#FootnoteText<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["FootnoteText"]])
+#cat(paste("\\nohyphens{",UpperText,"}",sep=""),"\n")
+#Cell_1_1<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_1_1"]])
+#Cell_1_2<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_1_2"]])
+#Cell_2_1<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_2_1"]])
+#Cell_2_2<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_2_2"]])
+#Cell_3_1<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_3_1"]])
+#Cell_3_2<-xmlValue(top[["Summary"]][["SummaryPlot"]][["Interpretation"]][["Cell_3_2"]])
+#cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|*{3}{>{\\arraybackslash}p{2.5cm}|>{\\arraybackslash}p{7.7cm}|}}","\n")
+#cat("\\hline","\n")
+#cat(paste("\\tikz{\\path[draw=black,fill=green] (0,0) rectangle (.25cm,.25cm);}\\hspace{2mm} ",Cell_1_1, " &", Cell_1_2,"\\\\",sep=""),"\n")
+#cat("\\hline","\n")
+#cat(paste("\\tikz{\\path[draw=black,fill=yel] (0,0) rectangle (.25cm,.25cm);}\\hspace{2mm} ",Cell_2_1, " &", Cell_2_2,"\\\\",sep=""),"\n")
+#cat("\\hline","\n")
+#cat(paste("\\tikz{\\path[draw=black,fill=red] (0,0) rectangle (.25cm,.25cm);}\\hspace{2mm} ",Cell_3_1, " &", Cell_3_2,"\\\\",sep=""),"\n")
+#cat("\\hline","\n")
+#cat("\\end{longtable}}","\n")
+#cat("\\vspace{-15pt}","\n")
+#cat(paste("\\scriptsize",FootnoteText,sep=""),"\n")
+#cat("~\\\\","\n")
+#cat("~\\\\","\n")
+#cat("\\footnotesize","\n")
+#cat(paste("\\nohyphens{",LowerText,"}",sep=""),"\n")
+@ % end chunk = 9
+%\end{mdframed}%
+%~\\
+
+%\tableofcontents
+\newpage
+\newwrite\indexfile
+\openout\indexfile=\jobname.disindex
+
+%chunk = 10
+<<echo=FALSE ,results=tex>>=
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+cat("\\small","\n")
+
+
+diseases<-top[["Diseases"]]["Disease"]
+if(xmlSize(diseases) !=0)
+{
+cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}")
+cat("\\definecolor{rowcol}{rgb}{.604, .847, .953}")
+cat("\\definecolor{maincol}{rgb}{.219, .6941, .8941}")
+
+Title<-xmlValue(top[["Diseases"]][["Title"]])
+risktitle<-xmlValue(top[["Diseases"]][["ProfileTitle"]])
+questionLogo<-xmlValue(top[["Diseases"]][["QuestionLogo"]])
+booklogo<-xmlValue(top[["Diseases"]][["BookLogo"]])
+risklogo<-xmlValue(top[["Diseases"]][["RiskLogo"]])
+
+ImageTitle_Tmp<-xmlValue(top[["Titles"]][["BoxPlot"]][["Title"]])
+
+TableTitle_Tmp<-xmlValue(top[["Titles"]][["TableTitle"]])
+cat("\\vspace{-.6cm}","\n")
+
+TableCaption<-top[["Titles"]][["TableCaption"]]
+
+
+for (i in 1:xmlSize(diseases))
+{       
+     cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}")
+     cat("\\definecolor{rowcol}{rgb}{.604, .847, .953}")
+     cat("\\definecolor{maincol}{rgb}{.219, .6941, .8941}")
+     name<-xmlValue(diseases[i][["Disease"]][["Name"]])
+     disid<-xmlGetAttr(diseases[i][["Disease"]],"ID") 
+     total_marker<-xmlValue(diseases[i][["Disease"]][["TotalMarker"]])
+     
+     traitflag<-xmlGetAttr(diseases[i][["Disease"]],"Trait")
+     TableTitle<-sub("\\$\\{disease_name\\}",name,TableTitle_Tmp)
+     ImageTitle<-sub("\\$\\{disease_name\\}",name,ImageTitle_Tmp)
+     cat(paste("\\write\\indexfile{",name,"^" ,"\\thepage}",sep=""),"\n") 
+
+     cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,backgroundcolor=textcol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedright","\\textbf{ \\textcolor{white}{\\normalsize ",name,"}}","}\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedleft 3} \\end{mdframed}}",sep=""),"\n")
+     cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=textcol,roundcorner=0pt,backgroundcolor=textcol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedleft","\\textbf{ \\textcolor{white}{\\normalsize ",name,"}}","}\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedright 3} \\end{mdframed}}",sep=""),"\n")
+ 
+     cat(paste("\\addcontentsline{toc}{section}{\\small ",name,"}",sep=""),"\n")
+     riskcount<-xmlValue(diseases[i][["Disease"]][["Risk"]][["YourRisk"]])
+     cat("~\\\\[-28pt]","\n")
+     cat("\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=gray,outerlinewidth=.1, innerleftmargin=12, innerrightmargin=12, innertopmargin=8,innerbottommargin=8, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n") 
+     cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+     cat(paste("\\includegraphics[width=1.0\\linewidth]{",logo,"}",sep=""),"\n")
+     cat("\\end{minipage}","\n")
+     cat(paste("\\begin{minipage}{0.15\\linewidth}","\n"))
+     cat("\\hspace{0cm}","\n")
+     cat("\\end{minipage}","\n")
+
+     cat(paste("\\begin{minipage}{0.65\\linewidth}","\n"))
+     OverallRelativeRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["OverallRelativeRisk"]])
+     Overall_Risk<-xmlValue(diseases[i][["Disease"]][["Profiles"]][["RelativeRisk"]])
+     OverallTypicalRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["OverallTypicalRisk"]])
+
+     RiskMarkers<-xmlGetAttr(diseases[i][["Disease"]][["Profiles"]][["Total"]],"count")
+
+     if(Overall_Risk <= 1) { OverallRelativeRisk<-OverallTypicalRisk }
+     risk<-TypicalRisk   
+     dname<-gsub(" ","_",name)
+     dname<-gsub("\\'","",dname)
+     ImageFile<-paste("./tmp/",disid,".pdf",sep="");
+
+     #if(length(riskfile[[disid]]) !=0)
+     #{
+     #    risk<-as.character(map[[dname]])
+     #    OverallRelativeRisk<-sub("\\$\\{risk\\}",risk,OverallRelativeRisk)
+     #    OverallRelativeRisk<-sub("\\$\\{overall_risk\\}",Overall_Risk,OverallRelativeRisk)
+     #    OverallRelativeRisk<-sub("\\$\\{total_markers\\}",total_marker,OverallRelativeRisk)
+     #}
+     
+     cat("~\\\\","\n")
+     #if(traitflag == "N")
+     #{
+     #      if (file.exists(ImageFile)) {
+     #        if(Overall_Risk > 1.0001)
+     #        {
+     #            cat(paste("\\textcolor{black}{\\footnotesize ",OverallRelativeRisk,"}",sep=""),"\n")
+                    
+     #        }
+     #        else 
+     #        {
+     #             cat(paste("\\footnotesize ", OverallRelativeRisk,sep=""),"\n")
+     #        }
+     #      }
+     #}
+     #else{    
+     #    risktext<-xmlValue(diseases[i][["Disease"]][["Profiles"]][["Total"]])
+     #    cat(paste("\\footnotesize ", risktext ,sep=""),"\n")        
+     #}   
+
+     NumberOfRiskMarkers<-xmlValue(top[["Titles"]][["NumberOfRiskMarkers"]])             
+     NumberOfRiskMarkers<-sub("\\$\\{your_risk_markers\\}",RiskMarkers,NumberOfRiskMarkers)
+     NumberOfRiskMarkers<-sub("\\$\\{total_markers\\}",total_marker,NumberOfRiskMarkers)
+
+     cat(paste("\\footnotesize \\textbf {", NumberOfRiskMarkers, "}" ,sep=""),"\n") 
+     
+     cat("\\end{minipage}","\n")
+     cat("\\end{mdframed}","\n")
+     cat("~\\\\","\n")
+     riskmarker<-xmlGetAttr(diseases[i][["Disease"]][["Profiles"]][["Negative"]],"count") 
+
+     #if(traitflag == "N")
+     #{
+     #   cat(paste("\\textcolor{textcol}{\\footnotesize \\textbf{",ImageTitle,"}}",sep=""),"\n")
+     #   cat("~\\\\[-5pt]","\n")
+     #   dname<-gsub(" ","_",name)
+     #   dname<-gsub("\\'","",dname)
+        #ImageFile<-paste("./tmp/",disid,".pdf",sep="");
+
+        #cat("\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=gray,outerlinewidth=.1, innerleftmargin=0, innerrightmargin=0, innertopmargin=9,innerbottommargin=9, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+    
+    	#boxplotsubtitle<-xmlValue(top[["Titles"]][["BoxPlot"]][["SubTitle"]])
+    
+    
+        #if (file.exists(ImageFile)) {
+        # 	cat(paste("\\textcolor{white}{----}","\\footnotesize\\textbf{",boxplotsubtitle,"}",sep=""),"\n")
+        # 	cat("~\\\\[-8pt]","\n")
+        # 	cat(paste("\\includegraphics[trim=0.6cm 4.5cm 0cm 1cm, clip=true,width=1.0\\linewidth]{",ImageFile,"}",sep=""),"\n")
+        # 	cat("\\leavevmode","\n")
+        # 	cat("\\newline","\n")  
+        # 	cat(paste("\\includegraphics[trim=2.3cm 4cm 1.5cm 13cm, clip=true,width=0.75\\linewidth]{./tmp/risk_legend.pdf}",sep=""),"\n")   
+        # } else {
+        #    cat("\\vspace{2mm}","\n")           
+        #    cat(paste("\\textcolor{black}{\\footnotesize \\textbf{\\hspace{1cm}You have no risk marker for ",name,"}}",sep=""),"\n");
+        #    cat("\\leavevmode","\n")
+        #    cat("\\newline","\n")
+        # }
+        # cat("\\end{mdframed}","\n")  
+        # BoxPlotCaption<-xmlValue(top[["Titles"]][["BoxPlot"]][["Caption"]]) 
+             
+      
+      	#Overall_Risk<-xmlValue(diseases[i][["Disease"]][["Profiles"]][["RelativeRisk"]])
+      	#BoxPlotCaption<-sub("\\$\\{individual_count\\}","1207",BoxPlotCaption)
+      	#dname<-gsub(" ","_",name)
+      	#dname<-gsub("\\'","",dname)
+      	#risk<-TypicalRisk   #temporary fix for null risk value
+      	#if(length(riskfile[[disid]]) !=0)
+      	#{
+        # 	risk<-as.character(map[[dname]]) 
+        # 	BoxPlotCaption<-sub("\\$\\{risk\\}",risk,BoxPlotCaption)
+      	#}
+
+
+     	#BoxPlotCaption<-sub("\\$\\{disease_name\\}",name,BoxPlotCaption)
+
+     	#cat("\\small","\n")     
+     	#cat("\\leavevmode","\n")
+     	#cat("\\newline","\n")
+     #}
+     ncount<-xmlSize(diseases[i][["Disease"]][["Risk"]][["Segments"]])
+     value<-numeric(0)
+     minmarker<-numeric(0)
+     maxmarker<-numeric(0)
+     text<-numeric(0)
+     for (nc in 1:ncount)
+     {         
+         push(value,xmlGetAttr(diseases[i][["Disease"]][["Risk"]][["Segments"]][nc][["Segment"]],"pop"))
+         push(minmarker,xmlGetAttr(diseases[i][["Disease"]][["Risk"]][["Segments"]][nc][["Segment"]],"minMarker"))
+         push(maxmarker,xmlGetAttr(diseases[i][["Disease"]][["Risk"]][["Segments"]][nc][["Segment"]],"maxMarker"))
+         push(text, xmlValue(diseases[i][["Disease"]][["Risk"]][["Segments"]][nc][["Segment"]]))
+     }
+     
+     head<-diseases[i][["Disease"]][["GenoEffects"]][["Header"]]
+     head1<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[1]]) #Gene
+     head2<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[2]]) #SNP
+     head3<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[3]]) #Genotype
+     head4<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[4]]) #Genotypic Effect
+     head5<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[5]]) #Risk allele 
+     head6<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[6]]) #Relative risk
+     head7<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Header"]][[7]]) #References
+  	     
+     caption<-xmlGetAttr(diseases[i][["Disease"]][["GenoEffects"]],"title")
+     footnote<-xmlValue(diseases[i][["Disease"]][["GenoEffects"]][["Footnote"]])
+     catalog = diseases[i][["Disease"]][["GenoEffects"]]
+     cat("\\\\[-5pt]","\n")
+    
+     cat(paste("\\textcolor{black}{\\footnotesize \\textbf{",TableTitle,"}}",sep=""),"\n")
+     cat("\\scriptsize ","\n")
+    
+     cat("\\captionsetup[longtable]{aboveskip=8pt}","\n")
+     cat("\\captionsetup[longtable]{belowskip=8pt}","\n")
+     cat("\\arrayrulecolor{black}","\n")
+
+     cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|M{1.4cm}|M{1.4cm}|M{1.4cm}|M{2.4cm}|M{.9cm}|M{1.6cm}|}","\n")
+     cat("\\hline","\n")
+     cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",head2,"}} &\\textbf{ \\textcolor{white}{",head3,"}} &\\textbf{ \\textcolor{white}{",head5,"}} &\\textbf{ \\textcolor{white}{",head4,"}} &\\textbf{ \\textcolor{white}{",head1,"}} &\\textbf{ \\textcolor{white}{",head7,"}} \\\\",sep=""),"\n")
+     cat("\\endfirsthead","\n")
+     cat(paste("\\rowcolor{textcol} \\textbf{ \\textcolor{white}{",head2,"}} &\\textbf{ \\textcolor{white}{",head3,"}} &\\textbf{ \\textcolor{white}{",head5,"}} &\\textbf{ \\textcolor{white}{",head4,"}} &\\textbf{ \\textcolor{white}{",head1,"}} &\\textbf{ \\textcolor{white}{",head7,"}} \\\\",sep=""),"\n")
+
+     cat("\\endhead","\n")     
+
+     cat("\\endfoot","\n")
+     
+     cat("\\hline","\n")  
+
+     boolfootflag<-0
+     pmid<-numeric(0)
+     
+     rowtable<-catalog["GenoEffect"]
+     rc<-0
+     if(length(rowtable) != 0) {
+          for (nc in 1:length(rowtable)) {
+              risks<-xmlGetAttr(rowtable[nc][["GenoEffect"]],"risk")
+              if(risks != "0")
+              {
+          	 refs<-strsplit(as.character(xmlValue(rowtable[nc][["GenoEffect"]][["Reference"]])),",")        
+          	 for (len in 1:length(refs)) { push(pmid,refs[len])}
+              }
+          }
+
+          pmid <- sort(unique(pmid))         
+          markercount<-0
+          for (c in 1:xmlSize(rowtable))
+          {      
+               markercount<-markercount+1
+             
+               risktag<-xmlGetAttr(rowtable[c][["GenoEffect"]],"risk")
+               genoeffect<-xmlValue(rowtable[c][["GenoEffect"]][["Effect"]])     
+
+               if (genoeffect == "*UND") { boolfootflag = 1; }  
+
+               if (risktag != 0 )
+               {
+                   cat("\\rowcolor{rowcol}","\n")
+                   rc<-rc+1
+                   rsid<-xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SNP"]]) 
+
+                   cat(paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SNP"]])))
+                   cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Alleles"]])))
+                   cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["RiskAllele"]]))," ")
+                   cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Effect"]]))," ")
+                   cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Gene"]]),sep=""),"\n")
+
+                   indexvector<-strsplit(xmlValue(rowtable[c][["GenoEffect"]][["Reference"]]),",")
+                   idtext<-numeric(0)
+                   idtext<-paste(idtext,which(pmid==indexvector[[1]][1]),sep="")
+                   len<-length(indexvector[[1]])
+
+                   if (len > 1)
+                   {
+                       for (cc in 2:len) { idtext<-paste(idtext,which(pmid==indexvector[[1]][cc]),sep=", ") }
+                   }
+                
+                   cat (paste("& [",idtext,"]",sep=""),"\n")   
+                   cat("~\\\\","\n") 
+                   cat("\\hline","\n")
+               }
+          }
+     }  
+
+     if (rc == 0)
+     {
+         cat("\\rowcolor{rowcol}","\n") 
+         cat(paste("\\multicolumn{6}{|c|}{",xmlValue(catalog[["NoVariant"]]),"} \\\\",sep=""),"\n") 
+         cat("\\hline","\n")
+     }
+     cat("\\end{longtable}}","\n")
+
+     if (rc > 0) {  
+         cat("\\vspace{-1cm}","\n")
+         cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|M{1.1 cm}|M{1.4cm}|M{1.4cm}|M{.9cm}|M{2.7cm}|M{1.6cm}|}","\n")
+         cat(paste("\\caption{\\textcolor{gray}{\\scriptsize \\textit{",xmlValue(TableCaption),"}}}",sep=""),"\n")
+         cat("\\end{longtable}}","\n")
+     }
+
+
+     cat("\\small ","\n")
+     cat("\\footnotesize","\n")
+   
+     if(boolfootflag == 1) { cat(footnote,"\n") }
+     
+     cat("\\needspace{1cm}","\n")
+     cat("\\vspace{-2mm}","\n")
+
+     name<-xmlValue(diseases[i][["Disease"]][["Description"]][["Title"]])
+     diseasetext<-xmlValue(diseases[i][["Disease"]][["Description"]][["Text"]])
+
+     cat("\\footnotesize","\n")
+
+     cat(paste("\\textcolor{textcol}{{{\\textbf {",name,"}}}}",sep=""),"\n")
+     dname<-gsub(" ","_",name)
+     dname<-gsub("\\'","",dname)
+     ImageFile<-paste("./tmp/",disid,".pdf",sep="")
+ 
+     if (file.exists(ImageFile)) {
+         if(ChipType == "PDI")
+         {
+            cat(paste("\\addstufftotoc{\\includegraphics[trim=.8cm 4.5cm 0cm 2.0cm,clip=true,width=0.7\\linewidth]{",ImageFile,"}}",sep=""),"\n")
+         } else {cat(paste("\\addstufftotoc{\\includegraphics[trim=.8cm 4.5cm 0cm 2.0cm,clip=true,width=0.9\\linewidth]{",ImageFile,"}}",sep=""),"\n") }
+     }
+     else
+     {
+         riskmarker<-xmlGetAttr(diseases[i][["Disease"]][["Profiles"]][["Negative"]],"count")
+         if (riskmarker == 0)
+         {              
+             if (lang=="en") { imagewidth=0.2 } else { imagewidth=0.15 }
+             cat(paste("\\addstufftotoc{\\includegraphics[trim=.1cm 0cm 0cm .1cm,clip=true,width=",imagewidth,"\\linewidth]{./image/risk_marker/No_Risk_",lang,".pdf}}",sep=""),"\n")
+         }
+         else 
+         {
+             if (lang=="en") { imagewidth=0.3 } else { imagewidth=0.19 }
+             cat(paste("\\addstufftotoc{\\includegraphics[trim=.1cm 0cm 0cm .1cm,clip=true,width=",imagewidth,"\\linewidth]{./image/risk_marker/Risk_",lang,".pdf}}",sep=""),"\n")
+         }
+     }
+                
+     cat("\\leavevmode","\n")
+     cat("\\newline","\n")
+     cat("\\newline","\n")
+
+     cat(paste ("\\nohyphens{",diseasetext,"}",sep=""),"\n")
+     cat("\\arrayrulecolor{black}","\n")
+     title<-xmlValue(diseases[i][["Disease"]][["References"]][["Title"]])
+
+     if (rc !=0 )
+     {
+         cat("~\\\\","\n")
+         cat("\\needspace{1cm}","\n")
+         cat(paste("\\textcolor{textcol}{\\textbf{",title,"}}",sep=""),"\n")
+     }
+
+     ref<-diseases[i][["Disease"]][["References"]]["Reference"]
+
+     nsize<-xmlSize(ref)
+     nref<-0
+     rflag<-0
+
+     if (length(ref) != 0)
+     {
+         for (nsize in 1:xmlSize(ref))
+         {
+              pubmid<-xmlGetAttr(ref[nsize][["Reference"]],"id")
+     	      pubid<-xmlValue(ref[nsize][["Reference"]][["PmId"]])
+  	      pubtitle<-xmlValue(ref[nsize][["Reference"]][["Title"]])
+  	      pubjournal<-xmlValue(ref[nsize][["Reference"]][["Journal"]])
+  	      pubdate<-xmlValue(ref[nsize][["Reference"]][["Pubdate"]])
+  	      pubvolume<-xmlValue(ref[nsize][["Reference"]][["Volume"]])
+  	      authorname<-xmlValue(ref[nsize][["Reference"]][["Author"]])
+                
+              index<-which(pmid == pubmid)
+              if (length(index) != 0)
+              {
+                  rflag<-rflag+1
+                  if (rflag==1)
+                  {
+                      cat("\\leavevmode","\n")
+                      cat("\\newline","\n")
+                      cat("\\newline","\n")
+                  }
+                  cat(paste("\n","[",index,"]",sep=""))
+                  aname<-strsplit(authorname,",")
+                  cat("\n","\\def\\verbatim@font{\\normalfont\\ua1}","\n")
+                  cat(paste(aname[[1]][1], ", et al.",", " ,sep=""),"\n")                    
+  		  cat(paste(pubtitle,", ",sep=""),"\n")                   
+  		  cat(paste(" ", pubjournal, pubdate, sep=" "),"\n")
+                  nref <- nref+1;
+                  cat("\\needspace{-30mm}","\n")
+              }
+	 }
+     }
+     if (nref == 0 && rc !=0 )
+     {
+         cat(xmlValue(diseases[i][["Disease"]][["References"]][["NoCitation"]]),"\n")
+     }
+           	      
+     cat("\\newpage","\n")
+     cat("\\footnotesize","\n")
+
+     #############################################################################
+     #   Definition<-diseases[[i]][["ExtendedContents"]][["Definition"]]
+     #   Causes<-diseases[[i]][["ExtendedContents"]][["Causes"]]
+     #   Symptoms<-diseases[[i]][["ExtendedContents"]][["Symptoms"]]
+     #   Risk<-diseases[[i]][["ExtendedContents"]][["Risk"]]
+     #   Complications<-diseases[[i]][["ExtendedContents"]][["Complications"]]
+     #   Lifestyle<-diseases[[i]][["ExtendedContents"]][["Lifestyle"]]
+        
+     #   riskmarker<-xmlGetAttr(diseases[i][["Disease"]][["Profiles"]][["Negative"]],"count")
+ 
+     #   if(mayocontentflag == 1)
+     #   {    
+     #   	riskmarker<-1    #temporary  fix
+     #   	traitflag<-"N"   #temporary  fix
+
+     #           IncreasedRisk<-xmlValue(top[["Titles"]][["BoxPlot"]][["RiskType"]][["Increased"]])
+     #   	risk<-IncreasedRisk #"Increased Relative Genetic Risk"  #temporary  fix
+
+     #           riskmarker<-1
+     #   }
+     #   else if(mayocontentflag == 2)
+     #   {
+     #           riskmarker<-1    #temporary  fix
+     #          traitflag<-"N"   #temporary  fix
+     #           risk<-"Slightly Increased Relative Genetic Risk"  #temporary  fix
+     #           riskmarker<-1
+     #   }
+     #   else if(mayocontentflag == 3)
+     #   {
+     #           riskmarker<-1    #temporary  fix
+     #           traitflag<-"N"   #temporary  fix
+     #           risk<-"Typical Relative Genetic Risk"  #temporary  fix
+     #           riskmarker<-1
+     #   }
+
+     #if(lang == "en") {
+     #   link<-xmlGetAttr(diseases[i][["Disease"]],"Linked")
+     #   if(link != "empty")
+     #   {
+     #       linkname<-gsub(" ","_",link)
+     #       linkname<-gsub("\\'","",linkname)
+
+     #       if((as.character(map[[linkname]])==IncreasedRisk) || (as.character(map[[linkname]]) == SlightlyIncreasedRisk))
+     #       {
+     #         risk<-as.character(map[[linkname]])
+     #       }
+     #   }        
+     #}
+
+     #   name<-xmlValue(diseases[i][["Disease"]][["Description"]][["Title"]])
+     #   dname<-gsub(" ","_",name)
+     #   dname<-gsub("\\'","",dname)
+ 
+     #   if(as.character(rmap[[dname]]) ==IncreasedRisk)
+     #   {
+     #     risk<-IncreasedRisk
+     #   }
+
+        # code for printing mayo-clinic content for trait with risk marker
+
+      #  if(traitflag == "Y" && riskmarker > 0)
+      #  {
+      #     risk<-IncreasedRisk
+      #  }
+
+      #  if( (traitflag == "N" ) || (traitflag == "Y" && riskmarker != 0))         #login end here
+      #  {   
+      #  	if(risk != TypicalRisk)
+      #    	{
+      #       		if(length(Definition[["Title"]])!=0)
+      #       		{           
+      #          		logoflag<-xmlGetAttr(diseases[[i]][["ExtendedContents"]],"logo")
+      #          		if(logoflag==1)
+      #          		{
+      #             			def_logo<-xmlValue(diseases[[i]][["ExtendedContents"]][["Logo"]])
+      #             			cat(paste("\\includegraphics[width=0.15\\linewidth]{",def_logo,"}",sep=""),"\n")
+      #             			cat("\\newline","\n")
+      #          		}
+      #          		cat("\\needspace{1cm}","\n")
+      #          		cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Definition[["Title"]]),"}}",sep=""),"\n")
+      #          		cat("~\\\\","\n")
+      #          		cat("~\\\\","\n")
+      #          		DefinitionImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Definition"]],"Image")         
+      #     		        cat(paste("\\nohyphens{",xmlValue(Definition[["Text"]]),"}",sep=""),"\n")
+      #     			cat("\\vspace{0mm}","\n")
+      #     			if(DefinitionImage ==1)
+      #     			{
+      #        				imagewidth=0.45
+                                       
+                                        
+      #                                  if (name == "Lactose Intolerance") { imagewidth=0.75}
+      #        				if (name == "Abdominal Aortic Aneurysm") { imagewidth=0.32} else { imagewidth=0.45 }             
+      #        				if (name == "Peripheral Arterial Disease") { imagewidth=0.6} else { imagewidth=0.45 }
+      #                                  if (name == "Cervical Cancer") { imagewidth=0.35}
+      #                                  if (name == "Chronic Obstructive Pulmonary Disease") { imagewidth=0.55}
+ 
+      #                                  if(ChipType == "ONC")
+      #                                  {
+      #                                      if ( (name == "Hodgkin's Lymphoma") || (name == "Melanoma") || (name == "Meningioma"))  { imagewidth=0.6}
+      #                                      if ( name == "Hodgkin's Lymphoma") {imagewidth=0.55}
+      #                                      if ( name == "Prostate Cancer") {imagewidth=0.55}
+      #                                      if ( (name == "Kidney Cancer")      || (name == "Neuroblastoma") ||  (name == "Larynx Cancer") || (name == "Squamous Cell Carcinoma (SCC)"))     {imagewidth=0.53}
+      #                                  }
+      #                                  else if(ChipType == "COR")
+      #                                  { 
+      #                                      if (name == "Hepatocellular Carcinoma") {imagewidth=0.6}
+      #                                      else if (name == "Cervical Cancer") { imagewidth=0.25}     
+      #                                      else if (name == "Breast Cancer") { imagewidth=0.35 } 
+      #                                      else if (name == "Ovarian Cancer") { imagewidth=0.37 }
+      #                                      else if (name == "Ankylosing Spondylitis") { imagewidth=0.37 }
+      #                                      else if (name == "Peripheral Arterial Disease") {imagewidth=0.4}    
+      #                                  }  
+      #                                  else if(ChipType == "OST")
+      #                                  {
+      #                                      if (name == "Ankylosing Spondylitis") { imagewidth=0.4}  
+      #                                  }
+      #        				Definition_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Definition"]][["Image"]][["Path"]])
+      #        				DefinitionImageCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Definition"]][["Image"]][["Caption"]])
+      #        				cat("\\begin{figure}[h!]","\n")
+      #        				cat("\\centering","\n")
+      #        				cat("\\vspace{1mm}","\n")             
+      #        				cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",Definition_image,"}}",sep=""),"\n")
+      #        				cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",DefinitionImageCaption,"}}}",sep=""),"\n")
+      #        				cat("\\end{figure}","\n")
+
+      #    			} 
+           
+      #  	        }
+
+
+      #    	        if (length(Causes[["Title"]])!=0)
+      #  	        {
+      #          	    cat("\\needspace{1cm}","\n")               
+      #    		    cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Causes[["Title"]]),"}}",sep=""),"\n") 
+      #    		    cat("\\newline","\n")
+      #    		    cat("\\newline","\n")
+      #   		    cat(paste("\\nohyphens{",xmlValue(Causes[["Text"]]),"}",sep=""),"\n")
+      #    		    cat("\\vspace{0mm}","\n")
+      #    		    CausesImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Causes"]],"Image")       
+      #    		    if (CausesImage ==1)
+      #    		    {
+      #      			cause_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Causes"]][["Image"]][["Path"]])
+      #     	 		CausesImageCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Causes"]][["Image"]][["Caption"]])
+      #      			cat("\\begin{figure}[h!]","\n")
+      #      			cat("\\centering","\n")
+      #      			cat("\\vspace{1mm}","\n")
+      #      
+      #      			if (name == "Abdominal Aortic Aneurysm") { imagewidth=0.4 } else { imagewidth=0.7}
+      #                          if (name == "Chronic Obstructive Pulmonary Disease") { imagewidth=0.5 }
+      #      			if (name == "Kidney Cancer") { imagewidth=0.5} else { imagewidth=0.7}  
+      #                          
+      #      			if (name == "Glioma Development") { imagewidth=0.9} else { imagewidth=0.7 }
+      #                          if (name == "Cervical Cancer") { imagewidth=0.8}
+      #                          if (name == "Stroke") { imagewidth=0.6} 
+      #                          if(risk == "Slightly Increased Relative Genetic Risk" && ( name == "Basal Cell Carcinoma") || (name == "Cervical Cancer") || (name == "Kidney Cancer")) {imagewidth=0.43}
+      #                          if(risk == "Slightly Increased Relative Genetic Risk" && ( name == "Breast Cancer")) {imagewidth=0.5}                                
+
+      #                          if (ChipType == "COR") {
+      #                                if (name == "Cervical Cancer") { imagewidth=0.35 }                                 
+      #                                else if (name == "Stroke") { imagewidth=0.5 } 
+      #                                else if (name == "Breast Cancer") { imagewidth=0.43 }   
+      #                                else if (name == "Prostate Cancer") { imagewidth=0.55 }  
+      #                          }                                 
+      #                          else if (ChipType == "OST"){
+      #                                if (name == "Osteoarthritis") { imagewidth=0.44 }
+      #                                else if (name == "Osteoporosis") { imagewidth=0.5 }
+      #                          }
+      #
+      #            			cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",cause_image,"}}",sep=""),"\n")
+      #      			cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",CausesImageCaption,"}}}",sep=""),"\n")
+      #     			cat("\\end{figure}","\n")
+      #    		    }
+      #  	        }
+      #         }
+     
+      #         if (risk != TypicalRisk)      
+      #         {
+      # 		if (length(Symptoms[["Title"]])!=0)   
+      #  	        {             
+      #     		    cat("\\needspace{1cm}","\n")          
+      #      		    booltab<-grep("<table", xmlValue(Symptoms[["Text"]]))
+      #     		    cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Symptoms[["Title"]]),"}}",sep=""),"\n")
+      #     		    cat("~\\\\","\n")
+      #     		    cat("\\\\","\n")
+
+      #    		    if (name == "Hepatocellular Carcinoma") { imagewidth=0.39} else { imagewidth=0.8 }           		
+      #     		    if(length(booltab) != 0)
+      #	                    {
+      #        			doc2 = xmlTreeParse(InFile, useInternal = TRUE)
+      #        			top2<-xmlRoot(doc2)
+      #
+      #              			if(ChipType=="COR")
+      #        			{
+      #               			table<-xmlValue(top2[["Diseases"]]["Disease"][[18]][["ExtendedContents"]][["Symptoms"]][["Text"]])
+      #        			}
+      #        			else
+      #        			{
+      #            			table<-xmlValue(top2[["Diseases"]]["Disease"][[11]][["ExtendedContents"]][["Symptoms"]][["Text"]])
+      #        			}
+
+      #        			text1<-substr(table, 0, (regexpr("<table",table))-(1+27))
+      #        			text1<-sub("<\\p>","",text1)
+      #        			text1<-sub("<p>","",text1)
+      #        			cat(text1,"\n")
+      #        			cat("~\\\\","\n")
+      #        			cat("\\\\","\n")
+
+      #        			tab<-readHTMLTable(table,encoding="UTF-8")
+      #        			cat("\\arrayrulecolor{black}","\n") 
+      #        			cat("\\begin{tabular}{|l|l|}","\n")
+      #        			cat("\\hline","\n")
+      #        			cat(paste("\\textbf{",tab[[1]][1,1],"}  &" , "\\textbf{",tab[[1]][1,2],"}", "\\\\" ,sep=""),"\n")
+      #        			for (k in 2:nrow(tab[[1]]))
+      #        			{
+      #          			cat("\\hline","\n")
+      #          			cat(paste(tab[[1]][k,1], " &" , tab[[1]][k,2], "\\\\" ,sep=""),"\n")
+      #        			}
+      
+      #        			cat("\\hline","\n")
+      #        			cat("\\end{tabular}","\n")
+      #        			text2<-substr(table, (regexpr("</table>",table))+8, nchar(table))         
+      #        			cat("~\\\\\\\\[10pt]","\n")
+
+      #        			text2<-sub("</div>","",text2)
+      #        			text2<-sub("</p>","",text2)
+      #        			text2<-sub("<p>","",text2)
+      #        			text2<-sub("<strong>","\\\\textbf\\{",text2)
+      #        			text2<-sub("</strong>","\\}",text2)
+      #        			text2<-sub("<p>","~\\\\\\\\",text2)
+      #        			text2<-sub("</p>","",text2)
+      #        			text2<-sub("<br />","~\\\\\\\\",text2)
+      #        			text2<-sub("<br />","~\\\\\\\\",text2) 
+      #        			text2<-sub("<br />","~\\\\\\\\",text2) 
+      #        			cat(text2,"\n")
+      #       	 		cat("~\\\\","\n")
+      #     		    }
+      #     		    else
+      #     		    {
+      #      			cat(paste("\\nohyphens{",xmlValue(Symptoms[["Text"]]),"}",sep=""),"\n")
+      #      			cat("\\vspace{0mm}","\n") 
+      #      			SymptomsImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Symptoms"]],"Image")   
+      #      			if (SymptomsImage == 1)
+      #      			{              
+      #        			 	 Symptoms_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Symptoms"]][["Image"]][["Path"]])
+      #       	 			 SymptomsCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Symptoms"]][["Image"]][["Caption"]])      
+      #                                  imagewidth<-0.4444
+    
+      #                                   if (ChipType == "OST"){
+      #                                      if (name == "Psoriasis") { imagewidth=0.35 }
+      #                                   } 
+
+      #                                   if(risk == "Slightly Increased Relative Genetic Risk" && ( (name == "Breast Cancer") || (name == "Bladder Cancer") || (name == "Cervical Cancer") || (name == "Basal Cell Carcinoma") || (name == "Kidney Cancer") || (name == "Hepatocellular Carcinoma") || (name == "Hypothyroidism")))
+
+      #                                   {
+      #                                       if (name == "Breast Cancer") { imagewidth=0.35}
+                                             
+      #                                       if (name == "Cervical Cancer") { cat("~\\\\[10pt]","\n")} 
+                                            
+      #                                      cat("\\begin{minipage}{\\linewidth}","\n")           
+      #                                      cat("\\centering","\n")
+      #                                      cat("\\vspace{1mm}","\n")
+                                   
+      #                                      cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",Symptoms_image,"}}",sep=""),"\n")
+      #                                      cat(paste("\\captionof{figure}{\\textcolor{gray}{\\footnotesize \\textit{",SymptomsCaption,"}}}",sep=""),"\n")
+      #        				    cat("\\end{minipage}","\n")                                           
+      #                                   }
+      #                                   else      
+      #                                   {
+      #                                     if (name == "Grave's Disease") { imagewidth=0.38}
+        
+      #                                     cat("\\begin{figure}[h!]","\n")
+      #                                     cat("\\centering","\n")
+      #        				    cat("\\vspace{1mm}","\n")
+      #        				    cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",Symptoms_image,"}}",sep=""),"\n")
+      #                                     cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",SymptomsCaption,"}}}",sep=""),"\n") 
+      #        				    cat("\\end{figure}","\n")
+      #                                   }
+      #      			}
+      #    		    }
+      #  	        }
+      #         }
+
+      #         if (risk == IncreasedRisk)
+      #         {
+      #  	        if (length(Risk[["Title"]])!=0)
+      #  	        {
+      #     		    cat("\\needspace{1cm}","\n")          
+      #     		    cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Risk[["Title"]]),"}}",sep=""),"\n")
+      #     		    cat("\\newline","\n")
+      #     		    cat("\\newline","\n")
+      #     		    cat(paste("\\nohyphens{",xmlValue(Risk[["Text"]]),"}",sep=""),"\n")
+      #                     cat("\\vspace{0mm}","\n")
+      #     		    RiskImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Risk"]],"Image")       
+
+      #     		    if (RiskImage == 1)
+      #     		    {
+      #        			Risk_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Risk"]][["Image"]][["Path"]])
+      #         	        RiskImageCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Risk"]][["Image"]][["Caption"]])
+      #        			cat("\\begin{figure}[h!]","\n")
+      #        			cat("\\centering","\n")
+      #        			cat("\\vspace{1mm}","\n")
+      #        			if (name == "Gallstone") { imagewidth=0.5 } else { imagewidth=0.8}
+      #        			cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",Risk_image,"}}",sep=""),"\n")
+      #        			cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",RiskImageCaption,"}}}",sep=""),"\n")
+      #        			cat("\\end{figure}","\n")
+      #     		    }
+      #  	       }
+              
+      #  	       if (length(Complications[["Title"]])!=0)
+      #  	       {         
+      #     	   	   cat("\\needspace{1.0cm}","\n")
+      #	   		   if (name == "Abdominal Aortic Aneurysm") { imagewidth=0.4 } else if (name == "Gallstone") { imagewidth=0.5 }  else { imagewidth=0.8}
+      #     		   cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Complications[["Title"]]),"}}",sep=""),"\n")
+      #     		   cat("\\newline","\n")
+      #     		   cat("\\newline","\n")
+      #     		   cat(paste("\\nohyphens{",xmlValue(Complications[["Text"]]),"}",sep=""),"\n")
+      #     		   cat("\\vspace{0mm}","\n")
+      #     		   ComplicationsImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Complications"]],"Image")       
+      #     		   if (ComplicationsImage == 1)
+      #     		   {
+      #                        if (name == "Osteoarthritis" ){imagewidth=0.5}
+      #                        if (name == "Osteoporosis"){imagewidth=0.3}
+      #
+      #                        if (ChipType == "COR"){
+      #                            if(name == "Deep Vein Thrombosis and Pulmonary Embolism") {imagewidth=0.6}
+      #                        }       
+      #                        else if (ChipType == "OST"){
+      #                            if(name == "Osteoporosis") {imagewidth=0.38}        
+      #                        }
+
+      #        		       Complications_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Complications"]][["Image"]][["Path"]])
+      #        		       ComplicationsImageCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Complications"]][["Image"]][["Caption"]])
+      #        		       cat("\\begin{figure}[h!]","\n")
+      #        		       cat("\\centering","\n")
+      #        		       cat("\\vspace{1mm}","\n")
+      #       	 	       cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=",imagewidth,"\\linewidth]{",Complications_image,"}}",sep=""),"\n")
+      #        		       cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",ComplicationsImageCaption,"}}}",sep=""),"\n")
+      #        		      cat("\\end{figure}","\n")
+      #     		  }
+      #  	      }        
+      #         }
+       
+      #	        if (risk != TypicalRisk)
+      #         {
+      #  	    if (length(Lifestyle[["Title"]])!=0)
+      #  	    {
+      #     		cat("\\needspace{1cm}","\n")
+      #     		cat(paste("\\textcolor{textcol}{\\textbf{",xmlValue(Lifestyle[["Title"]]),"}}",sep=""),"\n")
+      #     		cat("\\newline","\n")
+      #     		cat("\\newline","\n")
+      #     		cat(paste("\\nohyphens{",xmlValue(Lifestyle[["Text"]]),"}",sep=""),"\n")
+      #     		text<-xmlValue(Lifestyle[["Text"]])
+      #     		flag<-0
+      #     		lasttext<-substr(text, nchar(text)-14, nchar(text))
+         
+      #     		LifestyleImage<-xmlGetAttr(diseases[[i]][["ExtendedContents"]][["Lifestyle"]],"Image")       
+      #     		if(LifestyleImage == 1)
+      #     		{
+      #        			Lifestyle_image<-xmlValue(diseases[[i]][["ExtendedContents"]][["Lifestyle"]][["Image"]][["Path"]])
+      #        			LifestyleImageCaption<-xmlValue(diseases[[i]][["ExtendedContents"]][["Lifestyle"]][["Image"]][["Caption"]])
+      #        			cat("\\begin{figure}[h!]","\n")
+      #        			cat("\\centering","\n")
+      #       			cat("\\vspace{1mm}","\n")
+      #        			cat(paste("\\fcolorbox{gray}{white}{\\includegraphics[width=0.8\\linewidth]{",Lifestyle_image,"}}",sep=""),"\n")             
+      #        			cat(paste("\\caption{\\textcolor{gray}{\\footnotesize \\textit{",LifestyleImageCaption,"}}}",sep=""),"\n")
+              
+      #        			cat("\\end{figure}","\n")
+      #     		}
+      #  	    }          
+      #   	    cat("\\vspace{-.3cm}","\n")
+      #	        }
+      #  }
+      #############################################################################
+      #cat("\\vfill","\n")
+      #cat("\\clearpage","\n")
+  }
+}
+@ % end chunk = 10
+\closeout\indexfile
+
+\newwrite\commentfile
+\openout\commentfile=\jobname.comment
+
+\newwrite\indexfile
+\openout\indexfile=\jobname.index
+
+%chunk = 11
+<<echo=FALSE ,results=tex>>=
+cat("\\footnotesize","\n")
+dtag<-top[["Drugs"]]
+
+if(length(dtag) != 0) 
+{
+        cat("\\ifthenelse{\\isodd{\\thepage}}{}{\\newpage\\mbox{}\\thispagestyle{empty}\\newpage}","\n")
+	cat("\\thispagestyle{empty}","\n")
+	cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+	cat(paste("\\includegraphics[width=0.3\\linewidth]{",logo,"}",sep=""),"\n")
+	cat("\\end{minipage}","\n")
+	cat("\\needspace{5cm}","\n")
+	cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+	cat("\\vspace{3cm}","\n")
+	cat("\\end{minipage}","\n")
+
+	cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+
+        if(lang == "zh")
+        {
+           cat(paste("\\includegraphics[trim=0.25cm 0cm 0cm 0cm, clip=true,width=0.44\\linewidth]{",Section3,"}",sep=""),"\n")                      
+           cat("~\\\\[-8pt]","\n")
+        } else {
+  	   cat(paste("\\includegraphics[trim=0cm 0cm 0cm 0cm, clip=true,width=0.5\\linewidth]{",Section3,"}",sep=""),"\n")
+           cat("~\\\\[-12pt]","\n")
+        }
+
+	cat("\\linethickness{.3mm}","\n")
+	cat(paste("\\ThisLRCornerWallPaper{1.0}{",backgroundimage,"}",sep=""),"\n")
+	cat("\\textcolor{logcol}{\\line(1,0){330}}","\n")
+	cat("\\end{minipage}","\n")
+
+	cat("\\newpage\\mbox{}\\thispagestyle{empty}\\newpage","\n")
+
+   	drugs<-top[["Drugs"]]["Drug"]
+   	cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}")
+   	cat("\\definecolor{rowcol}{rgb}{ .851, .824, .914}")
+   	cat("\\definecolor{maincol}{rgb}{ 0.556863,0.486275,0.764706}")
+
+   	risktitle<-xmlValue(top[["Drugs"]][["ProfileTitle"]])
+   	questionLogo<-xmlValue(top[["Drugs"]][["QuestionLogo"]])
+   	booklogo<-xmlValue(top[["Drugs"]][["BookLogo"]])
+   	risklogo<-xmlValue(top[["Drugs"]][["DrugLogo"]])
+
+   	cat("\\footnotesize","\n")
+   	for (i in 1:xmlSize(drugs)) 
+	{      
+       		name<-xmlValue(drugs[i][["Drug"]][["Name"]])
+       		DrugTableTitle<-xmlValue(top[["Titles"]][["DrugTableTitle"]])
+       		DrugTableTitle<-sub("\\$\\{drug_name\\}",name,DrugTableTitle)
+	       	DrugTitle<-xmlValue(top[["Titles"]][["DrugTitle"]])       
+       		DrugTitle<-sub("\\$\\{drug_name\\}",name,DrugTitle)
+       		cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=maincol,roundcorner=0pt,backgroundcolor=maincol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedright","\\textbf{ \\textcolor{white}{ \\normalsize ",name,"}}","}\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedleft 3} \\end{mdframed}}",sep=""),"\n")
+                cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=maincol,roundcorner=0pt,backgroundcolor=maincol,innerleftmargin=0,innertopmargin=4,innerbottommargin=4]\\parbox[t]{1.0\\textwidth}{\\raggedleft","\\textbf{ \\textcolor{white}{ \\normalsize ",name,"}}","}\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedright 3} \\end{mdframed}}",sep=""),"\n")
+        	cat(paste("\\write\\indexfile{",name,"'" ,"\\thepage}",sep=""),"\n")
+ 
+       		riskcount<-xmlValue(drugs[i][["Drug"]][["Risk"]][["YourRisk"]])
+      
+        	cat("\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=gray,outerlinewidth=.1, innerleftmargin=12, innerrightmargin=12, innertopmargin=8,innerbottommargin=8, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+ 
+      		cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+      		cat(paste("\\includegraphics[width=1.0\\linewidth]{",logo,"}",sep=""),"\n")
+      		cat("\\end{minipage}","\n")
+      		cat(paste("\\begin{minipage}{0.15\\linewidth}","\n"))
+      		cat("\\hspace{0cm}","\n")
+      		cat("\\end{minipage}","\n")
+
+      		cat(paste("\\begin{minipage}{0.65\\linewidth}","\n"))
+ 
+     
+      		total_markers<-xmlValue(drugs[i][["Drug"]][["Profiles"]][["Total"]])
+       		cat("\\footnotesize","\n")
+       		cat(paste(total_markers ,sep= ""), "\n")
+       		cat("\\end{minipage}","\n")
+       		cat("\\end{mdframed}","\n")     
+       		cat("\\vspace{-3mm}","\n")
+       		head<-drugs[i][["Drug"]][["GenoEffects"]][["Header"]]
+       		head1<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Header"]][[1]])
+       		head2<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Header"]][[2]])
+       		head3<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Header"]][[3]])
+       		head4<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Header"]][[4]])
+       		head5<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Header"]][[7]]) 
+ 	
+       		caption<-xmlGetAttr(drugs[i][["Drug"]][["GenoEffects"]],"title")
+       		footnote<-xmlValue(drugs[i][["Drug"]][["GenoEffects"]][["Footnote"]])
+       		catalog = drugs[i][["Drug"]][["GenoEffects"]]
+       
+       		cat("~\\\\","\n")
+       		cat("~\\\\","\n")
+       		cat(paste("\\textcolor{maincol}{\\textbf{",DrugTableTitle,"}}",sep=""),"\n")
+      
+                cat("{\\renewcommand{\\arraystretch}{1.5}\\begin{longtable}{|M{1.5cm}|M{1.5cm}|M{3cm}|M{1.5cm}|M{2.0cm}|M{4.5cm}|}","\n")
+
+                cat(paste("\\rowcolor{maincol} \\textbf{ \\textcolor{white}{",head2,"}} &\\textbf{ \\textcolor{white}{",head3,"}} &\\textbf{ \\textcolor{white}{",head4,"}} &\\textbf{ \\textcolor{white}{",head1,"}} &\\textbf{ \\textcolor{white}{",head5,"}}  \\\\",sep=""),"\n")
+                cat("\\endfirsthead","\n")
+    
+      		cat("\\hline","\n")  
+      		boolfootflag<-0
+      
+      		pmid<-numeric(0)
+      		rc<-0
+      		rowtable<-catalog["GenoEffect"]
+      		if(length(rowtable) != 0) 
+		{
+          		for (nc in 1:length(rowtable)) 
+			{
+	              		risks<-xmlGetAttr(rowtable[nc][["GenoEffect"]],"risk")
+              			if(risks != "0") 
+                                {
+          	 			refs<-strsplit(as.character(xmlValue(rowtable[nc][["GenoEffect"]][["Reference"]])),",")        
+          	 			for (len in 1:length(refs)) { push(pmid,refs[len])}
+              			}
+          		}
+          		pmid <- sort(unique(pmid))
+          
+          		for (c in 1:xmlSize(rowtable)) 
+			{    
+              			risktag<-xmlGetAttr(rowtable[c][["GenoEffect"]],"risk")
+	              		genoeffect<-xmlValue(rowtable[c][["GenoEffect"]][["Effect"]])     
+              			if(genoeffect == "*UND") {
+                	 		boolfootflag = 1;
+              			}  
+              			if(risktag != "0") 
+				{
+                 			cat("\\rowcolor{rowcol}","\n")
+                 			rc<-rc+1
+
+                                        cat(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SNP"]]))
+                                        cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Alleles"]])))
+                                        cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Effect"]]))," ")
+                                        cat ("& ", paste(xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Gene"]]),"\n"))
+
+                 			cat(paste("\\write\\commentfile{",name,"'", xmlValue(rowtable[c][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SNP"]]),"'",xmlValue(rowtable[c][["GenoEffect"]][["Effect"]]) ,"'" ,"\\thepage}",sep=""),"\n")
+ 
+			                indexvector<-strsplit(xmlValue(rowtable[c][["GenoEffect"]][["Reference"]]),",")
+                 			idtext<-numeric(0)
+                 			idtext<-paste(idtext,which(pmid==indexvector[[1]][1]),sep="")
+                 			len<-length(indexvector[[1]])
+                 			if(len > 1)
+                 			{
+                    				for (cc in 2:len) 
+                    				{  
+                       					idtext<-paste(idtext,which(pmid==indexvector[[1]][cc]),sep=", ")
+                   				 }
+                 			}
+                 			cat (paste("& [",idtext,"]",sep=""),"\\\\","\n")             
+                 			cat("\\hline","\n")
+              			}
+          		}  
+        	}    
+           
+       
+		#cat("\\small ","\n")
+        	if(rc == 0)
+        	{            
+            		cat("\\rowcolor{rowcol}","\n")
+            		cat(paste("\\multicolumn{6}{|c|}{",xmlValue(catalog[["NoVariant"]]),"} \\\\",sep=""),"\n")
+            		cat("\\hline","\n")
+        	}
+        	cat("\\end{longtable}}","\n") 
+        	if(boolfootflag == 1) {
+          		cat(footnote,"\n")
+        	}
+        
+     		name<-xmlValue(drugs[i][["Drug"]][["Description"]][["Title"]])
+     		drugtext<-xmlValue(drugs[i][["Drug"]][["Description"]][["Text"]])
+    
+        	cat(paste("\\textcolor{maincol}{\\textbf{",name,"}}",sep=""),"\n")
+        	cat("\\needspace{2cm}","\n")
+       	 	cat(paste ("\\nohyphens{",drugtext,"}",sep=""),"\n")
+        
+
+        	if(rc !=0 )
+        	{
+        		cat("\\needspace{.7cm}","\n")
+        		cat("\\smallskip","\n")
+			title<-xmlValue(drugs[i][["Drug"]][["References"]][["Title"]])
+        		cat(paste("\\textcolor{maincol}{\\textbf{",title,"}}",sep=""),"\n")
+        		cat("~\\\\","\n")
+        		cat("~\\\\","\n")
+			ref<-drugs[i][["Drug"]][["References"]]["Reference"]
+        		cat("~\\\\[-15pt]","\n")
+        	}
+		nsize<-xmlSize(ref)
+        	nref<-0
+        	if(length(ref) != 0) 
+                {
+
+			for (nsize in 1:xmlSize(ref))
+			{
+                		pubmid<-xmlGetAttr(ref[nsize][["Reference"]],"id")
+  				pubid<-xmlValue(ref[nsize][["Reference"]][["PmId"]])
+  				pubtitle<-xmlValue(ref[nsize][["Reference"]][["Title"]])
+  				pubjournal<-xmlValue(ref[nsize][["Reference"]][["Journal"]])
+  				pubdate<-xmlValue(ref[nsize][["Reference"]][["Pubdate"]])
+  				pubvolume<-xmlValue(ref[nsize][["Reference"]][["Volume"]])
+  				authorname<-xmlValue(ref[nsize][["Reference"]][["Author"]])
+  
+                		index<-which(pmid == pubmid)
+                		if(length(index) != 0) 
+				{                   
+                  	 		cat(paste("\n","[",index,"]",sep=""))                    
+                   			aname<-strsplit(authorname,",")
+                   			cat("\n","\\def\\verbatim@font{\\normalfont\\ua1}","\n")
+                   			cat(paste(aname[[1]][1], ", et al.",", " ,sep=""),"\n")
+                   			cat(paste(pubtitle,", ",sep=""),"\n")
+                   			cat(paste(" ", pubjournal, pubdate, sep=" "),"\n")
+                   			nref <- nref+1;
+                   			cat("\\needspace{.3cm}","\n")
+                   			#cat("~\\\\[2pt]","\n")
+                		}
+       	    		}
+        	}
+
+        	if(nref == 0 && rc !=0 ){
+           		cat(xmlValue(drugs[i][["Drug"]][["References"]][["NoCitation"]]),"\n")
+        	}
+        
+        	#cat("\\end{mdframed}","\n")
+        	cat("\\newpage","\n")
+        	#cat("\\small","\n")
+   	}
+}
+
+cat("\\pagestyle{empty}","\n")
+cat("\\fancyfoot[C]{\\begin{mdframed}[roundcorner=0pt,leftmargin=0, rightmargin=0, linecolor=white,outerlinewidth=.1, innerleftmargin=0,innertopmargin=0,innerbottommargin=0,innerrightmargin=0,everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedright{\\scriptsize\\textcolor{white}{",PatientIdValue,"}}}"),"\n")
+cat(paste("\\parbox[t]{0.31\\textwidth}{\\centering{\\scriptsize\\textcolor{white}{\\thepage}}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedleft{\\scriptsize\\textcolor{white}{",PatientReportDateValue,"}}}"),"\n")
+cat("\\end{mdframed}}","\n")
+cat("\\definecolor{textcol}{rgb}{.118, .565, 1.00}","\n")   
+
+notes<-xmlValue(top[["Notes"]])
+
+#if (lang=="zh"){
+#    cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{1.0\\textwidth}{\\raggedright","\\includegraphics[width=0.18\\linewidth]{",logo,"}}","\\parbox[t]{0.333\\textwidth}{\\centering Page}\\parbox[t]{0.333\\textwidth}{\\raggedleft 3} \\end{mdframed}}",sep=""),"\n")
+#    cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{1.0\\textwidth}{\\raggedleft", "\\includegraphics[width=0.18\\linewidth]{",logo,"}}","\\end{mdframed}}",sep=""),"\n")
+#} else {
+    cat(paste("\\fancyhead[EL]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{0.333\\textwidth}{\\raggedright","\\includegraphics[height=12mm]{",logo,"}}","\\parbox[t]{0.333\\textwidth}{\\centering \\large \\textcolor{logcol}{\\textbf{",notes,"}}}\\parbox[t]{0.333\\textwidth}{\\raggedleft \\textcolor{white}{.}} \\end{mdframed}}",sep=""),"\n")
+    cat(paste("\\fancyhead[OR]{\\begin{mdframed}[linecolor=white,roundcorner=0pt,backgroundcolor=white,innerleftmargin=0,innertopmargin=0,innerbottommargin=0]\\parbox[t]{0.333\\textwidth}{\\raggedright \\textcolor{white}{.}}","\\parbox[t]{0.333\\textwidth}{\\centering \\large \\textcolor{logcol}{\\textbf{",notes,"}}}\\parbox[t]{0.333\\textwidth}{\\raggedleft","\\includegraphics[height=12mm]{",logo,"}}", "\\end{mdframed}}",sep=""),"\n")
+#}
+
+cat("\\newpage","\n")
+cat("\\pagestyle{fancy}","\n")
+cat("\\textcolor{logcol}{\\line(1,0){330}}","\n")
+cat("\\newpage","\n")
+cat("\\textcolor{logcol}{\\line(1,0){330}}","\n")
+cat("\\newpage","\n")
+
+if(lang == "zh")
+{
+        cat("\\clearpage\\end{CJK*}","\n")
+}
+@ %end chunk = 11
+\end{document}linecolor=goldenpoppy
+

@@ -1,0 +1,176 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles	Genotypes	Genotype effects	PMID	Risk/Efficacy	# SNPs/condition
+1	Autism	Disease	PDC	01	rs10513025	C/T	C;C	Typical risk of autism	19812673	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs10513025	C/T	C;T	Typical risk of autism	19812673	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs10513025	C/T	T;T	Slightly increased risk of autism	19812673	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs7794745	A/T	A;A	Typical risk of autism	18179894, 20414140, 20176116	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs7794745	A/T	A;T	Typical risk of autism	18179894, 20414140, 20176116	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs7794745	A/T	T;T	Slightly increased risk of autism	18179894, 20414140, 20176116	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs38845	A/G	A;A	Increased risk of autism	22110649, 19002214	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs38845	A/G	A;G	Slightly increased risk of autism	22110649, 19002214	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs38845	A/G	G;G	Typical risk of autism	22110649, 19002214	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs4307059	C/T	C;C	Typical risk of autism	19404256, 20634369	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs4307059	C/T	C;T	Typical risk of autism	19404256, 20634369	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs4307059	C/T	T;T	Slightly increased risk of autism	19404256, 20634369	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs1143674	A/G	A;A	Increased risk of autism	18846500	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs1143674	A/G	A;G	Slightly increased risk of autism	18846500	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs1143674	A/G	G;G	Typical risk of autism	18846500	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs167771	A/G	A;A	Typical risk of autism	19058789, 21691864	Neutral	Total: 6
+1	Autism	Disease	PDC	01	rs167771	A/G	A;G	Slightly increased risk of autism	19058789, 21691864	Bad	Total: 6
+1	Autism	Disease	PDC	01	rs167771	A/G	G;G	Increased risk of autism	19058789, 21691864, 19058789	Bad	Total: 6
+2	Asthma (Early Onset)	Disease	PDC	01	rs2305480	A/G	A;A	Slightly increased risk of early onset asthma 	20860503, 18923164	Bad	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs2305480	A/G	A;G	Typical risk of early onset asthma	20860503, 18923164	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs2305480	A/G	G;G	Typical risk of early onset asthma	20860503, 18923164	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs7216389	C/T	C;C	Typical risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs7216389	C/T	C;T	Typical risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs7216389	C/T	T;T	Slightly increased risk of early onset asthma	17611496, 19133921, 19029000, 18395550	Bad	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8067378	A/G	A;A	Typical risk of early onset asthma	17611496, 22370936	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8067378	A/G	A;G	Typical risk of early onset asthma	17611496, 22370936	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8067378	A/G	G;G	Increased risk of early onset asthma	17611496, 22370936	Bad	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8069176	A/G	A;A	Typical risk of early onset asthma	18923164, 22370936	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8069176	A/G	A;G	Typical risk of early onset asthma	18923164, 22370936	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs8069176	A/G	G;G	Increased risk of early onset asthma 	18923164, 22370936	Bad	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs4795400	C/T	C;C	Typical risk of early onset asthma	18923164, 22370936	Neutral	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs4795400	C/T	C;T	Slightly increased risk of early onset asthma 	18923164, 22370936	Bad	Total: 5
+2	Asthma (Early Onset)	Disease	PDC	01	rs4795400	C/T	T;T	Increased risk of early onset asthma 	18923164, 22370936	Bad	Total: 5
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1801260	A/G	A;A	Slightly increased risk of ADHD	20704703	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1801260	A/G	A;G	Typical risk of ADHD	20704703	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1801260	A/G	G;G	Typical risk of ADHD	20704703	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1611115	C/T	C;C	Typical risk of ADHD	18982239	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1611115	C/T	C;T	Slightly increased risk of ADHD	18982239	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs1611115	C/T	T;T	Slightly increased risk of ADHD	18982239	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3785143	C/T	C;C	Typical risk of ADHD	18937296, 17876324	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3785143	C/T	C;T	Slightly increased risk of ADHD	18937296, 17876324	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3785143	C/T	T;T	Increased risk of ADHD	18937296, 17876324	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3746544	G/T	G;G	Typical risk of ADHD	19721846, 21996783	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3746544	G/T	G;T	Typical risk of ADHD	19721846, 21996783	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs3746544	G/T	T;T	Slightly increased risk of ADHD	19721846, 21996783	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs27072	C/T	C;C	Slightly increased risk of ADHD	18165969, 16082693, 19506906	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs27072	C/T	C;T	Typical risk of ADHD	18165969, 16082693, 19506906	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs27072	C/T	T;T	Typical risk of ADHD	18165969, 16082693, 19506906	Neutral	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs998424	A/G	A;A	Slightly increased risk of ADHD	20863575, 17994190, 17876324, 21122117, 15717291	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs998424	A/G	A;G	Slightly increased risk of ADHD	20863575, 17994190, 17876324, 21122117, 15717291	Bad	Total: 6
+3	Attention-Deficit Hyperactivity Disorder (ADHD)	Disease	PDC	01	rs998424	A/G	G;G	Typical risk of ADHD	20863575, 17994190, 17876324, 21122117, 15717291	Neutral	Total: 6
+4	Dyslexia	Disease	PDC	01	rs793862	A/G	A;A	Increased risk of dyslexia	16385449, 15138886	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs793862	A/G	A;G	Slightly increased risk of dyslexia	16385449, 15138886	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs793862	A/G	G;G	Typical risk of dyslexia	16385449, 15138886	Neutral	Total: 8
+4	Dyslexia	Disease	PDC	01	rs807701	A/G	A;A	Typical risk of dyslexia	16385449, 19238550	Neutral	Total: 8
+4	Dyslexia	Disease	PDC	01	rs807701	A/G	A;G	Slightly increased risk of dyslexia	16385449, 19238550	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs807701	A/G	G;G	Increased risk of dyslexia	16385449, 19238550	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs4504469	C/T	C;C	Typical risk of dyslexia	15717286, 16600991	Neutral	Total: 8
+4	Dyslexia	Disease	PDC	01	rs4504469	C/T	C;T	Slightly increased risk of dyslexia	15717286, 16600991	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs4504469	C/T	T;T	Increased risk of dyslexia	15717286, 16600991	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs2143340	A/G	A;A	Typical risk of dyslexia	15514892, 16600991, 18829873	Neutral	Total: 8
+4	Dyslexia	Disease	PDC	01	rs2143340	A/G	A;G	Slightly increased risk of dyslexia	15514892, 16600991, 18829873	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs2143340	A/G	G;G	Increased risk of dyslexia	15514892, 16600991, 18829873	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs3743205	C/T	C;C	Slightly increased risk of dyslexia	12954984, 21599957, 22383464	Bad	Total: 8
+4	Dyslexia	Disease	PDC	01	rs3743205	C/T	C;T	Typical risk of dyslexia	12954984, 21599957, 22383464	Neutral	Total: 8
+4	Dyslexia	Disease	PDC	01	rs3743205	C/T	T;T	Typical risk of dyslexia	12954984, 21599957, 22383464	Neutral	Total: 8
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs2233406	A/G	A;A	Typical risk of invasive pneumococcal disease	17463416	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs2233406	A/G	A;G	Typical risk of invasive pneumococcal disease	17463416	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs2233406	A/G	G;G	Increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs3138053	C/T	C;C	Typical risk of invasive pneumococcal disease	17463416	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs3138053	C/T	C;T	Typical risk of invasive pneumococcal disease	17463416	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs3138053	C/T	T;T	Increased risk of invasive pneumococcal disease	17463416	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs4925858	A/G	A;A	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs4925858	A/G	A;G	Typical risk of invasive pneumococcal disease	21171993	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs4925858	A/G	G;G	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs600718	A/T	A;A	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs600718	A/T	A;T	Typical risk of invasive pneumococcal disease	19798075	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs600718	A/T	T;T	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs616597	A/C	A;A	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs616597	A/C	A;C	Typical risk of invasive pneumococcal disease	19798075	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs616597	A/C	C;C	Slightly increased risk of invasive pneumococcal disease	19798075	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs760477	A/G	A;A	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs760477	A/G	A;G	Typical risk of invasive pneumococcal disease	21171993	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs760477	A/G	G;G	Slightly increased risk of invasive pneumococcal disease	21171993	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs8177374	C/T	C;C	Slightly increased risk of invasive pneumococcal disease	19509334, 17322885	Bad	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs8177374	C/T	C;T	Typical risk of invasive pneumococcal disease	19509334, 17322885	Neutral	Total: 7
+5	Invasive Pneumococcal Disease (IPD)	Disease	PDC	01	rs8177374	C/T	T;T	Slightly increased risk of invasive pneumococcal disease	19509334, 17322885	Bad	Total: 7
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9939609	A/T	A;A	Increased risk of obesity at young age	18583465, 19158205, 20090391, 20858286, 21411553	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9939609	A/T	A;T	Slightly increased risk of obesity at young age	18583465, 19158205, 20090391, 20858286, 21411553	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9939609	A/T	T;T	Typical risk of obesity at young age	18583465, 19158205, 20090391, 20858286, 21411553	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6265	C/T	C;C	Slightly increased risk of obesity at young age	20843981, 19478790, 22355368	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6265	C/T	C;T	Typical risk of obesity at young age	20843981, 19478790, 22355368	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6265	C/T	T;T	Typical risk of obesity at young age	20843981, 19478790, 22355368	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs17782313	C/T	C;C	Increased risk of obesity at young age	20843981, 21527513	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs17782313	C/T	C;T	Slightly increased risk of obesity at young age	20843981, 21527513	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs17782313	C/T	T;T	Typical risk of obesity at young age	20843981, 21527513	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs10938397	A/G	A;A	Typical risk of obesity at young age	20843981	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs10938397	A/G	A;G	Slightly increased risk of obesity at young age	20843981	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs10938397	A/G	G;G	Slightly increased risk of obesity at young age	20843981	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7138803	A/G	A;A	Slightly increased risk of obesity at young age	20843981, 22355368, 21527513	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7138803	A/G	A;G	Slightly increased risk of obesity at young age	20843981, 22355368, 21527513	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7138803	A/G	G;G	Typical risk of obesity at young age	20843981, 22355368, 21527513	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6499640	A/G	A;A	Slightly increased risk of obesity at young age	20843981, 22355368, 21527513	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6499640	A/G	A;G	Typical risk of obesity at young age	20843981, 22355368, 21527513	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6499640	A/G	G;G	Typical risk of obesity at young age	20843981, 22355368, 21527513	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs3751812	G/T	G;G	Typical risk of obesity at young age	18335027, 21443588	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs3751812	G/T	G;T	Increased risk of obesity at young age	18335027, 21443588	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs3751812	G/T	T;T	Increased risk of obesity at young age	18335027, 21443588	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs1121980	A/G	A;A	Increased risk of obesity at young age	18159244, 21248185, 22355368	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs1121980	A/G	A;G	Slightly increased risk of obesity at young age	18159244, 21248185, 22355368	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs1121980	A/G	G;G	Typical risk of obesity at young age	18159244, 21248185, 22355368	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6548238	C/T	C;C	Slightly increased risk of obesity at young age	22083549, 19851340	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6548238	C/T	C;T	Typical risk of obesity at young age	22083549, 19851340	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs6548238	C/T	T;T	Typical risk of obesity at young age	22083549, 19851340	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7566605	C/G	C;C	Increased risk of obesity at young age	16614226, 17218509, 17218508, 18615239	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7566605	C/G	C;G	Slightly increased risk of obesity at young age	16614226, 17218509, 17218508, 18615239	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs7566605	C/G	G;G	Typical risk of obesity at young age	16614226, 17218509, 17218508, 18615239	Neutral	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9921255	C/T	C;C	Increased risk of obesity at young age	20418190, 18779467	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9921255	C/T	C;T	Increased risk of obesity at young age	20418190, 18779467	Bad	Total: 11
+6	Obesity (Childhood Onset)	Disease	PDC	01	rs9921255	C/T	T;T	Typical risk of obesity at young age	20418190, 18779467	Neutral	Total: 11
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs2228622	A/G	A;A	Increased risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Bad	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs2228622	A/G	A;G	Slightly increased risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Bad	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs2228622	A/G	G;G	Typical risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780413	C/G	C;C	Slightly increased risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Bad	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780413	C/G	C;G	Slightly increased risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Bad	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780413	C/G	G;G	Typical risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780412	C/T	C;C	Increased risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Bad	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780412	C/T	C;T	Typical risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs3780412	C/T	T;T	Typical risk of obsessive-compulsive disorder (OCD)	19884611, 22531293, 21990008	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs1800497	A/G	A;A	Typical risk of obsessive-compulsive disorder (OCD)	16427255	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs1800497	A/G	A;G	Typical risk of obsessive-compulsive disorder (OCD)	16427255	Neutral	Total: 5
+7	Obsessive-Compulsive Disorder (OCD)	Disease	PDC	01	rs1800497	A/G	G;G	Increased risk of obsessive-compulsive disorder (OCD)	16427255	Bad	Total: 5
+8	Pathologic Myopia	Disease	PDC	01	rs10034228	C/T	C;C	Slightly increased risk of high myopia	21505071, 22150588	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs10034228	C/T	C;T	Slightly increased risk of high myopia	21505071, 22150588	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs10034228	C/T	T;T	Typical risk of high myopia	21505071, 22150588	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs4803455	A/C	A;A	Typical risk of high myopia	19365037	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs4803455	A/C	A;C	Typical risk of high myopia	19365037	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs4803455	A/C	C;C	Slightly increased risk of high myopia	19365037	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs662702	C/T	C;C	Slightly increased risk of high myopia	22447870, 21421876	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs662702	C/T	C;T	Typical risk of high myopia	22447870, 21421876	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs662702	C/T	T;T	Typical risk of high myopia	22447870, 21421876	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs6885224	C/T	C;C	Increased risk of high myopia	21095009, 21911587	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs6885224	C/T	C;T	Slightly increased risk of high myopia	21095009, 21911587	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs6885224	C/T	T;T	Typical risk of high myopia	21095009, 21911587	Neutral	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs9318086	A/G	A;A	Increased risk of high myopia	21640322	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs9318086	A/G	A;G	Slightly increased risk of high myopia	21640322	Bad	Total: 6
+8	Pathologic Myopia	Disease	PDC	01	rs9318086	A/G	G;G	Typical risk of high myopia	21640322	Neutral	Total: 6
+9	Restless Legs Syndrome	Disease	PDC	01	rs2300478	G/T	G;G	Increased risk of restless leg syndrome	19279021, 17637780, 19223043, 21779176	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs2300478	G/T	G;T	Slightly increased risk of restless leg syndrome	19279021, 17637780, 19223043, 21779176	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs2300478	G/T	T;T	Typical risk of restless leg syndrome	19279021, 17637780, 19223043, 21779176	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs1975197	A/G	A;A	Increased risk of restless leg syndrome	21779176, 18660810, 21264940	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs1975197	A/G	A;G	Slightly increased risk of restless leg syndrome	21779176, 18660810, 21264940	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs1975197	A/G	G;G	Typical risk of restless leg syndrome	21779176, 18660810, 21264940	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs4626664	A/G	A;A	Increased risk of restless leg syndrome	18660810, 21264940	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs4626664	A/G	A;G	Slightly increased risk of restless leg syndrome	18660810, 21264940	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs4626664	A/G	G;G	Typical risk of restless leg syndrome	18660810, 21264940	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs3923809	A/G	A;A	Increased risk of restless leg syndrome	17634447, 17637780, 19279021, 19223043	Bad	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs3923809	A/G	A;G	Typical risk of restless leg syndrome	17634447, 17637780, 19279021, 19223043	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs3923809	A/G	G;G	Typical risk of restless leg syndrome	17634447, 17637780, 19279021, 19223043	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs12593813	A/G	A;A	Typical risk of restless leg syndrome	17637780, 21779176	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs12593813	A/G	A;G	Typical risk of restless leg syndrome	17637780, 21779176	Neutral	Total: 5
+9	Restless Legs Syndrome	Disease	PDC	01	rs12593813	A/G	G;G	Slightly increased risk of restless leg syndrome	17637780, 21779176	Bad	Total: 5
+10	Permanent Tooth Development	Disease	PDC	01	rs7924176	A/G	A;A	No significant effect on number of tooth and delayed tooth eruption	21931568	Neutral	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs7924176	A/G	A;G	G allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs7924176	A/G	G;G	G allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs12424086	C/T	C;C	C allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs12424086	C/T	C;T	C allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs12424086	C/T	T;T	No significant effect on number of tooth and delayed tooth eruption	21931568	Neutral	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs4491709	C/T	C;C	No significant effect on number of tooth and delayed tooth eruption	21931568	Neutral	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs4491709	C/T	C;T	T allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs4491709	C/T	T;T	T allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs2281845	C/T	C;C	No significant effect on number of tooth and delayed tooth eruption	21931568	Neutral	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs2281845	C/T	C;T	T allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+10	Permanent Tooth Development	Disease	PDC	01	rs2281845	C/T	T;T	T allele increased odds of having slightly fewer teeth at 10-12 years of age and delayed tooth eruption	21931568	Bad	Total: 4
+

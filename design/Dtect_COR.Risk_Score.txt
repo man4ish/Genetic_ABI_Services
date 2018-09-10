@@ -1,0 +1,130 @@
+#ID	Specific disease/drug category	RSID	Risk allele	Allele frequency (HapMap)	Odd ratio (Homozygote)	Odd ratio (Heterozygote)	Homozygous modal genotype (Major allele)	Heterozygous	Homozygous variant genotype (Minor allele)
+COR_01_02	Ankylosing spondylitis	rs10865331	A	0.42	1.6129	1.27	GG	AG	AA
+COR_01_02	Ankylosing spondylitis	rs17095830	G	0.117	1.6641	1.29	AA	AG	GG
+COR_01_02	Ankylosing spondylitis	rs30187	T	0.41	1.5129	1.23	CC	CT	TT
+COR_01_02	Ankylosing spondylitis	rs4552569	C	0.267	1.4641	1.21	TT	CT	CC
+COR_01_03	Asthma	rs12603332	C	0.517	3.0276	1.74	TT	CT	CC
+COR_01_03	Asthma	rs404860	T	0.728	1.4641	1.21	CC	CT	TT
+COR_01_03	Asthma	rs7216389	T	0.635	2.1025	1.45	TT	CT	CC
+COR_01_04	Atrial fibrillation	rs13376333	T	0.2202	9.1204	3.02	CC	CT	TT
+COR_01_04	Atrial fibrillation	rs2200733	T	0.2706	3.2761	1.81	CC	CT	TT
+COR_01_04	Atrial fibrillation	rs7193343	T	0.3118	1.4641	1.21	CC	CT	TT
+COR_01_05	Back Pain (Lumbar disk disease)	rs1676486	A	0.185	2.0164	1.42	GG	AG	AA
+COR_01_05	Back Pain (Lumbar disk disease)	rs2073711	G	0.514	2.5921	1.61	AA	AG	GG
+COR_01_06	Breast Cancer	rs10822013	T	0.4199	1.2544	1.12	CC	CT	TT
+COR_01_06	Breast Cancer	rs1219648	G	0.4016	1.56	1.24	AA	GA	GG
+COR_01_06	Breast Cancer	rs13387042	A	0.4487	1.5625	1.25	GG	AG	AA
+COR_01_06	Breast Cancer	rs2046210	A	0.3832	1.59	1.36	GG	AG	AA
+COR_01_06	Breast Cancer	rs2981582	A	0.4057	1.4884	1.22	GG	AG	AA
+COR_01_06	Breast Cancer	rs3803662	A	0.457	1.69	1.3	GG	AG	AA
+COR_01_06	Breast Cancer	rs4784227	T	0.2175	1.5625	1.25	CC	CT	TT
+COR_01_06	Breast Cancer	rs7107217	C	0.4876	1.1664	1.08	AA	AC	CC
+COR_01_06	Breast Cancer	rs889312	C	0.3892	1.21	1.1	AA	AC	CC
+COR_01_07	Cervical cancer	rs11134527	A	0.6717	0.72	0.848528	GG	AG	AA
+COR_01_07	Cervical cancer	rs231775 	A	0.5481	1.66	1.28841	AA	AG	GG
+COR_01_07	Cervical cancer	rs2566	A	0.3045	2.4649	2.4649	GG	AG	AA
+COR_01_07	Cervical cancer	rs3212227	G	0.3379	1.3	1.14018	TT	GT	GG
+COR_01_07	Cervical cancer	rs568408	A	0.1277	1.43	1.19583	GG	AG	AA
+COR_01_07	Cervical cancer	rs750749	T	0.2541	0.7	0.8	TT	CT	CC
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs17576	G	0.4501	3.8	1.8	AA	AG	GG
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs1800469	G	0.641	1.0404	1.02	GG	AG	AA
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs2241712	T	0.6506	1.4161	1.19	TT	CT	CC
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs3736309	A	0.1557	0.1936	0.44	AA	AG	GG
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs7671167	T	0.5151	1.7424	1.32	TT	CT	CC
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs8034191	C	0.2092	1.97122	1.404	TT	CT	CC
+COR_01_08	Chronic obstructive pulmonary disease (COPD)	rs8192287	T	0.0563	6.25	2.5	GG	GT	TT
+COR_01_09	Colorectal cancer	rs10795668	G	0.7308	2.4336	1.12	GG	AG	AA
+COR_01_09	Colorectal cancer	rs16892766	A	0.9281	1.43	1.27	AA	AC	CC
+COR_01_09	Colorectal cancer	rs1800734	A	0.3146	1.68	1.18	GG	AG	AA
+COR_01_09	Colorectal cancer	rs3802842	C	0.3132	2.4336	1.56	AA	AC	CC
+COR_01_09	Colorectal cancer	rs4444235	C	0.4345	1.23	1.13	TT	CT	CC
+COR_01_09	Colorectal Cancer	rs4779584	T	0.4583	1.7	1.23	TT	CT	CC
+COR_01_09	Colorectal cancer	rs4939827	T	0.618	0.73	0.86	CC	CT	TT
+COR_01_09	Colorectal cancer	rs6691170	T	0.2605	1.1236	1.06	GG	GT	TT
+COR_01_09	Colorectal cancer	rs6983267	G	0.5636	1.68	1.39	TT	GT	GG
+COR_01_09	Colorectal cancer	rs7758229	T	0.2253	1.5625	1.28	GG	GT	TT
+COR_01_09	Colorectal cancer	rs961253	A	0.2885	2.56	1.6	CC	AC	AA
+COR_01_10	Coronary heart disease	rs17465637	C	0.5481	1.2769	1.13	CC	AC	AA
+COR_01_10	Coronary heart disease	rs3798220	C	0.0568	2.2801	1.51	TT	CT	CC
+COR_01_11	Deep Vein Thrombosis and Pulmonary Embolism 	rs1799963	A	0.0046	2.99982	1.732	GG	AG	AA
+COR_01_11	Deep Vein Thrombosis and Pulmonary Embolism 	rs268	G	0.0082	9.5481	3.09	AA	AG	GG
+COR_01_11	Deep Vein Thrombosis and Pulmonary Embolism 	rs5361	G	0.0549	7.4529	2.73	TT	GT	GG
+COR_01_11	Deep Vein Thrombosis and Pulmonary Embolism 	rs6025	T	0.006	12.7449	3.57	CC	CT	TT
+COR_01_11	Deep Vein Thrombosis and Pulmonary Embolism 	rs7025486	A	0.2605	1.44	1.2	GG	AG	AA
+COR_01_12	Heart attack	rs2291834	C	0.543	1.145	1.07	CC	CT	TT
+COR_01_12	Heart attack	rs599839	A	0.6877	1.6641	1.29	AA	AG	GG
+COR_01_12	Heart attack	rs6922269	A	0.2908	1.65	1.17	GG	AG	AA
+COR_01_13	Hepatocellular carcinoma	rs1573266	G	0.516	1.9321	1.39	AA	AG	GG
+COR_01_13	Hepatocellular carcinoma	rs2275959	A	0.4135	1.7161	1.31	GG	AG	AA
+COR_01_13	Hepatocellular carcinoma	rs231775	A	0.5481	1.43	1.19583	AA	AG	GG
+COR_01_13	Hepatocellular carcinoma	rs2596542	T	0.4107	1.9321	1.39	CC	CT	TT
+COR_01_13	Hepatocellular carcinoma	rs430397	T	0.1195	2.1904	1.48	CC	CT	TT
+COR_01_13	Hepatocellular carcinoma	rs4444903	G	0.5824	1.6641	1.29	AA	AG	GG
+COR_01_13	Hepatocellular carcinoma	rs7821974	T	0.6937	1.7689	1.33	TT	CT	CC
+COR_01_14	Hypertension	rs12413409	G	0.1383	0.7396	0.86	GG	AG	AA
+COR_01_14	Hypertension	rs13333226	A	0.1964	0.7569	0.87	AA	AG	GG
+COR_01_14	Hypertension	rs1378942	C	0.6703	1.5625	1.25	CC	AC	AA
+COR_01_14	Hypertension	rs17367504	A	0.1099	0.7921	0.89	AA	AG	GG
+COR_01_14	Hypertension	rs3754777	T	0.1941	1.51536	1.231	CC	CT	TT
+COR_01_14	Hypertension	rs5370	T	0.2056	3.8025	1.95	GG	GT	TT
+COR_01_15	Lung Cancer	rs1051730	A	0.1937	1.7161	1.31	GG	AG	AA
+COR_01_15	Lung Cancer	rs2736100	C	0.4483	1.2544	1.12	CC	CT	TT
+COR_01_15	Lung Cancer	rs3117582	G	0.0385	1.4884	1.22	TT	GT	GG
+COR_01_15	Lung Cancer	rs31489	C	0.6502	1.2544	1.12	CC	AC	AA
+COR_01_15	Lung Cancer	rs401681	C	0.5572	1.5625	1.25	CC	CT	TT
+COR_01_15	Lung Cancer	rs402710	C	0.6392	1.3924	1.18	CC	CT	TT
+COR_01_15	Lung Cancer	rs4488809	C	0.4473	1.5876	1.26	TT	CT	CC
+COR_01_15	Lung Cancer	rs748404	T	0.8475	1.3225	1.15	TT	CT	CC
+COR_01_15	Lung Cancer	rs8034191	C	0.2092	1.69	1.3	TT	CT	CC
+COR_01_16	Macular degeneration	rs1061147	A	0.296	4.2025	2.05	CC	AC	AA
+COR_01_16	Macular degeneration	rs2230199	G	0.902	1.88	1.44	CC	CG	GG
+COR_01_16	Macular degeneration	rs3750847	T	0.273	2.6569	1.63	CC	CT	TT
+COR_01_16	Macular degeneration	rs547154	G	0.901	5.1984	2.28	TT	GT	GG
+COR_01_16	Macular degeneration	rs9621532	A	0.977	1.9881	1.41	CC	AC	AA
+COR_01_17	Obesity	rs10871777	G	0.2285	1.0404	1.02	AA	AG	GG
+COR_01_17	Obesity	rs1121980	A	0.3681	1.7956	1.34	GG	AG	AA
+COR_01_17	Obesity	rs1421085	C	0.2473	2.0449	1.43	TT	CT	CC
+COR_01_17	Obesity	rs8050136	A	0.3384	2.1025	1.45	CC	AC	AA
+COR_01_19	Osteoarthritis	rs11842874	A	0.855	1.3689	1.17	GG	AG	AA
+COR_01_19	Osteoarthritis	rs143383	A	0.734	1.5876	1.26	GG	AG	AA
+COR_01_19	Osteoarthritis	rs7639618	T	0.264	2.1025	1.45	TT	CT	CC
+COR_01_19	Osteoarthritis	rs9864422	T	0.247	2.1025	1.45	TT	CT	CC
+COR_01_20	Ovarian Cancer	rs10088218	G	0.0842	0.5776	0.76	GG	AG	AA
+COR_01_20	Ovarian Cancer	rs1042838	A	0.0948	10.4329	3.23	CC	AC	AA
+COR_01_20	Ovarian Cancer	rs2072590	A	0.2386	1.44	1.2	CC	AC	AA
+COR_01_20	Ovarian Cancer	rs2295190	T	0.0925	1.1881	1.09	GG	GT	TT
+COR_01_20	Ovarian Cancer	rs2665390	C	0.0604	1.5376	1.24	TT	CT	CC
+COR_01_20	Ovarian Cancer	rs2854344	G	0.978	1.05	1.0247	GG	AG	AA
+COR_01_20	Ovarian Cancer	rs3814113	T	0.3951	0.6724	0.82	TT	CT	CC
+COR_01_20	Ovarian Cancer	rs9303542	G	0.3109	1.1236	1.06	AA	AG	GG
+COR_01_21	Peripheral arterial disease	rs1051730	A	0.1937	1.4161	1.19	GG	AG	AA
+COR_01_21	Peripheral arterial disease	rs7025486	A	0.2605	1.2996	1.14	GG	AG	AA
+COR_01_22	Prostate cancer 	rs10993994	T	0.473	1.3924	1.18	CC	CT	TT
+COR_01_22	Prostate cancer 	rs12621278	A	0.9107	1.7689	1.33	AA	AG	GG
+COR_01_22	Prostate cancer 	rs1447295	A	0.1818	2.0164	1.42	CC	AC	AA
+COR_01_22	Prostate cancer 	rs1512268	T	0.4611	1.3924	1.18	CC	CT	TT
+COR_01_22	Prostate cancer 	rs1571801	T	0.1667	1.8496	1.36	GG	GT	TT
+COR_01_22	Prostate cancer 	rs16901979	A	0.1799	3.24	1.8	CC	AC	AA
+COR_01_22	Prostate cancer 	rs1859962	G	0.3979	1.6129	1.27	TT	GT	GG
+COR_01_22	Prostate cancer 	rs4054823	T	0.5581	1.2769	1.13	TT	CT	CC
+COR_01_22	Prostate cancer 	rs4430796	A	0.5348	1.3924	1.18	AA	AG	GG
+COR_01_22	Prostate cancer 	rs6983267	G	0.5636	1.5625	1.25	GG	GT	TT
+COR_01_23	Stomach cancer	rs1801133	A	0.3242	1.52	1.17	GG	AG	AA
+COR_01_23	Stomach cancer	rs2274223	G	0.2766	1.7956	1.34	AA	AG	GG
+COR_01_23	Stomach cancer	rs2294008	T	0.4322	2.6244	1.62	CC	CT	TT
+COR_01_23	Stomach cancer	rs2976392	A	0.4313	2.6244	1.38-1.89	GG	AG	AA
+COR_01_24	Stroke	rs12425791	A	0.2019	1.96	1.4	GG	AG	AA
+COR_01_24	Stroke	rs3783799	T	0.0627	1.6129	1.27	CC	CT	TT
+COR_01_25	Sudden cardiac arrest	rs12143842	T	0.242	8.2944	2.88	CC	CT	TT
+COR_01_25	Sudden cardiac arrest	rs174230	T	0.128	1.9044	1.38	C:C	CT	TT
+COR_01_25	Sudden cardiac arrest	rs2824292	G	0.545	3.1684	1.78	AA	AG	GG
+COR_01_25	Sudden cardiac arrest	rs4665058	A	0.111	3.6864	1.92	CC	AC	AA
+COR_01_25	Sudden cardiac arrest	rs4687718	A	0.205	1.6129	1.27	GG	AG	AA
+COR_01_26	Type 2 Diabetes	rs1111875	C	0.5586	2.4	1.31	CC	CT	TT
+COR_01_26	Type 2 Diabetes	rs13266634	C	0.7179	1.4884	1.22	CC	CT	TT
+COR_01_26	Type 2 Diabetes	rs4402960	T	0.342	1.5129	1.23	GG	GT	TT
+COR_01_26	Type 2 Diabetes	rs5219	T	0.2738	1.5625	1.25	CC	CT	TT
+COR_01_26	Type 2 Diabetes	rs7756992	G	0.4052	1.6129	1.27	AA	AG	GG
+COR_01_26	Type 2 Diabetes	rs7903146	T	0.2189	2.3716	1.54	CC	CT	TT
+COR_01_26	Type 2 Diabetes	rs8050136	A	0.3384	1.3225	1.15	CC	AC	AA
+

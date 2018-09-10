@@ -1,0 +1,34 @@
+#ID	Specific disease/drug category	RSID	Risk allele	Allele frequency (HapMap)	Odd ratio (Homozygote)	Odd ratio (Heterozygote)	Homozygous modal genotype (Major allele)	Heterozygous	Homozygous variant genotype (Minor allele)
+OST_01_01	Alopecia Areata	rs694739	A	0.749	1.7689	1.33	AA	AG	GG
+OST_01_01	Alopecia Areata	rs1024161	T	0.498	2.7036	1.44	CC	CT	TT
+OST_01_01	Alopecia Areata	rs1701704	G	0.239	1.7956	1.34	TT	GT	GG
+OST_01_01	Alopecia Areata	rs3118470	C	0.318	1.9881	1.41	TT	CT	CC
+OST_01_01	Alopecia Areata	rs7682241	T	0.31	1.7956	1.34	GG	GT	TT
+OST_01_01	Alopecia Areata	rs9275572	G	0.625	4.8841	2.21	GG	AG	AA
+OST_01_01	Alopecia Areata	rs9479482	A	0.695	2.7225	1.65	AA	AG	GG
+OST_01_01	Alopecia Areata	rs304650	C	0.461	1.7161	1.31	CC	CT	TT
+OST_01_02	Ankylosing Spondylitis	rs30187	T	0.41	1.5129	1.23	CC	CT	TT
+OST_01_02	Ankylosing Spondylitis	rs4552569	C	0.267	1.4641	1.21	TT	CT	CC
+OST_01_02	Ankylosing Spondylitis	rs10865331	A	0.42	1.6129	1.27	GG	AG	AA
+OST_01_02	Ankylosing Spondylitis	rs17095830	G	0.117	1.6641	1.29	AA	AG	GG
+OST_01_07	Osteoarthritis	rs143383	A	0.734	1.5876	1.26	GG	AG	AA
+OST_01_07	Osteoarthritis	rs7639618	T	0.264	2.1025	1.45	TT	CT	CC
+OST_01_07	Osteoarthritis	rs9864422	T	0.247	2.1025	1.45	TT	CT	CC
+OST_01_07	Osteoarthritis	rs11842874	A	0.855	1.3689	1.17	GG	AG	AA
+OST_01_08	Osteoporosis	rs1038304	G	0.544	1.0816	1.04	AA	AG	GG
+OST_01_08	Osteoporosis	rs2273061	A	0.517	0.49	0.7	AA	AG	GG
+OST_01_08	Osteoporosis	rs3018362	A	0.416	1.1664	1.08	GG	AG	AA
+OST_01_08	Osteoporosis	rs3736228	T	0.135	1.69	1.3	CC	CT	TT
+OST_01_08	Osteoporosis	rs4355801	A	0.696	1.44	1.2	AA	GA	GG
+OST_01_08	Osteoporosis	rs6469804	A	0.723	1.1025	1.05	AA	GA	GG
+OST_01_08	Osteoporosis	rs6929137	A	0.341	1.1025	1.05	GG	AG	AA
+OST_01_08	Osteoporosis	rs7524102	A	0.341	1.1881	1.09	GG	AG	AA
+OST_01_08	Osteoporosis	rs9594738	T	0.32	1.2321	1.11	CC	CT	TT
+OST_01_08	Osteoporosis	rs11898505	G	0.801	2.3104	1.52	GG	AG	AA
+OST_01_09	Psoriasis	rs20541	G	0.732	1.6129	1.27	AA	AG	GG
+OST_01_09	Psoriasis	rs1800925	C	0.758	1.7689	1.33	CC	CT	TT
+OST_01_09	Psoriasis	rs3212227	T	0.662	2.0449	1.43	TT	GT	GG
+OST_01_09	Psoriasis	rs4085613	G	0.587	1.7424	1.32	GG	GT	TT
+OST_01_09	Psoriasis	rs6887695	G	0.395	2.0449	1.43	CC	CG	GG
+OST_01_09	Psoriasis	rs10484554	T	0.108	5.76	2.4	CC	CT	TT
+

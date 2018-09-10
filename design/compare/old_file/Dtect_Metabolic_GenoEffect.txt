@@ -1,0 +1,200 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles	Genotypes	Genotype effects	PMID	Risk/Efficacy	# SNPs/condition
+13	Chronic Thyroiditis	Disease	MTB	01	rs2476601	A/G	A;A	Increased risk of Hashimoto's thyroiditis	15719322, 20615141, 22069277	Bad	Total: 1
+13	Chronic Thyroiditis	Disease	MTB	01	rs2476601	A/G	A;G	Increased risk of Hashimoto's thyroiditis	15719322, 20615141, 22069277	Bad	Total: 1
+13	Chronic Thyroiditis	Disease	MTB	01	rs2476601	A/G	G;G	Typical risk of Hashimoto's thyroiditis	15719322, 20615141, 22069277	Neutral	Total: 1
+1	Effects of Smoking Dose on Metabolic Syndrome	Disease	MTB	01	rs4673	A/G	A;A	Typical risk of metabolic syndrome for smokers who smoke no less than 25 pack-years	22396743	Neutral	Total: 1
+1	Effects of Smoking Dose on Metabolic Syndrome	Disease	MTB	01	rs4673	A/G	A;G	Typical risk of metabolic syndrome, for smokers who smoke no less than 25 pack-years	22396743	Neutral	Total: 1
+1	Effects of Smoking Dose on Metabolic Syndrome	Disease	MTB	01	rs4673	A/G	G;G	Slightly increased risk of metabolic syndrome, for smokers who smoke no less than 25 pack-years	22396743	Bad	Total: 1
+2	Familial Hypercholesterolemia	Disease	MTB	01	rs5742904	C/T	C;C	Typical risk of hypercholesterolemia, Type B	19602640	Neutral	Total: 1
+2	Familial Hypercholesterolemia	Disease	MTB	01	rs5742904	C/T	C;T	Increased risk of hypercholesterolemia, Type B	19602640	Bad	Total: 1
+2	Familial Hypercholesterolemia	Disease	MTB	01	rs5742904	C/T	T;T	Increased risk of hypercholesterolemia, Type B	19602640	Bad	Total: 1
+3	G6PD Deficiency	Disease	MTB	01	rs1050828	C/T	C;C	Typical G6PD activity	19112496, 16528451	Neutral	Total: 2
+3	G6PD Deficiency	Disease	MTB	01	rs1050828	C/T	C;T	Decreased G6PD activity, G6PD deficiency	19112496, 16528451	Bad	Total: 2
+3	G6PD Deficiency	Disease	MTB	01	rs1050828	C/T	T;T	Decreased G6PD activity, G6PD deficiency	19112496, 16528451	Bad	Total: 2
+3	G6PD Deficiency	Disease	MTB	01	rs1050829	C/T	C;C	Decreased G6PD activity, G6PD deficiency	16356170, 1303173, 16528451	Bad	Total: 2
+3	G6PD Deficiency	Disease	MTB	01	rs1050829	C/T	C;T	Decreased G6PD activity, G6PD deficiency	16356170, 1303173, 16528451	Bad	Total: 2
+3	G6PD Deficiency	Disease	MTB	01	rs1050829	C/T	T;T	Typical G6PD activity	16356170, 1303173, 16528451	Neutral	Total: 2
+4	Gallstone	Disease	MTB	01	rs11887534	C/G	C;C	Increased risk of gallstone	17632509, 21039838	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs11887534	G/T	C;G	Increased risk of gallstone	17632509, 21039838	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs11887534	C/G	G;G	Typical risk of gallstone	17632509, 21039838	Neutral	Total: 3
+4	Gallstone	Disease	MTB	01	rs440446	C/G	C;C	Increased risk of gallstone	18296645	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs440446	C/G	C;G	Slightly increased risk of gallstone	18296645	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs440446	C/G	G;G	Typical risk of gallstone	18296645	Neutral	Total: 3
+4	Gallstone	Disease	MTB	01	rs3758650	A/G	A;A	Increased risk of gallstone	21839066	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs3758650	A/G	A;G	Increased risk of gallstone	21839066	Bad	Total: 3
+4	Gallstone	Disease	MTB	01	rs3758650	A/G	G;G	Typical risk of gallstone	21839066	Neutral	Total: 3
+5	Gestational Diabetes	Disease	MTB	01	rs7903146	C/T	C;C	Typical risk of gestational diabetes	17342473, 20682688, 21672010	Neutral	Total: 2
+5	Gestational Diabetes	Disease	MTB	01	rs7903146	C/T	C;T	Slightly increased risk of gestational diabetes	17342473, 20682688, 21672010	Bad	Total: 2
+5	Gestational Diabetes	Disease	MTB	01	rs7903146	C/T	T;T	Increased risk of gestational diabetes	17342473, 20682688, 21672010	Bad	Total: 2
+5	Gestational Diabetes	Disease	MTB	01	rs4402960	G/T	G;G	Typical risk of gestational diabetes	22096510, 17463240, 19002430	Neutral	Total: 2
+5	Gestational Diabetes	Disease	MTB	01	rs4402960	G/T	G;T	Slightly increased risk of gestational diabetes	22096510, 17463240, 19002430	Bad	Total: 2
+5	Gestational Diabetes	Disease	MTB	01	rs4402960	G/T	T;T	Slightly increased risk of gestational diabetes	22096510, 17463240, 19002430	Bad	Total: 2
+10	Gout	Disease	MTB	01	rs2231142	G/T	G;G	Typical risk of gout	18834626, 19506252, 20421215, 22161105	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs2231142	G/T	G;T	Slightly increased risk of gout	18834626, 19506252, 20421215, 22161105	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs2231142	G/T	T;T	Increased risk of gout	18834626, 19506252, 20421215, 22161105	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs16890979	C/T	C;C	Slightly increased risk of gout	18834626, 18759275	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs16890979	C/T	C;T	Typical risk of gout	18834626, 18759275	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs16890979	C/T	T;T	Typical risk of gout	18834626, 18759275	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs780093	C/T	C;C	Typical risk of gout	20884846, 22395765	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs780093	C/T	C;T	Slightly increased risk of gout	20884846, 22395765	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs780093	C/T	T;T	Increased risk of gout	20884846, 22395765	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs6855911	A/G	A;A	Increased risk of gout	18398472, 19890391	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs6855911	A/G	A;G	Slightly increased risk of gout	18398472, 19890391	Bad	Total: 5
+10	Gout	Disease	MTB	01	rs6855911	A/G	G;G	Typical risk of gout	18398472, 19890391	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs3733591	T/C	T;T	Typical risk of gout	19723617, 21658257, 20413573	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs3733591	T/C	T;C	Typical risk of gout	19723617, 21658257, 20413573	Neutral	Total: 5
+10	Gout	Disease	MTB	01	rs3733591	T/C	C;C	Increased risk of gout	19723617, 21658257, 20413573	Bad	Total: 5
+12	Grave's Disease	Disease	MTB	01	rs7528684	A/G	A;A	Typical risk of Grave's disease	15838509, 19438904	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs7528684	A/G	A;G	Typical risk of Grave's disease	15838509, 19438904	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs7528684	A/G	G;G	Slightly increased risk of Grave's disease	15838509, 19438904	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs10889677	A/C	A;A	Typical risk of Grave's disease	18073300	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs10889677	A/C	A;C	Typical risk of Grave's disease	18073300	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs10889677	A/C	C;C	Increased risk of Grave's disease	18073300	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs2281388	A/G	A;A	Increased risk of Grave's disease	21841780	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs2281388	A/G	A;G	Increased risk of Grave's disease	21841780	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs2281388	A/G	G;G	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs4947296	C/T	C;C	Increased risk of Grave's disease	21841780	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs4947296	C/T	C;T	Increased risk of Grave's disease	21841780	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs4947296	C/T	T;T	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs6457617	C/T	C;C	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs6457617	C/T	C;T	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs6457617	C/T	T;T	Increased risk of Grave's disease	21841780	Bad	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs9355610	A/G	A;A	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs9355610	A/G	A;G	Typical risk of Grave's disease	21841780	Neutral	Total: 6
+12	Grave's Disease	Disease	MTB	01	rs9355610	A/G	G;G	Slightly increased risk of Grave's disease	21841780	Bad	Total: 6
+6	Hypertriglyceridemia	Disease	MTB	01	rs964184	C/G	C;C	Typical risk of hypertriglyceridemia	20657596	Neutral	Total: 1
+6	Hypertriglyceridemia	Disease	MTB	01	rs964184	C/G	C;G	Increased risk of hypertriglyceridemia	20657596	Bad	Total: 1
+6	Hypertriglyceridemia	Disease	MTB	01	rs964184	C/G	G;G	Increased risk of hypertriglyceridemia	20657596	Bad	Total: 1
+11	Hypothyroidism	Disease	MTB	01	rs7850258	A/G	A;A	Typical risk of hypothyroidism	21981779	Neutral	Total: 1
+11	Hypothyroidism	Disease	MTB	01	rs7850258	A/G	A;G	Slightly increased risk of hypothyroidism	21981779	Bad	Total: 1
+11	Hypothyroidism	Disease	MTB	01	rs7850258	A/G	G;G	Slightly increased risk of hypothyroidism	21981779	Bad	Total: 1
+7	Lactose Intolerance	Disease	MTB	01	rs4988235	A/G	A;A	Lactase persistence	15114531, 17159977	Neutral	Total: 1
+7	Lactose Intolerance	Disease	MTB	01	rs4988235	A/G	A;G	Lactase persistence	15114531, 17159977	Neutral	Total: 1
+7	Lactose Intolerance	Disease	MTB	01	rs4988235	A/G	G;G	Increased possibility of lactose intolerance	15114531, 17159977	Bad	Total: 1
+8	Type 1 Diabetes	Disease	MTB	01	rs17388568	A/G	A;A	Increased risk of type 1 diabetes	17554260, 17554300, 21875375	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs17388568	A/G	A;G	Slightly increased risk of type 1 diabetes	17554260, 17554300, 21875375	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs17388568	A/G	G;G	Typical risk of type 1 diabetes	17554260, 17554300, 21875375	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2292239	G/T	G;G	Typical risk of type 1 diabetes	17554260, 21559886, 20586186	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2292239	G/T	G;T	Slightly increased risk of type 1 diabetes	17554260, 21559886, 20586186	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2292239	G/T	T;T	Increased risk of type 1 diabetes	17554260, 21559886, 20586186	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2296336	C/G	C;C	Typical risk of type 1 diabetes	16960798, 18340361	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2296336	C/G	C;G	Slightly increased risk of type 1 diabetes	16960798, 18340361	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2296336	C/G	G;G	Increased risk of type 1 diabetes	16960798, 18340361	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2476601	A/G	A;A	Increased risk of type 1 diabetes	17554260, 17934143	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2476601	A/G	A;G	Slightly increased risk of type 1 diabetes	17554260, 17934143	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2476601	A/G	G;G	Typical risk of type 1 diabetes	17554260, 17934143	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs6679677	A/C	A;A	Increased risk of type 1 diabetes	17554300, 18305142	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs6679677	A/C	A;C	Increased risk of type 1 diabetes	17554300, 18305142	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs6679677	A/C	C;C	Typical risk of type 1 diabetes	17554300, 18305142	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7574865	G/T	G;G	Typical risk of type 1 diabetes	18759272, 18576336, 18703106	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7574865	G/T	G;T	Slightly increased risk of type 1 diabetes	18759272, 18576336, 18703106	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7574865	G/T	T;T	Increased risk of type 1 diabetes	18759272, 18576336, 18703106	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs725613	G/T	G;G	Typical risk of type 1 diabetes	17632545, 18946483, 19178520	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs725613	G/T	G;T	Typical risk of type 1 diabetes	17632545, 18946483, 19178520	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs725613	G/T	T;T	Slightly increased risk of type 1 diabetes	17632545, 18946483, 19178520	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs17696736	A/G	A;A	Typical risk of type 1 diabetes	17554260, 17554300, 20089178	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs17696736	A/G	A;G	Slightly increased risk of type 1 diabetes	17554260, 17554300, 20089178	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs17696736	A/G	G;G	Increased risk of type 1 diabetes	17554260, 17554300, 20089178	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2542151	G/T	G;G	Increased risk of type 1 diabetes	17554260, 17554300, 21246196	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2542151	G/T	G;T	Slightly increased risk of type 1 diabetes	17554260, 17554300, 21246196	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2542151	G/T	T;T	Typical risk of type 1 diabetes	17554260, 17554300, 21246196	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7202877	G/T	G;G	Increased risk of type 1 diabetes	19430480	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7202877	G/T	G;T	Slightly increased risk of type 1 diabetes	19430480	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs7202877	G/T	T;T	Typical risk of type 1 diabetes	19430480	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs5753037	C/T	C;C	Typical risk of type 1 diabetes	19430480	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs5753037	C/T	C;T	Slightly increased risk of type 1 diabetes	19430480	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs5753037	C/T	T;T	Slightly increased risk of type 1 diabetes	19430480	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3825932	C/T	C;C	Typical risk of type 1 diabetes	19430480, 18978792	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3825932	C/T	C;T	Typical risk of type 1 diabetes	19430480, 18978792	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3825932	C/T	T;T	Slightly increased risk of type 1 diabetes	19430480, 18978792	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs11755527	C/G	C;C	Typical risk of type 1 diabetes	19430480, 18978792	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs11755527	C/G	C;G	Slightly increased risk of type 1 diabetes	19430480, 18978792	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs11755527	C/G	G;G	Slightly increased risk of type 1 diabetes	19430480, 18978792	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3087243	A/G	A;A	Slightly increased risk of type 1 diabetes	19430480, 18978792, 19506323	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3087243	A/G	A;G	Slightly increased risk of type 1 diabetes	19430480, 18978792, 19506323	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs3087243	A/G	G;G	Typical risk of type 1 diabetes	19430480, 18978792, 19506323	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs4788084	T/C	T;T	Typical risk of type 1 diabetes	19430480, 21829393	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs4788084	T/C	T;C	Typical risk of type 1 diabetes	19430480, 21829393	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs4788084	T/C	C;C	Slightly increased risk of type 1 diabetes	19430480, 21829393	Bad	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2104286	C/T	C;C	Typical risk of type 1 diabetes	17554300, 19119414, 19956099	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2104286	C/T	C;T	Typical risk of type 1 diabetes	17554300, 19119414, 19956099	Neutral	Total: 16
+8	Type 1 Diabetes	Disease	MTB	01	rs2104286	C/T	T;T	Slightly increased risk of type 1 diabetes	17554300, 19119414, 19956099	Bad	Total: 16
+9	Type 2 Diabetes	Disease	MTB	01	rs4402960	G/T	G;G	Typical risk of type 2 diabetes	18477659, 18437351, 20523342	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs4402960	G/T	G;T	Slightly increased risk of type 2 diabetes	18477659, 18437351, 20523342	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs4402960	G/T	T;T	Increased risk of type 2 diabetes	18477659, 18437351, 20523342	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10811661	C/T	C;C	Typical risk of type 2 diabetes	18477659, 18437351, 19033397	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10811661	C/T	C;T	Typical risk of type 2 diabetes	18477659, 18437351, 19033397	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10811661	C/T	T;T	Slightly increased risk of type 2 diabetes	18477659, 18437351, 19033397	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9300039	A/C	A;A	Typical risk of type 2 diabetes	17463248, 18162508	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9300039	A/C	A;C	Typical risk of type 2 diabetes	17463248, 18162508	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9300039	A/C	C;C	Slightly increased risk of type 2 diabetes	17463248, 18162508	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs8050136	A/C	A;A	Slightly increased risk of type 2 diabetes	17959933, 20057365	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs8050136	A/C	A;C	Slightly increased risk of type 2 diabetes	17959933, 20057365	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs8050136	A/C	C;C	Typical risk of type 2 diabetes	17959933, 20057365	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs13266634	C/T	C;C	Slightly increased risk of type 2 diabetes	18162508, 18324385, 19033397	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs13266634	C/T	C;T	Typical risk of type 2 diabetes	18162508, 18324385, 19033397	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs13266634	C/T	T;T	Typical risk of type 2 diabetes	18162508, 18324385, 19033397	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7903146	C/T	C;C	Typical risk of type 2 diabetes	17671651, 18655717, 21109996	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7903146	C/T	C;T	Slightly increased risk of type 2 diabetes	17671651, 18655717, 21109996	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7903146	C/T	T;T	Increased risk of type 2 diabetes	17671651, 18655717, 21109996	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs5219	C/T	C;C	Typical risk of type 2 diabetes	17977958, 18162508, 19498446	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs5219	C/T	C;T	Slightly increased risk of type 2 diabetes	17977958, 18162508, 19498446	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs5219	C/T	T;T	Increased risk of type 2 diabetes	17977958, 18162508, 19498446	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9465871	C/T	C;C	Increased risk of type 2 diabetes	17554300, 18633108	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9465871	C/T	C;T	Slightly increased risk of type 2 diabetes	17554300, 18633108	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs9465871	C/T	T;T	Typical risk of type 2 diabetes	17554300, 18633108	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1889018	A/G	A;A	Slightly increased risk of type 2 diabetes	18192539, 17019602	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1889018	A/G	A;G	Slightly increased risk of type 2 diabetes	18192539, 17019602	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1889018	A/G	G;G	Typical risk of type 2 diabetes	18192539, 17019602	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2297508	C/G	G;G	Slightly increased risk of type 2 diabetes	18192539, 18692268, 21178094	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2297508	C/G	C;G	Slightly increased risk of type 2 diabetes	18192539, 18692268, 21178094	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2297508	C/G	C;C	Typical risk of type 2 diabetes	18192539, 18692268, 21178094	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs12255372	G/T	G;G	Typical risk of type 2 diabetes	19228405, 19033397, 22052079, 17697858	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs12255372	G/T	G;T	Slightly increased risk of type 2 diabetes	19228405, 19033397, 22052079, 17697858	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs12255372	G/T	T;T	Increased risk of type 2 diabetes	19228405, 19033397, 22052079, 17697858	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2295490	A/G	A;A	Typical risk of type 2 diabetes	18984671, 19139803	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2295490	A/G	A;G	Slightly increased risk of type 2 diabetes	18984671, 19139803	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2295490	A/G	G;G	Slightly increased risk of type 2 diabetes	18984671, 19139803	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7756992	A/G	A;A	Typical risk of type 2 diabetes	18162508, 19033397, 22437209	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7756992	A/G	A;G	Slightly increased risk of type 2 diabetes	18162508, 19033397, 22437209	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs7756992	A/G	G;G	Increased risk of type 2 diabetes	18162508, 19033397, 22437209	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1111875	C/T	C;C	Slightly increased risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1111875	C/T	C;T	Typical risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1111875	C/T	T;T	Typical risk of type 2 diabetes	17971426, 18231124, 18477659, 20927120	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	C;C	Increased risk of type 2 diabetes	21799836	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	C;G	Slightly increased risk of type 2 diabetes	21799836	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	G;G	Typical risk of type 2 diabetes	21799836	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs4712523	A/G	A;A	Typical risk for type 2 diabetes	19401414, 22437209, 17463248	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs4712523	A/G	A;G	Slightly increased risk of type 2 diabetes	19401414, 22437209, 17463248	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs4712523	A/G	G;G	Increased risk of type 2 diabetes	19401414, 22437209, 17463248	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2383208	A/G	A;A	Slightly increased risk of type 2 diabetes	19401414, 21270277	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2383208	A/G	A;G	Typical risk of type 2 diabetes	19401414, 21270277	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2383208	A/G	G;G	Typical risk of type 2 diabetes	19401414, 21270277	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237892	C/T	C;C	Slightly increased risk of type 2 diabetes	19401414, 19448982, 19516902, 22403629	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237892	C/T	C;T	Typical risk of type 2 diabetes	19401414, 19448982, 19516902, 22403629	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237892	C/T	T;T	Typical risk of type 2 diabetes	19401414, 19448982, 19516902, 22403629	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs864745	C/T	C;C	Typical risk of type 2 diabetes	18372903, 19455301, 20927120	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs864745	C/T	C;T	Typical risk of type 2 diabetes	18372903, 19455301, 20927120	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs864745	C/T	T;T	Slightly increased risk of type 2 diabetes	18372903, 19455301, 20927120	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1552224	A/C	A;A	Slightly increased risk of type 2 diabetes	19651812, 20581827, 21267535	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1552224	A/C	A;C	Typical risk of type 2 diabetes	19651812, 20581827, 21267535	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1552224	A/C	C;C	Typical risk of type 2 diabetes	19651812, 20581827, 21267535	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs243021	A/G	A;A	Slightly increased risk of type 2 diabetes	20581827	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs243021	A/G	A;G	Typical risk of type 2 diabetes	20581827	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs243021	A/G	G;G	Typical risk of type 2 diabetes	20581827	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2943641	C/T	C;C	Slightly increased risk of type 2 diabetes	19734900, 22046406	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2943641	C/T	C;T	Typical risk of type 2 diabetes	19734900, 22046406	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2943641	C/T	T;T	Typical risk of type 2 diabetes	19734900, 22046406	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10830963	C/G	C;C	Typical risk of type 2 diabetes	19241057, 19060907, 21470412, 21949744	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10830963	C/G	C;G	Slightly increased risk of type 2 diabetes	19241057, 19060907, 21470412, 21949744	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs10830963	C/G	G;G	Slightly increased risk of type 2 diabetes	19241057, 19060907, 21470412, 21949744	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237897	C/T	C;C	Typical risk of type 2 diabetes	19308350, 19448982, 20056949	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237897	C/T	C;T	Slightly increased risk of type 2 diabetes	19308350, 19448982, 20056949	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs2237897	C/T	T;T	Increased risk of type 2 diabetes	19308350, 19448982, 20056949	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1042714	C/G	C;C	Increased risk of type 2 diabetes	17150099	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1042714	C/G	C;G	Slightly increased risk of type 2 diabetes	17150099	Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs1042714	C/G	G;G	Typical risk of type 2 diabetes	17150099	Neutral	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	C;C	Increased risk of type 2 diabetes		Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	C;G	Slightly increased risk of type 2 diabetes		Bad	Total: 25
+9	Type 2 Diabetes	Disease	MTB	01	rs163182	C/G	G;G	Typical risk of type 2 diabetes		Neutral	Total: 25
+

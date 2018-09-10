@@ -1,0 +1,57 @@
+#Specific disease/drug category	RSID	ID	Risk allele	Allele frequency (HapMap)	Odd ratio (Homozygote)	Odd ratio (Heterozygote)	Homozygous modal genotype (Major allele)	Heterozygous	Homozygous variant genotype (Minor allele)
+Autism	rs10513025	PDC_01_01	T	0.052	0.3025	0.55	TT	CT	CC
+Autism	rs7794745	PDC_01_01	T	0.477	1.5129	1.23	AA	AT	TT
+Autism	rs38845	PDC_01_01	A	0.394	1.6256	1.275	AA	AT	TT
+Autism	rs4307059	PDC_01_01	T	0.764	1.4161	1.19	TT	CT	CC
+Autism	rs1143674	PDC_01_01	A	0.412	1.69	1.3	GG	AG	AA
+Autism	rs167771	PDC_01_01	G	0.348	2.2201	1.49	AA	AG	GG
+Asthma (Early Onset)	rs2305480	PDC_01_02	A	0.671	1.3924	1.18	GG	AG	AA
+Asthma (Early Onset)	rs7216389	PDC_01_02	T	0.635	2.1025	1.45	TT	CT	CC
+Asthma (Early Onset)	rs8067378	PDC_01_02	G	0.459	3.3856	1.84	AA	AG	GG
+Asthma (Early Onset)	rs8069176	PDC_01_02	G	0.614	4.41	2.10	GG	AG	AA
+Asthma (Early Onset)	rs4795400	PDC_01_02	T	0.332	3.7249	1.93	CC	CT	TT
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs1801260	PDC_01_03	A	0.782	2.3409	1.53	AA	AG	GG
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs1611115	PDC_01_03	T	0.207	1.1025	1.05	CC	CT	TT
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs3785143	PDC_01_03	T	0.104	1.69	1.3	CC	CT	TT
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs3746544	PDC_01_03	T	0.707	1.3225	1.15	TT	GT	GG
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs27072	PDC_01_03	C	0.808	1.44	1.2	CC	CT	TT
+Attention-Deficit Hyperactivity Disorder (ADHD)	rs998424	PDC_01_03	A	0.268	1.21	1.1	GG	AG	AA
+Dyslexia	rs793862	PDC_01_04	A	0.410	3.3	1.8165	GG	AG	AA
+Dyslexia	rs807701	PDC_01_04	G	0.418	1.88	1.371	AA	AG	GG
+Dyslexia	rs4504469	PDC_01_04	T	0.233	2.2801	1.51	CC	CT	TT
+Dyslexia	rs2143340	PDC_01_04	G	0.151	1.6384	1.28	AA	AG	GG
+Dyslexia	rs3743205	PDC_01_04	C	0.092	0.0064	0.08	CC	CT	TT
+Invasive Pneumococcal Disease (IPD)	rs2233406	PDC_01_05	G	0.228	0.3025	0.55	GG	AG	AA
+Invasive Pneumococcal Disease (IPD)	rs3138053	PDC_01_05	T	0.228	0.36	0.6	TT	CT	CC
+Invasive Pneumococcal Disease (IPD)	rs4925858	PDC_01_05	G	0.616	1	0.7	GG	AG	AA
+Invasive Pneumococcal Disease (IPD)	rs600718	PDC_01_05	T	0.229	1	0.67	TT	AT	AA
+Invasive Pneumococcal Disease (IPD)	rs616597	PDC_01_05	A	0.225	1	0.65	GG	AG	AA
+Invasive Pneumococcal Disease (IPD)	rs760477	PDC_01_05	G	0.636	1	0.67	GG	AG	AA
+Invasive Pneumococcal Disease (IPD)	rs8177374	PDC_01_05	T	0.084	1	0.59	CC	CT	TT
+Obesity (Childhood Onset)	rs9939609	PDC_01_06	A	0.355	3.2041	1.79	TT	AT	AA
+Obesity (Childhood Onset)	rs6265	PDC_01_06	C	0.771	1.2544	1.12	CC	CT	TT
+Obesity (Childhood Onset)	rs17782313	PDC_01_06	C	0.222	1.44	1.2	TT	CT	CC
+Obesity (Childhood Onset)	rs10938397	PDC_01_06	G	0.346	1.3924	1.18	AA	AG	GG
+Obesity (Childhood Onset)	rs7138803	PDC_01_06	A	0.293	1.2996	1.14	GG	AG	AA
+Obesity (Childhood Onset)	rs6499640	PDC_01_06	A	0.483	1.3456	1.16	GG	AG	AA
+Obesity (Childhood Onset)	rs3751812	PDC_01_06	T	0.241	2.7	2.2	GG	GT	TT
+Obesity (Childhood Onset)	rs1121980	PDC_01_06	A	0.368	2.76	1.67	GG	AG	AA
+Obesity (Childhood Onset)	rs6548238	PDC_01_06	C	0.872	2.1025	1.45	TT	CT	CC
+Obesity (Childhood Onset)	rs7566605	PDC_01_06	C	0.296	2.6244	1.62	GG	CG	CC
+Obesity (Childhood Onset)	rs9921255	PDC_01_06	C	0.188	3.1329	1.77	TT	CT	CC
+Obsessive-Compulsive Disorder (OCD)	rs2228622	PDC_01_07	A	0.310	4.309	2.076	GG	AG	AA
+Obsessive-Compulsive Disorder (OCD)	rs3780413	PDC_01_07	C	0.389	1.44	1.2	GG	CG	CC
+Obsessive-Compulsive Disorder (OCD)	rs3780412	PDC_01_07	C	0.414	4.605	2.146	TT	CT	CC
+Obsessive-Compulsive Disorder (OCD)	rs1800497	PDC_01_07	G	0.296	0.25	0.5	GG	AG	AA
+Pathologic Myopia	rs10034228	PDC_01_08	C	0.362	1.3924	1.18	TT	CT	CC
+Pathologic Myopia	rs4803455	PDC_01_08	C	0.478	0.4489	0.67	CC	AC	AA
+Pathologic Myopia	rs662702	PDC_01_08	C	0.849	2.1	1.449	CC	CT	TT
+Pathologic Myopia	rs6885224	PDC_01_08	C	0.347	1.5376	1.24	TT	CT	CC
+Pathologic Myopia	rs9318086	PDC_01_08	A	0.451	1.7424	1.32	GG	GT	AA
+Restless Legs Syndrome	rs2300478	PDC_01_09	G	0.222	3.0276	1.74	TT	GT	GG
+Restless Legs Syndrome	rs1975197	PDC_01_09	A	0.208	1.6641	1.29	GG	AG	AA
+Restless Legs Syndrome	rs4626664	PDC_01_09	A	0.255	2.0736	1.44	GG	AG	AA
+Restless Legs Syndrome	rs3923809	PDC_01_09	A	0.597	3.61	1.9	AA	AG	GG
+Restless Legs Syndrome	rs12593813	PDC_01_09	G	0.546	0.5041	0.71	AA	AG	GG
+
+

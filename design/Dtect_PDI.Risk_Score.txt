@@ -1,0 +1,58 @@
+#ID	Specific disease/drug category	RSID	Risk allele	Allele frequency (HapMap)	Odd ratio (Homozygote)	Odd ratio (Heterozygote)	Homozygous modal genotype (Major allele)	Heterozygous	Homozygous variant genotype (Minor allele)
+PDI_01_01	Abnormal QT Interval	rs10494366 	G	0.523	3.18	2.57	GG	GT	TT
+PDI_01_01	Abnormal QT Interval	rs10918594	G	0.428	3.6	1.897	CC	CG	GG
+PDI_01_01	Abnormal QT Interval	rs12143842	T	0.242	2.88	1.697	CC	CT	TT
+PDI_01_01	Abnormal QT Interval	rs16847548	C	0.244	1.31	1.7161	TT	CT	CC
+PDI_01_01	Abnormal QT Interval	rs4657139	A	0.407	1.9044	1.38	AA	AG	GG
+PDI_01_02	Allergic Asthma (Early Onset)	rs16947078	G	0.146	8.3	2.8809	AA	AG	GG
+PDI_01_03	Asthma (Early Onset)	rs1041973	C	0.289	0.49	0.7	CC	AC	AA
+PDI_01_03	Asthma (Early Onset)	rs2305480	A	0.671	1.3924	1.18	GG	AG	AA
+PDI_01_03	Asthma (Early Onset)	rs7216389	T	0.635	2.1025	1.45	TT	CT	CC
+PDI_01_03	Asthma (Early Onset)	rs8067378	G	0.459	3.3856	1.84	AA	AG	GG
+PDI_01_03	Asthma (Early Onset)	rs8069176	G	0.614	4.41	2.1	GG	AG	AA
+PDI_01_04	Coeliac Disease	rs1464510	A	0.453	1.5129	1.23	CC	AC	AA
+PDI_01_04	Coeliac Disease	rs17810546	G	0.051	1.8225	1.35	AA	AG	GG
+PDI_01_04	Coeliac Disease	rs2187668	T	0.084	6.23	2.495	CC	CT	TT
+PDI_01_04	Coeliac Disease	rs3184504	T	0.21	1.4161	1.19	CC	CT	TT
+PDI_01_04	Coeliac Disease	rs6441961	T	0.272	1.4641	1.21	CC	CT	TT
+PDI_01_04	Coeliac Disease	rs6822844	G	0.933	2.0736	1.44	GG	GT	TT
+PDI_01_05	Crohn's Disease	rs10761659	A	0.501	1.5129	1.23	AA	AG	GG
+PDI_01_05	Crohn's Disease	rs10883365	G	0.475	1.62	1.2	AA	AG	GG
+PDI_01_05	Crohn's Disease	rs11209026	G	0.033	0.1849	0.43	GG	AG	AA
+PDI_01_05	Crohn's Disease	rs11805303	T	0.332	1.86	1.39	CC	CT	TT
+PDI_01_05	Crohn's Disease	rs17234657	G	0.11	2.32	1.54	TT	GT	GG
+PDI_01_05	Crohn's Disease	rs2241880	G	0.39	2.1025	1.45	AA	AG	GG
+PDI_01_05	Crohn's Disease	rs2542151	G	0.156	1.3225	1.15	TT	GT	GG
+PDI_01_05	Crohn's Disease	rs4958847	A	0.353	3.1222	1.767	GG	AG	AA
+PDI_01_05	Crohn's Disease	rs6596075	C	0.755	2.06	1.55	CC	CG	GG
+PDI_01_05	Crohn's Disease	rs6908425	C	0.782	1.95	1.63	CC	CT	TT
+PDI_01_05	Crohn's Disease	rs9858542	A	0.221	1.84	1.09	GG	AG	AA
+PDI_01_06	Early Speech Impairment	rs2710102	G	0.599	1.7689	1.33	CC	AC	AA
+PDI_01_06	Early Speech Impairment	rs759178	C	0.6	2.1316	1.46	GG	AG	AA
+PDI_01_06	Early Speech Impairment	rs17236239	G	0.238	1.5129	1.23	AA	AG	GG
+PDI_01_06	Early Speech Impairment	rs2538976	C	0.468	2.1316	1.46	TT	CT	CC
+PDI_01_07	Infantile Hypertrophic Pyloric Stenosis	rs11712066	A	0.897	2.5921	1.61	AA	AG	GG
+PDI_01_07	Infantile Hypertrophic Pyloric Stenosis	rs29784	T	0.351	2.0164	1.42	CC	CT	TT
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs2233406	G	0.228	0.3025	0.55	GG	AG	AA
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs3138053	T	0.228	0.36	0.6	TT	CT	CC
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs4925858	A	0.616	1	0.7	GG	AG	AA
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs600718	A	0.229	1	0.67	TT	AT	AA
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs616597	A	0.225	1	0.65	GG	AG	AA
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs760477	A	0.636	1	0.67	GG	AG	AA
+PDI_01_08	Invasive Pneumococcal Disease (IPD)	rs8177374	C	0.084	1	0.59	CC	CT	TT
+PDI_01_09	Kawasaki's Disease	rs10129255	T	0.298	1.729	1.315	CC	CT	TT
+PDI_01_09	Kawasaki's Disease	rs1568657	G	0.307	1.9852	1.409	AA	AG	GG
+PDI_01_09	Kawasaki's Disease	rs1801274	A	0.57	1.7424	1.32	AA	AG	GG
+PDI_01_09	Kawasaki's Disease	rs2844724	C	0.328	5.3361	2.31	AA	AC	CC
+PDI_01_09	Kawasaki's Disease	rs28493229	C	0.095	2.3104	1.52	GG	CG	CC
+PDI_01_09	Kawasaki's Disease	rs527409	T	0.045	8.41	2.9	CC	CT	TT
+PDI_01_09	Kawasaki's Disease	rs7604693	C	0.136	7.29	2.7	AA	AC	CC
+PDI_01_10	Meningococcal Disease	rs1065489	G	0.767	1	0.64	GG	GT	TT
+PDI_01_10	Meningococcal Disease	rs11582939	C	0.759	1	0.66	CC	CT	TT
+PDI_01_10	Meningococcal Disease	rs352140	C	0.542	1	0.6	CC	CT	TT
+PDI_01_11	Pathological Myopia	rs10034228	C	0.362	1.5129	1.23	TT	CT	CC
+PDI_01_11	Pathological Myopia	rs4803455	C	0.478	0.4489	0.67	CC	AC	AA
+PDI_01_11	Pathological Myopia	rs662702	C	0.849	2.1	1.449	CC	CT	TT
+PDI_01_11	Pathological Myopia	rs6885224	C	0.347	1.5376	1.24	TT	CT	CC
+PDI_01_11	Pathological Myopia	rs9318086	A	0.451	1.7424	1.32	GG	AG	AA
+

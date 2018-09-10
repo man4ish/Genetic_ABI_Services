@@ -1,0 +1,61 @@
+#!/bin/bash
+
+DIR1="/cygdrive/d/Experiment/"
+DIR2="/cygdrive/d/TXTfiles/"
+
+while true
+do
+        EDS=`/usr/bin/ls "$DIR1" | /usr/bin/grep .eds`
+        TXT=`/usr/bin/ls "$DIR2" | /usr/bin/grep .txt`
+        if [[ "$EDS" && "$TXT" ]];
+        then
+                /usr/bin/echo "both eds and txt files exist"
+                for EDS in `/usr/bin/ls "$DIR1" | /usr/bin/grep .eds`
+                do
+                        for TXT in `/usr/bin/ls "$DIR2" | /usr/bin/grep .txt`
+                        do
+                                FILENAME_EDS=`/usr/bin/echo $EDS | /usr/bin/awk -F '.' '{print $1}'`
+                                FILENAME_TXT=`/usr/bin/echo $TXT | /usr/bin/awk -F '.' '{print $1}'`
+                                if [ "$FILENAME_EDS" == "$FILENAME_TXT" ];
+                                then
+                                        /usr/bin/scp "$DIR1"/"$EDS" gss@192.168.7.1:/data/gss_in/"$EDS"_part
+                                        echo $?
+                                        if (( $? == 0 ));
+                                        then
+                                                /usr/bin/ssh gss@192.168.7.1 mv /data/gss_in/"$EDS"_part /data/gss_in/"$EDS"
+                                        else
+                                                /usr/bin/scp "$DIR1"/"$EDS" gss@192.168.7.1:/data/gss_in/"$EDS"_part
+                                        fi
+
+                                        /usr/bin/scp "$DIR2"/"$TXT" gss@192.168.7.1:/data/gss_in/"$TXT"_part
+                                        if (( $? == 0 ));
+                                        then
+                                                /usr/bin/ssh gss@192.168.7.1 mv /data/gss_in/"$TXT"_part /data/gss_in/"$TXT"
+                                        else
+                                                /usr/bin/scp "$DIR2"/"$TXT" gss@192.168.7.1:/data/gss_in/"$TXT"_part
+                                        fi
+                                        /usr/bin/ssh gss@192.168.7.1 chmod 755 /data/gss_in/*
+                                        /usr/bin/mv "$DIR1"/"$EDS" "$DIR1"/transferred/
+                                        /usr/bin/mv "$DIR2"/"$TXT" "$DIR2"/transferred/
+#                               /usr/bin/rm -f "$DIR1"/"$EDS"
+#                               /usr/bin/rm -f "$DIR2"/"$TXT"
+                                else
+                                        /usr/bin/echo "both txt file name and eds file name do not match, continue waiting"
+                                        continue
+                                fi
+                        done
+                done
+        elif [ "$EDS" ];
+        then
+                /usr/bin/echo "only eds file exists"
+                continue
+        elif [ "$TXT" ];
+        then
+                /usr/bin/echo "only txt file exists"
+                continue
+        else
+                continue
+                /usr/bin/echo "none"
+        fi
+        /usr/bin/sleep 60
+done

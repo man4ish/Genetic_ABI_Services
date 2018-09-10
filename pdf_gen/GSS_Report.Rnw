@@ -1,0 +1,1472 @@
+\documentclass[11pt,table,a4paper]{article}
+\usepackage{array,ragged2e}
+\usepackage{graphicx}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{lipsum}
+\usepackage[top=.5cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{parskip}
+\usepackage{framed}
+\usepackage{sidecap}
+\usepackage{setspace}
+\usepackage[scaled]{uarial}
+\usepackage{tikz}
+\usepackage{lipsum} 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{transparent}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{hyphenat}
+\usepackage{xstring}
+\usepackage{forloop}
+\usepackage{collcell}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{varwidth}
+\usepackage{CJKutf8}
+\renewcommand*\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+\usepackage{wallpaper}
+\makeatletter
+%\def\verbatim@font{\normalfont\ua1} 
+\makeatother
+
+
+
+\renewcommand*\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+
+
+
+
+\newcolumntype{P}[1]{>{\collectcell\AddBreakableChars}p{#1}<{\endcollectcell}}
+
+\newsavebox\MyBreakChar%
+\sbox\MyBreakChar{}% char to display the break after non char
+\newsavebox\MySpaceBreakChar%
+\sbox\MySpaceBreakChar{-}% char to display the break after space
+\makeatletter%
+\newcommand*{\BreakableChar}[1][\MyBreakChar]{%
+  \leavevmode%
+  \prw@zbreak%
+  \discretionary{\usebox#1}{}{}%
+  \prw@zbreak%
+}%
+
+\newcounter{index}%
+\newcommand{\AddBreakableChars}[1]{%
+  \StrLen{#1 }[\stringLength]%
+  \forloop[1]{index}{1}{\value{index}<\stringLength}{%
+    \StrChar{#1}{\value{index}}[\currentLetter]%
+    \IfStrEq{\currentLetter}{]}
+        {\currentLetter\BreakableChar[\MyBreakChar]}%
+        {\currentLetter}%
+  }%
+}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Read parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<<echo=FALSE,results=tex>>=
+
+require(RMySQL)
+library(jpeg)
+library(grid)
+
+# push pod definition
+push <- function(vec, item) {
+vec=substitute(vec)
+eval.parent(parse(text = paste(vec, ' <- c(', vec, ', ', item, ')', sep = '')), n = 1)
+}
+
+pop <- function(vec) {
+tmp <- vec[length(vec)]
+vec=substitute(vec)
+eval.parent(parse(text = paste(vec, ' <- ', vec, '[-length(', vec, ')]',
+sep = '')),
+n = 1)
+tmp
+}
+
+group <- function(a) 
+{
+   groupedvec<-numeric(0)
+   tempvec<-numeric(0)
+   counter<-(-1)
+   if(length(a) == 1)
+   {
+       groupedvec<-paste(groupedvec,paste("[",a[1],"]",sep=""),sep="")
+   }
+   else {
+   for (pc in 1:length(a))
+   {
+       if(counter+1 == a[pc])
+       { 
+           
+           push(tempvec,a[pc])
+           counter<-a[pc]
+           if(pc == length(a))
+           {
+             refid<-numeric(0)
+             if(length(tempvec) > 1)
+             {
+                refid<-paste("[",tempvec[1],"-",tempvec[length(tempvec)],"]",sep="")                
+             }
+             else
+             {
+                refid<-paste("[",tempvec[1],"]",sep="")
+             }
+             groupedvec<-paste(groupedvec,refid,sep="")
+           }
+       }
+       else
+       {          
+          if(length(tempvec) != 0)
+          {
+             refid<-numeric(0)
+             if(length(tempvec) > 1)
+             {
+                refid<-paste("[",tempvec[1],"-",tempvec[length(tempvec)],"]",sep="")                
+             }
+             else
+             {
+                refid<-paste("[",tempvec[1],"]",sep="")
+             }
+             groupedvec<-paste(groupedvec,refid,sep="")
+          }
+          if(pc == length(a))
+          {
+             refid<-numeric(0)
+             refid<-paste("[",a[pc],"]",sep="")
+             groupedvec<-paste(groupedvec,refid,sep="")
+          }
+          tempvec<-numeric(0)
+          push(tempvec,a[pc])
+          counter<-a[pc]
+       }
+     }
+   }
+   groupedvec
+} 
+
+
+genclock <- function(x,df,riskallele,inputdir)
+{
+        library(plotrix)
+        library(jpeg)
+        pdf(paste(x,sep=""),width = 32 ,height = 10.8)
+        DF = data.frame(names = paste(df[,2],"% population has ",df[,1]," risk marker(s)",sep=""),freq=df[,2],stringsAsFactors=FALSE)
+        rgb<-0
+        max<-.922
+        cols<-numeric(0)
+        if(nrow(DF) != 1)
+        {
+        for (ic in 1:(nrow(DF)-1)) 
+        {               
+             push(cols,paste("rgb(1.000,",rgb,",",rgb,")",sep=""))
+             rgb <- rgb+(max/(nrow(DF)-1)) 
+        }
+        push(cols,paste("rgb(1.000,",max,",",max,")",sep=""))
+        }
+        else
+        {
+           push(cols,paste("rgb(1.000,",max,",",max,")",sep=""))           
+        }
+
+        
+	ht<-0
+	sum<-0
+        
+	for (s in 1:nrow(df)) {if(df[s,3] == "=") {ht<-sum+(df[s,2]/2)}; sum <- sum+df[s,2]}
+        #print(ht)
+        
+        angle<-(ht*360)/100
+        #print(450-angle)
+        xpos<-0.8*cos((450-angle)*0.0174532925)
+        ypos<-0.8*sin((450-angle)*0.0174532925)
+        #print(xpos)
+        #print(ypos)
+        cols2<-(cols)
+        #cols2<-rev(cols)
+
+        #par(mar=c(0, 0, 2, 0))
+        par(oma=c(0,0,0,0))
+	pie(df[,2],col="black",radius=1.0,border=NA,labels=NA)
+	floating.pie(0,0,rev(df[,2]),start=7.86,radius=.95, main="Distribution of risk markserrs in general population",col=cols2)
+	pie.labels(0,0,seq(pi/10,19*pi/10,by=pi/5),c(2,1,0,9,8,7,6,5,4,3)*10,radius=0.8,border=NA,bg=NA, cex = 2.0)
+	
+	points(0,0,lwd=8)
+	
+	legend(x=1.04,y=1.04,  rev(paste(df[,2],"% population has ",df[,1]," risk marker(s)",sep="")), cex=3.0, fill=cols2)
+
+        draw.circle(0,0,0.9,border="black",lty=3,lwd=3)
+        draw.circle(0,0,0.4,border="black",lty=3,lwd=3)
+
+ 
+        arrows(0,0,xpos,ypos,lwd=12,length=0.45,col= 'black')
+        draw.circle(0,0,0.03,border="white",lty=1,lwd=3,col="white")   
+}
+
+
+
+genbarplot <- function(x,df,riskallele,inputdir,traitflag)
+{      
+	pdf(x,width = 5 ,height = 3.5)
+	DF = data.frame(names = paste(df[,2],"% population has ",as.integer(df[,1])," risk marker(s)",sep=""),freq=df[,2],stringsAsFactors=FALSE)
+
+  
+	a <- readJPEG(paste(inputdir,"/image/pointer/pointer_en.jpg",sep=""))
+
+	# ypos.img is at which height of the barchart you want to place the image
+        #print(riskallele)
+        #print(df[,1])
+        #print(df[,2])
+	ht<-0
+	sum<-0
+	for (s in 1:nrow(df)) {if(df[s,3] == "=") {ht<-sum+(df[s,2]/2)}; sum <- sum+df[s,2]}
+        #print(ht)
+
+	# cat(paste(df[3,1]),"\n")
+	ypos.img <-ht
+
+	# Create a new polot
+	grid.newpage()
+	pushViewport(viewport(width=0.9, height=0.9))
+
+	#grid.text("Your Risk Profile", x=0, y=.5, just=c("center", "top"),rot=90)
+
+	# add image
+	pushViewport(viewport(yscale=c(0,sum(DF[,2])), xscale=c(0,1), x=.0, y=0, width=0.15, height=1.0, just=c("left", "bottom")))
+	grid.raster(a, y=unit(ypos.img, "native"))
+	#print(ypos.img)
+	# add barplot
+	popViewport()
+	pushViewport(viewport(x=0.15, y=0, width=0.25, height=1, just=c("left", "bottom")))
+	pushViewport(dataViewport(xscale=c(0,2), yscale=c(0, sum(DF[,2]))))
+	#cols <- heat.colors(length(DF[,2]))
+        library(plotrix)
+        #cols<-color.scale(1:5,1,c(0,0.3),c(0.3,0))
+        cols<-numeric(0)
+        #cols<-c(rgb(1.00, .922, .922),rgb(1.00, .769, .769),rgb(1.00, .616, .616),rgb(1.00, .463, .463),rgb(1.00, .306, .306),rgb(1.00, .153, .153),rgb(1.0, 0, 0))
+        rgb<-0
+        max<-.922
+        if(nrow(DF) != 1)
+        {
+        for (ic in 1:(nrow(DF)-1)) 
+        {  
+             #cat(paste("rgb(1.000,",rgb,",",rgb,")",sep=""),"\n")
+             push(cols,paste("rgb(1.000,",rgb,",",rgb,")",sep=""))
+             rgb <- rgb+(max/(nrow(DF)-1)) 
+        }
+        push(cols,paste("rgb(1.000,",max,",",max,")",sep=""))
+        #cat(paste("rgb(1.000,",max,",",max,")",sep=""),"\n")
+        }
+        else
+        {
+           push(cols,paste("rgb(1.000,",max,",",max,")",sep=""))
+           #cat(paste("rgb(1.000,",max,",",max,")",sep=""),"\n")
+        }
+        #colindex<-(8-nrow(DF))
+        #cols2<-(cols[colindex:7])
+        #print(cols)
+
+        
+        cols2<-rev(cols)
+	for (i in 1:nrow(DF)) {                
+ 		start <- 0 
+ 		if (i > 1) start <- sum(DF[1:(i-1), 2])
+ 		grid.rect(x=0, y=start, width=1.2, height=DF[i, 2], default.units="native", just=c("left", "bottom"), gp=gpar(fill=cols2[i]))
+	}
+
+	popViewport(2)
+
+
+        grid.text("Distribution of marker(s) in general", x=0.33, y=1, just=c("left", "top"),gp=gpar(fontsize=14, fontface="bold"))
+        grid.text("population", x=0.33, y=.9, just=c("left", "top"),gp=gpar(fontsize=14, fontface="bold"))
+	# Legend
+	pushViewport(viewport(x=0.33, y=0, width=0.25, height=1, just=c("left", "bottom")))
+	ypos <- 0.7
+	for (itt in nrow(DF):1) {
+        	grid.rect(x=0.05, y=ypos, width=0.1, height=0.05, just=c("left", "top"), gp=gpar(fill=cols2[itt]))
+                markers<-strsplit(as.character(df[itt,1]), "-")
+                if(traitflag == 1)
+                {
+                   if(length(grep("-", df[itt,1])) == 0)
+                   {
+                       grid.text(paste(df[itt,2],"% population has ",trunc(as.numeric(as.character(df[itt,1])))," trait marker(s)",sep=""), x=0.2, y=ypos, just=c("left", "top"),gp=gpar(fontsize=11))
+                   }
+                   else
+                   {
+                       grid.text(paste(df[itt,2],"% population has ",trunc(as.numeric(as.character(markers[[1]][1]))), "-", trunc(as.numeric(as.character(markers[[1]][2]))), " trait marker(s)",sep=""), x=0.2, y=ypos, just=c("left", "top"),gp=gpar(fontsize=11))
+                   }
+                }
+                else
+                {
+                   if(length(grep("-", df[itt,1])) == 0)
+                   {
+ 		      grid.text(paste(df[itt,2],"% population has ",trunc(as.numeric(as.character(df[itt,1])))," risk marker(s)",sep=""), x=0.2, y=ypos, just=c("left", "top"),gp=gpar(fontsize=11))
+                   }
+                   else
+                   {
+                       grid.text(paste(df[itt,2],"% population has ",trunc(as.numeric(as.character(markers[[1]][1]))), "-", trunc(as.numeric(as.character(markers[[1]][2]))), " risk marker(s)",sep=""), x=0.2, y=ypos, just=c("left", "top"),gp=gpar(fontsize=11))
+                   }
+                }
+ 		ypos <- ypos - 0.15
+	}
+
+
+	popViewport()
+	dev.off()
+}
+
+
+
+cmd<-commandArgs()
+cmd<-strsplit(cmd," ")
+DiseaseSummaryFile<-cmd[[4]][1]
+
+InFile<-cmd[[5]][1]
+Disease_RiskFile<-cmd[[6]][1]
+QRcode<-cmd[[7]][1]
+InformationFile<-cmd[[8]][1]
+InputDir<-cmd[[9]][1]
+IODir<-cmd[[10]][1]
+PlotType<-cmd[[11]][1]
+ChipType<-numeric(0)
+ChipVer<-numeric(0)
+Filename<-numeric(0)
+QRImage<-numeric(0)
+OpenArray<-numeric(0)
+QR<-numeric(0)
+PatientId<-numeric(0)
+PatientName<-numeric(0)
+PatientAdd<-numeric(0)
+SampleId<-numeric(0)
+SampleType<-numeric(0)
+SampleCollectionDate<-numeric(0)
+SampleReceiptDate<-numeric(0)
+ReportDate<-numeric(0)
+DoctorName<-numeric(0)
+DoctorAdd<-numeric(0)
+RefNum<-numeric(0)
+
+
+SampleInfoFile<-read.csv(InformationFile,sep=":",header=FALSE)
+
+for (i in 1:length(SampleInfoFile[[1]])) 
+{ 
+	if(SampleInfoFile[i,1]== "#ChipType")  
+   	{	
+      		ChipType<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#ChipVer")  
+   	{
+      		ChipVer<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#Filename")  
+   	{
+      		Filename<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#QRImage")  
+   	{
+      		QRImage<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#OpenArray")  
+   	{
+      		OpenArray<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#QR")  
+   	{
+      		QR<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#PatientId")  
+   	{
+      		PatientId<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#PatientName")  
+   	{
+      		PatientName<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#PatientAdd")  
+  	{
+      		PatientAdd<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#SampleId")  
+   	{
+      		SampleId<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#SampleType")  
+   	{
+      		SampleType<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#SampleCollectionDate")  
+   	{
+      		SampleCollectionDate<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#SampleReceiptDate")  
+   	{
+      		SampleReceiptDate<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#ReportDate")  
+   	{
+      		ReportDate<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#DoctorName")  
+   	{
+      		DoctorName<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#DoctorAdd")  
+   	{
+      		DoctorAdd<-SampleInfoFile[i,2]
+   	} 
+   	if(SampleInfoFile[i,1]== "#Reference No")  
+   	{
+      		RefNum<-SampleInfoFile[i,2]
+   	}
+}
+
+logo<-numeric(0)
+background_image<-numeric(0)
+report_logo<-numeric(0)
+if (ChipType == "MTB")
+{
+   logo<-"logo/logo_mtb_en.pdf"
+   background_image<-"bg_mtb.jpg"
+   report_logo<-"title_mtb_en.pdf"
+}
+if (ChipType == "PDC")
+{
+    logo<-"logo/logo_pdc_en.pdf"
+   background_image<-"bg_pdc.jpg"
+   report_logo<-"title_pdc_en.pdf"
+}
+if (ChipType == "PDI")
+{
+    logo<-"logo/logo_pdi_en.pdf"
+   background_image<-"bg_pdi.jpg"
+   report_logo<-"title_pdi_en.pdf"
+}
+if (ChipType == "CRD")
+{
+      logo<-"logo/logo_crd_en.pdf"
+   background_image<-"bg_crd.jpg"
+   report_logo<-"title_crd_en.pdf"
+}
+if (ChipType == "ONC")
+{
+      logo<-"logo/logo_onc_en.pdf"
+   background_image<-"bg_onc.jpg"
+   report_logo<-"title_onc_en.pdf"
+}
+
+#cat("\\fancyhead[R]{","\n")
+#cat("\\begin{minipage}{0.75\\linewidth}","\n")
+#cat("\\hspace{6cm}","\n")
+#cat("\\end{minipage}","\n")
+#cat("\\hspace{6cm}","\n")
+#cat("\\begin{minipage}{0.25\\linewidth}","\n")
+#cat(paste("\\includegraphics[width=0.11\\linewidth]{",InputDir,"/image/",logo,"}",sep=""),"\n")
+#cat("\\end{minipage}","\n")
+#cat("\\end{mdframed}","\n")
+#cat("}","\n")
+cat("\\fancyfoot[C]{\\begin{mdframed}[roundcorner=4pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=5,innertopmargin=5,innerbottommargin=5, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedright{", PatientId,"}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\centering{\\thepage}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedleft{", ReportDate,"}}"),"\n")
+cat("\\end{mdframed}}","\n")
+@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%   
+
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline} 
+
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+% new colours
+\definecolor{shadecolor}{rgb}{.753, .878, .914}
+\definecolor{lightgray}{rgb}{0.9,0.9,0.9}
+\definecolor{yellow}{rgb}{1,0.5,0}
+\definecolor{bananamania}{rgb}{1.0, .835, 0.655}
+\definecolor{goldenpoppy}{rgb}{.059, .412, .659}
+\definecolor{gold}{rgb}{1.0, 0.84, 0.0}
+\definecolor{burlywood1}{rgb}{.996, .894, .745}
+\definecolor{headcol}{rgb}{.996, .894, .745}
+\definecolor{blue}{rgb}{0,.412,.651}
+\definecolor{maincol}{rgb}{0,.412,.651}
+\definecolor{goldenrod}{rgb}{1.00, .937, .835}
+
+%
+
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+
+\begin{minipage}{0.3\linewidth}
+
+<<echo=FALSE,results=tex>>=
+cat(paste("\\ThisLRCornerWallPaper{1.0}{",InputDir,"/image/background/",background_image,"}",sep=""),"\n")
+
+cat(paste("\\includegraphics[width=0.85\\linewidth]{",InputDir,"/image/logo/logo_dtect_en.pdf}",sep=""),"\n")
+@
+\end{minipage}
+\begin{minipage}{0.55\linewidth}
+\hspace{2cm}
+\end{minipage}
+\begin{minipage}{0.15\linewidth}
+<<echo=FALSE,results=tex>>=
+cat(paste("\\includegraphics[height= 2.5cm,width =2.5cm]{",QRcode,"}",sep = "" ) ,"\n") 
+@
+\end{minipage}
+\begin{minipage}{1.0\linewidth}
+<<echo=FALSE,results=tex>>=
+cat(paste("\\includegraphics[width=0.3\\linewidth]{",InputDir,"/image/title/",report_logo,"}",sep=""),"\n")
+@
+\end{minipage}
+\thispagestyle{empty}
+
+\hspace{10cm}
+\newline
+\vspace{7.5cm}
+
+\begin{minipage}{0.45\linewidth}
+\hspace{1cm}
+\end{minipage}
+\begin{minipage}{0.55\linewidth}
+
+
+<<echo=FALSE,results=tex>>=
+cat("\\small","\n")
+	cat("\\begin{tabular}{P{4cm}  P{6cm} }","\n")
+  	cat(paste("\\textbf{Patient's Name:} &",PatientName,"\\\\",sep = ""),"\n")
+
+  	cat(paste("\\textbf{Patient's ID:} &", PatientId ,"\\\\",sep = ""),"\n")
+        padd<-strsplit(as.character(PatientAdd),"`")
+  	cat(paste("\\textbf{Patient's Address:} &", padd[[1]][1] ,"\\\\",sep = ""),"\n")
+        if(is.na(padd[[1]][2]) == FALSE)
+        {
+            cat("\\vspace{0pt}   &" , paste(padd[[1]][2] ,"\\\\",sep = ""),"\n")
+        }
+        if(is.na(padd[[1]][3])== FALSE)
+        {
+          cat("\\vspace{0pt}   &"  , paste(padd[[1]][3] ,"\\\\",sep = ""),"\n")
+        }
+        if(is.na(padd[[1]][4])== FALSE)
+        {
+           cat("\\vspace{0pt}   &"  , paste(padd[[1]][4] ,"\\\\",sep = ""),"\n")
+        }
+  	cat("\\vspace{0pt}   &  \\\\","\n")
+
+  	cat(paste("\\textbf{Sample ID:} &", SampleId ,"\\\\",sep = ""),"\n")
+  	cat(paste("\\textbf{Primary Sample Type:} &", SampleType ,"\\\\",sep = ""),"\n")
+  	cat(paste("\\textbf{Sampling Date:} &", SampleCollectionDate ,"\\\\",sep = ""),"\n")
+  	cat(paste("\\textbf{Sample Receipt Date:} &", SampleReceiptDate ,"\\\\",sep = ""),"\n")
+  	cat(paste("\\textbf{Report Date:} &", ReportDate ,"\\\\",sep = ""),"\n")
+  	cat(paste("\\textbf{Reference No:} &", RefNum ,"\\\\",sep = ""),"\n")
+  	cat("\\vspace{0pt}   &  \\\\","\n")
+  	cat(paste("\\textbf{Doctor's Name:} &", DoctorName ,"\\\\",sep = ""),"\n")
+        docadd<-strsplit(as.character(DoctorAdd),"`")
+  	#cat(paste("\\textbf{Doctor's Address:} &", DoctorAdd ,"\\\\",sep = ""),"\n")
+        cat(paste("\\textbf{Doctor's Address:} &", docadd[[1]][1] ,"\\\\",sep = ""),"\n")
+        if(is.na(docadd[[1]][2]) == FALSE)
+        {
+            cat("\\vspace{0pt}   &" , paste(docadd[[1]][2] ,"\\\\",sep = ""),"\n")
+        }
+        if(is.na(docadd[[1]][3])== FALSE)
+        {
+          cat("\\vspace{0pt}   &"  , paste(docadd[[1]][3] ,"\\\\",sep = ""),"\n")
+        }
+        if(is.na(docadd[[1]][4])== FALSE)
+        {
+           cat("\\vspace{0pt}   &"  , paste(docadd[[1]][4] ,"\\\\",sep = ""),"\n")
+        }
+	cat("\n","\\end{tabular}","\n")
+  
+@
+\end{minipage}
+
+\vspace{3.2cm}
+
+\begin{minipage}{0.455\linewidth}
+\hspace{1cm}
+\end{minipage}
+\begin{minipage}{0.12\linewidth}
+<<echo=FALSE,results=tex>>=
+cat(paste("\\includegraphics[width=0.9\\linewidth]{",InputDir,"/image/logo_mgrc.png}",sep=""),"\n")
+@
+
+\end{minipage}
+\begin{minipage}{0.425\linewidth}
+
+%cat(paste("\\includegraphics[height= 2.5cm,width =2.5cm]{",QRcode,"}",sep = "" ) ,"\n") 
+
+\textbf{Malaysian Genomics Resource Centre Berhad}
+\leavevmode
+\newline
+27-9, Level 9, Signature Office, Bandar Mid-Valley
+\leavevmode
+\newline
+59200 Kuala Lumpur, Malaysia
+\leavevmode
+\newline
+Tel: +6-03-2284-5676|www.mgrc.com.my 
+\end{minipage}
+
+\newpage
+\clearpage
+\setcounter{page}{1}
+\huge{Summary Of Your Dtect Genetic Screening Profile}
+\newline
+\newline
+\small
+\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=goldenpoppy,outerlinewidth=.5, innerleftmargin=8, innertopmargin=1,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]
+
+
+<<echo=FALSE ,fig=FALSE,results=hide>>=
+disease_data<-read.table(DiseaseSummaryFile , sep="\t",header=FALSE,quote="\"", check.names=FALSE)
+
+rownames(disease_data)<-disease_data[,1]
+for (i in 1:length(disease_data[[1]])) 
+{
+  if( disease_data[i,2] == 0 && disease_data[i,3] == 0) 
+  {
+     rownames(disease_data)[i]<-paste(rownames(disease_data)[i]," *+",sep="")
+  }
+  else if(disease_data[i,2] == 0 ) 
+  {
+     rownames(disease_data)[i]<-paste(rownames(disease_data)[i]," *",sep="")
+  }
+  else if(disease_data[i,3] == 0 ) 
+  {
+    rownames(disease_data)[i]<-paste(rownames(disease_data)[i]," +",sep="")
+  }
+
+  if(disease_data[i,4] == "UND")
+  {
+    rownames(disease_data)[i]<-paste(rownames(disease_data)[i],"#",sep="")
+  } 
+}
+
+pdf(paste(IODir,"/legend.pdf",sep=""), width=10 , height =3)
+plot.new()
+legend("bottomright", c("Patient","General Population"), cex=1.5, bty="n", fill = c(rgb(.059, .412, .659),rgb(.537, .769, .933)));
+dev.off()
+#pdf(paste(InputDir,"/Input/population.pdf",sep=""), width=10 , height =11)
+pdf(paste(IODir,"/population.pdf",sep=""), width=10 , height =11)
+par(mar=c(4,22.5,0,2))
+normdisease_data<-disease_data
+
+disease_data[,2]<-log2(disease_data[,2]+1)
+disease_data[,3]<-log2(disease_data[,3]+1)
+mp<-barplot(t(disease_data[,2:3]), xlab ="Number of risk markers" , beside=TRUE, col=c(rgb(.537, .769, .933),rgb(.059, .412, .659)), width = 1, horiz=TRUE,cex.names=.9, border ="white",las=1, cex.axis= 1, cex.lab=1.2, axes = FALSE)
+#mtext(text=t(disease_data[,2:3]),las=1,side=4,outer=FALSE,at=mp)
+counts<-t(disease_data[,2:3])
+#text(x= counts+0.1, y= mp, labels=as.character(formatC(t(disease_data[,2:3]), format = "f", digits = 1)), xpd=TRUE)
+
+#axis(1, at = pretty(c(0, max(disease_data[,2], disease_data[,3]))))
+#legend("topright", c("Patient","General Population"), cex=1.5, bty="n", fill = c(rgb(.059, .412, .659),rgb(.537, .769, .933)));
+abline(v = 0, lwd = 1, col = 1)
+lab<-c(0,1,3,7,15,31)
+xx<-c(normdisease_data[,2])
+#lab<-round(2^seq(min(log2(xx+1)),max(log2(xx+1)),length.out=4)-1)
+
+
+axis(1,at=log2(lab+1),labels=lab)
+#axis(1,at= (labels=as.character(formatC(t(disease_data[,2:3]),digits=2))),cex.axis=0.9)
+#
+dev.off()
+@
+\begin{minipage}[b]{0.7\linewidth}
+\hspace{1cm}
+\end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+<<echo=FALSE ,results=tex>>=
+cat(paste("\\includegraphics[trim=17cm 3cm 1.3cm 2.8cm, clip=true, totalheight=0.04\\textheight, angle=0]{",IODir,"/legend.pdf}",sep=""),"\n")
+@
+
+\end{minipage}
+
+\begin{center}
+<<echo=FALSE ,results=tex>>=
+#cat(paste("\\includegraphics[height= 4 cm,width =17cm]{",InputDir,"/Input/legend}",sep=""),"\n")
+#cat(paste("\\includegraphics[height= 18 cm,width =17cm]{",InputDir,"/Input/population}",sep=""),"\n")
+cat(paste("\\includegraphics[height= 18 cm,width =17cm]{",IODir,"/population}",sep=""),"\n")
+
+@
+\end{center}
+\begin{minipage}[b]{0.7\linewidth}
+\tiny  
+\hspace{.5mm}*
+\hspace{.1cm}
+Tested general population has no marker for this disease
+\newline
++
+\hspace{.1cm}
+Patient has no marker for this disease
+\newline
+\#
+\hspace{.1cm}
+All the markers for this disease have not been amplified
+\end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+<<echo=FALSE ,results=tex>>=
+#cat(paste("\\includegraphics[trim=17cm 3cm 1.3cm 1.5cm, clip=true, totalheight=0.07\\textheight, angle=0]{",IODir,"/legend.pdf}",sep=""),"\n")
+@
+\end{minipage}
+\end{mdframed}
+
+\vspace{1mm}
+
+\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=goldenpoppy,outerlinewidth=.5, innerleftmargin=8, innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]
+\normalsize{
+\setlength{\parindent}{1em}  
+\setlength{\parskip}{2ex}
+\indent 
+\small    The genetic markers investigated in this Dtect genetic screening product are published
+and scientifically reviewed single nucleotide polymorphisms associated with human
+disease. A genetic marker is not a diagnosis of a genetic disease and is not a substitute
+for other clinical laboratory tests that have been designed and certified for the purpose
+of medical diagnosis of disease. If you have risk alleles for a genetic disease it is important that you have the results
+confirmed using other appropriate technologies.
+
+}
+
+\end{mdframed}
+\newpage
+
+<<echo=FALSE ,results=tex>>=
+infile<-read.table(InFile,sep="\t",quote="",header=FALSE, check.names= TRUE)
+disease_data<-read.table(Disease_RiskFile,sep="\t",quote="",header=FALSE)
+Snp_Id<-infile[,3]
+Gene_Name<-infile[,2]
+Phenoype_Name<-infile[,1]
+Publication_Id<-infile[,4]
+Genotype<-infile[,5]
+Genotype_Effect<-infile[,6]
+Tag<-infile[,7]
+
+formatfile<-data.frame(Snp_Id, Gene_Name, Phenoype_Name, Publication_Id, Genotype_Effect , Genotype, Genotype_Effect,Tag)
+
+Col3 <- unique(formatfile[,3])  
+LCol3 <- length(Col3)
+
+colnames(formatfile)[1]<-'SNP Id'
+colnames(formatfile)[2]<-"Gene Name"
+colnames(formatfile)[3]<-'Phenoype Name'
+colnames(formatfile)[4]<-'Publication Id'
+colnames(formatfile)[5]<-'Genotype'
+colnames(formatfile)[6]<-'Genotype Effect'
+
+
+for (i in 1:LCol3) {
+	df <- data.frame(matrix(ncol = 7, nrow = 0))
+	datavec<-c(formatfile[formatfile[,3]==Col3[i],-3])
+       
+	df<-rbind(df,datavec)
+	list<-df[,2]
+	p<-0
+	n<-0
+	r<-0
+        und<-0
+	ne<-0
+	for (it in 1:length(list))
+	{
+   		if (list[it] == '+')
+   		{
+        		p<-p+1
+   		}
+   	if (list[it] == '-')
+   	{
+        	n<-n+1
+   	}
+   	if(list[it]== 'N')
+   	{
+     		ne<-ne+1
+   	}
+        if(list[it]== 'X')
+   	{
+     		und<-und+1
+   	}
+	}
+	r<-p-n
+
+	#################################################################################
+	dataf <- data.frame(matrix(ncol = 3, nrow = 0))
+	datafvec<-c(disease_data[disease_data[,1]==Col3[i],-1])
+        
+        
+	dataf<-rbind(dataf,datafvec)
+
+	y<-dataf[,1]
+	x<-dataf[,2]
+        imagename<-paste(IODir,"/barplot",sep="")
+	#imagename<-paste(InputDir,"/Input/barplot",sep="")
+	imagename<-paste(imagename,i,".pdf",sep="")
+        triatmark<-0
+        if(df[1,7]== "Trait")
+	{
+            triatmark<-1
+        }
+        if(PlotType == "clock") 
+        {
+           genclock(imagename,dataf,n,InputDir)
+           
+        }
+        if(PlotType == "bar")
+        {
+           genbarplot(imagename,dataf,n,InputDir,triatmark)
+        }
+	qimage<-paste(InputDir,"/image/logo_des_disease.png",sep="")
+	rimage<-paste(InputDir,"/image/logo_ref_disease.png",sep="")
+	if(df[1,7]!= "Drug")
+	{
+  		cat("\\definecolor{maincol}{rgb}{.059, .412, .659}")
+  		cat("\\definecolor{headcol}{rgb}{.537, .769, .933}")
+  		cat("\\definecolor{rowcol}{rgb}{.714, .855, .957}")
+  		qimage<-paste(InputDir,"/image/logo_des_disease.png",sep="")
+	        rimage<-paste(InputDir,"/image/logo_ref_disease.png",sep="")
+	}
+	else
+	{ 
+  		cat("\\definecolor{maincol}{rgb}{.404,.404,1.00}")
+  		cat("\\definecolor{headcol}{rgb}{.602, .602, 1.00}")
+  		cat("\\definecolor{rowcol}{rgb}{.802, .802, 1.00}")
+  		qimage<-paste(InputDir,"/image/logo_des_drug.png",sep="")
+	        rimage<-paste(InputDir,"/image/logo_ref_drug.png",sep="")
+	}
+        
+        cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+        cat(paste("\\includegraphics[width=0.9\\linewidth]{",InputDir,"/image/",logo,"}",sep=""),"\n")
+        cat("\\end{minipage}","\n")
+        #cat(paste("\\begin{varwidth}{0.2\\linewidth}","\n"))
+        #cat("\\hspace{0mm}","\n")
+        #cat("\\end{varwidth}","\n")
+        cat(paste("\\begin{minipage}{0.8\\linewidth}","\n"))
+	#cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol, outerlinewidth=1, innerleftmargin=3, 	innertopmargin=8,innerbottommargin=8, everyline = true, splittopskip=.6cm, splitbottomskip=.3cm]")
+	cat(paste("\\hfill\\textbf{\\Large{", Col3[i],"}}\n")) 
+	#cat("\\end{mdframed}","\n")
+        cat("\\end{minipage}","\n")
+        cat("\\newline","\n")
+	cat("\\vspace{1mm}","\n")
+
+	#########################################################################################################
+	if(df[1,7] == "Disease")
+	{
+		cat(paste("\\begin{minipage}{.49\\linewidth}","\n"))
+		cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=0,    innerrightmargin=0, innertopmargin=3,innerbottommargin=3, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+                
+                #cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+                #cat("\\begin{center}","\n")
+                #cat("\\hspace{.22cm}","\n")
+                #cat("\\textbf{Distribution of marker(s) in general population}","\n")
+                #cat("\\end{center}","\n")
+                #cat("\\end{minipage}","\n")
+                
+                #cat("\\begin{left}","\n")
+                if(PlotType == "clock")
+                {
+                   cat(paste("\\includegraphics[trim=29.5cm .3cm 0cm .3cm, clip=true, width=9.1cm,height=4.8cm,angle=0]{",imagename,"}",sep=""),"\n")
+                }
+                if(PlotType == "bar")
+                {
+		   cat(paste("\\includegraphics[width = 8.3cm, height = 4.8cm]{",imagename,"}",sep=""),"\n")
+                } 
+                #cat("\\end{left}","\n")
+		cat("\\end{mdframed}","\n")
+
+		cat("\\end{minipage}","\n")
+		cat("\\hspace{.23cm}")
+		cat("\\begin{minipage}{0.49\\linewidth}","\n")
+
+		cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8,innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+
+		cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+		cat(paste("\\includegraphics[width=.92\\textwidth]{",InputDir,"/image/logo_profile_disease.png}",sep=""),"\n")   #Can replace with new risk image
+		cat("\\end{minipage}","\n")
+		cat("\\hspace{.1mm}","\n")
+		cat("\\begin{minipage}{0.8\\linewidth}","\n")
+		cat("\\textbf{Your Screening Profile}","\n")
+		cat("\\leavevmode","\n")
+		cat("\\newline","\n")
+		cat("\\begin{itemize}","\n")
+cat("\\scriptsize","\n")
+#if(r == 0)
+{
+#  cat("\\item Your relative risk: No Risk","\n")
+}
+#else
+{
+   if(ne !=0)  
+   {
+     #if(df[1,7] != "Drug")
+     {
+        if(ne == 1)
+        {
+           #cat(paste("\\item You have",ne ,"neutral marker"),"\n")
+        }
+        else
+        {
+           #cat(paste("\\item You have",ne ,"neutral markers"),"\n")
+        }
+      }
+   }
+   
+   if(n !=0)
+   {
+     if(n == 1)
+     {
+        cat(paste("\\item You have",n ,"risk marker"),"\n")
+     }
+     else
+     {
+        cat(paste("\\item You have",n ,"risk markers"),"\n")
+     }
+      
+   }
+   else
+   {
+       cat(paste("\\item You have no risk marker"),"\n")
+   }
+   if(p !=0)
+   {
+      if(p == 1)
+     {
+        cat(paste("\\item You have",p ,"protective marker"),"\n")
+     }
+     else
+     {
+        cat(paste("\\item You have",p ,"protective markers"),"\n")
+     }      
+   }
+   if(und !=0)
+   {
+      if(und == 1)
+     {
+        cat(paste("\\item You have",und ,"undefined marker"),"\n")
+     }
+     else
+     {
+        cat(paste("\\item You have",und ,"undefined markers"),"\n")
+     }      
+   }
+}
+#cat("\\\\","\n")
+#cat("\\end{tabular}","\n")
+cat("\\end{itemize}","\n")
+cat("\\end{minipage}","\n")
+cat("\\end{mdframed}","\n")
+cat("\\end{minipage}","\n")
+}
+else if(df[1,7] == "Trait")
+{
+cat(paste("\\begin{minipage}{.49\\linewidth}","\n"))
+		cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=0,    innerrightmargin=0, innertopmargin=3,innerbottommargin=3, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+                
+                #cat(paste("\\begin{minipage}{1.0\\linewidth}","\n"))
+                #cat("\\begin{center}","\n")
+                #cat("\\hspace{.22cm}","\n")
+                #cat("\\textbf{Distribution of marker(s) in general population}","\n")
+                #cat("\\end{center}","\n")
+                #cat("\\end{minipage}","\n")
+                
+                #cat("\\begin{left}","\n")
+                if(PlotType == "clock")
+                {
+                   cat(paste("\\includegraphics[trim=29.5cm .3cm 0cm .3cm, clip=true, width=9.1cm,height=4.8cm,angle=0]{",imagename,"}",sep=""),"\n")
+                }
+                if(PlotType == "bar")
+                {
+		   cat(paste("\\includegraphics[width = 8.3cm, height = 4.8cm]{",imagename,"}",sep=""),"\n")
+                } 
+                #cat("\\end{left}","\n")
+		cat("\\end{mdframed}","\n")
+
+		cat("\\end{minipage}","\n")
+		cat("\\hspace{.23cm}")
+		cat("\\begin{minipage}{0.49\\linewidth}","\n")
+
+		cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8,innertopmargin=58,innerbottommargin=58, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+
+		cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+                cat("\\hspace{.23cm}")
+		#cat(paste("\\includegraphics[width=.92\\textwidth]{",InputDir,"/image/logo_profile_disease.png}",sep=""),"\n")       # replace Bluecubes with trait image
+		cat("\\end{minipage}","\n")
+		cat("\\hspace{.1mm}","\n")
+		cat("\\begin{minipage}{0.8\\linewidth}","\n")
+		cat("\\textbf{Your Screening Profile}","\n")
+		cat("\\leavevmode","\n")
+		cat("\\newline","\n")
+		cat("\\begin{itemize}","\n")
+cat("\\scriptsize","\n")
+#if(r == 0)
+{
+#  cat("\\item Your relative risk: No Risk","\n")
+}
+#else
+{
+   if(ne !=0)  
+   {
+     #if(df[1,7] != "Drug")
+     {
+        if(ne == 1)
+        {
+           #cat(paste("\\item You have",ne ,"neutral trait marker"),"\n")
+        }
+        else
+        {
+           #cat(paste("\\item You have",ne ,"neutral trait markers"),"\n")
+        }
+      }
+   }
+   
+   if(n !=0)
+   {
+     if(n == 1)
+     {
+        cat(paste("\\item You have",n ,"trait marker"),"\n")
+     }
+     else
+     {
+        cat(paste("\\item You have",n ,"trait markers"),"\n")
+     }
+      
+   }
+   else
+   {
+       cat(paste("\\item You have no trait marker"),"\n")
+   }
+   if(p !=0)
+   {
+      if(p == 1)
+     {
+        cat(paste("\\item You have",p ,"protective trait marker"),"\n")
+     }
+     else
+     {
+        cat(paste("\\item You have",p ,"protective trait markers"),"\n")
+     }      
+   }
+}
+#cat("\\\\","\n")
+#cat("\\end{tabular}","\n")
+cat("\\end{itemize}","\n")
+cat("\\end{minipage}","\n")
+cat("\\end{mdframed}","\n")
+cat("\\end{minipage}","\n")
+}
+##########################################################################################################################################
+else
+{
+        #cat("Your Risk Profile","\n")
+	cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1.0, rightmargin=1.0, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8, innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+   	cat(paste("\\begin{minipage}{0.2\\linewidth}","\n"))
+     	cat(paste("\\includegraphics[width=.88\\textwidth]{",InputDir,"/image/logo_drug.jpeg}",sep=""),"\n")
+    	cat("\\end{minipage}","\n")
+     	cat("\\hspace{6cm}","\n")
+      	cat(paste("\\begin{minipage}{0.45\\linewidth}","\n"))
+      	cat("\\textbf{Your Drug Profile}")
+      	cat("\\leavevmode","\n")
+      	cat("\\newline","\n")
+	cat("\\begin{itemize}","\n")
+    	if(ne != 0)
+    	{
+       		if(ne == 1)
+        	{
+           		#cat(paste("\\item You have",ne ,"neutral pharmacogenetic variant"),"\n")
+        	}
+        	else
+        	{
+           		#cat(paste("\\item You have",ne ,"neutral pharmacogenetic variants"),"\n")
+        	}
+    	}
+
+    	if(n !=0)
+    	{
+       		if(n == 1)
+       		{
+          		#cat(paste("\\item You have",n ,"risk pharmacogenetic marker for", Col3[i],sep=" "),"\n")
+       		}
+       		else
+       		{
+          		#cat(paste("\\item You have",n ,"risk pharmacogenetic markers for", Col3[i],sep=" "),"\n")
+       		}      
+   	}
+
+   	if(p !=0)
+   	{
+      		if(p == 1)
+     		{
+       	 		#cat(paste("\\item You have",p ,"protective pharmacogenetic marker for", Col3[i],sep=" "),"\n")
+     		}
+     		else
+     		{
+        		#cat(paste("\\item You have",p ,"protective pharmacogenetic markers for", Col3[i],sep=" ""),"\n")
+     		}      
+   	}
+  	tot_allele<-n+p;
+  	if(tot_allele == 0)
+  	{
+     		cat(paste("\\item You have no pharmacogenetic marker for", Col3[i],sep=" "),"\n")
+  	}
+  	else if(tot_allele == 1)
+  	{
+     		cat(paste("\\item You have",tot_allele ,"pharmacogenetic marker for", Col3[i],sep=" "),"\n")
+  	}
+  	else
+  	{ 
+     		cat(paste("\\item You have",tot_allele ,"pharmacogenetic markers for", Col3[i],sep=" "),"\n")
+  	}
+	cat("\\end{itemize}","\n")
+      	cat("\\end{minipage}","\n")
+    	cat("\\end{mdframed}","\n")
+}
+
+
+############################################################################################################################################
+
+	cat("\\vspace{1mm}","\n")
+
+	cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1.0, rightmargin=1.0, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8, innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+	cat("\\small")
+	cat("\\textbf{Genotypes}","\n")
+
+
+	citationvec<-numeric(0)
+	tvec<-numeric(0)
+
+	cat("\\centering","\n")
+
+	cat("\\rowcolors{2}{rowcol}{white}","\n")
+cat("\\begin{longtable}{>{\\rule{0pt}{.5cm}}>{\\centering\\arraybackslash}p{2cm}>{\\centering\\arraybackslash}p{1.5cm}>{\\centering\\arraybackslash}p{2cm}>{\\centering\\arraybackslash}p{7.7cm}>{\\centering\\arraybackslash}p{3cm}}","\n")     
+cat("\\rowcolor{headcol} \\textbf{Gene} &\\textbf{SNP} &\\textbf{Genotype} &\\textbf{Genotypic Effect} &\\textbf{References}\\\\","\n")    
+	cat("\\hline","\n")      
+
+
+	pubmedidvec<-numeric(0)                
+	for (id in 1:nrow(df))
+	{ 
+   		if(df[id,2] != "N")
+   		{
+       			pubid<-strsplit(as.character(df[id,6]),", ")
+       			for (pb in 1:length(pubid[[1]])) 
+       			{ 
+         			push(pubmedidvec,pubid[[1]][pb])
+       			}
+   		}
+     		push(citationvec,df[id,6])   
+	}
+	
+	unipubvec<-unique(pubmedidvec)
+
+	con <- dbConnect(MySQL(), user="jameswong", password="",dbname="variant_db", host="192.168.7.4")
+
+	if(ne == nrow(df) && df[1,7] == "Disease")
+	{
+   		cat("No Variant","\n")
+	}
+	if(ne == nrow(df) && df[1,7] == "Drug")
+	{
+   		cat("No Variant","\n")
+	}
+	else
+	{
+  		for (ii in 1:nrow(df))
+  		{    
+    			Query <-"select GeneMain.EntrezSymbol from GeneMain left outer join SnpMain on GeneMain.EntrezId = SnpMain.EntrezId where SnpMain.RsId ="
+
+
+    		if(length(grep(",", df[ii,1])) !=0)
+   	 	{
+           		rsids<-strsplit(as.character(df[ii,1]),", ")
+           		#cat (paste(rsids[[1]][1],rsids[[1]][2],sep=""),"\n")
+           		#gene <- ifelse(is.na(d1), "-", d1)
+           		Query1 <-"select GeneMain.EntrezSymbol from GeneMain left outer join SnpMain on GeneMain.EntrezId = SnpMain.EntrezId where SnpMain.RsId ="
+           		Query1<-paste(Query1, substr(rsids[[1]][1],3,20),sep ="")           
+           		res1 <- dbSendQuery(con, Query1)
+           		gene1 <- fetch(res1, n = 10000)
+           		gene1 <- ifelse(is.na(gene1), "-", gene1)
+           		Query2 <-"select GeneMain.EntrezSymbol from GeneMain left outer join SnpMain on GeneMain.EntrezId = SnpMain.EntrezId where SnpMain.RsId ="
+           		Query2<-paste(Query2, substr(rsids[[1]][2],3,20),sep ="")           
+           		res2 <- dbSendQuery(con, Query2)
+           		gene2 <- fetch(res2, n = 10000)
+           		gene2 <- ifelse(is.na(gene2), "-", gene2)
+
+
+           		#cat(paste("\\boxcolumn{2cm}{",gene1, " \\\\ ", gene2, "} & \\boxcolumn{3cm}{",rsids[[1]][1], " \\\\ ", rsids[[1]][1],"} & \\boxcolumn{3cm}{","text", " \\\\ ", "text","} & text & text\\\\[2.5ex]",sep=""),"\n")
+           		#cat("gene1","\n")
+           		#cat("\\newline","\n")
+           		#cat("gene2","\n")
+           		#cat (paste("gene1", "gene2","gene3", sep = "\n\\newline\n")," ")
+           		cat (paste(gene1, gene2,sep = ", ")," ")
+           		#cat (paste(gene1)," ")
+           		cat ("& ", paste(df[ii,1])) 
+           		cat ("& ", paste(df[ii,3])," ")
+           		cat ("& ", paste(df[ii,5])," ")
+
+
+           		if(length(grep(",", df[ii,6]))==0)
+           		{
+              			cat (paste("& ","[",which(unipubvec==df[ii,6]),"]",sep=""))
+           		}
+           		else
+           		{
+             ###################################################################################################
+             pubid<-strsplit(as.character(df[ii,6]),", ")
+             #print(df[ii,6])
+             indexvector<-numeric(0)
+             for ( cr in 1:length(pubid[[1]])) {  push(indexvector,which(unipubvec==pubid[[1]][cr]))}
+	       indexvector<-sort(indexvector)
+	     idtext<-numeric(0)
+             idtext<-paste(idtext,indexvector[1],sep="")
+	     #for (cv in 1:length(indexvector)) { idtext<-paste(idtext," [",indexvector[cv],"] ",sep="")}
+             for (cv in 2:length(indexvector)) { idtext<-paste(idtext,indexvector[cv],sep=", ")}
+		paste (indexvector,sep="", collapse=",")
+         
+             ##################################################################################################
+              pmid<-df[ii,6]
+              pmids<-strsplit(as.character(pmid),", ")
+              out<-""
+              group(indexvector)
+              cat (paste("&","\\AddBreakableChars{",group(indexvector),"}",sep=""),"\n")
+           }   
+           cat(paste (("\\\\"),"\n"))
+    		}
+    		else
+    		{
+    			Query<-paste(Query, substr(df[ii,1],3,20),sep ="")
+    			res <- dbSendQuery(con, Query)
+    			d1 <- fetch(res, n = 10000)
+    			gene <- ifelse(is.na(d1), "-", d1)
+    			if(df[ii,7] != "Drug")
+    			{
+        			if(df[ii,2] != "N")
+        			{
+           				cat (paste(gene)," ")
+           				cat ("& ", paste(df[ii,1])) 
+           				cat ("& ", paste(df[ii,3])," ")
+           				cat ("& ", paste(df[ii,5])," ")
+           				if(length(grep(",", df[ii,6]))==0)
+           				{
+              					cat (paste("& ","[",which(unipubvec==df[ii,6]),"]",sep=""))
+           				}
+           				else
+           				{ 
+              					pmid<-df[ii,6]
+              					pmids<-strsplit(as.character(pmid),", ")
+              					out<-""
+                				###################################################################################################
+             					pubid<-strsplit(as.character(df[ii,6]),", ")
+
+             					indexvector<-numeric(0)
+             					for ( cr in 1:length(pubid[[1]])) 
+						{  
+							push(indexvector,which(unipubvec==pubid[[1]][cr]))
+						}
+	       					indexvector<-sort(indexvector)
+	     					idtext<-numeric(0)
+	     					for (cv in 1:length(indexvector)) 
+						{ 
+							idtext<-paste(idtext,"[",indexvector[cv],"]",sep="")
+						}
+						paste (indexvector,sep="", collapse=",")
+
+             					##################################################################################################
+              				        group(indexvector)
+                                                cat (paste("&","\\AddBreakableChars{",group(indexvector),"}",sep=""),"\n")
+				           }   
+					        cat(paste (("\\\\"),"\n"))
+        		}
+    		}
+    	else
+    	{
+         	if(df[ii,2] != "N")
+         	{
+              		cat (paste(gene)," ")
+              		cat ("& ", paste(df[ii,1])) 
+              		cat ("& ", paste(df[ii,3])," ")
+              		cat ("& ", paste(df[ii,5])," ")
+              		if(length(grep(",", df[ii,6]))==0)
+              		{
+                 		cat (paste("& ","[",which(unipubvec==df[ii,6]),"]",sep=""))
+              		}
+              		else
+              		{ 
+                 		pmid<-df[ii,6]
+                 		pmids<-strsplit(as.character(pmid),", ")
+                 		out<-""
+             			###################################################################################################
+             			pubid<-strsplit(as.character(df[ii,6]),", ")
+
+             			indexvector<-numeric(0)
+             			for ( cr in 1:length(pubid[[1]])) 
+				{  
+					push(indexvector,which(unipubvec==pubid[[1]][cr]))
+				}
+	       			indexvector<-sort(indexvector)
+                                group(indexvector)
+	     			idtext<-numeric(0)
+	     			for (cv in 1:length(indexvector)) 
+				{ 
+					idtext<-paste(idtext,"[",indexvector[cv],"]",sep="")
+				}
+				paste (indexvector,sep="", collapse=",")
+
+             			##################################################################################################
+             			cat (paste("&","\\AddBreakableChars{",group(indexvector),"}",sep=""),"\n")  
+              		}   
+              		cat(paste (("\\\\"),"\n"))
+        	 }
+   		}
+  	}
+ 	}     
+}
+dbDisconnect(con)      
+cat("\\end{longtable}","\n")
+if(und !=0)
+{
+  cat("\\begin{minipage}{1.0\\linewidth}","\n")
+  cat("\\tiny","\n")
+  cat("* This marker has not been amplified due to DNA quality issues","\n")
+  cat("\\end{minipage}","\n")
+}
+cat("\\end{mdframed}","\n")
+
+cat("\\vspace{1mm}","\n")
+
+cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8, innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat("\\begin{minipage}{0.05\\linewidth}","\n")
+cat(paste("\\includegraphics[width=0.9\\linewidth]{",qimage,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+
+cat("\\begin{minipage}{0.95\\linewidth}","\n")
+disname<-Col3[i]
+cat("\\leavevmode","\n")
+cat("\\newline","\n")
+cat(paste("\\textbf{","About ", Col3[i],"}\n",sep=""))
+cat("\\leavevmode","\n")
+cat("\\newline","\n")  
+cat("\\end{minipage}")
+cat("\\leavevmode","\n")
+cat("\\newline","\n")  
+
+disQuery = "SELECT DisDrug.Description FROM DisDrug JOIN Chip ON Chip.ChipSK=DisDrug.ChipFK WHERE ChipType = "
+disQuery<-paste(disQuery, "'", ChipType ,"'"," AND ChipVer = ", "'", ChipVer ,"'", " AND DiseaseDrug = ", "\"", disname ,"\"",sep = "")
+
+#disQuery= "select DisDrug.Description from DisDrug where ChipFK = 1 and DisDrug.DiseaseDrug = " 
+#disQuery<-paste(disQuery, "'", disname ,"'", sep = "")    
+discon <- dbConnect(MySQL(), user="jameswong", password="",dbname="GSSDb", host="192.168.7.1")
+dbset <- dbSendQuery(discon, disQuery)
+dismout <- fetch(dbset, n = 10000)
+#cat("\\def\\verbatim@font{\\normalfont\\ua1}","\n")
+
+#cat("\\begin{verbatim}","\n")
+
+cat(paste(dismout),"\n")
+ 
+#cat("\\end{verbatim}","\n")
+dbDisconnect(discon)
+cat("\\end{mdframed}","\n")
+cat("\\vspace{1mm}","\n")
+
+
+cat("\\begin{mdframed}[roundcorner=10pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=8, innertopmargin=8,innerbottommargin=8, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+if(df[1,7] != "Drug")
+{
+cat("\\begin{minipage}{0.06\\linewidth}","\n")
+cat(paste("\\includegraphics[width=1.0\\linewidth]{",rimage,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+
+cat("\\begin{minipage}{0.94\\linewidth}","\n")
+
+cat("\\leavevmode","\n")
+cat("\\newline","\n")
+cat(paste("\\textbf{References}",sep=""),"\n")
+cat("\\leavevmode","\n")
+cat("\\newline","\n")  
+cat("\\end{minipage}")
+}
+else
+{
+   cat("\\begin{minipage}{0.15\\linewidth}","\n")
+cat(paste("\\includegraphics[width=1.0\\linewidth]{",rimage,"}",sep=""),"\n")
+cat("\\end{minipage}","\n")
+
+}
+#cat("\\leavevmode","\n")
+#cat("\\newline","\n") 
+
+
+cat("\\begin{spacing}{0.0}","\n")
+cat("\\footnotesize","\n") 
+
+if(length(unipubvec) != 0)
+{
+
+for (l in 1:length(unipubvec))
+{
+    pmQuery= "select Citation.Author, Citation.ISOAbbreviation, Citation.PublicationDate, Citation.ArticleTitle from Citation where Citation.PmId ="
+    pmQuery<-paste(pmQuery, unipubvec[l],sep ="")
+    con <- dbConnect(MySQL(), user="jameswong", password="",dbname="variant_db", host="192.168.7.4")
+    resultset <- dbSendQuery(con, pmQuery)
+    pmout <- fetch(resultset, n = 10000)
+    cat(paste("\n","\\textbf{","[",l,"] PMID:",unipubvec[l],"} ",sep=""))
+    if(length(pmout) !=0)
+    {
+        Author<-pmout[,1]
+        Journal<-pmout[,2]
+        PublicationDate<-pmout[,3]
+        Title<-pmout[,4]
+        Author <- ifelse(is.na(Author), "-", Author)
+        Journal <- ifelse(is.na(Journal), "-", Journal)
+        PublicationDate <- ifelse(is.na(PublicationDate), "-", PublicationDate)
+        Title <- ifelse(is.na(Title), "-", Title)
+
+        
+        name<-strsplit(Author,",")
+        cat("\n","\\def\\verbatim@font{\\normalfont\\ua1}","\n")
+
+  
+        cat(paste(name[[1]][1], ", et al.", sep=""),"\n")
+        cat("\\newline","\n")
+        cat(paste("\\textbf{\\emph{", Title,"}}", sep=" "),"\n")
+
+        cat("\\newline","\n")
+        cat(paste(" ", Journal, PublicationDate, sep=" "),"\n")
+       
+    }  
+    dbDisconnect(con)      
+}
+}
+else
+{
+   cat("No Relevant Citation","\n")
+}
+cat("\\end{spacing}","\n")
+cat("\\end{mdframed}","\n")
+cat("\\fancyfoot[C]{\\begin{mdframed}[roundcorner=4pt,leftmargin=1, rightmargin=1, linecolor=maincol,outerlinewidth=.5, innerleftmargin=5,innertopmargin=5,innerbottommargin=5, everyline=true, splittopskip=.6cm, splitbottomskip=.3cm]","\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedright{", PatientId,"}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\centering{\\thepage}}"),"\n")
+cat(paste("\\parbox[t]{0.333\\textwidth}{\\raggedleft{", ReportDate,"}}"),"\n")
+cat("\\end{mdframed}}","\n")
+cat("\\vspace{1mm}","\n")
+cat("\\newpage","\n")
+}
+
+@
+\clearpage\end{CJK*}
+\end{document}linecolor=goldenpoppy

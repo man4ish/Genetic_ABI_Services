@@ -1,0 +1,7 @@
+Dtect_Cardio_SnpList	Specific disease/drug category	RSID	Odds Ratio(Risk Allele)	p	RR(TT) - risk+	  |	Index	Specific disease/drug category	RSID	Odds Ratio(Risk Allele)	p	RR(TT) - risk+risk	RR(CT)
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs268	3.09	0.0082	9.229054261	2.9867	  |	9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs268	3.09	0.0082	4.250776857	2.0436
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs6025	3.57	0.006	12.36075521	3.4623	  |	9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	rs6025	3.57	0.006	6.477392291	2.5222
+11	Chronic Obstructive Pulmonary Disease (COPD)	rs3736309	0.44	0.1557	0.232352033	0.5280	  |	11	Chronic Obstructive Pulmonary Disease (COPD)	rs3736309	0.44	0.1557	1.200165462	0.5280
+12	Hypertension	rs12413409	0.86	0.1383	0.769094076	0.894295437	1.039878415		  |	12	Hypertension	rs12413409	1.16	0.1383	1.287968992	1.110318097	0.957170773
+12	Hypertension	rs13333226	0.87	0.1964	0.797082622	0.916186922	1.053088416		  |	12	Hypertension	rs13333226	0.87	0.1964	1.053088416	0.916186922	0.797082622
+12	Hypertension	rs17367504	0.89	0.1099	0.811604359	0.91191501	1.024623607		  |	12	Hypertension	rs17367504	0.89	0.1099	1.024623607	0.91191501	0.811604539

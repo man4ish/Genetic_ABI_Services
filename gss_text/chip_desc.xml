@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<root>
+  <chip>
+    <type>CRD</type>
+    <ver>01</ver>
+    <diseases>
+      <disease>
+        <name>Abdominal Aortic Aneurysm</name>
+        <desc>Abdominal aortic aneurysm represents the most common form of aortic aneurysm. An aneurysm is a localised ballooning (dilation) of a blood vessel, and can occur throughout the body. Risk factors include gender, smoking, age (&gt; 65 years), atherosclerosis, and family history of abdominal aortic aneurysms. 
+\newline 
+\newline 
+Aneurysms often have few symptoms but they may cause pain in the abdomen or back as a result of the pressure they exert. An aneurysm may rupture at any time, which can lead to a major internal blood spill, and to sudden death. The repair of any rupture is very dangerous and is associated with a high mortality rate. For larger aneurysms the risk associated with surgical repair is significantly less than the risk of rupture, so medical intervention can be applied. It is therefore invaluable to know whether you are at increased risk for abdominal aortic aneurysm. Ultrasound-based testing can then be considered for confirmation. </desc>
+      </disease>
+      <disease>
+        <name>Brain Aneurysm</name>
+        <desc>A brain aneurysm is a cerebrovascular condition caused by the localised ballooning or dilation of an artery in the brain. Small aneurysms may display no obvious signs (asymptomatic) but larger aneurysms may be associated with sudden severe headaches, vision impairment or even loss of consciousness. A ruptured brain aneurysm leads to bleeding in the brain, or subarachnoid haemorrhage. This may cause severe brain damage or death resulting from a haemorrhagic stroke. 
+\newline 
+\newline
+Brain aneurysms can occur in adults and children but are most common in adult women. The risk for brain aneurysm is greatly increased by high blood pressure and atherosclerosis. There are surgical approaches to treating ruptured brain aneurysms but these procedures usually result in permanent disability or death.</desc>
+      </disease>
+      <disease>
+        <name>Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)</name>
+        <desc>Deep vein thrombosis (DVT) refers to the development of a blood clot in a deep vein. DVT occurs most often in the legs. While the disease is asymptomatic, DVT may be detected through a number of non-specific symptoms that could include tenderness, swelling, discolouration and heat sensation in the affected area. Often the blood clots naturally dissolve. However, a significant health risk occurs when the clot migrates to the lung where it causes a pulmonary embolism (PE). The blockage of the major artery leading to the lung causes increased pressure on the right venticle of the heart and this is associated with typical clinical presentations of cyanosis, chest pains and heart palpitations. 
+\newline 
+\newline
+Your risk for DVT and PE is increased if you are above the age of 50, have had major surgery and/ or are obese. Sitting down for long periods of time, for example during a flight, may also increase the risk. Certain oral contraceptives and hormone replacement therapies are also associated within an increased risk for DVT. Pregnancy is another risk factor.  </desc>
+      </disease>
+      <disease>
+        <name>Familial Hypercholesterolemia</name>
+        <desc>Familial hypercholesterolemia is a medical condition characterised by the accumulation of ‘bad’ fats, or low density lipids (LDL), in the blood. As a result, the cholesterol levels in the blood are elevated. It is a genetic condition that is passed down in families. 
+\newline 
+\newline
+Familial hypercholesterolemia is caused by a genetic defect on chromosome 19. It is inherited in the autosomal dominant fashion, requiring only one defective chromosome (from one parent) for the disease to develop. If both parents have the disorder, and have passed it down to the child, the disease will be more severe. High levels of cholesterol can cause the narrowing of arteries through the formation of plaques, which are deposits of cholesterol and cells in the arterial wall. Effectively, the blood vessels will become harder, thicker, and brittle, which can lead to many diseases such as coronary heart disease, hypertension, heart attack, and stroke. 
+\newline 
+\newline
+Familial hypercholesterolemia can be managed through medications that include bile acid sequestrants and statins. You can confirm your genetic risks through a blood test that measures the levels of cholesterol in your blood. High cholesterol levels correspond to readings greater than 300 mg/dl blood in adults, where the levels of LDL are greater than 220 mg/dl. </desc>
+      </disease>
+      <disease>
+        <name>Atrial Fibrillation</name>
+        <desc>Atrial fibrillation (AF) is a term used for an irregular heart rhythm (heartbeat). The condition is characterised by rapid and uncoordinated contractions of the atria (the upper chambers of the heart) which are not synchronised with the ventricles (lower chambers of the heart). When this occurs, the blood flow between the atria and the ventricles is disrupted, causing retention of blood in the heart and decreased blood flow to the body. 
+\newline 
+\newline
+In many cases AF is asymptomatic but may also be associated with symptoms such as palpitations, tachycardia, cyanosis and congestive heart failure. As many as one third of stroke cases are caused by AF. Other indications of AF could include chest pain, respiratory distress, hypoxia that in turn may lead to pneumonia, and sleep apnoea. AF may be caused by hypertension, pulmonary embolism, alcohol consumption and genetic risk factors.
+\newline 
+\newline 
+This disease is associated with a reduced quality of life. Warfarin may be prescribed to protect affected individuals from stroke . Please be aware of the genetic differences associated with warfarin sensitivity. This can be found in the latter section of this report.</desc>
+      </disease>
+      <disease>
+        <name>Coronary Heart Disease</name>
+        <desc>Coronary heart disease is caused by the narrowing of the coronary arteries due to atherosclerotic plaques (deposits of cholesterol and fat that occlude blood flow). The narrowing of the critical arteries restricts blood flow to the heart muscles, causing chest pains in the form of angina. This can lead to a heart attack.
+\newline 
+\newline
+Coronary heart disease is caused by a number of risk factors that include smoking, hypertension, obesity, diabetes, excessive consumption of alcohol, stress and hyperlipidemia. Coronary heart disease can be managed by consuming plenty of vegetables, maintaining an ideal weight and quitting smoking. Avoiding intake of trans fats and exercising regularly are also good preventive steps. Statins may be prescribed to manage LDL cholesterol levels along with beta-blockers for hypertension and arrhythmia. Aspirin may be prescribed to prevent excessive clotting in individuals at high risk for stroke and infarction.</desc>
+      </disease>
+      <disease>
+        <name>Heart Attack</name>
+        <desc>The rupture or dislodging of an atherosclerotic plaque can cause an occlusion of the coronary artery that supplies blood to a part of the heart. The resulting blockage leads to a shortage in oxygen supply which can cause damage to the heart. In more severe cases death of parts of the heart muscle occurs. Symptoms include chest pains, shortness of breath, nausea and anxiety, although many heart attacks are asymptomatic. Risk factors for heart attacks include gender, other underlying cardiovascular diseases, age, smoking, high LDL levels, diabetes, blood pressure, obesity and alcohol consumption. The risk of a heart attack occurring increases with exertion that may be either physical or psychological. This increased risk could be six times higher for physcially fit individuals, and as much as 35 times higher for unfit individuals. This may be a result of the increased stretching of the vasculature that leads to the dislodging of atheromatous plaques. 
+\newline 
+\newline
+Heart attacks can be prevented by maintaining healthy blood pressure levels and making lifestyle changes that include quitting smoking, taking regular exercise and adopting a balanced diet. Taking prescribed antiplatelet drugs such as clopidogrel, beta-blockers and statins can also help. </desc>
+      </disease>
+      <disease>
+        <name>Peripheral Arterial Disease</name>
+        <desc>Peripheral arterial disease, or peripheral vascular disease, refers to the blockage and narrowing of the large arteries that are outside of the heart, brain and aorta. The disease is classified based on claudication, a pain usually observed in males aged 50 and above, while they are walking. The pain is a consequence of restricted blood flow to the leg muscles. As the disease becomes more severe the pain becomes worse, even when resting, and gangrene may occur. Symptoms such as weakness, numbness or cramping of the leg muscles may be observed. The development of sores and ulcers on the legs that heal poorly may also be an indication. 
+\newline 
+\newline
+Other indications include reduced hair and nail growth on the affected limb. Ischemic muscle pain is one of the most common manifestations of the disease which is directly caused by atherosclerosis. A common consequence of peripheral arterial disease is amputation of the affected limb. Risk factors include smoking, hypertension and diabetes. </desc>
+      </disease>
+      <disease>
+        <name>Sudden Cardiac Arrest</name>
+        <desc>Sudden cardiac arrest occurs when the heart stops beating, which results in the interruption of normal blood flow. This may be due to a heart attack, which in turn may be the consequence of coronary heart disease. Other cardiac abnormalities can also be responsible for sudden cardiac death, especially in young adults. The risk factors for sudden cardiac arrest are similar to those for coronary heart disease. Besides genetic factors, common risk factors include smoking, lack of physical exercise, obesity and diabetes.  </desc>
+      </disease>
+      <disease>
+        <name>Hypertriglyceridemia</name>
+        <desc>Familial hypertriglyceridemia is a genetic disease affecting the metabolism of fats. It is characterised by an increased level of triglycerides in the blood. The triglycerides represent a type of organic fat used by the human body to store energy. They are usually transported through the blood in the form of very low density lipids (VLDL), where they are packed together with proteins for solubility. Individuals with this medical condition are at a higher risk of developing cardiovascular diseases such as heart attack, coronary heart disease, hypertension, and stroke. It has also been reported that higher triglyceride levels in the blood can cause pancreatitis. 
+\newline 
+\newline
+Familial hypertriglyceridemia is a genetic disorder that is passed down as an autosomal dominant trait. This means that a child can inherit the disease even if only one parent has the genetic defect. In the event both parents are affected, the disease will show up in the child earlier in life and be more severe. Similar to high levels of cholesterol, elevated triglycerides can cause narrowing of blood vessels through the formation of fatty deposits in the arterial wall. The deposits will also make the walls harder, thicker and brittle, thus predisposing the walls to increased blood pressure and breakages as seen in a haemorrhagic stroke. There are very few symptoms that can be related specifically to familial hypertriglyceridemia. More often than not, an individual will show symptoms associated with cardiovascular diseases including shortness of breath, chest pain and tiredness on physical exertion. Prevention includes avoiding foods rich in saturated fats, reducing intake of refined carbohydrates and maintaining an active lifestyle with regular exercise. </desc>
+      </disease>
+      <disease>
+        <name>Chronic Obstructive Pulmonary Disease (COPD)</name>
+        <desc>Chronic obstructive pulmonary disease (COPD) refers to a group of medical conditions that cause the narrowing of breathing passages and the destruction of alveoli. Alveoli are situated at the end of the passages, and are responsible for oxygen and carbon dioxide exchange. There are two forms of the diseases-chronic bronchitis and emphysema. 
+\newline 
+\newline
+COPD is one of the most common pulmonary diseases and is strongly linked to smoking and air pollution. It develops over the years, but can be easily reversed if smoking is stopped early. Individuals with this disease have difficulties in breathing, especially when they exhale air from the lungs. COPD is caused by external factors that damage the walls of the breathing passages and the surface of the lungs. This damage makes the lungs less effective in exchanging carbon dioxide for oxygen in the blood. Smoking is the leading cause of the disease, but other air pollutants also play an important role, including industrial gases and fumes, car exhaust fumes and smog. 
+\newline 
+\newline
+If you are a smoker or are routinely exposed to occupational smoke or gasses and you have a chronic cough, sputum, wheezing or shortness of breath, you may have this disease. COPD may lead to respiratory failure and pulmonary heart disease. </desc>
+      </disease>
+      <disease>
+        <name>Hypertension</name>
+        <desc>Hypertension or high blood pressure refers to chronic elevated blood pressure in the arteries. Hypertension is a serious risk factor for other major cardiovascular complications such as stroke, heart attack, heart failure, aortic aneurysms, peripheral arterial disease and kidney disease. Reducing one's blood pressure can greatly reduce the risk of stroke, heart disease and even dementia. To avoid hypertension it is necessary to maintain a normal body weight, reduce intake of salt in food and exercise regularly. Diet should be rich in fruits and vegetables, contain as little alcohol as possible and be free from saturated fats. Hypertension can also be controlled through the use of medication. </desc>
+      </disease>
+      <disease>
+        <name>Obesity</name>
+        <desc>Obesity refers to the deposition of excess body fat. This is associated with decreased life expectancy through various cardiovascular health problems. In particular obesity is associated with the development of heart disease, diabetes, sleep apnoea and osteoarthritis.</desc>
+      </disease>
+      <disease>
+        <name>Stroke</name>
+        <desc>Stroke refers to the rapid loss of brain function due to a disruption in blood supply. This can be caused by ischemia as a result of a blockage due to atherosclerosis, or by a haemorrhage. The risk factors for stroke include old age, hypertension, diabetes, smoking and atrial fibrillation. High blood pressure is the most important risk factor that can be controlled in order to prevent a stroke. Other factors such as diet, smoking and cardiovascular health also have importance. </desc>
+      </disease>
+    </diseases>
+    <drugs>
+      <drug>
+        <name>PLAVIX (Clopidogrel)</name>
+        <desc>Clopidogrel is an antiplatelet drug that inhibits clots in coronary artery disease, peripheral vascular disease and cerebrovascular disease. It is prescribed to patients who have been diagnosed with symptomatic atherosclerosis. It may also be prescribed with aspirin to prevent thrombosis following intracoronary stent surgery. Clopidogrel is a pro-drug in that it needs to be metabolised by the CYP2C19 enzyme before it becomes functional. Approximately 14\% of the population have genetic variations for this enzyme that make it slower for the patient’s body to metabolise clopidogrel. The patients may not respond to treatment and are therefore at increased risk for serious adverse events that include death through heart attack and stroke. 
+\begin{itemize}
+\item A genetic marker for reduced drug efficacy means that a standard dose of the drug does not have an optimal pharmacological effect. 
+\item A genetic marker for increased drug efficacy means that a standard dose of the drug has a greater pharmacological effect. 
+\item  The absence of a pharmacogenetic marker means normal efficacy with a standard dose is expected.\end{itemize}</desc>
+      </drug>
+      <drug>
+        <name>Statins</name>
+        <desc>Statins are drugs used to lower blood cholesterol (LDL) levels by inhibiting the liver enzyme HMG-CoA reductase. Statins are routinely prescribed to patients with cardiovascular diseases. They are not usually prescribed to individuals who have increased blood cholesterol but who have not been diagnosed with cardiovascular diseases. There are severe adverse drug reactions associated with statins, including myopathy and increased production of liver enzymes. We have tested for genetic variants that affect your sensitivity to the drug and may be used to personalise your dosage if you need to take the drug. The results of many clinical trials have shown that statin therapy is usually safe and the incidence of adverse drug reactions is low. There are however some differences in the speed and dosage that are optimum for individuals. Your genome has been tested for common variants that correspond to differences in your ability to metabolise the statin drug. 
+\begin{itemize}
+\item A genetic marker for reduced drug efficacy means that a standard dose of the drug does not have an optimal pharmacological effect. 
+\item A genetic marker for increased drug efficacy means that a standard dose of the drug has a greater pharmacological effect. 
+\item A genetic marker for myopathy corresponds to a risk for an adverse drug reaction. 
+\item The absence of a pharmacogenetic marker means normal efficacy with a standard dose is expected. \end{itemize}</desc>
+      </drug>
+      <drug>
+        <name>Warfarin</name>
+        <desc>Warfarin is a drug used as an anticoagulant to prevent thrombosis and thromboembolism. Warfarin activity is determined by genetic factors that can be used to assist a doctor to prescribe an optimal dosage of the drug for a patient. The process of determining an effective and safe dosage for therapeutic anticoagulation is complicated by the patterns of genetic variation that alter the body's ability to metabolise the drug. Dtect Cardio screens for genetic differences in the VKORC1 and CYP2C9 enzymes. The results can be used to ensure appropriate drug dosage and prevent serious adverse drug reactions such as haemorrhage and necrosis. 
+\newline 
+\newline
+You have genetic variations that are likely to confer a difference in your body's ability to metabolise warfarin. If you have been prescribed warfarin for the management of your heart disease, it is important that you discuss these genetic variants with your doctor. Clinics are already aware of the intricacies and can use this information to better calculate the optimal starting dose. 
+\begin{itemize}
+\item The genetic markers for warfarin correspond to known pharmacogenetic dosage markers and can be used by your doctor to optimise your warfarin therapy. 
+\item The absence of a pharmacogenetic marker means normal efficacy with a standard dose is expected. 
+\end{itemize}</desc>
+      </drug>
+      <drug>
+        <name>Aspirin</name>
+        <desc>Aspirin (acetyl salicylic acid) is the most commonly used antiplatelet drug, and is prescribed for both primary and secondary care of cardiovascular diseases. When patients at high risk for a cardiovascular disease are treated with aspirin, they have a greatly reduced chance (&gt;30\%) of non-fatal myocardial infarction, experience a 25\% reduction in non-fatal stroke and benefit from a significant decrease in mortality. Aspirin works by binding irreversibly to the COX1 enzyme which is involved in the platelet aggregation process. The effect of the drug is not the same on all patients. Some patients who are prescribed aspirin suffer from specific thromboembolic vascular conditions. These adverse reactions are broadly referred to as 'aspirin resistance'. 
+\begin{itemize}
+\item A genetic marker for reduced drug in an individual indicates that a standard dose of the drug does not have an optimal pharmacological effect. 
+\item A genetic marker for increased drug efficacy in an individual indicates that a standard dose of the drug has a greater pharmacological effect on the individual. 
+\item The absence of a genetic marker indicates normal efficacy with a standard dose is expected. 
+\end{itemize}</desc>
+      </drug>
+      <drug>
+        <name>Beta-blocker (Metoprolol)</name>
+        <desc>Beta-blockers are drugs used in the management of heart disease. It is the excessive activation of the adrenergic nervous system that in many cases contributes to the symptoms of cardiovascular disease. Beta-blocker drugs are competitive antagonists of the adrenergic receptors. They modulate the activity of the pathway and assist in the management of cardiovascular diseases. They are routinely prescribed as a first-line agent for the treatment of heart failure, hypertension and angina. They also provide protection following a heart attack. 
+\newline 
+\newline
+Genetic differences contribute to differences in response to beta-blocker therapy. You have variations in your CYP2D6 enzyme that alter the speed at which Metoprolol is broken down. This carries a risk of differences in your antihypertensive response to Metoprolol. If you have been prescribed Metoprolol or other beta-blockers for the management of blood pressure and or heart disease, we would recommend that you discuss this with your physician. 
+\begin{itemize}
+\item A genetic marker for reduced drug efficacy means that a standard dose of the drug does not have an optimal pharmacological effect. 
+\item A genetic marker for increased drug efficacy means that a standard dose of the drug has a greater pharmacological effect. 
+\item The absence of a pharmacogenetic marker means normal efficacy with a standard dose is expected. \end{itemize}</desc>
+      </drug>
+      <drug>
+        <name>Beta-blocker (Bucindolol)</name>
+        <desc>Beta-blockers are drugs used in the management of heart disease. It is the excessive activation of the adrenergic nervous system that in many cases contributes to the symptoms of cardiovascular disease. The beta-blocker drugs are competitive antagonists of the adrenergic receptors. They modulate the activity of the pathway and assist in the management of cardiovascular diseases. They are routinely prescribed as a first-line agent for the treatment of heart failure, hypertension and angina. They also provide protection following a heart attack. 
+\newline 
+\newline
+Genetic differences contribute to differences in response to beta-blocker therapy. You have variations in your CYP2D6 enzyme that alter the speed at which Bucindolol is broken down. This carries a risk of differences in your antihypertensive response to Bucindolol. If you are prescribed Bucindolol or other beta-blockers for the management of blood pressure and or heart disease, we would recommend that you discuss this with your physician. 
+\begin{itemize}
+\item A genetic marker for reduced drug efficacy means that a standard dose of the drug does not have an optimal pharmacological effect. 
+\item A genetic marker for increased drug efficacy means that a standard dose of the drug has a greater pharmacological effect. 
+\item The absence of a pharmacogenetic marker means normal efficacy with a standard dose is expected. \end{itemize}</desc>
+      </drug>
+    </drugs>
+  </chip>
+  <chip>
+    <type>MTB</type>
+    <ver>01</ver>
+    <diseases>
+      <disease>
+        <name>Effects of Smoking Dose on Metabolic Syndrome</name>
+        <desc>Metabolic syndrome is a cluster of clinical observations that includes abdominal obesity, high triglycerides,low levels of high density lipoprotein cholesterol levels, high blood pressure and elevated blood fasting glucose levels. Metabolic syndrome is a critical risk factor for development of diabetes and cardiovascular disease. The development of metabolic syndrome is influenced by central obesity, age, smoking, alcohol consumption, diet and physical activity. This genetic screening analysis looks at the C242T variant of the CYBA gene. This has been associated with the development of metabolic disease in a Chinese population and how the metabolic syndrome risk is moduled by the number of pack years of exposure to cigarettes. Individual who who carry this genetic marker have reduced serum triglycerides concentrations and a smaller waist circumference. For the individuals who smoke at least 25 pack years of cigarettes, a reduced risk of metabolic syndrome was observed. </desc>
+      </disease>
+      <disease>
+        <name>Familial Hypercholesterolemia</name>
+        <desc>Familial Hypercholesterolemia is a genetic disorder characterised by higher than normal blood cholesterol levels. This is observed as excess cholesterol bound to the low density lipoproteins that have been associated with the earlier development of cardiovascular disease. This cardiovascular disease is typically manifested through the accelerated development of atherosclerosis which has profound effects on coronary artery disease which in turn is associated with angina pectoris and heart attacks. If you have this disorder then you may also develop xanthomas and or corneal arcus. Familial hypercholesterolemia can be managed through pharmaceutical products that include bile acid sequestrants and statins. Blood tests can be used to investigate cholesterol levels. A normal blood cholesterol level would be approximately 150-250 mg/dl serum cholesterol and 75-175 mg/dl LDL-cholesterol. Cholesterol is a normal part of the human diet and levels can be lowered by decreasing the dietary amounts of animal fats from both poultry and mammals. Using low-fat dairy products and avoiding coconut and palm-oils may also reduce cholesterol levels. </desc>
+      </disease>
+      <disease>
+        <name>Gallstone</name>
+        <desc>A gallstone is a compacted crystalline enterolith that forms within the gallbladder. The gallstones are formed from the components of bile and cholesterol is a key constituent. While the gallstones form in the gallbladder they may pass into other parts of the biliary tract where they may cause severe inflammation through acute cholecystitis, cholangitis or even pancreatitis. The development of gallstones is a common manifestation of gallbladder disease. While as many as 10-50\% of people depending on race and ethnicity may develop symptoms, for most people the condition is typically asymptomatic. In addition to genetic background, risk for the development of gallbladder disease can be increased by increasing age, female, central obesity, elevated blood lipids, diet, type-2-diabetes and various Medications. </desc>
+      </disease>
+      <disease>
+        <name>Gestational Diabetes</name>
+        <desc>Diabetes mellitus refers to a group of metabolic diseases in which a person has high levels of blood sugar. An increased fasting serum glucose content of more than 126mg/dl (&gt;7mmol/l) is a diagnosis for Diabetes and may be associated with the symptoms of frequent urination, increased thirst and increased hunger. Gestational diabetes is a form of Diabetes mellitus typically seen in the third trimester of pregnancy. It is observed in between 2-8\% of pregnant women with no previous diabetic history; it is often considered to be a natural phenomenon. Gestational diabetes is associated with risks to the baby that can include an excessive birth weight, stillbirth, low blood sugar, seizures and jaundice. Risks to the mother include the development of type-2 diabetes, pre-eclampsia and a requirement for a Caesarean section birth. The risk for developing gestational diabetes includes genetics, a family history of type 2 diabetes, increasing maternal age and a South Asian ancestry. Being overweight or obese also greatly increases the risks. </desc>
+      </disease>
+      <disease>
+        <name>Hypertriglyceridemia</name>
+        <desc>Familial Hypertriglyceridemia refers to high levels of triglycerides, a fatty molecule, in the blood. The increased blood concentration of these triglycerides is associated with the development of atherosclerosis, even when the blood cholesterol levels are normal. Increased levels of triglycerides in diabetic and or obese individuals is also associated with the development of metabolic syndrome. Individuals with type 2 diabetes will often also have an increased level of serum triglycerides. Hypertriglyceridemia may also be responsible for the development of pancreatitis. Beyond a family history of hypertriglyceridemia, risk factors include a carbohydrate rich diet, obesity, diabetes and insulin resistance, renal failure and alcohol consumption. The normal range of serum triglyceride levels is less than 150 mg/dl (&lt;1.7 mmol/l). </desc>
+      </disease>
+      <disease>
+        <name>Lactose Intolerance</name>
+        <desc>In humans the biochemical activity of lactase and other digestive hydrolases are greatest at birth. In individuals with a lactose intolerance a decrease in lactase enzyme levels typically occurs at between 3-5 years of age but may occur later in young adulthood. An inability to digest the lactose content of dairy products will result in symptoms that include diarrhea, bloating, flatulence and abdominal pain. This is a result of lactose digestion by the fermenting bacteria that live in the distal ileum and colon. Of interest is that the genetic variation responsible for lactose intolerance is not in fact a mutation. The normal state for humans is an inability to process lactose as an adult. Individuals who can digest lactose carry a mutation that keeps a gene switched on - this mutation is ancient and has been around as long as man has been domesticating animals. </desc>
+      </disease>
+      <disease>
+        <name>Type 1 Diabetes</name>
+        <desc>Diabetes mellitus refers to a group of metabolic diseases in which a person has high levels of blood sugar. An increased fasting serum glucose content of more than 126mg/dl (&gt;7mmol/l) is a diagnosis for Diabetes and may be associated with the symptoms of frequent urination, increased thirst and increased hunger. Type 1, or insulin dependent, diabetes is a disorder of glucose homeostasis that results in increased blood sugar and ketoacidosis. Diabetic ketoacidosis refers to an accumulation of toxic ketone acids in the blood and urine. These ketoacids are a by product of the body metabolising fat instead of glucose. The frequency of Type 1 Diabetes in Caucasian populations is approximately 0.3\%; it is lower in Asia and this is due to a lower abundance of islet-specific autoantibodies and other environmental differences. Type 1 diabetes results from an autoimmune destruction of the insulin producing beta cells that are found in the pancreas. The disease is fatal if not treated with insulin therapy. The onset of disease has genetic components but also requires a trigger and exposure to a driving antigen. A number of viruses have been implicated as environmental disease triggers. A number of complications are caused by type 1 diabetes. These include cardiovascular disease, diabetic neuropathy and diabetic retinopathy. </desc>
+      </disease>
+      <disease>
+        <name>Type 2 Diabetes</name>
+        <desc>Diabetes mellitus refers to a group of metabolic diseases in which a person has high levels of blood sugar. An increased fasting serum glucose content of more than 126mg/dl (&gt;7mmol/l) is a diagnosis for Diabetes and may be associated with the symptoms of frequent urination, increased thirst and increased hunger. Type 2 diabetes results from the development of insulin resistance. This results in a metabolic disorder that is characterised by high levels of blood glucose. Type 2 diabetes is the most common form of diabetes and obesity is believed to be the primary cause in people who have a genetic predisposition to the disease. Type 2 diabetes is an emerging disease and the rates of diagnoses have increased in parallel with obesity over the last decades. As a chronic disease, type 2 diabetes is associated with a decreased life expectancy of at least ten years. Much of this is associated with the peripheral complications that include greatly increasedrisks for cardiovascular disease, kidney failure and limb amputation. Type 2 diabetes is also associated with other complications that include sexual dysfunction, dementia and cognitive dysfunction. Environmental risk factors for Type 2 diabetes include the consumption of sugar sweetened drinks, saturated fats and trans fatty acids. White rice consumption may also play a role. A number of medications have also been associated with the development of diabetes. Type 2 diabetes can be managed by dietary modifications and ensuring sufficient exercise. Aerobic exercise appears particularly important in numerous studies. </desc>
+      </disease>
+      <disease>
+        <name>Gout</name>
+        <desc>Gout is a medical condition characterised by recurrent attacks of acute inflammatory arthritis commonly affecting the big toe joint. This arthritis is caused by elevated levels of blood uric acid when then crystallize and form monosodium urate crystal deposits in the joints and tendons. A high level of serum uric acid is called hyperuricemia.Gout is typically treated with non-steroid anti-inflammatory drugs and steroids. Levels of uric acid can be managed by dietary modifications with a focus on reducing the consumption of fructose sweetened drinks, alcohol, meat and seafood. Physical activities and the consumption of foods that reduce insulin resistance (coffee and dairy products) decrease the risk of hyperuricemia and development of gout. </desc>
+      </disease>
+      <disease>
+        <name>Hypothyroidism</name>
+        <desc>Primary Hypothyroidism is the most common thyroid disorder that may affect as many as 1-5\% of the population. Up to 12\% of the elderly may have hypothyroidism at a subclinical level. Rare mutations have been associated with congenital hypothyroidism; this is readily detectable by newborn screening. The broader primary hypothyroidism disease has a strong autoimmune thyroid disease genetic component and symptoms may include cold intolerance, constipation, weight gain, elevated serum cholesterol, depression and fatigue. Hypothyroidism during pregnancy increases the risk of pre-eclampsia and perinatal mortality and a subclinical disease may become overt. Hypothyroidism can be treated by medication. </desc>
+      </disease>
+      <disease>
+        <name>Grave&apos;s Disease</name>
+        <desc>Grave&apos;s disease is an autoimmune disorder in which antibodies to the thyrotropin receptor result in constitutive receptor activation and increased levels of thyroid hormone or hyperthroidism. This hypermetabolic disease may cause thyrotoxicosis and affects approximately 2\% of women but only 0.2\% of men. The role of the thyroid hormonesâ€™ roles in pacing the bodyâ€™s metabolic processes mean that the disease may present with symptoms that include nervousness, irritability, heart racing, tremours, insomnia and muscular weakness. Hyperthyroidism is also commonly associated with unexplained weight loss. While Graveâ€™s disease is a clear genetic disease the risk may be modulated by dietary iodine. </desc>
+      </disease>
+      <disease>
+        <name>Chronic Thyroiditis</name>
+        <desc>Chronic Thyroiditis, often called Hashimotoâ€™s thyroiditis, is an automimmune disease of the thyroid gland. This disease is curious in that it typically results in hypothyroidism with occasional periods of hyperthyroidism. Symptoms may include growth of the thyroid gland, a variety of other psychological issues (psychosis, mania, depression, migraines) and weight gain, temperature sensitivity, tachycardia, high serum cholesterol levels and hair loss. Hashimotoâ€™s disease is the primary cause of hypothyroidism in the USA and has a population prevalence of approximately 1.5 in 1000 people with women being affected more than men by a factor of at least 12x. Other risk factors for Chronic Thyroiditis include dietary iodine, selenium deficiency and exposure to pollutants such as tobacco smoke. </desc>
+      </disease>
+      <disease>
+        <name>G6PD Deficiency</name>
+        <desc>G6PD deficiency is an X-linked genetic disease associated with low level activity of the G6PDH enzyme which is involved in red blood cell metabolism. As one of the most common human enzyme defects it has global impact and may be manifested as haemolytic anemia or as favism a reaction following consumption of broad bean. Drugs that can cause haemolysis include various antimalarial drugs including e.g. chloroquine. Other drugs such as sulphonamides, analgesics such as aspirin and acetanilide and non-sulphur antibiotics may also cause haemolysis. In many individuals with G6PD deficiency the disease is asymptomatic. The prevalence of this G6PD de?ciency mutation is likely because it has a modest protective effect against malarial infection. </desc>
+      </disease>
+    </diseases>
+  </chip>
+  <chip>
+    <type>PDI</type>
+    <ver>01</ver>
+    <diseases>
+      <disease>
+        <name>Abnormal QT Interval</name>
+        <desc>In cardiology (studies of the heart and its functions) the QT interval is a measure of the heart’s electrical cycle and it refers to the electrical pulse within the left and right ventricles. A lengthened QT interval (where the cardiac polarisation takes longer than normal) is a biomarker for both ventricular tachyarrhythmia (excessively fast heart beat) and a risk factor for sudden death. Short QT similarly is also associated with sudden cardiac arrest and atrial fibrillation. A number of genetic markers have been identified that correlate with Long QT syndrome and Short QT syndrome.</desc>
+      </disease>
+      <disease>
+        <name>Allergic Asthma (Early Onset)</name>
+        <desc>Asthma and allergies are both common but complex disorders with a range of genetic and environmental determinants. Allergic asthma is a form of asthma (please also see the section report of asthma) which is associated with an allergic sensitization. This form of asthma may be triggered by exposure to a variety of inhaled allergens that may include material from the dust mite, domestic animals, pollens, moulds and even synthetic food additives.</desc>
+      </disease>
+      <disease>
+        <name>Asthma (Early Onset)</name>
+        <desc>Asthma is a common chronic inflammatory disease of the airways. Asthma is characterised by a range of symptoms that are associated with airflow obstruction and bronchospasm - the symptoms can include a tightness of the chest and a shortness of breath, wheezing and even coughing. The symptoms are often more pronounced at night and in the early mornings. An asthma attack is an acute asthma event when the symptoms are most pronounced. A lack of blood oxygenation during such attacks may lead to a blueness of skin and the attacks can be life threatening. Asthma is caused by a variety of known genetic variants and environmental triggers.</desc>
+      </disease>
+      <disease>
+        <name>Coeliac Disease</name>
+        <desc>Coeliac disease is an autoimmune disease of the small intestine. The disease can first occur at any age and symptoms can include chronic diarrhoea, a failure to thrive and fatigue. The disease can also be asymptomatic having no obvious clinical presentation. Coeliac disease is caused by a reaction in the small intestine to gliadin, a gluten protein which occurs naturally in wheat, barley and rye. The gliadin protein causes an inflammatory reaction which in turn leads to a shortening of the villi structures which line the small intestine and which are responsible for the absorption of nutrients.\newline A genetic risk to Coeliac disease does not mean that the disease will occur. The disease state may be induced by exposure to viruses such a rotavirus or an intestinal adenovirus. It has also been suggested that early infancy exposure to gluten is associated with an increased risk of coeliac disease.</desc>
+      </disease>
+      <disease>
+        <name>Crohn&apos;s Disease</name>
+        <desc>Crohns disease is a form of inflammatory bowel disease although it may affect a number of different parts of the broader gastrointestinal tract. Crohn’s disease can cause a range of symptoms although the primary indications include abdominal pain, bloody diarrhoea, vomiting and weight loss. Crohn’s disease may also be association with other immunological complications that could include rashes, arthritis and ocular inflammation. The disease is manifested as a chronic inflammatory disorder where the immune system targets the gastrointestinal tract and the microbial antigens contained within. The disease can occur at any age, is equally distributed between males and females and is more frequent in smokers. Crohn’s disease can lead to a range of complications within the intestines that includes obstructions and abscesses that become infected and more general haemorrhages. Individuals with Crohn’s disease are at a higher risk for certain types of cancer that includes small intestinal cancer and colon cancer. There is also a risk of malnutrition due to poor absortption of foods and decreased food intake.</desc>
+      </disease>
+      <disease>
+        <name>Early Speech Impairment</name>
+        <desc>Speech and language impairments involve issues with communication and may involve hearing, speech, language and fluency. Such language impairments are often a characteristic feature of autism spectrum disorders and a number of genetic markers have been implicated . Some of the genetic markers that have been screened for are also associated with selective mutism and social anxiety. At 18 months of age at least 10\% of children can talk in sentences; the slowest 10\% of language learners may only have acquired a few isolated words at this same stage. While most of these slower learners will have caught up with their peers by the age of three or four, a delay in language acquisition could still indicate a persistent language impairment or a symptom of an autistic disorder. The Dtect child product looks for genetic aberrations in the older child. This panel looks for genetic variants associated with autism, dyslexia, ADHD and obsessive compulsive disorder markers. This could be used to determine risk profiles for other disorders within the learning disability spectrum.</desc>
+      </disease>
+      <disease>
+        <name>Infantile Hypertrophic Pyloric Stenosis</name>
+        <desc>Infantile hypertrophic pyloric stenosis (IHPS) is a severe condition of infancy when hypertrophy of the pyloric sphincter smooth muscle leads to obstruction of the gastric outlet. Symptoms appear a few weeks after birth and include projectile vomiting that progresses to dehydration, weight loss and alkalosis. The risk to your baby is through dehydration and electrolyte imbalance. This is a severe condition but it can be treated by surgery.</desc>
+      </disease>
+      <disease>
+        <name>Invasive Pneumococcal Disease (IPD)</name>
+        <desc>Invasive pneumococcal disease (IPD) is caused by the pneumococcus bacteria Streptoccus pneumoniae. It is the leading cause of severe bacterial infections in children in industrialised countries. The mortality associated with paediatric IPD can be as high as 11\% although age of child, comorbidity and the serotype of the Streptococcus strain and the organ invaded (blood, lung or meningitis) determine the risk of death. The bacteria is carried asymptomatically by a large number of people and genetics have identified that many of these individuals are more resistant to an invasive pneumococcal infection.</desc>
+      </disease>
+      <disease>
+        <name>Kawasaki&apos;s Disease</name>
+        <desc>Kawasaki disease is an autoimmune disease of the blood vessels. It results in an inflammation of the blood vessels and can cause fatal coronary artery aneurysms. It is typically seen in children below the age of five years. Kawasaki disease can be treated effectively through intravenous immunoglobulin and salicylate therapy. Corticosteroids may be used in some cases although they are contraindicated due to risks associated with coronary artery embolism.</desc>
+      </disease>
+      <disease>
+        <name>Meningococcal Disease</name>
+        <desc>Meningococcal disease refers to a bacterial form of meningitis caused by several species of bacteria of which Neisseria meningitidis is associated with epidemics. The Neisseria meningitidis bacteria is transmissible through respiratory droplets. The mortality associated with an infection can be as high as 10\% of patients. There is also significant disease morbidity through blood sepsis and limb amputation, brain damage and hearing loss. Vaccination against N. meningitidis is provided in some countries for university students and military conscripts. Saudi Arabia requires that travelers on Umrah and Hajj to have been vaccinated against the disease.</desc>
+      </disease>
+      <disease>
+        <name>Pathological Myopia</name>
+        <desc>Pathological myopia is an extreme form of nearsightedness that leads to a profound alteration in the shape of the eye and often leads to blindness. This blindness can be caused the the misshapen elongation of the eye (staphyloma), through macular degeneration and through retinal detachment. All of these problems are consequences of the myopia. A significant number of babies are born with pathological myopia but most sufferers develop the disease in childhood or early adolescence and vision progressive deteriorates over time. This serious eye condition is most frequently observed in individuals of Chinese, Japanese and Middle Eastern descent. There is an association between education and myopia and it unresolved as to whether myopia correlates with IQ. China, Singapore and Malaysia are amongst the countries in the world with the highest prevalence of myopia although the genetic contribution to the myopia is unresolved. Pathological myopia can be managed using various approaches.</desc>
+      </disease>
+      <disease>
+        <name>Sudden Infant Death Syndrome</name>
+        <desc>Sudden infant death syndrome (SIDS) refers to the death of an infant which is not predicted on the basis of a disease or infection and which cannot be simply explained by autopsy and forensic examination. SIDS may also be referred to as cot death. SIDS is more common in boys and risk factors include sleeping on the tummy, exposure to tobacco smoke and there is a clear genetic element. SIDS is most common in babies aged between three months and one year old and is more prevalent in babies who had a low birth weight and young mothers. The mechanisms behind SIDS remain unresolved and there are only anecdotal suggestions as to how risk can be reduced. Good air circulation with fan use in the baby’s bedroom is associated with a reduced risk of SIDS as is breastfeeding.</desc>
+      </disease>
+      <disease>
+        <name>Early or Late Teething</name>
+        <desc>Tooth development is a highly heritable process that controls the growth and development of the tooth bud and the eruption of first the baby’s milk teeth and then the permanent teeth. As a complex developmental process, abnormalities of the teeth are common. The time to first tooth eruption and the number of milk teeth is a common cause of concern for many parents. The DNA sample tested shows increased genetic risk for tooth agenesis. There is a risk that your child may have fewer teeth and that they will erupt later. This is not a cause for concern and is part of normal development. The DNA sample tested shows a normal genetic profile for tooth agensis.</desc>
+      </disease>
+    </diseases>
+  </chip>
+  <chip>
+    <type>PDC</type>
+    <ver>01</ver>
+    <diseases>
+      <disease>
+        <name>Autism</name>
+        <desc>Autism is a pervasive developmental disorder that typically becomes apparent by the age of three years. Autism has a number of characteristics that include limited verbal communication, lack of reciprocal social interactions and patterns of ritualised or compulsive behaviour. The broader autism spectrum disorder includes other less severe disorders such as Asperger syndrome. Mental retardation is concomitant in many cases of autism and autism spectrum disorder but not in individuals with Asperger syndrome. Autism is a complex multifactorial disorder and includes several genes and markers at distinct genomic locations. Unbalanced copy number variations have also been implicated in autism spectrum disorder. Testing for copy number requires a different methodology. The Dtect-cytogenetic test can be used to evaluate patterns of copy number variation in the genome. The prevalence of autism spectrum disorders is approximately 5 people in 1,000 with males showing a four-fold increased likelihood over females.</desc>
+      </disease>
+      <disease>
+        <name>Asthma (Early Onset)</name>
+        <desc>Asthma is a common chronic inflammatory disease of the airways. Asthma is characterised by a range ofsymptoms that are associated with airflow obstruction and bronchospasm - the symptoms can include a tightness of the chest and a shortness of breath, wheezing and even coughing. The symptoms are often more pronounced at night and in the early mornings. An asthma attack is an acute asthma event when the symptoms are most pronounced. A lack of blood oxygenation during such attacks may lead to a blueness of skin and the attacks can be life threatening. Asthma is caused by a variety of known genetic variants and environmental triggers.</desc>
+      </disease>
+      <disease>
+        <name>Attention-Deficit Hyperactivity Disorder (ADHD)</name>
+        <desc>Attention-deficit hyperactivity disorder (ADHD) is a developmental disorder. It is typically characterised by both hyperactivity, impulsivity and attentional distractions. Comorbid elements of disruptive behaviour disorder, oppositional defiant disorder and antisocial personality disorder may also be observed. As the most commonly diagnosed psychiatric disorder of children, the global prevalence of ADHD has been estimated to be approximately 4\%. ADHD is more commonly observed in boys (two to four times more common) and symptoms are usually observed before the children reach seven years of age. As a chronic disorder, the symptoms will persist into adolescence for a substantial fraction of diagnosed individuals. ADHD management through behaviour modification and pharmaceutical intervention can help in the development of lifelong coping strategies. As evidenced by twin-studies, ADHD is highly heritable and genetic risk factors have been identified. Environmental risks for ADHD include exposure to lead, organophosphates and food additives such as sodium benzoate and a number of artificial colorings including Tartrazine (E102). ADHD can be treated by the prescription of stimulants. Adverse drug reactions are however common and side effects may include mania and psychosis.</desc>
+      </disease>
+      <disease>
+        <name>Dyslexia</name>
+        <desc>Dyslexia is a learning disability that impairs an individual’s ability to read through issues of fluency or comprehension accuracy. People with dyslexia read more slowly than their intelligence matched peers and have issues with spelling and phonological processing. Dyslexia and IQ are not interrelated. Early symptoms of dyslexia may include delays in speech development, letter reversal and mirror writing. Dyslexia may also be manifested as difficulties reading aloud and in learning foreign languages. Dyslexia is frequently comorbid with ADHD. The genetics of dyslexia have been investigated and genetic differences are associated with brain structural differences particularly in the language centres of the left hemisphere. Dyslexia cannot be cured but treatment with technical aids and can be used to help dyslexic individuals to manage their symptoms and improve understanding of written texts.</desc>
+      </disease>
+      <disease>
+        <name>Invasive Pneumococcal Disease (IPD)</name>
+        <desc>Invasive pneumococcal disease (IPD) is caused by the pneumococcus bacteria Streptoccus pneumoniae. It is the leading cause of severe bacterial infections in children in industrialised countries. The mortality associated with paediatric IPD can be as high as 11\% although age of child, comorbidity and the serotype of the Streptococcus strain and the organ invaded (blood, lung or meningitis) determine the risk of death. The bacteria is carried asymptomatically by a large number of people and genetics have identified that many of these individuals are more resistant to an invasive pneumococcal infection.</desc>
+
+      </disease>
+      <disease>
+        <name>Obesity (Childhood Onset)</name>
+        <desc>Childhood obesity is serious public health concern that refers to an excessive accumulation of body fat that negatively affects a child’s health and wellbeing. Childhood obesity is often the result of interplay betweengenetic and environmental factors. Genetic differences are responsible for controlling both appetite and metabolism and can contribute to the development of obesity. Fat babies are more likely to grow up to become children with childhood obesity; breast feeding of babies is however protective. If a child has obese parents the child is much more likely to suffer from childhood obesity. The home environment, lack of family meals, processed food based diet and sedentary lifestyle are all contributing factors to this development of childhood obesity in addition to the genetic risks.</desc>
+      </disease>
+      <disease>
+        <name>Obsessive-Compulsive Disorder (OCD)</name>
+        <desc>Obsessive-compulsive disorder (OCD) is an ego dystonic anxiety disorder characterised by intrusive thoughts that become an obsession. These obsessive thoughts are recurrent and persistent and compulsive behaviour becomes a strategy to mitigate the anxiety associated with the obsession. An OCD sufferer is aware that the obsessive thoughts and compulsive behaviour is irrational; this causes both stress and anxiety and in-turn leads to periods of depression. The disorder is associated with complex thinking patterns, rituals and has been linked with an above-average intelligence. Symptoms of OCD are typically first observed during the teenage years and into the mid 20s. The OCD population frequency has been estimated as between one and three percent. Medical management of OCD is possible and combination therapy using drug classes such as atypical antipsychotics and selective serotonin reuptake inhibitors have been successfully used. Serotonin is a neurotransmitter associated with the regulation of anxiety and it is believed that OCD patients’ serotonin receptors are understimulated. This is supported by the patterns of genetic variation found in OCD patients’ serotonin transporter gene.</desc>
+      </disease>
+      <disease>
+        <name>Pathologic Myopia</name>
+        <desc>Pathological myopia is an extreme form of nearsightedness that leads to a profound alteration in the shape of the eye and often leads to blindness. This blindness can be caused the the misshapen elongation of the eye (staphyloma), through macular degeneration and through retinal detachment. All of these problems are consequences of the myopia. A significant number of babies are born with pathological myopia but most sufferers develop the disease in childhood or early adolescence and vision progressive deteriorates over time. This serious eye condition is most frequently observed in individuals of Chinese, Japanese and Middle Eastern descent. There is an association between education and myopia and it unresolved as to whether myopia correlates with IQ. China, Singapore and Malaysia are amongst the countries in the world with the highest prevalence of myopia although the genetic contribution to the myopia is unresolved. Pathological myopia can be managed using various approaches.</desc>
+      </disease>
+      <disease>
+        <name>Restless Legs Syndrome</name>
+        <desc>Restless legs syndrome (RLS) is a neurological disorder characterised by irresistable urges to move limbs to stop uncomfortable or strange sensations that may be felt within the legs, arms or even phantom limbs. The RLS sensations include aching, tickling, crawling, itching and other painful sensations. These sensations occur during periods of quiet wakefulness such as reading, studying or relaxing. Individuals with RLS typically also show limb jerking during sleep. A spectrum of severity is observed and the syndrome can have a significant impact on ability to sleep and quality of life. The molecular basis of the syndrome appears to be anchored within biological systems associated with the dopamine neurotransmitter and iron levels in the brain. Approximately 60\% of RLS cases are familial and a number of clear genetic markers for disease risk have been identified. RLS can be managed by pharmaceutical intervention and this includes treatment with dopamine agonists and opioids. Oral iron supplements are also of benefit if blood iron levels are lower than the normal 50ng/ml. Monochromatic near-infrared light treatment has also been shown to decrease symptoms associated with RLS.</desc>
+      </disease>
+      <disease>
+        <name>Permanent Tooth Development</name>
+        <desc>Permanent teeth refer to the second set of teeth that emerge in mammals following the earlier deciduous teeth. In humans, there are thirty-two permanent teeth, consisting of six maxillary and six mandibular molars, four maxillary and four mandibular premolars, two maxillary and two mandibular canines, four maxillary and four mandibular incisors. In rare occurrences, a third set of teeth is possible. This hyperdontia phenomenon is observed in the very elderly. Dental maturity is as measure of the number of permanent teeth that have emerged at a given age. This is based on gender, malnutrition, dental health, ethnicity and disease but is also influenced by a number of genetic markers. These markers can be used to explain the delayed emergence of permanent teeth.</desc>
+      </disease>
+    </diseases>
+  </chip>
+  <chip>
+    <type>ONC</type>
+    <ver>01</ver>
+     <diseases>
+      <disease>
+        <name>Basal Cell Carcinoma</name>
+        <desc>Basal cell carcinoma (BCC) is a cancer of the skin and is the most common form of non-melanoma skin cancer. Medically, it is defined as a basal keratinocyte tumour of the epidermis, which is part of the skin. This form of skin cancer is the most commonly diagnosed cancer in populations of European ancestry, but there are associated concerns with usage of skin lightening products. While representing a common cancer, BCC is rarely fatal and tumour metastasis is uncommon. The tumour will, however, lead to a significant destruction of peripheral tissue if left untreated. BCC is most typically observed in regions exposed to sunlight, and UV light has been identified as the most important and common environmental risk factor. Genetic host factors are associated with lightened skin pigmentation, and common genetic risk factors have been identified in known cancer pathways and control processes. </desc>
+      </disease>
+     <disease>
+        <name>Bladder Cancer</name>
+        <desc>Globally, bladder cancer represents the 7th most common cancer for men and the 17th most common cancer for women. The prevalence varies considerably among countries, as bladder cancer is more prevalent in the United States and Europe than in Asia. The incidence and mortality associated with bladder cancer have been increasing in Asian populations over the last two decades. Tobacco smoking is the predominant risk factor followed by an occupational exposure to carcinogens. People who drink more than 1.5 litres of water per day and who urinate frequently have a reduced risk of bladder cancer compared to those who drink less water. 
+\newline 
+\newline
+Medically, bladder cancer typically refers to a malignancy of the urothelium, the cell layer that lines the inside of the urinary bladder. Bladder cancer is often characterised by its high frequency of recurrence. While exposure to carcinogens explains much of the bladder cancer risk, the research on families with bladder cancer reveals a strong genetic basis for the disease. Genetic markers that characterise a risk for the predisposition towards bladder cancer in different ethnic groups have been identified. Risk for bladder cancer can be mitigated by avoiding tobacco smoke and by eating fruits and yellow-orange vegetables, such as carrots, which are rich in selenium.</desc>
+      </disease>
+      <disease>
+        <name>Breast Cancer</name>
+        <desc>Breast cancer is the most prevalent type of cancer in women with over one million new cases diagnosed globally each year. The etiology of breast cancer is complicated and estrogen exposure is a significant risk factor.
+\newline 
+\newline
+Breast cancer remains a complex multigenic disease, and genetic variants in a number of genes have been clearly associated with risk. Patients with breast cancer are up to five times more likely to develop a second primary breast cancer than unaffected women, and first degree relatives are twice as likely to suffer from breast cancer than individuals with no family history. Most breast cancers are the result of malignancies that develop within the milk ducts (ductal carcinomas) or lobules (lobular carcinomas) of the breast. Depending on access to medical care, five-year survival rates can be as high as 85\% (United Kingdom). The key risk factors include older age, women who have had no children and mothers who have not breastfed. Obesity, aberrant hormone levels, poor diet and exposure to carcinogens are also risk factors. Breast cancer may be detected by observing lumps in the breast tissue, leakage and by changes in shape, colour or morphology of either the skin or nipple. As with all diseases, early detection is associated with an improved prognosis. This early detection can be facilitated by regular screening by X-ray and ultrasound mammography.</desc>
+      </disease>
+      <disease>
+        <name>Cervical Cancer</name>
+        <desc>Infection with the human papillomavirus (HPV) is believed to be a pre-requisite for the development of cervical cancer but is not singularly sufficient to cause the cancer – as many as 30-60\% of women infected by HPV will not develop the cancer. Ten-year cumulative incidence rates for cervical intraepithelial neoplasia (cervical cancer precursor) and invasive cervical cancer can be as high as 17\% for the HPV strains identified as HPV16 or HPV18. Research has identified a clear familial clustering of cervical cancer and a number of genes have been identified as contributing risk factors to the development of cancer. Some of these genetic variations influence the primary immune response that may in turn determine the outcome of high-risk HPV infections. This is supported by the observation that immunocompromised individuals are at higher risk for the development of HPV-associated tumours.
+\newline 
+\newline
+Cervical cancer screening using the Pap smear technique can be used to identify precancerous changes within the cervical cells and can be used to facilitate an early and effective treatment. Recent HPV vaccines have a great impact (93\%) in reducing the risk of precancerous changes in cervical cells. Overall, the current five-year survival for cervical cancer is 72\%; this increases to 92\% with the earlier detection and treatment of precancerous masses.</desc>
+      </disease>
+      <disease>
+        <name>Colorectal Cancer</name>
+        <desc>Colorectal cancer (CRC) affects over one million people each year worldwide and is the third most common malignancy. It is also the fourth most common cause of cancer-related mortality in the world. The overall burden of the disease is likely to increase as Asian and African populations adopt more Western diets. The lifetime risk for developing colorectal cancer is currently 6\% globally and the five-year survival rate is presently only 55\%. More than half of the number of patients diagnosed with colorectal cancer are over 70 years of age. Medically, colorectal cancer refers to an uncontrolled cellular proliferation within tissues of either the colon or the bowel. More than 80\% of CRC result from a precancerous adenomatous polyp. Such polyps are easily observed by colonoscopy and as such, routine screening for those individuals at risk can aid in the early identification of growths and aid in the successful treatment of the disease through surgery. Diet and lifestyle are major risk factors for CRC. Genetic studies in twins have shown that approximately 30\% of the variation in susceptibility to CRC involves inherited genetic differences. However, high-penetrance susceptibility mutations account for only 6\% of cases; the majority of risk being the consequence of multiple low-risk genetic variants. The risk of suffering a CRC is increased 2.2 times if a first-degree relative has already been diagnosed with CRC. Other risk factors for colorectal cancer include male gender, older age, obesity, tobaccco exposure, physical inactivity, a high-fat diet, and excessive intake of red meat and alcohol. The consumption of whole grains and fruits and vegetables and the decreased consumption of red meats will reduce the risk.
+</desc>
+      </disease>
+      <disease>
+        <name>Endometrial Cancer</name>
+        <desc>Endometrial cancer (EC) is a hormone-related cancer associated with excessive estrogen stimulation unopposed by progesterone. Endometrial cancer refers to several types of malignancies that arise from the endometrium of the uterus. EC is the most common cancer of the female genital tract and the second most common gynecologic cancer. EC occurs in peri- and postmenopausal women, and it may also be present in premenopausal women, particularly those suffering from hyperestrogenism. Having menarche at early age and/ or menopause at late age, having no children, being obese, using estrogen-alone hormone replacement therapy, using tamoxifen, and having a family history of endometrial, breast, ovarian or colorectal cancer are established risk factors for EC.
+\newline 
+\newline
+This cancer can be further categorised into endometrioid (type 1) and non-endometrioid (type 2) adenocarcinomas. The usual treatment for endometrial cancer is surgical and with early detection and treatment for a stage 1A tumour that is confined to the uterus with little or no myometrial invasion, a five-year survival rate of 90\% is observed.</desc>
+      </disease>
+      <disease>
+        <name>Esophageal Cancer</name>
+        <desc>Esophageal cancer refers to a malignancy of the esophagus. There are various subtypes, with primarily squamous cell carcinoma and adenocarcinoma being the two main forms.   Gastro-esophageal reflux disease is a major risk factor for the development of esophageal adenocarcinoma and the presence of Barrett’s esophagus is a likely precursor to the development of the disease. Esophageal cancer is a genetic cancer and family history is a major determinant of risk  based on familial aggregation studies that have identified genetic susceptibility as playing a pivotal role in the etiology of esophageal cancer. As with other cancers it is the early detection of the cancer that stands to have the greatest impact on the successful clinical outcome. </desc>
+      </disease>
+     <disease>
+        <name>Esophageal Squamous Cell Carcinoma (ESCC)</name>
+        <desc>Esophageal squamous cell carcinoma (ESCC) is the sixth most fatal cancer worldwide with a five-year survival rate of less than 10\%. As a general rule, primary squamous carcinomas are observed in the top two-thirds of the esophagus while adenocarcinomas tend to be observed closer to the stomach. Risk factors for ESCC include old age (&gt;60 years), being a male, excessive consumption of alcohol, heavy smoking and obesity. Gastro-esophageal reflux disease is also a major risk factor for the development of esophageal adenocarcinoma. Human papillomavirus (HPV) is also recognised as a major risk factor for ESCC and the consumption of Fusarium-contaminated grains has been hypothesised to be another significant environmental source of carcinogens. As with other cancers, it is the early detection of the cancer that stands to have the greatest impact on the successful clinical outcome..</desc>
+      </disease>
+      <disease>
+        <name>Gallbladder Cancer</name>
+        <desc>Biliary tract cancers include cancers of the gallbladder, extrahepatic bile duct and ampulla of Vater. They are rare but associated poor survival and high fatality with an overall five year survival rate of less than 5\%. The presence of gallstones are the most important risk factor for biliary tract cancers, especially those of the gallbladder. In a study of patients from Shanghai, a 24-fold increased risk of gallbladder cancer was associated with the presence of gallstones. 
+\newline 
+\newline
+Most tumors are adenocarcinomas, with a small percent being squamous cell carcinomas. The cancer commonly spreads to the liver, bile duct, stomach, and duodenum. Due to the vague symptoms of the cancer and its rapid spread the tumour is likely to have metastasized by the time it is detected. Predisposing risk factors include cholelithiasis, ethnicity, genetic predisposition, geographical location, female gender, chronic inflammation, chronic infection and environmental exposure to carcinogens.</desc>
+      </disease>
+      <disease>
+        <name>Glioma Development</name>
+        <desc>Gliomas account for approximately 80\% of malignant primary tumours of the central nervous system, and comprise almost 40\% of all primary brain tumours. Gliomas have a very poor prognosis and, in the USA, are responsible for more than 13,000 deaths a year. The most common type of glioma is glioblastoma (GBM), a cancer with a median overall survival rate of only 10 to 15 months. Gliomas are a leading cause of childhood cancer deaths and the second leading cause of cancer-related deaths in men aged 20–39. The etiology of glioma is poorly understood, but heterogeneous gliomas and their different tumour subtypes, defined in part by malignancy grade, can be distinguished. There is a two-fold increased risk for first-degree relatives of glioma patients to also develop glioma, thus demonstrating that there is a strong but complex genetic association.</desc>
+      </disease>
+      <disease>
+        <name>Hepatocellular Carcinoma</name>
+        <desc>Hepatocellular carcinoma (HCC) is the fifth most common, and the third most deadly, cancer worldwide. Chronic hepatitis B virus (HBV) infection is known to drive liver cirrhosis, a non-malignant precursor to HCC. Liver cirrhosis is estimated to affect 1–2\% of the world population and, in turn, is the most prominent risk factor. Heavy alcohol consumption and poor response to medical intervention through interferon treatment are the other main risk factors for the development of HCC. Type 2 diabetes is a major contributing factor to the development of HCC, and is likely aided by obesity. The genetics of the transition from liver cirrhosis to HCC have been well studied and a number of risk markers have been characterised. The five-year disease survival rate for HCC may be as high as 50\%. In one well-described Korean cohort study, a median survival rate of 60 months was observed following tumour resection. The ability to perform surgery on the liver is based on the stage at which the tumour is detected the early detection of the tumour and its removal is associated with the best survival profile.</desc>
+      </disease>
+      <disease>
+        <name>Kidney Cancer</name>
+        <desc>Kidney cancer accounts for nearly 4\% of cancer incidence and 2\% of cancer mortality in the United States. Around 80–90\% of kidney cancers develop in the renal parenchyma and are known as renal cell carcinoma (RCC). Epidemiological studies have conclusively identified three risk factors for RCC, all of which are modifiable: hypertension, obesity and smoking. Other risk factors for RCC include suspected occupational risk factors such as chlorinated solvents, gasoline and lead. The five-year survival rate for renal cell carcinoma is approximately 50\% but this drops to less than 10\% if the tumour has metastasised. There is evidence that genetic factors influence susceptibility to RCC; for instance, the lifetime risk for disease increases approximately two-fold for those with a first-degree relative with RCC. However, familial RCC cases represent less than 5\% of RCC cases overall and many other genetic variants are known to be contributing risk factors to the development of disease.</desc>
+      </disease>
+      <disease>
+        <name>Larynx Cancer</name>
+        <desc>Laryngeal cancer is an upper aero-digestive tract cancer, and its risk is largely related to alcohol consumption and the toxic by-products from the metabolism of alcohol. However, smoking is the most important risk factor for laryngeal cancer, with the risk of cancer being more than 20 times higher for smokers compared to non-smokers. Most laryngeal cancers are squamous cell carcinomas, reflecting their origin from the squamous cells which form the majority of the laryngeal epithelium. Cancer can develop in any part of the larynx, but the cure rate is affected by the location of the tumour. Most laryngeal cancers originate in the glottis, the region of the larynx containing the vocal cords.</desc>
+      </disease>
+     <disease>
+        <name>Acute Lymphoblastic Leukemia</name>
+        <desc>Childhood acute lymphoblastic leukaemia (ALL) is the leading cause of cancer-related deaths among children as it affects 30–45 children per 1,000,000 each year. Substantial racial differences exist in both the incidence and treatment outcome of childhood ALL. Caucasians and Africans are at greater risk for developing ALL than Asians. Ancestry-related genomic variations have been shown to contribute to racial disparities in the incidence and outcome of ALL. Dysregulated immune response to common infection may be a cause for childhood ALL, and epidemiological data is consistent with carcinogen exposure during pregnancy as a basis for infant leukaemias. The five-year survival rate for ALL is almost 95\% for children under the age of 10 but this drops considerably as children become adolescents with only a 75\% survival rate for those between the ages of 15 and 22. While the cancer is much rarer in adults, a long-term survival probability may be less than 35–40\%.</desc>
+      </disease>
+      <disease>
+        <name>Chronic Lymphocytic Leukemia</name>
+        <desc>Chronic lymphocytic leukaemia (CLL) accounts for around 25\% of all leukaemia cases and is one of the most common forms of lymphoid malignancy globally. Medically, CLL is defined as a malignant B-cell lymphoproliferative disorder and is most common in male Caucasians, with a lifetime risk of 1 in 200. CLL is characterised by the accumulation of small, mature-appearing lymphocytes in the bone marrow, blood, and lymphoid tissues. There is a strong genetic element to CLL with risks in first-degree relatives of cases being increased eight-fold. In cases of familial CLL diagnosis at an earlier age is observed compared to cases of sporadic CLL. At diagnosis, 85\% of patients are older than 65 years of age and the majority of patients are men. Most people are diagnosed without symptoms as the result of routine blood tests that return a high white blood cell count, but, as CLL advances, it can result in swollen lymph nodes, liver and spleen resulting in anaemia. ZAP-70 is a gene whose expression level forms a biomarker for the aggressiveness of the CLL disease. A low level ZAP-70 expression is associated with a more aggressive form of the disease with a median survival rate of 8 years while a high level ZAP-70 expression corresponds to the more progressive form of CLL with a median survival rate of almost 25 years.</desc>
+      </disease> 
+      <disease>
+        <name>Acute Myeloid Leukemia</name>
+        <desc>Acute myeloid leukemia (AML) is a heterogeneous disease characterised by different recurrent cytogenetic aberrations. Medically, AML is a malignancy of the myeloid blood cells and the disease is characterised by the rapid growth of abnormal cells that accumulate in the bone-marrow, interfering with normal cell production. This interference causes a drop in the number red blood cells, platelets and normal white blood cells. The resulting symptoms include fatigue, shortness of breath, easy bruising and bleeding, and increased risk of infection. Cytogenetically normal AML (CN-AML) is the largest subgroup, representing approximately 45\% of adult patients with AML. It is a rare disease in children, and accounts for approximately 15 – 20\% of childhood acute leukaemia patients. Biological and clinical differences between adult and paediatric AML are well documented. Cytogenetics is used extensively to characterise the leukemia genome and to evaluate the prognosis. Depending on mutations the five-year survival rate may range from 15\% to over 70\%, with a recurrence risk following treatment of 33\% to 78\%.</desc>
+      </disease>
+      <disease>
+        <name>Chronic Myeloid Leukemia</name>
+        <desc>Chronic myeloid leukaemia (CML) is a disease with diverse clinical and biological features. CML malignancy is characterised by the increased and unregulated growth of predominantly myeloid cells in the bone marrow and the accumulation of these cells in the blood. CML occurs in all age groups, but most commonly in the middle-aged and elderly. Its annual incidence is 1 – 2 per 100,000 people, and slightly more men than women are affected. CML represents about 15 – 20\% of all cases of adult leukaemia. A five-year survival rate of 89\% is observed and it has been suggested that only 1\% of patients die because of leukaemia progression.</desc>
+      </disease>
+      <disease>
+        <name>Lung Cancer</name>
+        <desc>Lung cancer is the most frequent cause of cancer-related deaths throughout the world. Every year more than 1 million individuals are diagnosed, and a significant proportion die within two years of diagnosis. Environmental exposure, primarily to cigarette smoke, is the major risk factor for lung cancer. Although lung cancer is linked to smoking and passive smoke, genetic and other factors also play an important role in lung carcinogenesis and there is considerable variation in the susceptibility of smokers to lung cancer. Researchers have demonstrated a 2.5-fold higher risk in cases involving first-degree relatives who smoke. Other studies have also shown the presence of genetic heterogeneity in lung cancer susceptibility between populations of European descent and Asians. Non-smokers account for 15\% of lung cancer cases; these cases may be attributed to a combination of other risks that include genetic factors, radon gas exposure, asbestos exposure and other air pollutants including second-hand smoke. Clinical studies suggest that bronchial obstruction and emphysema also increase susceptibility to lung cancer. The most common symptoms include coughing, weight loss and a shortness of breath. Lung cancer may be diagnosed with a chest X-ray or CT scan. 
+\newline 
+\newline
+Most primary cancers that start in lung are carcinomas that derive from epithelial cells in the bronchi. The main types of lung cancer are small cell lung carcinoma (SCLC) and non-small cell lung carcinoma (NSCLC). Each type has different pathophysiological and clinical features, suggesting that their mechanisms of carcinogenesis differ. NSCLC is sometimes treated with surgery, whereas SCLC usually responds better to chemotherapy and radiotherapy. NSCLC is the most common histological type, which accounts for approximately 85\% of lung cancer diagnoses. All the major histological types of lung cancer are associated with smoking, the association is strongest for small-cell lung cancer, and is stronger for squamous cell than for adenocarcinoma. 
+\newline 
+\newline
+Lung cancer remains one of the most lethal types of cancer and the five-year relative survival rate remains at approximately 10\% worldwide. This is due in part to the observation that most patients are diagnosed when the malignancy has developed to more advanced stages.</desc>
+      </disease>
+      <disease>
+        <name>Lung Adenocarcinoma</name>
+        <desc>Lung adenocarcinoma is the most common type of lung cancer in lifelong non-smokers. It accounts for about 50\% of all histological types of lung cancer, and its incidence is increasing in East Asian and Western countries where it has become the most common major type of lung cancer in smokers (replacing squamous cell lung carcinoma). This cancer usually is seen peripherally in the lungs, as opposed to small cell lung cancer and squamous cell lung cancer, which both tend to be more centrally located. Generally, adenocarcinomas grow slower and form smaller masses than the other subtypes. However, they tend to form metastases at an early stage. Adenocarcinoma is a non-small cell lung cancer, and as such, it is not as responsive to radiation therapy but rather is treated surgically. The five-year survival rate for lung adenocarcinoma is approximately 17\% across all clinical stages at treatment. This may increase to as much as 70\% if the lung adenocarcinoma is detected early while the tumour is still small and has not metastasised.</desc>
+      </disease>
+      <disease>
+        <name>Follicular Lymphoma</name>
+        <desc>Non-Hodgkin’s Lymphoma (NHL) is a varied group of malignancy of B- and T-cells that differ in their causes and molecular profiles. NHL is the fifth most common among all cancers in the United States and has doubled in annual incidence since the 1970s. Over 300,000 new cases of NHL are diagnosed worldwide each year. Follicular lymphoma (FL) is one of the most common types of B-cell lymphoma. Medically, FL is a cancer of the lymph system. Patients with FL follow a slow clinical course but eventually succumb to the disease. FL is typically a cancer that affects older adults with a median age at diagnosis of 55 years. FL commonly transforms to the more aggressive diffuse large B-cell lymphoma (DLBCL) at a frequency of 10 – 60\%. Familial studies provide substantial evidence for a genetic influence on susceptibility to the major mature B-cell neoplasms, including FL. The overall five-year survival rate is 72 – 77\%. The symptoms of FL are subtle. This is why the cancer is typically detected in its later stages. Symptoms may include enlargement of the lymph nodes, fatigue, fever and unexpected weight loss.</desc>
+      </disease>
+      <disease>
+        <name>Hodgkin Lymphoma</name>
+        <desc>Hodgkin’s lymphoma (HL) is a common cancer of the lymph nodes, originating from the precursor B-cells. It is characterised by malignant cells mixed with lymphocytes and other inflammatory cells. Epstein-Barr virus (EBV) infection has been causally related to many cases, but there is little evidence to support the involvement of other environmental risk factors. The influence of genetics on susceptibility is robustly provided by the increased familial risk and high disease prevalence in monozygotic twins. Nodular sclerosing Hodgkin’s lymphoma (NSHL) has often been combined with mixed-cellularity Hodgkin’s lymphoma (MCHL) and other subtypes as classic Hodgkin’s lymphoma (cHL). Evidence suggests that NSHL is a distinct etiologic entity. NSHL is the most common histological subtype among adolescents and young adults in industrialised countries. Hodgkin's lymphoma is characterised by the orderly spread of the disease from one lymph node group to another and by the development of systemic symptoms with advanced disease. The disease occurrence shows two peaks: the first in young adulthood (ages 15 – 35) and the second in those over 55 years. The five-year survival is 84\%.</desc>
+      </disease>
+      <disease>
+        <name>Non-Hodgkin Lymphoma</name>
+        <desc>The non-Hodgkin’s lymphomas are a diverse group of blood cancers affecting lymphocytes that include any kind of lymphoma with the exception of Hodgkin’s lymphomas. It is estimated to be the sixth most common cancer in the United States. NHL comprises numerous distinct disease entities, with multifactorial etiologies. Profound disruption of immune function is an established risk factor for non-Hodgkin’s lymphoma. Established environmental risk factors for NHL therefore often relate to immune suppression, as in HIV infection, post-transplant immunosuppressive treatment, or immune stimulation from specific autoimmune disorders and infections. Genetic susceptibility also plays a central role in lymphomagenesis. Population-based studies show a two-fold risk elevation for NHL among individuals with a family history of hematopoietic malignancies. Specifically, inflammatory response genes may play a role in chronic antigenic stimulation, which is a key mechanism for lymphomagenesis.
+\newline 
+\newline
+For the past 20 years, the incidence of NHL has been rising steadily across all age groups and in both genders. In most cases of NHL, the cause is unknown. Some subtypes are associated with infection, such as the Epstein–Barr virus in Burkitt’s lymphoma. Symptoms include swollen lymph nodes, unexpected weight loss, fever and night sweats. The five-year survival rates for NHL vary between 58\% and 81\% with individuals treated for early stages of the cancer having a much better prognosis than those treated for later stages.</desc>
+      </disease>
+      <disease>
+        <name>Melanoma</name>
+        <desc>Cutaneous malignant melanoma (CMM) is an etiologically diverse disease. CMM is a form of skin cancer that arises from melanocytes. The prevalence and incidence of melanoma have increased significantly over the past few decades, faster than for any other cancer. Established risk factors for CMM include number of nevi (skin lesions), skin pigmentation, and sun exposure. Genetic predisposition also plays an important role in melanoma etiology with a number of melanoma susceptibility genes identified to date. The risk of relative recurrence among siblings was estimated at 2.24 in a combined study of familial melanomas, showing that familial cases carry an inherited susceptibility to CMM. 
+\newline 
+\newline
+Although melanoma is less common than other skin cancers, it is much more dangerous if it is not discovered early. It causes the majority (75\%) of deaths related to skin cancer. The first sign of melanoma is a change in the size, shape, colour, or feel of an existing mole. Most melanomas have a black or blue-black area. Melanoma also may appear as a new mole that may be black or abnormal. It is more common in women than in men. In women, the most common site is the legs and melanomas in men are most common on the back. Brain metastases are particularly common in patients with metastatic melanoma. It can also spread to the liver, bones, abdomen or distant lymph nodes. The five-year survival rate is less than 10\% for CMM that has metastasised while the rates may be as high as 92 – 98\% for the earliest stage where the tumour is small and shows no or little ulceration or invasion into neighbouring tissue.</desc>
+      </disease>
+      <disease>
+        <name>Meningioma</name>
+        <desc>Meningiomas are one of the principal primary brain tumours in adults accounting, for up to 37\% of all primary brain tumours. Primary meningioma tumours of the central nervous system are the third most common tumours in men and the sixth most common tumour in women between ages 35 to 49. Meningiomas originate from the cells located in the meningeal membrans of the brain and spinal cord. Evidence for an inherited predisposition to meningioma is convincingly provided by rare genetic syndromes such as neurofibromatosis type 2, Werner syndrome and Gorlin syndrome. 
+\newline 
+\newline
+The two to three-fold elevated risk of meningioma in the relatives of patients with meningioma also demonstrates that the disease has associated genetic risk. Genes implicated in meningioma are associated with oxidative stress, which can be explained by the fact that brain tumours have high oxygen consumption. 92\% of meningiomas are benign, with 8\% being either atypical or malignant. Many individuals have meningiomas but remain asymptomatic for their entire life. As many as 1 – 2\% of all post-mortem brain examinations reveal meningiomas that were unknown to during the individual’s lifetime. The five-year survival rate for meningioma is 70\% for benign, 75\% for atypical and 55\% for malignant grades respectively.</desc>
+      </disease>
+      <disease>
+        <name>Nasopharyngeal Cancer</name>
+        <desc>Nasopharyngeal cancer (NPC) is a mucosal epithelium-originated malignancy of the nasopharynx. It is a multifactorial cancer associated with risks from both genetic and environmental factors. NPC incidence shows geographic and ethnic distribution being more prominent in the Southeast Asian regions, including southern China, Malaysia and Taiwan. The annual incidence rate is over 25-fold higher than that observed in the Western world. The World Health Organisation has defined three types of NPC. Type 2b is the most common type and is clinically defined as a non-keratinising undifferentiated form. This type is consistently associated with Epstein-Barr virus (EBV) infection, and the EBV DNA sequence is detectable in tumours from patients in endemic areas. Other risks include consumption of pickled food and exposure to noxious inhalants. The EBV association is mainly observed in individuals of Chinese origin suggesting that additional genetic factors act in concert with environmental factors such as EBV to regulate NPC tumour formation and progression.
+\newline 
+\newline
+NPC is ranked based on clinical stages upon diagnosis, ranging from small tumours confined to the nasopharynx (stage I) through to large tumours showing bilateral neck disease, intracranial invasion and distant metastasis (stage IV). Most patients are diagnosed when their tumours have reached stage III or IV. The five-year survival rate for NPC ranges from 98\% for stage I through to 73\% for stage IV.</desc>
+      </disease>
+      <disease>
+        <name>Neuroblastoma</name>
+        <desc>Neuroblastoma is the most common solid cancer of early childhood; 50\% of neuroblastoma cases occur in children younger than two years old. Neuroblastoma is an embryonal cancer; it is thought to arise from partially committed primordial cells during foetal or early childhood development. Neuroblastoma arises from neural crest elements of the sympathetic nervous system, and most frequently originates in one of the adrenal glands. However, it can also develop in nerve tissues in the neck, chest or abdomen. Approximately 50\% of neuroblastoma cases show an aggressive clinical course with widespread metastases to bone and bone marrow at diagnosis. Cure rates remain less than 40\% and survivors often have serious lifelong coexisting conditions. Neuroblastoma remains an important clinical problem, accounting for 15\% of deaths attributable to malignant conditions in children. The five-year survival rate for neuroblastoma ranges from 95\% for the lowest risk groups to just 35\% for the high-risk aggressive forms of the disease.</desc>
+      </disease>
+      <disease>
+        <name>Oral And Throat Cancers</name>
+        <desc>Head and neck cancers, which include cancers that occur in the oral cavity, pharynx, and larynx, are the sixth most common type of cancers. All head and neck cancers are characteristic of squamous cell carcinoma of the head and neck (SCCHN). The cancers originate from the mucosal lining (epithelium) of their regions. Although smoking and alcohol consumption are known as major risk factors for SCCHN, only a few smokers and drinkers develop SCCHN, suggesting that there is genetic susceptibility to this disease in the general population. Head and neck cancers often spread to the lymph nodes of the neck. This is often the first sign of the disease at the time of diagnosis. Other risk factors for head and neck cancers include betel nut chewing and human papillomavirus (HPV) infection. In particular, HPV16 can be detected in many or most tumour samples tested. The five-year survival prognosis depends on the site of infection. This can range from 95\% for early stage nasopharyngeal cancer, 80\% for early stage lip cancer and 60 – 70\% for early stage nose and sinus cancers. Late stage detection of a cancer has a five-year survival of between 15 - 30\% regardless of the site of tumour.</desc>
+      </disease>
+      <disease>
+        <name>Ovarian Cancer</name>
+        <desc>Epithelial carcinoma of the ovary is one of the most common gynecological malignancies and one of the most lethal cancers in women. Family history is the greatest risk factor for ovarian cancer. Compared with a 1.6\% lifetime risk of developing ovarian cancer in the general population, women having one first-degree relative with ovarian cancer have a 5\% increased risk. Environmental and genetic factors contribute to this increased risk, but studies of twins suggest that genetic factors are more important. Ovarian cancer is hormone-related and evidence supports a protective role for progesterone in the etiology of the disease. The protective effect increases steadily with each birth as pregnancy is associated with high progesterone levels. Oral contraceptives are also protective against ovarian cancer. 
+\newline 
+\newline
+Data from large population studies indicate an increased risk of ovarian cancer in women with endometriosis. Symptoms are initially subtle and are easily confused with other illnesses. Ovarian cancer is associated with high mortality because it lacks early detection or screening. This means that more than 60\% of cases are diagnosed when they have reached advanced stages I.e. the tumour has already spread beyond the ovaries. The five-year survival rate for all stages of ovarian cancer is 47\%; this increases to almost 93\% if the tumour is detected and treated in its earliest stage.</desc>
+      </disease>      
+      <disease>
+        <name>Pancreatic Cancer</name>
+        <desc>Pancreatic cancer has one of the highest mortality rates among all the cancers, with death rates approaching its incidence rates. The five-year relative survival rate for pancreatic cancer remains less than 5\%. There is no commercial screening test for this malignancy, and by the time of initial diagnosis, metastatic disease is commonly present. Pancreatic cancer is the thirteenth most common cancer in the world. Medically, pancreatic cancer is defined as a malignant neoplasm originating from transformed cells arising in pancreatic tissues. 95\% of the pancreatic cancers are defined as adenocarcinomas. 
+\newline 
+\newline
+Approximately 10\% of pancreatic cancer patients have family history of the disease, and individuals having first-degree relatives with pancreatic cancer revealed a two to four-fold higher risk of the disease when compared to the general population. Other established risk factors or pancreatic cancer include having a medical history of type 2 diabetes, being overweight – having an elevated body-mass index, and cigarette smoking. Studies have also suggested an increased risk of pancreatic cancer within families with hereditary pancreatitis – the inflammation of pancreas. Most patients with pancreatic cancer experience back pain, weight loss, or jaundice. Clinical depression can also be a symptom. Typically, pancreatic cancer spreads to regional lymph nodes, and later to the liver and or to the peritoneal cavity.</desc>
+      </disease>
+      <disease>
+        <name>Prostate Cancer</name>
+        <desc>Prostate cancer (Pca) is one of the most commonly diagnosed cancers in men. It is a form of cancer that develops in the prostate gland of the male reproductive system. The incidence of Pca is known to be much lower in Asian men than in Western men. The number of Pca cases is, however, growing rapidly in the developed areas of the Asian region, and a four-fold increase has been observed in the last three decades in Shanghai. More than 30 prostate cancer risk-associated loci have been identified in populations of European descent. Many of these markers are also significantly associated with a risk of Pca in Asian men. 
+\newline 
+\newline
+Age, race, family history of prostate cancer, and obesity are well-established risk factors for Pca. Individuals having a first-degree relative affected by the disease are 2.5 times more likely to develop the disease themselves. Pca is rare in men under the age of 45 and the median age at diagnosis is 70. Prostate-specific antigen (PSA) is a robust clinical biomarker for the developing disease although it is estimated that half of the men who test positive during screening will only develop a benign (not life threatening) form of the disease. Early prostate cancer usually causes no symptoms but a third of individuals may experience difficulties in urination that could include blood, painful urination or flow issues. Sexual dysfunction may also be experienced. The five-year survival rate for prostate cancer, when detected early, can approach 98\%.</desc>
+      </disease>
+      <disease>
+        <name>Squamous Cell Carcinoma (SCC)</name>
+        <desc>Squamous cell carcinoma (SCC) is a form of skin cancer. It is a malignancy of the squamous cells, a type of cells that forms the main part of the top layer of the skin. However, squamous cells also occur in the lining of the digestive tract, lungs, and other areas of the body. SCC occurs as a form of cancer in diverse tissues, including the lips, mouth, oesophagus, urinary bladder, prostate, lung, vagina, and cervix, among others. Despite all being called squamous cell carcinoma, SCCs of different body sites can show tremendous differences in presented symptoms, natural history, prognosis and response to treatment. 
+\newline 
+\newline
+Human papilloma virus (HPV) has been associated with SCC of the oropharynx, lung, fingers and ano-genital region. Sunlight exposure and immunosuppression are risk factors for SCC of the skin, with chronic sun exposure being the strongest environmental risk factor. The long-term outcome of SCC is dependent primarily upon several factors: the sub-type of the carcinoma, location and severity. The long-term outcome is positive with less than 4\% of SCC cases having a risk of metastasis.</desc>
+      </disease>
+      <disease>
+        <name>Stomach Cancer</name>
+        <desc>Stomach cancer is estimated to be the fourth most common cancer and the second leading cause of cancer-related deaths worldwide with 700,000 people dying from this malignancy annually. The most common cancers of the stomach are adenocarcinomas but other histological types have also been reported. Multiple environmental and lifestyle factors are found to be associated with risk for stomach cancer, including a diet lacking in fresh fruits and vegetables, excessive intake of salt, tobacco smoking, alcohol consumption, and Helicobacter pylori (H. pylori) infection. H. pylori is the major acquired etiological agent responsible for stomach cancer, although only a small proportion (&gt; 3\%) of infected individuals develop the cancer. Prevalence of H. pylori infections range from 40 – 80 \% in humans. 
+\newline 
+\newline
+Stomach cancer shows a male predominance in its incidence with three times as many men developing the disease compared to women. Estrogen may provide protection against the cancer for women. Stomach cancer is often asymptomatic, or has non-specific symptoms in its early stages. When the disease is diagnosed it is typically at a more advanced stage and may already spread to distal tissues. The five-year survival rate varies from 70\% for the early detection of low-grade tumours to just 4\% for the most advanced metastatic tumours.</desc>
+      </disease>
+      <disease>
+        <name>Testicular Germ-cell Tumor</name>
+        <desc>Testicular germ cell tumours (TGCT) have a peak incidence among those aged 25 – 34 years. Most TGCTs in adults are malignant with a strong propensity to metastasise. Incidence varies widely across racial groups, with a five-fold lower rate among African-American males in the United States. Prevalence varies from 9.2 per 100,000 in Denmark to 0.2 per 100,000 in Algeria. 
+\newline 
+\newline
+Familial incidents of TGCT are well documented and family history is the strongest known risk factor. The first-degree relatives of TGCT-affected males have a 5 to 19-fold increased risk if a brother is affected, or a 2 to 4-fold increased risk if the father is affected. Other risk factors for TGCT include cryptorchidism (undescended testicles), subfertility, and race. Testicular cancer has one of the highest cure rates of all cancers, especially if treated before metastasis. The five-year survival rate for TGCT is 99\% if the tumour has not spread, or 72\% if it has spread to distal lymph nodes or organs. One of the first signs of testicular cancer is often a lump or swelling in the testes that may be accompanied by pain or aches, breast enlargement and lower back pain.</desc>
+      </disease>
+      <disease>
+        <name>Thyroid Cancer</name>
+        <desc>Papillary thyroid carcinoma (PTC) is the most common malignant tumour in endocrine organs and represents approximately 85\% of all thyroid cancers. It is a complex disease with a largely unknown etiology. Its only well-known environmental risk factor is exposure to ionising radiation. Genetic polymorphisms have been shown to contribute to individual susceptibility to PTC. The incidence of PTC in industrialised countries has been rising over the past few decades. At present, its incidence is 4.9 and 14.1 per 100,000 in the United States for males and females of European ancestry respectively. The risk of thyroid cancer has a greater genetic component than the familial risk for any other cancer, and the effect has even been shown to extend beyond the nuclear family. The risk is highest for first-degree male relatives of affected male individuals but lowest for first-degree female relatives of affected female individuals. 
+\newline 
+\newline
+Risk factors for thyroid cancer include deficiency in iodine intake, exposure to ionising radiation and nodular disease of the thyroid. Often the first symptom of thyroid cancer is a nodule in the thyroid region of the neck. The five-year survival rate for thyroid cancer is almost 100\% for low stage tumours, and drops to 50\% for later stage tumours with  metastases.</desc>
+      </disease>
+    </diseases>
+    </chip>    
+</root> 

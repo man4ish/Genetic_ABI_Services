@@ -1,0 +1,206 @@
+Index	Disease/Drug	Association type	Test code	Version	RSID	Possible alleles (VIC/FAM)	Genotypes	Genotype effects 	PMID	Risk/Efficacy	Definite Biomarker (10-30%)	Definite Biomarker (30-60%)	Definite Biomarker (>60%)	# SNPs/condition
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs10757278	A/G	A;A	Typical risk of abdominal aortic aneurysm	18176561, 17478679	Neutral				Total: 2
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs10757278	A/G	A;G	Slightly increased risk of abdominal aortic aneurysm	18176561, 17478679	Bad				Total: 2
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs10757278	A/G	G;G	Increased risk of abdominal aortic aneurysm	18176561, 17478679	Bad				Total: 2
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs7025486	A/G	A;A	Increased risk of abdominal aortic aneurysm	20622881	Bad				Total: 2
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs7025486	A/G	A;G	Slightly increased risk of abdominal aortic aneurysm	20622881	Bad				Total: 2
+1	Abdominal Aortic Aneurysm	Disease	CRD	01	rs7025486	A/G	G;G	Typical risk of abdominal aortic aneurysm	20622881	Neutral				Total: 2
+2	Atrial Fibrillation	Disease	CRD	01	rs7193343	C/T	C;C	Typical risk of atrial fibrillation	19597491, 21760908	Neutral				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs7193343	C/T	C;T	Slightly increased risk of atrial fibrillation	19597491, 21760908	Bad				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs7193343	C/T	T;T	Slightly increased risk of atrial fibrillation	19597491, 21760908	Bad				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs13376333	C/T	C;C	Typical risk of atrial fibrillation	20173747	Neutral				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs13376333	C/T	C;T	Slightly increased risk of atrial fibrillation	20173747	Bad				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs13376333	C/T	T;T	Increased risk of atrial fibrillation	20173747	Bad				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs2200733	C/T	C;C	Typical risk of atrial fibrillation	17603472, 19141561	Neutral				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs2200733	C/T	C;T	Slightly increased risk of atrial fibrillation	17603472, 19141561	Bad				Total: 3
+2	Atrial Fibrillation	Disease	CRD	01	rs2200733	C/T	T;T	Increased risk of atrial fibrillation	17603472, 19141561	Bad				Total: 3
+3	Brain Aneurysm	Disease	CRD	01	rs10757278	A/G	A;A	Typical risk of brain aneurysm	18176561, 17478679	Neutral	v			Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs10757278	A/G	A;G	Slightly increased risk of brain aneurysm	18176561, 17478679	Bad	v			Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs10757278	A/G	G;G	Increased risk of brain aneurysm	18176561, 17478679	Bad	v			Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs10958409	A/G	A;A	Increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs10958409	A/G	A;G	Slightly increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs10958409	A/G	G;G	Typical risk of brain aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1333040	C/T	C;C	Typical risk of aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1333040	C/T	C;T	Typical risk of aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1333040	C/T	T;T	Slightly increased risk of aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1429412	A/G	A;A	Typical risk of brain aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1429412	A/G	A;G	Slightly increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs1429412	A/G	G;G	Slightly increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs700675	A/G	A;A	Typical risk of brain aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs700675	A/G	A;G	Slightly increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs700675	A/G	G;G	Increased risk of brain aneurysm	18997786	Bad				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs911271	A/C	A;A	Typical risk of brain aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs911271	A/C	A;C	Typical risk of brain aneurysm	18997786	Neutral				Total: 6
+3	Brain Aneurysm	Disease	CRD	01	rs911271	A/C	C;C	Slightly increased risk of brain aneurysm	18997786	Bad				Total: 6
+4	Coronary Heart Disease	Disease	CRD	01	rs17465637	A/C	A;A	Typical risk of coronary heart disease	19198609	Neutral				Total: 2
+4	Coronary Heart Disease	Disease	CRD	01	rs17465637	A/C	A;C	Typical risk of coronary heart disease	19198609	Neutral				Total: 2
+4	Coronary Heart Disease	Disease	CRD	01	rs17465637	A/C	C;C	Slightly increased risk of coronary heart disease	19198609	Bad				Total: 2
+4	Coronary Heart Disease	Disease	CRD	01	rs3798220	C/T	C;C	Increased risk of coronary heart disease	18775538, 21378990	Bad				Total: 2
+4	Coronary Heart Disease	Disease	CRD	01	rs3798220	C/T	C;T	Increased risk of coronary heart disease	18775538, 21378990	Bad				Total: 2
+4	Coronary Heart Disease	Disease	CRD	01	rs3798220	C/T	T;T	Typical risk of coronary heart disease	18775538, 21378990	Neutral				Total: 2
+5	Familial Hypercholesterolemia	Disease	CRD	01	rs5742904	C/T	C;C	Typical risk of hypercholesterolemia, type B	19602640	Neutral				Total: 1
+5	Familial Hypercholesterolemia	Disease	CRD	01	rs5742904	C/T	C;T	Increased risk of hypercholesterolemia, type B	19602640	Bad				Total: 1
+5	Familial Hypercholesterolemia	Disease	CRD	01	rs5742904	C/T	T;T	Increased risk of hypercholesterolemia, type B	19602640	Bad				Total: 1
+6	Heart Attack	Disease	CRD	01	rs2291834	C/T	C;C	Slightly increased risk of heart attack	19198609	Bad				Total: 3
+6	Heart Attack	Disease	CRD	01	rs2291834	C/T	C;T	Typical risk of heart attack	19198609	Neutral				Total: 3
+6	Heart Attack	Disease	CRD	01	rs2291834	C/T	T;T	Typical risk of heart attack	19198609	Neutral				Total: 3
+6	Heart Attack	Disease	CRD	01	rs599839	A/G	A;A	Slightly increased risk of heart attack	17634449	Bad				Total: 3
+6	Heart Attack	Disease	CRD	01	rs599839	A/G	A;G	Typical risk of heart attack	17634449	Neutral				Total: 3
+6	Heart Attack	Disease	CRD	01	rs599839	A/G	G;G	Typical risk of heart attack	17634449	Neutral				Total: 3
+6	Heart Attack	Disease	CRD	01	rs6922269	A/G	A;A	Increased risk of heart attack	17634449	Bad				Total: 3
+6	Heart Attack	Disease	CRD	01	rs6922269	A/G	A;G	Slightly increased risk of heart attack	17634449	Bad				Total: 3
+6	Heart Attack	Disease	CRD	01	rs6922269	A/G	G;G	Typical risk of heart attack	17634449	Neutral				Total: 3
+7	Peripheral Arterial Disease	Disease	CRD	01	rs1051730	A/G	A;A	Increased risk of peripheral arterial disease	18385739	Bad				Total: 2
+7	Peripheral Arterial Disease	Disease	CRD	01	rs1051730	A/G	A;G	Slightly increased risk of peripheral arterial disease	18385739	Bad				Total: 2
+7	Peripheral Arterial Disease	Disease	CRD	01	rs1051730	A/G	G;G	Typical risk of peripheral arterial disease	18385739	Neutral				Total: 2
+7	Peripheral Arterial Disease	Disease	CRD	01	rs7025486	A/G	A;A	Slightly increased risk of peripheral arterial disease	20622881	Bad				Total: 2
+7	Peripheral Arterial Disease	Disease	CRD	01	rs7025486	A/G	A;G	Slightly increased risk of peripheral arterial disease	20622881	Bad				Total: 2
+7	Peripheral Arterial Disease	Disease	CRD	01	rs7025486	A/G	G;G	Typical risk of peripheral arterial disease	20622881	Neutral				Total: 2
+8	Sudden Cardiac Arrest	Disease	CRD	01	rs174230	C/T	C;C	Typical risk of sudden cardiac arrest/death	21738491	Neutral				Total: 1
+8	Sudden Cardiac Arrest	Disease	CRD	01	rs174230	C/T	C;T	Slightly increased risk of sudden cardiac arrest/death	21738491	Bad				Total: 1
+8	Sudden Cardiac Arrest	Disease	CRD	01	rs174230	C/T	T;T	Increased risk of sudden cardiac arrest/death	21738491	Bad				Total: 1
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs1799963	A/G	A;A	Increased risk of thrombosis	10477778	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs1799963	A/G	A;G	Increased risk of thrombosis	10477778	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs1799963	A/G	G;G	Typical risk of thrombosis	10477778	Neutral				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs268	A/G	A;A	Typical risk of thrombosis	16651467	Neutral				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs268	A/G	A;G	Increased risk of thrombosis	16651467	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs268	A/G	G;G	Increased risk of thrombosis	16651467	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs5361	G/T	G;G	Increased risk of recurrent thrombosis	16908800	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs5361	G/T	G;T	Increased risk of recurrent thrombosis	16908800	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs5361	G/T	T;T	Typical risk of recurrent thrombosis	16908800	Neutral				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs6025	C/T	C;C	Typical risk of thrombosis	10477778, 14996674	Neutral				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs6025	C/T	C;T	Increased risk of thrombosis	10477778, 14996674	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs6025	C/T	T;T	Increased risk of thrombosis	10477778, 14996674	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs7025486	A/G	A;A	Slightly increased risk of thrombosis	20622881	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs7025486	A/G	A;G	Slightly increased risk of thrombosis	20622881	Bad				Total: 5
+9	Deep Vein Thrombosis (DVT) and Pulmonary Embolism (PE)	Disease	CRD	01	rs7025486	A/G	G;G	Typical risk of thrombosis	20622881	Neutral				Total: 5
+10	Hypertriglyceridemia	Disease	CRD	01	rs964184	C/G	C;C	Typical risk of hypertriglyceridemia	20657596	Neutral				Total: 1
+10	Hypertriglyceridemia	Disease	CRD	01	rs964184	C/G	C;G	Increased risk of hypertriglyceridemia	20657596	Bad				Total: 1
+10	Hypertriglyceridemia	Disease	CRD	01	rs964184	C/G	G;G	Increased risk of hypertriglyceridemia	20657596	Bad				Total: 1
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs17576	A/G	A;A	Typical risk of COPD in smokers	18046864	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs17576	A/G	A;G	Typical risk of COPD in smokers	18046864	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs17576	A/G	G;G	Increased risk of COPD in smokers	18046864	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs1800469	A/G	A;A	Typical risk of COPD	15175276	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs1800469	A/G	A;G	Typical risk of COPD	15175276	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs1800469	A/G	G;G	Slightly increased risk of COPD	15175276	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs2241712	C/T	C;C	Typical risk of COPD	15175276	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs2241712	C/T	C;T	Typical risk of COPD	15175276	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs2241712	C/T	T;T	Slightly increased risk of COPD	15175276	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs3736309	A/G	A;A	Slightly increased risk of COPD	18853286	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs3736309	A/G	A;G	Typical risk of COPD	18853286	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs3736309	A/G	G;G	Typical risk of COPD	18853286	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs7671167	C/T	C;C	Typical risk of COPD	20173748	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs7671167	C/T	C;T	Typical risk of COPD	20173748	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs7671167	C/T	T;T	Slightly increased risk of COPD	20173748	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8034191	C/T	C;C	Increased risk of COPD in smokers	19300482	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8034191	C/T	C;T	Slightly increased risk of COPD in smokers	19300482	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8034191	C/T	T;T	Typical risk of COPD in smokers	19300482	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8192287	G/T	G;G	Typical risk of COPD	18703790	Neutral				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8192287	G/T	G;T	Increased risk of COPD	18703790	Bad				Total: 7
+11	Chronic Obstructive Pulmonary Disease (COPD)	Disease	CRD	01	rs8192287	G/T	T;T	Increased risk of COPD	18703790	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs3754777	C/T	C;C	Typical risk of hypertension	19114657	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs3754777	C/T	C;T	Slightly increased risk of hypertension	19114657	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs3754777	C/T	T;T	Increased risk of hypertension	19114657	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs1378942	A/C	A;A	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs1378942	A/C	A;C	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs1378942	A/C	C;C	Slightly increased risk of hypertension	19430483	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs12413409	A/G	A;A	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs12413409	A/G	A;G	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs12413409	A/G	G;G	Slightly increased risk of hypertension	19430483	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs13333226	A/G	A;A	Slightly increased risk of hypertension	21082022	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs13333226	A/G	A;G	Typical risk of hypertension	21082022	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs13333226	A/G	G;G	Typical risk of hypertension	21082022	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs16998073	A/T	A;A	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs16998073	A/T	A;T	Slightly increased risk of hypertension	19430483	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs16998073	A/T	T;T	Slightly increased risk of hypertension	19430483	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs5370	G/T	G;G	Typical risk of hypertension	17938376	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs5370	G/T	G;T	Slightly increased risk of hypertension	17938376	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs5370	G/T	T;T	Increased risk hypertension	17938376	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs17367504	A/G	A;A	Slightly increased risk of hypertension	19430483	Bad				Total: 7
+12	Hypertension	Disease	CRD	01	rs17367504	A/G	A;G	Typical risk of hypertension	19430483	Neutral				Total: 7
+12	Hypertension	Disease	CRD	01	rs17367504	A/G	G;G	Typical risk of hypertension	19430483	Neutral				Total: 7
+13	Obesity	Disease	CRD	01	rs8050136	A/C	A;A	Increased risk of obesity	20057365	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs8050136	A/C	A;C	Slightly increased risk of obesity	20057365	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs8050136	A/C	C;C	Typical risk of obesity	20057365	Neutral				Total: 6
+13	Obesity	Disease	CRD	01	rs10871777	A/G	A;A	Typical risk of obesity	19151714	Neutral				Total: 6
+13	Obesity	Disease	CRD	01	rs10871777	A/G	A;G	Slightly increased risk of obesity	19151714	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs10871777	A/G	G;G	Slightly increased risk of obesity	19151714	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs3751812	G/T	G;G	Typical risk of obesity	17434869	Neutral				Total: 6
+13	Obesity	Disease	CRD	01	rs3751812	G/T	G;T	Increased risk of obesity	17434869	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs3751812	G/T	T;T	Increased risk of obesity	17434869	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs9939609	A/T	A;A	Increased risk of obesity	17434869	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs9939609	A/T	A;T	Slightly increased risk of obesity	17434869	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs9939609	A/T	T;T	Typical risk of obesity	17434869	Neutral				Total: 6
+13	Obesity	Disease	CRD	01	rs1421085	C/T	C;C	Increased risk of obesity	19151714	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs1421085	C/T	C;T	Slightly increased risk of obesity	19151714	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs1421085	C/T	T;T	Typical risk of obesity	19151714	Neutral				Total: 6
+13	Obesity	Disease	CRD	01	rs1121980	A/G	A;A	Increased risk of obesity	18159244, 20075932	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs1121980	A/G	A;G	Slightly increased risk of obesity	18159244, 20075932	Bad				Total: 6
+13	Obesity	Disease	CRD	01	rs1121980	A/G	G;G	Typical risk of obesity	18159244, 20075932	Neutral				Total: 6
+14	Stroke	Disease	CRD	01	rs12425791	A/G	A;A	Increased risk of stroke	19369658	Bad				Total: 2
+14	Stroke	Disease	CRD	01	rs12425791	A/G	A;G	Slightly increased risk of stroke	19369658	Bad				Total: 2
+14	Stroke	Disease	CRD	01	rs12425791	A/G	G;G	Typical risk of stroke	19369658	Neutral				Total: 2
+14	Stroke	Disease	CRD	01	rs3783799	C/T	C;C	Typical risk of stroke	18164711	Neutral				Total: 2
+14	Stroke	Disease	CRD	01	rs3783799	C/T	C;T	Slightly increased risk of stroke	18164711	Bad				Total: 2
+14	Stroke	Disease	CRD	01	rs3783799	C/T	T;T	Increased risk of stroke	18164711	Bad				Total: 2
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4244285	A/G	A;A	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4244285	A/G	A;G	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4244285	A/G	G;G	Typical clopidogrel efficacy	20979470	No				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4986893	A/G	A;A	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4986893	A/G	A;G	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs4986893	A/G	G;G	Typical clopidogrel efficacy	20979470	No				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs28399504	A/G	A;A	Typical clopidogrel efficacy	20979470	No				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs28399504	A/G	A;G	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs28399504	A/G	G;G	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs41291556	C/T	C;C	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs41291556	C/T	C;T	Reduced clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs41291556	C/T	T;T	Typical clopidogrel efficacy	20979470	No				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12248560	C/T	C;C	Typical clopidogrel efficacy	20979470	No				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12248560	C/T	C;T	Increased clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12248560	C/T	T;T	Increased clopidogrel efficacy	20979470	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12777823	A/G	A;A	Reduced clopidogrel efficacy	19706858	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12777823	A/G	A;G	Reduced clopidogrel efficacy	19706858	Yes				Total: 6
+15	PLAVIX (Clopidogrel)	Drug	CRD	01	rs12777823	A/G	G;G	Typical clopidogrel efficacy	19706858	No				Total: 6
+16	Statins	Drug	CRD	01	rs17244841	A/T	A;A	Increased statins efficacy	15199031	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs17244841	A/T	A;T	Typical statins efficacy	15199031	No				Total: 4
+16	Statins	Drug	CRD	01	rs17244841	A/T	T;T	Typical statins efficacy	15199031	No				Total: 4
+16	Statins	Drug	CRD	01	rs17238540	G/T	G;G	Reduced statins efficacy 	15199031, 18815589	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs17238540	G/T	G;T	Reduced statins efficacy 	15199031, 18815589	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs17238540	G/T	T;T	Typical statins efficacy	15199031, 18815589	No				Total: 4
+16	Statins	Drug	CRD	01	rs4149056	C/T	C;C	Increased risk of myopathy while on Simvastatin	18650507, 20837016	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs4149056	C/T	C;T	Increased risk of myopathy while on Simvastatin	18650507, 20837016	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs4149056	C/T	T;T	Typical risk of myopathy while on Simvastatin	18650507, 20837016	No				Total: 4
+16	Statins	Drug	CRD	01	rs20455	A/G	A;A	Typical statins efficacy	20403483, 20886236	No				Total: 4
+16	Statins	Drug	CRD	01	rs20455	A/G	A;G	Increased statins efficacy	20403483, 20886236	Yes				Total: 4
+16	Statins	Drug	CRD	01	rs20455	A/G	G;G	Increased statins efficacy	20403483, 20886236	Yes				Total: 4
+17	Warfarin	Drug	CRD	01	rs1799853	C/T	C;C	Typical warfarin dose	19955245	No				Total: 5
+17	Warfarin	Drug	CRD	01	rs1799853	C/T	C;T	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs1799853	C/T	T;T	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs1057910	C/A	C;C	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs1057910	C/A	C;A	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs1057910	C/A	A;A	Typical warfarin dose	19955245	No				Total: 5
+17	Warfarin	Drug	CRD	01	rs8050894	G/C	G;G	Typical warfarin dose	19955245	No				Total: 5
+17	Warfarin	Drug	CRD	01	rs8050894	G/C	G;C	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs8050894	G/C	C;C	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs9923231	C/T	C;C	Typical warfarin dose	19955245	No				Total: 5
+17	Warfarin	Drug	CRD	01	rs9923231	C/T	C;T	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs9923231	C/T	T;T	Require lower warfarin dose	19955245	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs2108622	C/T	C;C	Typical warfarin dose	19955245, 21084764	No				Total: 5
+17	Warfarin	Drug	CRD	01	rs2108622	C/T	C;T	Require lower warfarin dose	19955245, 21084764	Yes				Total: 5
+17	Warfarin	Drug	CRD	01	rs2108622	C/T	T;T	Require lower warfarin dose	19955245, 21084764	Yes				Total: 5
+18	Aspirin	Drug	CRD	01	rs5918	C/T	C;C	Reduced aspirin efficacy 	11723016	Yes				Total: 1
+18	Aspirin	Drug	CRD	01	rs5918	C/T	C;T	Reduced aspirin efficacy 	11723016	Yes				Total: 1
+18	Aspirin	Drug	CRD	01	rs5918	C/T	T;T	Typical aspirin efficacy	11723016	No				Total: 1
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;A, C;C	Increased metoprolol efficacy	16844790, 12844134	Yes				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;A, C;G	Increased metoprolol efficacy	16844790, 12844134	Yes				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;A, G;G	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;G, C;C	Increased metoprolol efficacy	16844790, 12844134	Yes				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;G, C;G	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	A;G, G;G	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	G;G, C;C	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	G;G, C;G	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+19	Beta-blocker (Metoprolol)	Drug	CRD	01	rs1801252, rs1801253	A/G, C/G	G;G, G;G	Typical metoprolol efficacy	16844790, 12844134	No				Total: 2
+20	Beta-blocker (Bucindolol)	Drug	CRD	01	rs1801253	C/G	C;C	Increased bucindolol efficacy	16844790	Yes				Total: 2
+20	Beta-blocker (Bucindolol)	Drug	CRD	01	rs1801253	C/G	C;G	Typical bucindolol efficacy	16844790	No				Total: 2
+20	Beta-blocker (Bucindolol)	Drug	CRD	01	rs1801253	C/G	G;G	Typical bucindolol efficacy	16844790	No				Total: 2
+

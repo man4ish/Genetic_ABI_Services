@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <label>
+    <doc_id>GS-LABEL</doc_id>
+    <version>1</version>
+  </label>
+  
+  <chip testcode="CRD01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-CRD</doc_id>
+    <doc_id type="ec">GS_CRD_EC</doc_id>
+    <doc_id type="desc">GS-CRD-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="MTB01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-MTB</doc_id>
+    <doc_id type="ec">GS_MTB_EC</doc_id>
+    <doc_id type="desc">GS-MTB-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="PDI01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-PDI</doc_id>
+    <doc_id type="ec">GS_PDI_EC</doc_id>
+    <doc_id type="desc">GS-PDI-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="PDC01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-PDC</doc_id>
+    <doc_id type="ec">GS_PDC_EC</doc_id>
+    <doc_id type="desc">GS-PDC-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="ONC01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-ONC</doc_id>
+    <doc_id type="ec">GS_ONC_EC</doc_id>
+    <doc_id type="desc">GS-ONC-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="COR01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-COR</doc_id>
+    <doc_id type="ec">GS_COR_EC</doc_id>
+    <doc_id type="desc">GS-COR-DESC</doc_id>
+  </chip>
+  
+  <chip testcode="OST01">
+    <format>1</format>
+    <version>1</version>
+    <doc_id type="dt">GS-OST</doc_id>
+    <doc_id type="ec">GS_OST_EC</doc_id>
+    <doc_id type="desc">GS-OST-DESC</doc_id>
+  </chip>
+</root>

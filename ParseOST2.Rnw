@@ -1,0 +1,221 @@
+\documentclass[11pt,table,a5paper]{article}
+\usepackage{array,ragged2e}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{xstring}
+\usepackage{forloop}
+\usepackage{collcell}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{varwidth}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{placeins}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{lipsum}
+\usepackage[top=2cm, bottom=2cm, outer=2.1cm, inner=1cm,twoside, headsep=26pt]{geometry}
+\usepackage{collcell}
+\usepackage{longtable}
+\definecolor{headcolwithoutgrr}{rgb}{.0.195,0.195,1}
+\definecolor{rowcolwithoutgrr}{rgb}{0.50,0.68,.85}
+\definecolor{headcolwithgrr}{rgb}{.30,0.38,.30}
+\definecolor{rowcolwithgrr}{rgb}{0.6953125,0.7851,0.6953125}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\collectcell\AddBreakableChars}p{#1}<{\endcollectcell}}
+\newcommand{\AddBreakableChars}[1]{#1}
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}} 
+%\usepackage{booktabs}
+%\usepackage{bigstrut}
+%\singlespacing 
+\raggedbottom
+\fboxsep=4mm%padding thickness
+\fboxrule=.1pt%border thickness
+\usepackage{array}% http://ctan.org/pkg/array
+\usepackage{keyval}% http://ctan.org/pkg/keyval
+\makeatletter
+\newlength{\mylist@beforeskip}
+\newlength{\mylist@afterskip}
+\define@key{mylist}{beforeskip}{\setlength{\mylist@beforeskip}{#1}}
+\define@key{mylist}{afterskip}{\setlength{\mylist@afterskip}{#1}}
+\newenvironment{mylist}[1][,]
+  {\setkeys{mylist}{beforeskip=10pt,afterskip=10pt,#1}%
+   \par\vspace*{\mylist@beforeskip}%
+   \begin{itemize}}
+  {\end{itemize}%
+   \vspace*{\mylist@afterskip}}
+\makeatother
+
+\begin{document}
+%chunk = 1
+<<echo=FALSE,results=tex>>=
+cmd<-commandArgs()
+cmd<-strsplit(cmd," ")
+InFile<-"OST01_001221_20140227_IRW38_20140404111129_en.xml.fmt"
+#miscflag<-cmd[[5]][1]
+#runtype<-cmd[[6]][1]
+push <- function(vec, item) {
+        vec=substitute(vec)
+        if (is(item, "character"))
+        {
+                eval.parent(parse(text = paste(vec, ' <- c(', vec, ', "', item, '")', sep = '')), n = 1)
+        }
+        else
+        {
+                eval.parent(parse(text = paste(vec, ' <- c(', vec, ', ', item, ')', sep = '')), n = 1)
+        }
+}
+
+pop <- function(vec) {
+        tmp <- vec[length(vec)]
+        vec=substitute(vec)
+        eval.parent(parse(text = paste(vec, ' <- ', vec, '[-length(', vec, ')]',
+        sep = '')),
+        n = 1)
+        tmp
+}
+
+library(XML)
+
+doc = xmlTreeParse(paste(InFile,sep=""), useInternal = TRUE, encoding="UTF-8")
+top = xmlRoot(doc)
+diseases<-top[["Diseases"]]["Disease"]
+cat("\\newcolumntype{M}[1]{>{\\centering\\arraybackslash}p{#1}}","\n")
+
+if (xmlSize(diseases) !=0)
+{
+     for (i in 1:xmlSize(diseases))
+     {       
+           traitflag<-xmlGetAttr(diseases[i][["Disease"]],"Trait")
+           disid<-xmlGetAttr(diseases[i][["Disease"]],"ID") 
+           if(traitflag== "Y" && disid != "OST_01_06") 
+           {
+               name<-xmlValue(diseases[i][["Disease"]][["Name"]])
+               genoeffects<-diseases[i][["Disease"]][["GenoEffects"]]["GenoEffect"]
+               grrflag<-0
+               pmid<-numeric(0)
+               rowtable<-diseases[i][["Disease"]][["GenoEffects"]]["GenoEffect"]
+               for (nc in 1:length(rowtable)) {
+                  risks<-xmlGetAttr(rowtable[nc][["GenoEffect"]],"risk")
+                  if (risks != "0")
+                  {
+                      refs<-strsplit(as.character(xmlValue(rowtable[nc][["GenoEffect"]][["Reference"]])),",") 
+                      #cat(paste(refs),"\n")       
+                      for (len in 1:length(refs)) { push(pmid,refs[len])}
+                  }
+               }
+               pmid <- sort(unique(pmid)) 
+               for (k in 1:xmlSize(genoeffects))
+               {
+                   TraitInfo<-xmlGetAttr(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]],"Available")
+                   if(TraitInfo=="Y") 
+                   { 
+                      GRRFlag<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitGRR"]])
+                      cat("\\noindent","\n")
+                      snp<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SNP"]])
+                      cat(paste("\\textbf{",snp,"}"),"\n")
+                      SubInfos<-genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["SubInfos"]]["SubInfo"]
+                      if(GRRFlag == "0.00"){headcol<-"headcolwithgrr"} else {headcol<-"headcolwithoutgrr"}                
+                      #if(GRRFlag == "0.00") 
+                      {
+                           if(GRRFlag == "0.00")
+                           {
+                              cat("{\\renewcommand{\\arraystretch}{1.8}\\begin{longtable}{|p{2.5cm}|M{3.45cm}|M{2.0cm}|M{2.0cm}|}","\n")
+                              cat(paste("\\rowcolor{",headcol,"}\\textbf{\\textcolor{white}{Your Genotype}}&\\textbf{\\textcolor{white}{Gene}}&\\textbf{ \\textcolor{white}{Related Condition}} &\\textbf{\\textcolor{white}{References}}\\\\",sep=""),"\n")
+                              #cat("\\endfirsthead","\n")    
+                              #cat(paste("\\rowcolor{",headcol,"}\\textbf{\\textcolor{white}{Your Genotype}}&\\textbf{\\textcolor{white}{Gene}}&\\textbf{ \\textcolor{white}{Related Condition}} &\\textbf{\\textcolor{white}{References}}\\\\",sep=""),"\n")
+                              #cat("\\endhead","\n")
+                            } else {
+                              cat("{\\renewcommand{\\arraystretch}{1.8}\\begin{longtable}{|p{2.0cm}|M{1.5cm}|M{2.5cm}|M{1.5cm}|M{2.0cm}|}","\n")
+                              cat(paste("\\rowcolor{",headcol,"} \\textbf{\\textcolor{white}{Your Genotype}}&\\textbf{\\textcolor{white}{Gene}}&\\textbf{ \\textcolor{white}{Related Condition}} &\\textbf{\\textcolor{white}{GRR}}&\\textbf{\\textcolor{white}{References}}\\\\",sep=""),"\n")
+                              cat("\\endfirsthead","\n")    
+                              cat(paste("\\rowcolor{",headcol,"} \\textbf{\\textcolor{white}{Your Genotype}}&\\textbf{\\textcolor{white}{Gene}}&\\textbf{ \\textcolor{white}{Related Condition}} &\\textbf{\\textcolor{white}{GRR}}&\\textbf{\\textcolor{white}{References}}\\\\",sep=""),"\n")
+                              cat("\\endhead","\n")
+                           }     
+
+                          gene<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Gene"]])
+                          genotype<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["Alleles"]])
+                          TraitGenoEffects<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitGenoEffects"]])
+                          GRR<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitGRR"]])
+                          
+                          if(GRRFlag=="0.00") {cat("\\rowcolor{rowcolwithgrr}","\n")} else {cat("\\rowcolor{rowcolwithoutgrr}","\n")}
+                          
+                          
+                          #if (length(grep(";",GRR))==1)
+                          #{
+                             subinfos<-strsplit(GRR,";")
+                             nrow<-length(subinfos[[1]])  
+                          #}
+                          
+                          if(GRRFlag == "0.00") {
+                              cat(paste("\\multirow{",nrow,"}{*}{",genotype,"}"," & \\multirow{",nrow,"}{*}{",gene,"}",sep=""))
+                          } else {
+                              cat(paste("\\multirow{",nrow,"}{*}{",genotype,"} & \\multirow{",nrow,"}{*}{",gene,"}",sep=""))
+                          }
+                          
+                          refs<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitPmId"]])
+                          #cat(paste(refs),"\n")
+                          indexvector<-strsplit(refs,",")
+                          idtext<-numeric(0)
+                          idtext<-paste(idtext,which(pmid==indexvector[[1]][1]),sep="")
+                          len<-length(indexvector[[1]])
+
+                          if (len > 1){
+                             
+                              for (cc in 2:len) { 
+                                   #cat(paste(pmid,indexvector[[1]][cc],sep=""),"\n")
+                                   idtext<-paste(idtext,which(pmid==indexvector[[1]][cc]),sep=", ") 
+                              }
+                          }                          
+
+                          for (p in 1:nrow) {
+                               RelatedCondition<-strsplit(TraitGenoEffects,";")[[1]][p]
+                               #RelatedCondition<-sub("\\%","\%",RelatedCondition)
+                               GRRValue<-strsplit(GRR,";")[[1]][p]
+
+                               if(p != 1) {
+                                            if(GRRFlag=="0.00") {cat("\\rowcolor{rowcolwithgrr}","\n")} else {cat("\\rowcolor{rowcolwithoutgrr}","\n")}
+                                            if(GRRFlag=="0.00") {cat("&  &","\n")} else {cat(" &","\n")}                       
+                               }
+                               if(GRRFlag == "0.00") {
+                                            cat(paste(" & ",RelatedCondition," &[",idtext,"]\\\\",sep=""),"\n")
+                                            #cat("\\cline{3-5}","\n")
+                               } else {
+                                            cat(paste(" & ",RelatedCondition," &",GRRValue," &[",idtext,"]\\\\",sep=""),"\n")
+                                            cat("\\cline{3-5}","\n")
+                               }                     
+                          }
+
+                          #cat("\\cline{1-2}","\n")
+                             
+
+                          cat("\\hline","\n")
+                          if(GRRFlag=="0.00") {cat("\\rowcolor{rowcolwithgrr}","\n")} else {cat("\\rowcolor{rowcolwithoutgrr}","\n")}                           
+                          Text<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitGeneDescription"]])
+                          Text<-gsub("~\\\\","\\\\newline",Text)
+                          if(GRRFlag=="0.00") {
+                              cat("\\rowcolor{rowcolwithgrr}","\n")
+                              cat(paste("\\multicolumn{4}{|p{11.25cm}|}{",Text,sep=""),"}\\\\","\n")
+                          } else {
+                              cat("\\rowcolor{rowcolwithoutgrr}","\n")
+                              cat(paste("\\multicolumn{5}{|p{11.25cm}|}{",Text,sep=""),"}\\\\","\n")
+                          }                
+                          cat("\\hline","\n")               
+                          cat("\\end{longtable}}","\n")
+                          cat("~\\\\","\n")
+                          TraitRelatedDiseases<-xmlValue(genoeffects[k][["GenoEffect"]][["Genotypes"]][["Genotype"]][["TraitInfo"]][["TraitRelatedDiseases"]])
+                          cat(TraitRelatedDiseases,"\n")
+                          cat("\\newpage","\n") 
+                       }
+                    }
+                }
+            } 
+      }
+}
+@ %end chunk = 12
+\end{document}linecolor=goldenpoppy
+
+
+
+
+
